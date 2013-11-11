@@ -196,7 +196,7 @@ h1 {
     line-height: 20px;
     text-transform: uppercase;
 	margin:15px 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "c4y1", Arial, Verdana;
 	font-weight:700;
 }
 h2 {
@@ -206,7 +206,7 @@ h2 {
 	margin-bottom:10px;
 	font-weight:normal;
 	text-transform:uppercase;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "c4y1", Arial, Verdana;
 }
 /***********************************************************************************header-style**********************************************************************************/
 .bg-1 {
@@ -3900,7 +3900,7 @@ tbody .total {
 	line-height:20px;
 	margin:0 0 20px;
 	font-weight:normal;
-	font-family: Arial, sans-serif;
+	font-family: "c4y1", Arial, Verdana;
 }
 #footer .column.col-1 {width:200px}
 #footer .column.col-2 {width:200px}
