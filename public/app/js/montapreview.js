@@ -3,7 +3,7 @@ function MontaPreview(idcsession, modelo, layout, filtro) {
 	alert(idcsession);
 	alert(modelo);
 	alert(layout);
-	alert(filtro);
+	alert(filtro); 
 	parent.previewframe.location="/app/product/?idcsession="+idcsession+"&m="+modelo+"&l="+layout+"&f="+filtro; 
 }
 
