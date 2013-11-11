@@ -126,7 +126,9 @@ body {
 		});
 	}
 
-	//abrirferramenta();
+	<?php if ($_GET["ferramenta"] == '1') { ?>
+		abrirferramenta();
+	<? } ?>
 
 
 		$(document).ready(function() {
