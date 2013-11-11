@@ -111,16 +111,19 @@ body {
 
 	<script type="text/javascript">
 	function abrirferramenta() {
-		$("#fancybox-manual-b").click(function() {
-				$.fancybox.open({
-					href : '/app/',
-					type : 'iframe',
-					scrolling   : 'no',
-					padding : 5,
-					width: 820,
-					height: 845
-				});
-			});
+		$(document).ready(function () {
+	        $.fancybox({
+	            'width': '820',
+	            'height': '845',
+	            'padding': 5,
+	            'scrolling': 'no',
+	            'autoScale': true,
+	            'transitionIn': 'fade',
+	            'transitionOut': 'fade',
+	            'type': 'iframe',
+	            'href': '/app/'
+	        });
+		});
 	}
 
 	abrirferramenta();
