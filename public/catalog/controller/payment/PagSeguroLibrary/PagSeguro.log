@@ -1,0 +1,36 @@
+{2013/09/25 17:23:50} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=17,     SenderEmail=ffigueiredo@webca.com.br)) - begin 
+{2013/09/25 17:23:52} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=17,     SenderEmail=ffigueiredo@webca.com.br)) - end {1}831565746A6ACF9CC4F95F93F93CF828 
+{2013/09/25 17:32:11} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=18,     SenderEmail=ffigueiredo@webca.com.br)) - begin 
+{2013/09/25 17:32:13} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=18,     SenderEmail=ffigueiredo@webca.com.br)) - end {1}2CE41E7DDFDF059CC4F2EFB0AB3969D4 
+{2013/09/25 17:37:20} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=20,     SenderEmail=ffigueiredo@webca.com.br)) - begin 
+{2013/09/25 17:37:21} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=20,     SenderEmail=ffigueiredo@webca.com.br)) - end {1}DFBDDEA7CFCF7697747D8F937C63864A 
+{2013/09/25 17:43:43} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=21,     SenderEmail=ffigueiredo@webca.com.br)) - begin 
+{2013/09/25 17:43:44} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=21,     SenderEmail=ffigueiredo@webca.com.br)) - end {1}B7DD612B29292837748A8F94F164146E 
+{2013/09/25 18:44:58} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=27,     SenderEmail=ffigueiredo@webca.com.br)) - begin 
+{2013/09/25 18:45:01} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=27,     SenderEmail=ffigueiredo@webca.com.br)) - end {1}D5D484C060606774447F7F838F6FEC71 
+{2013/09/27 20:50:04} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=28,     SenderEmail=fernando.mendes2@webca.com.br)) - begin 
+{2013/09/27 20:50:07} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=28,     SenderEmail=fernando.mendes2@webca.com.br)) - end {1}10875F767D7DBE5664ECAFBF281A4021 
+{2013/09/27 21:52:45} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=29,     SenderEmail=fernando.mendes2@webca.com.br)) - begin 
+{2013/09/27 21:52:48} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=29,     SenderEmail=fernando.mendes2@webca.com.br)) - end {1}71C91C5C8C8C4C0DD4606F937DCE6F2F 
+{2013/09/27 21:59:17} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=30,     SenderEmail=fernando.mendes2@webca.com.br)) - begin 
+{2013/09/27 21:59:19} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=30,     SenderEmail=fernando.mendes2@webca.com.br)) - end {1}6A9F384BC0C0B9A884EEBF84288E0222 
+{2013/09/28 12:29:53} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=31,     SenderEmail=fernando.mendes2@webca.com.br)) - begin 
+{2013/09/28 12:29:56} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=31,     SenderEmail=fernando.mendes2@webca.com.br)) - end {1}826824125454CF7884B4CF916C1906ED 
+{2013/09/28 12:32:05} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=32,     SenderEmail=fernando.mendes2@webca.com.br)) - begin 
+{2013/09/28 12:32:08} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=32,     SenderEmail=fernando.mendes2@webca.com.br)) - end {1}83DD18A9232347ADD4257F8E47D53EEB 
+{2013/09/28 14:03:28} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=33,     SenderEmail=ffigueiredo@webca.com.br)) - begin 
+{2013/09/28 14:03:31} [Error] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=33,     SenderEmail=ffigueiredo@webca.com.br)) - error [HTTP 400] - BAD_REQUEST [11030] - Item amount out of range: 0.00 
+{2013/09/28 14:03:39} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=34,     SenderEmail=ffigueiredo@webca.com.br)) - begin 
+{2013/09/28 14:03:40} [Error] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=34,     SenderEmail=ffigueiredo@webca.com.br)) - error [HTTP 400] - BAD_REQUEST [11030] - Item amount out of range: 0.00 
+{2013/09/28 14:04:03} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=35,     SenderEmail=ffigueiredo@webca.com.br)) - begin 
+{2013/09/28 14:04:04} [Error] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=35,     SenderEmail=ffigueiredo@webca.com.br)) - error [HTTP 400] - BAD_REQUEST [11030] - Item amount out of range: 0.00 
+{2013/09/28 14:05:38} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=36,     SenderEmail=fernando.mendes2@webca.com.br)) - begin 
+{2013/09/28 14:05:40} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=36,     SenderEmail=fernando.mendes2@webca.com.br)) - end {1}279C1C2208086E5554E4FFADF07F695E 
+{2013/09/28 14:21:41} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=37,     SenderEmail=teste2@webca.com.br)) - begin 
+{2013/09/28 14:21:42} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=37,     SenderEmail=teste2@webca.com.br)) - end {1}D40D113A050522E004070F884F7D1960 
+{2013/09/28 14:22:08} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=38,     SenderEmail=teste2@webca.com.br)) - begin 
+{2013/09/28 14:22:10} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=38,     SenderEmail=teste2@webca.com.br)) - end {1}420C21C3C1C1883884825F9D73FB128C 
+{2013/10/04 04:35:51} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=39,     SenderEmail=fernando.mendes2@webca.com.br)) - begin 
+{2013/10/04 04:35:53} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=39,     SenderEmail=fernando.mendes2@webca.com.br)) - end {1}A7692F15B1B15207744F9FA3E4AF571A 
+{2013/11/11 06:13:16} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=45,     SenderEmail=fernando.mendes@webca.com.br)) - begin 
+{2013/11/11 06:13:18} [Info] PagSeguroPaymentService.Register(PagSeguroPaymentRequest(Reference=45,     SenderEmail=fernando.mendes@webca.com.br)) - end {1}07292261A4A4BFDEE4F16FB51D430340 
