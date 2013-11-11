@@ -35,7 +35,7 @@ body {
 	line-height:18px;
 	min-width:1024px;
 	
-	<?php if ($_SERVER["REQUEST_URI"] == "/" || $_SERVER["REQUEST_URI"] == "/index.php?route=common/home") { ?>
+	<?php if ($_SERVER["REQUEST_URI"] == "/" || $_SERVER["REQUEST_URI"] == "/index.php?route=common/home" || $_SERVER["REQUEST_URI"] == "/?ferramenta=1") { ?>
 	background-position-y: -10px;
 	background-image: url('/catalog/view/theme/theme254/image/bg-c4y.png');
 	background-repeat: repeat-x;
