@@ -75,6 +75,6 @@ $(document).ready(function() {
 
 <div>
 	<a class="fancybox fancybox.iframe sf-with-ul" href="http://case4you.com.br/app/?m=0">
-		<img src="/app/bannerhome.png" alt="">
+		<img src="/app/img/bannerhome.png" alt="">
 	</a>
 </div>
