@@ -1,6 +1,10 @@
 function MontaPreview(idcsession, modelo, layout, filtro) {
 	escondemascarasup();
-	parent.previewframe.location="http://case4you.com.br/app/product/?idcsession="+idcsession+"&m="+modelo+"&l="+layout+"&f="+filtro; 
+	alert(idcsession);
+	alert(modelo);
+	alert(layout);
+	alert(filtro);
+	parent.previewframe.location="/app/product/?idcsession="+idcsession+"&m="+modelo+"&l="+layout+"&f="+filtro; 
 }
 
 function selecionarfiltro(filtro) {
