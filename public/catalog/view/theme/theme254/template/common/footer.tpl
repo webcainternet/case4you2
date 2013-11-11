@@ -52,7 +52,7 @@
           <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
           <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
           <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li> -->
-          <li><a class="fancybox fancybox.iframe" href="http://127.0.0.1/app/">Crie sua capinha</a></li>
+          <li><a class="fancybox fancybox.iframe" href="http://case4you.com.br/app/">Crie sua capinha</a></li>
         </ul>
       </div>
       <div class="column col-4">
