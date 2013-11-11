@@ -299,7 +299,7 @@ else {
 			margin-top: 2px;
 			padding-left: 0px;
 			display: none;">
-			<iframe name="previewframe" src=""  width="340" height="540" scrolling="no" frameborder="0"></iframe>
+			<iframe name="previewframe" id="previewframe" src=""  width="340" height="540" scrolling="no" frameborder="0"></iframe>
 		</div>
 
 		<div id="ircheckout1"  style="width: 340px;

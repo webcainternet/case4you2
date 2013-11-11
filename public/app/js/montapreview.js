@@ -1,10 +1,6 @@
 function MontaPreview(idcsession, modelo, layout, filtro) {
 	escondemascarasup();
-	alert(idcsession);
-	alert(modelo);
-	alert(layout);
-	alert(filtro); 
-	parent.previewframe.location="/app/product/?idcsession="+idcsession+"&m="+modelo+"&l="+layout+"&f="+filtro; 
+	document.getElementById("previewframe").src = "/app/product/?idcsession="+idcsession+"&m="+modelo+"&l="+layout+"&f="+filtro; 
 }
 
 function selecionarfiltro(filtro) {
