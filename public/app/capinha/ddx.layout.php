@@ -1,3 +1,35 @@
+<style>
+.controleico {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+</style>
+
+<script>
+function teste() {
+    //var myNode = document.getElementById('divl1');
+    //alert($("#divl1 > img").size());
+
+    //alert($("#divl1:first-child").attr("id"));
+
+    //$('#divl1 img').each(function(){
+    //    console.log($(this).attr('src'));
+    //    console.log($(this).attr('id'));
+    //});
+
+ //   $("#testFind").click(function () {
+ 
+        $('divl1 > img').css('background','red');
+ 
+        $('.divl1').find('.child').css('background','red');
+ 
+ //       });
+}
+</script>
 
 <?php
 switch ($ql) {
@@ -8,7 +40,24 @@ switch ($ql) {
     	<div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 10px; background-size: 340px; background-image: url(http://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
     		<div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 100%; height: 100%; overflow: hidden;text-align: center;
 	align: middle; border: solid 1px #6aa11a;">
-                <div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img src="img/close_red.gif"></a></div>
+                <div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img src="img/close_red.gif"></a></div>
+
+                <div style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
+                    <div class="controleico">&nbsp;</div>
+                    <div class="controleico"><a href="#" onclick="moverup()"><img src="/app/img/seta_cim.png"></a></div>
+                    <div class="controleico">&nbsp;</div>
+                    <div class="controleico"><a href="#" onclick="zoommais()"><img src="/app/img/seta_mai.png"></a></div>
+
+                    <div class="controleico"><a href="#" onclick="moveresq()"><img src="/app/img/seta_esq.png"></a></div>
+                    <div class="controleico">&nbsp;</div>
+                    <div class="controleico"><a href="#" onclick="moverdir()"><img src="/app/img/seta_dir.png"></a></div>
+                    <div class="controleico">&nbsp;</div>
+
+                    <div class="controleico">&nbsp;</div>
+                    <div class="controleico"><a href="#" onclick="moverbaixo()"><img src="/app/img/seta_bai.png"></a></div>
+                    <div class="controleico">&nbsp;</div>
+                    <div class="controleico"><a href="#" onclick="zoommenos()"><img src="/app/img/seta_men.png"></a></div>
+                </div>
             </div>
   	</div>
 <!-- FIM LAYOUT 1 -->
@@ -20,12 +69,47 @@ switch ($ql) {
         <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 10px; background-size: 340px; background-image: url(http://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
                 <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
         align: middle;">
-                    <div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2a')"><img src="img/close_red.gif"></a></div>
+                    <div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2a')"><img src="img/close_red.gif"></a></div>
+
+                    <div style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="moverup()"><img src="/app/img/seta_cim.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="zoommais()"><img src="/app/img/seta_mai.png"></a></div>
+
+                        <div class="controleico"><a href="#" onclick="moveresq()"><img src="/app/img/seta_esq.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="moverdir()"><img src="/app/img/seta_dir.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="moverbaixo()"><img src="/app/img/seta_bai.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="zoommenos()"><img src="/app/img/seta_men.png"></a></div>
+                    </div>
+
                 </div>
 
         		<div id="divl2b" ondrop="dropl2(event, '2')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
         align: middle;">
-                    <div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2b')"><img src="img/close_red.gif"></a></div>
+                    <div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2b')"><img src="img/close_red.gif"></a></div>
+
+                    <div style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="moverup()"><img src="/app/img/seta_cim.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="zoommais()"><img src="/app/img/seta_mai.png"></a></div>
+
+                        <div class="controleico"><a href="#" onclick="moveresq()"><img src="/app/img/seta_esq.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="moverdir()"><img src="/app/img/seta_dir.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="moverbaixo()"><img src="/app/img/seta_bai.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="zoommenos()"><img src="/app/img/seta_men.png"></a></div>
+                    </div>
                 </div>
         </div>
 <!-- FIM LAYOUT 2 -->
@@ -38,53 +122,53 @@ switch ($ql) {
 
 
                 <div id="divl15b1" ondrop="dropl15b(event, '1')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b1')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b1')"><img src="img/close_red.gif"></a></div></div>
 
 		        <div id="divl15b2" ondrop="dropl15b(event, '2')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b2')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b2')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15a1" ondrop="dropl15a(event, '5')" ondragover="allowDrop(event)" style="float: right; border: solid 1px #6aa11a; width: <?php echo $mw15a; ?>px; height: <?php echo $mh15a; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15a1')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15a1')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15b3" ondrop="dropl15b(event, '3')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b3')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b3')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15b4" ondrop="dropl15b(event, '4')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b4')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b4')"><img src="img/close_red.gif"></a></div></div>
 
 
 
 		        <div id="divl15a2" ondrop="dropl15a(event, '6')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15a; ?>px; height: <?php echo $mh15a; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15a2')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15a2')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15b5" ondrop="dropl15b(event, '8')" ondragover="allowDrop(event)" style="float: right; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b5')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b5')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15b6" ondrop="dropl15b(event, '7')" ondragover="allowDrop(event)" style="float: right; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b6')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b6')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15b7" ondrop="dropl15b(event, '10')" ondragover="allowDrop(event)" style="float: right; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b7')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b7')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15b8" ondrop="dropl15b(event, '9')" ondragover="allowDrop(event)" style="float: right; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b8')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b8')"><img src="img/close_red.gif"></a></div></div>
 
 
 
                 <div id="divl15b9" ondrop="dropl15b(event, '11')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b9')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b9')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15b10" ondrop="dropl15b(event, '12')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b10')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b10')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15a3" ondrop="dropl15a(event, '15')" ondragover="allowDrop(event)" style="float: right; border: solid 1px #6aa11a; width: <?php echo $mw15a; ?>px; height: <?php echo $mh15a; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15a3')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15a3')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15b11" ondrop="dropl15b(event, '13')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b11')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b11')"><img src="img/close_red.gif"></a></div></div>
 
                 <div id="divl15b12" ondrop="dropl15b(event, '14')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
-        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 10; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b12')"><img src="img/close_red.gif"></a></div></div>
+        align: middle;"><div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b12')"><img src="img/close_red.gif"></a></div></div>
         </div>
 <!-- FIM LAYOUT 3 -->
 
