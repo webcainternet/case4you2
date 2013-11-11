@@ -126,7 +126,7 @@ body {
 		});
 	}
 
-	abrirferramenta();
+	//abrirferramenta();
 
 
 		$(document).ready(function() {
