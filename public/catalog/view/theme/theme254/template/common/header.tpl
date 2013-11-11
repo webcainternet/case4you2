@@ -259,7 +259,7 @@ body {
 					type : 'iframe',
 					scrolling   : 'no',
 					padding : 5,
-					width: 800,
+					width: 820,
 					height: 845
 				});
 			});
