@@ -110,6 +110,22 @@ body {
 	<script type="text/javascript" src="catalog/view/theme/theme254/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
 	<script type="text/javascript">
+	function abrirferramenta() {
+		$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : '/app/',
+					type : 'iframe',
+					scrolling   : 'no',
+					padding : 5,
+					width: 820,
+					height: 845
+				});
+			});
+	}
+
+	abrirferramenta();
+
+
 		$(document).ready(function() {
 			/*
 			 *  Simple image gallery. Uses default settings
