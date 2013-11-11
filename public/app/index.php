@@ -59,6 +59,14 @@ else {
 	    }); 
 	</script>
 
+	<!-- Ferramenta -->
+	<script>
+	function showcomputador() {
+   		document.getElementById("optionupload").style.display="block";
+	}
+	</script>
+
+
 </head>
 
 <body>

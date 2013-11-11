@@ -1,6 +1,4 @@
-function showcomputador() {
-   document.getElementById("optionupload").style.display="block";
-}
+
 
 function MontaCapa(modelo, layout) {
    $(document).ready(function(){
