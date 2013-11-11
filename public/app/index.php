@@ -194,7 +194,7 @@ else {
 				</div>
 
 				<div style="float: left; width: 360px;">
-					<div class="fontc4y1" style="float: left; width: 320px; margin-left: 20px; margin-top: 0px;">
+					<div id="optionupload" class="fontc4y1" style="float: left; width: 320px; margin-left: 20px; margin-top: 0px; display: none;">
 						<form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 						<div id='imageloadstatus' style='display:none'>
 							<img src="loader.gif" alt="Uploading...."/>
