@@ -70,3 +70,11 @@ $(document).ready(function() {
 		<div class="passoimg3"><div class="passonumero">3</div></div>
 	</div>
 </div>
+
+
+
+<div>
+	<a class="fancybox fancybox.iframe sf-with-ul" href="http://case4you.com.br/app/?m=0">
+		<img src="/app/bannerhome.png" alt="">
+	</a>
+</div>
