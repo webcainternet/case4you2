@@ -903,6 +903,7 @@ h2 {
 .breadcrumb a {
 	color:#ffffff;
 	text-decoration:none;
+	font-family: "c4y1", Arial, Verdana;
 }
 .breadcrumb a:hover {
 	color:#6aa11a;
@@ -3359,7 +3360,7 @@ a {
 }
 .cart-info thead .quantity, .cart-info thead .price, .cart-info thead .total {
 	text-align:left;
-	font-family:Arial;
+	font-family: "c4y1", Arial, Verdana;
 	font-size:12px;
 }
 .cart-info tbody td {
@@ -3509,7 +3510,7 @@ tbody .total {
 	color:#4d4949;
 }
 .cart-total table td b {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "c4y1", Arial, Verdana;
 }
 .cart-total table {
 	width:100%;
