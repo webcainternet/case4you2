@@ -2,7 +2,7 @@
 
 <script type="text/javascript">
 $(window).load(function() {
-    $(".button-cart").click();
+    $("#button-cart").click();
   });
 </script> 
 
