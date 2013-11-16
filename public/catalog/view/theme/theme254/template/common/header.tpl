@@ -405,6 +405,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 
 </head>
 <body class="<?php echo empty($this->request->get['route']) ? 'common-home' : str_replace('/', '-', $this->request->get['route']); ?>">
+	<center><h1>Em Manutenção</h1></center>
 <div class="bg-1">
 <div class="main-shining">
 <div class="row-1">
