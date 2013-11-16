@@ -201,7 +201,7 @@ else {
 			          <img style="margin-left: 2px; margin-right: 15px; width: 35px;" src="./img/instagram.png" alt="">
 				</div>
 
-				<div style="float: left; width: 360px;">
+				<div style="float: left; width: 360px; background-image: url('/app/img/setaarraste.png'); background-repeat: no-repeat;">
 					<div id="optionupload" class="fontc4y1" style="float: left; width: 320px; margin-left: 20px; margin-top: 0px; display: none;">
 						<form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 						<div id='imageloadstatus' style='display:none'>
