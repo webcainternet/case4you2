@@ -1,4 +1,11 @@
+<script type="text/javascript">
+$(window).load(function() {
+    $(".ok-entrega").click();
+  });
+</script> 
+
 <?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+
 <div id="content"><?php echo $content_top; ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -405,9 +412,9 @@ $('#button-cart').bind('click', function() {
 				//$('#cart-total').html(json['total']);
 				//$('html, body').animate({ scrollTop: 0 }, 'slow'); 
 				
-        //window.location = 'index.php?route=checkout/cartcustom';
+        window.location = 'index.php?route=checkout/cartcustom';
 
-				window.location = 'index.php?route=checkout/checkout';
+				//window.location = 'index.php?route=checkout/checkout';
 			}	
 		}
 	});
