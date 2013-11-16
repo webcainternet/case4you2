@@ -39,31 +39,7 @@
         <tbody>
           <?php foreach ($products as $product) { ?>
           <tr>
-            <td class="image">
-
-            <?php    
-              include '../config.php';
-
-              $dblink = mysql_connect(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD);
-              mysql_select_db(DB_DATABASE,$dblink);
-
-              $result = mysql_query("select mpn from oc_product WHERE product_id = ".$product['product_id']);
-
-              while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-                  $urlcapinha = $row["mpn"];
-              }
-
-              mysql_free_result($result);
-
-            ?>
-
-            <iframe src="http://case4you.com.br/app/thumb/index.php?<?php echo $urlcapinha; ?>" style="border: 0px; width: 80px; height: 135px;" scrolling="no"></iframe>
-
-            <?php if ($product['thumb']) { ?>
-
-            
-            
-
+            <td class="image"><?php if ($product['thumb']) { ?>
               <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
               <?php } ?></td>
             <td class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
