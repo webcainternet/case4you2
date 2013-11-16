@@ -105,10 +105,40 @@ function escondemascarasup() {
 
 function mostracontroles() {
    document.getElementById("dvcontroles").style.display="block";
+   document.getElementById("dvfechar1").style.display="block";
+   document.getElementById("dvfechar2").style.display="block";
+   document.getElementById("dvfechar3").style.display="block";
+   document.getElementById("dvfechar4").style.display="block";
+   document.getElementById("dvfechar5").style.display="block";
+   document.getElementById("dvfechar6").style.display="block";
+   document.getElementById("dvfechar7").style.display="block";
+   document.getElementById("dvfechar8").style.display="block";
+   document.getElementById("dvfechar9").style.display="block";
+   document.getElementById("dvfechar10").style.display="block";
+   document.getElementById("dvfechar11").style.display="block";
+   document.getElementById("dvfechar12").style.display="block";
+   document.getElementById("dvfechar13").style.display="block";
+   document.getElementById("dvfechar14").style.display="block";
+   document.getElementById("dvfechar15").style.display="block";
 }
 
 function escondecontroles() {
    document.getElementById("dvcontroles").style.display="none";
+   document.getElementById("dvfechar1").style.display="none";
+   document.getElementById("dvfechar2").style.display="none";
+   document.getElementById("dvfechar3").style.display="none";
+   document.getElementById("dvfechar4").style.display="none";
+   document.getElementById("dvfechar5").style.display="none";
+   document.getElementById("dvfechar6").style.display="none";
+   document.getElementById("dvfechar7").style.display="none";
+   document.getElementById("dvfechar8").style.display="none";
+   document.getElementById("dvfechar9").style.display="none";
+   document.getElementById("dvfechar10").style.display="none";
+   document.getElementById("dvfechar11").style.display="none";
+   document.getElementById("dvfechar12").style.display="none";
+   document.getElementById("dvfechar13").style.display="none";
+   document.getElementById("dvfechar14").style.display="none";
+   document.getElementById("dvfechar15").style.display="none";
 }
 
 
