@@ -9,7 +9,7 @@ $(window).load(function() {
 
 <?php // echo $column_left; ?><?php // echo $column_right; ?>
 
-<center>Aguarde...</center>
+<center><h1>Aguarde...</h1></center>
 
 <div id="content" style="display: none;"><?php echo $content_top; ?>
   <div class="breadcrumb">
@@ -524,4 +524,4 @@ $(document).ready(function() {
 	$('.time').timepicker({timeFormat: 'h:m'});
 });
 //--></script> 
-<?php // echo $footer; ?>
+<?php  echo $footer; ?>
