@@ -58,6 +58,21 @@ switch ($ql) {
                     <div class="controleico">&nbsp;</div>
                     <div class="controleico"><a href="#" onclick="zoommenos()"><img src="/app/img/seta_men.png"></a></div>
                 </div>
+
+                <div id="dvfechar2" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar3" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar4" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar5" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar6" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar7" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar8" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar9" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar10" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar11" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar12" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar13" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar14" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar15" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
             </div>
   	</div>
 <!-- FIM LAYOUT 1 -->
@@ -111,6 +126,21 @@ switch ($ql) {
                         <div class="controleico"><a href="#" onclick="zoommenos()"><img src="/app/img/seta_men.png"></a></div>
                     </div>
                 </div>
+
+                <div id="dvfechar3" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar4" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar5" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar6" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar7" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar8" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar9" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar10" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar11" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar12" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar13" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar14" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+                <div id="dvfechar15" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px;z-index: -101;"></div>
+
         </div>
 <!-- FIM LAYOUT 2 -->
 
