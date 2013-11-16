@@ -1,10 +1,4 @@
-
-
 <?php if ($success) { ?>
-
-ssssss
-
-
 <div class="success"><?php echo $success; ?></div>
 <?php } ?>
 <div class="onecheckout-product">

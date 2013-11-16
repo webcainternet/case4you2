@@ -40,7 +40,7 @@ $_['text_payment_method']            = 'Pagamento via cartão de debito, crédit
 $_['text_comments']                  = 'Comentários para o pedido';
 
 //button
-$_['button_confirm']    		     = 'Pay Now';
+$_['button_confirm']    		     = 'Confirmar';
 
 // Column
 $_['column_name']                    = 'Produto';
