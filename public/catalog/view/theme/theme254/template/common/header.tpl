@@ -449,19 +449,21 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 			<ul class="menu">
 				<li>
 					<a class="fancybox fancybox.iframe" href="http://case4you.com.br/app/?m=0">Crie Sua Capa</a>
-					<ul style="position: absolute; z-index:1000;">
+					<!-- <ul style="position: absolute; z-index:1000;">
 						<li><a class="fancybox fancybox.iframe" href="http://case4you.com.br/app/?m=0">Iphone 4</a></li>
 						<li><a class="fancybox fancybox.iframe" href="http://case4you.com.br/app/?m=1">Iphone 5</a></li>
 						<li><a class="fancybox fancybox.iframe" href="http://case4you.com.br/app/?m=2">Galaxy S3</a></li>
 						<li><a class="fancybox fancybox.iframe" href="http://case4you.com.br/app/?m=3">Galaxy S4</a></li>
-					</ul>
+					</ul> -->
 				</li>
 				<li>
-					<a class="" href="/capas-prontas">Produtos</a>
+					<a class="" href="/acessorios">Acessórios</a>
+					<!--
 					<ul style="position: absolute; z-index:1000;">
-						<!-- <li><a class="" href="/capas-prontas">Capas prontas</a></li> -->
+						<li><a class="" href="/capas-prontas">Capas prontas</a></li> 
 						<li><a class="" href="/acessorios">Acessórios</a></li>
 					</ul>
+					-->
 				</li>
 				<li><a class="" href="/quem-somos">Quem Somos</a></li>
 				<li><a class="" href="/duvidas">D&uacute;vidas</a></li>
