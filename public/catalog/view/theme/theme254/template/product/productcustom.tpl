@@ -1,4 +1,5 @@
-<?php echo $header; ?>
+
+<?php // echo $header; ?>
 
 <script type="text/javascript">
 $(window).load(function() {
@@ -6,7 +7,7 @@ $(window).load(function() {
   });
 </script> 
 
-<?php echo $column_left; ?><?php echo $column_right; ?>
+<?php // echo $column_left; ?><?php // echo $column_right; ?>
 
 <div id="content" style="display: none;"><?php echo $content_top; ?>
   <div class="breadcrumb">
@@ -521,4 +522,4 @@ $(document).ready(function() {
 	$('.time').timepicker({timeFormat: 'h:m'});
 });
 //--></script> 
-<?php echo $footer; ?>
+<?php // echo $footer; ?>
