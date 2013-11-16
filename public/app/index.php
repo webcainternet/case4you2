@@ -207,8 +207,8 @@ else {
 						<div id='imageloadstatus' style='display:none'>
 							<img src="loader.gif" alt="Uploading...."/>
 						</div>
-						<div id='imageloadbutton'>
-							<input type="file" name="photoimg" id="photoimg" />
+						<div id='imageloadbutton' style="background-image: url('/app/img/button-upload.png'); background-repeat: no-repeat;">
+							<input type="file" name="photoimg" id="photoimg" style="-moz-opacity:0 ; filter:alpha(opacity: 0); opacity: 0; z-index: 2;" />
 						</div>
 						</form>
 					</div>
