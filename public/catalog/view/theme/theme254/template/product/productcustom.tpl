@@ -1,5 +1,5 @@
 
-<?php // echo $header; ?>
+<?php echo $header; ?>
 
 <script type="text/javascript">
 $(window).load(function() {
