@@ -94,9 +94,25 @@ function selecionalayout(layout) {
 
 function mostramascarasup() {
    document.getElementById("mascarasuperior").style.display="block";
+   escondecontroles();
 }
 
 
 function escondemascarasup() {
    document.getElementById("mascarasuperior").style.display="none";
+   mostracontroles();
 }
+
+function mostracontroles() {
+   document.getElementById("dvcontroles").style.display="block";
+}
+
+function escondecontroles() {
+   document.getElementById("dvcontroles").style.display="none";
+}
+
+
+
+
+
+

@@ -42,7 +42,7 @@ switch ($ql) {
 	align: middle; border: solid 1px #6aa11a;">
                 <div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img src="img/close_red.gif"></a></div>
 
-                <div style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
+                <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
                     <div class="controleico">&nbsp;</div>
                     <div class="controleico"><a href="#" onclick="moverup()"><img src="/app/img/seta_cim.png"></a></div>
                     <div class="controleico">&nbsp;</div>
@@ -71,7 +71,7 @@ switch ($ql) {
         align: middle;">
                     <div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2a')"><img src="img/close_red.gif"></a></div>
 
-                    <div style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
+                    <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
                         <div class="controleico">&nbsp;</div>
                         <div class="controleico"><a href="#" onclick="moverup()"><img src="/app/img/seta_cim.png"></a></div>
                         <div class="controleico">&nbsp;</div>
@@ -94,7 +94,7 @@ switch ($ql) {
         align: middle;">
                     <div style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2b')"><img src="img/close_red.gif"></a></div>
 
-                    <div style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
+                    <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
                         <div class="controleico">&nbsp;</div>
                         <div class="controleico"><a href="#" onclick="moverup()"><img src="/app/img/seta_cim.png"></a></div>
                         <div class="controleico">&nbsp;</div>
