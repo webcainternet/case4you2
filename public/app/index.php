@@ -209,9 +209,9 @@ else {
 						</div>
 						<div id='imageloadbutton' style="background-image: url('/app/img/button-upload.png'); background-repeat: no-repeat;border-radius: 5px;
 width: 123px;
-height: 34px;">
+height: 34px;cursor: pointer;">
 							<input type="file" name="photoimg" id="photoimg" style="-moz-opacity:0 ; filter:alpha(opacity: 0); opacity: 0; z-index: 2;width: 123px;
-height: 34px;" />
+height: 34px;cursor: pointer;" />
 						</div>
 						</form>
 					</div>
