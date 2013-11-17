@@ -113,8 +113,6 @@ font-family: "c4y1", Arial, Verdana;
 <div style="float: left; width: 350px; height: 550px;">
 
 
-<div style="margin: 20px;">
-
 <a href="http://case4you.com.br/casefouryou/2/?l=<?php echo $_GET["l"]; ?>&m=<?php echo $_GET["m"]; ?>"><img src="http://case4you.com.br/image/data/login_facebook.jpg" alt="" border="0"></a>
 
 <?php <script type="text/javascript">
@@ -135,44 +133,10 @@ print ('<option value="'.$album['id'].'">'.$album['name'].'</option>' ) ;
 </select>
 
 ?>
-</div>
 
 
 </div>
 
-
-<div id="p1-dvfoto-img" style="float: left; width: 348px; border-left: solid 1px #CCC; height: 540px; text-align: left; background-repeat: no-repeat; background-position: 15px 10px;">
-      <div style="float: left;
-                  width: 15px;
-                  height: 20px;
-                  margin-left: 20px;
-                  margin-top: 20px;
-                  background-color: #6aa11a;
-                  border-radius: 20px;
-                  padding: 5px;
-                  padding-left: 10px;
-                  padding-top: 5px;
-                  color: #FFFFFF;
-                  font-size: 14px;
-                  font-weight: bold;">3</div>
-
-      <div class="fontc4y2" style="float: left;
-                  width: 260px;
-                  margin-left: 10px;
-                  margin-top: 13px;
-                  padding: 5px;
-                  color: #6aa11a;
-                  font-size: 14px;
-                  font-weight: bold;">
-ESCOLHA O ALBUM DE SEU FACEBOOK!
-	</div>
-      <div class="fontc4y1" style="float: left; width: 320px; margin-left: 20px; margin-top: 20px;">
-        AJUDA: Faça o login com o Facebook e escolha as fotos de seus albuns.
-        <br /><br />
-        OBS: Para obter qualidade na impressão é importante o upload de imagens em alta qualidade. Recomendamos fotos com pelo menos 1900x1200 pixels e 300dpi.
-	</div>
-
-    </div>
 
 
 
