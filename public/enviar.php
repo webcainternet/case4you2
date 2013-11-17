@@ -1,6 +1,6 @@
 <?php
 // multiple recipients
-$to  = 'contato@case4you.com.br';
+$to  = 'fernando.mendes@webca.com.br';
 
 // subject
 $subject = 'Case4you - Contato através do site';
@@ -33,8 +33,8 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 // Additional headers
-$headers .= 'To: Case4you - Contato <contato@case4you.com.br>' . "\r\n";
-$headers .= 'From: Case4you - Contato <contato@case4you.com.br>' . "\r\n";
+$headers .= 'To: Case4you - Contato <fernando.mendes@webca.com.br>' . "\r\n";
+$headers .= 'From: Case4you - Contato <fernando.mendes@webca.com.br>' . "\r\n";
 
 // Mail it
 mail($to, $subject, $message, $headers);
