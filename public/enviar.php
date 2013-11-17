@@ -6,12 +6,23 @@ $to  = 'fernando.mendes@webca.com.br';
 $subject = 'Case4you - Contato através do site';
 
 // message
+
+$nome = $_POST["nome"];
+$email = $_POST["email"];
+$assunto = $_POST["assunto"];
+$mensagem = $_POST["mensagem"];
+
 $message = '
 <html>
 
 <body>
 
+Nome: '.$nome.'<br />
+Email: '.$email.'<br />
+Assunto: '.$assunto.'<br />
+Mensagem: '.$mensagem.'<br />
 
+--
 
 <p>Olá,</p>
 
