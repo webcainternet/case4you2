@@ -102,7 +102,6 @@ print ('<option value="'.$album['id'].'">'.$album['name'].'</option>' ) ;
 
 </select>
 
-?>
 
 
 </div>
