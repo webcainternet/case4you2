@@ -114,8 +114,7 @@ font-family: "c4y1", Arial, Verdana;
 
 
 <a href="http://case4you.com.br/casefouryou/2/?l=<?php echo $_GET["l"]; ?>&m=<?php echo $_GET["m"]; ?>"><img src="http://case4you.com.br/image/data/login_facebook.jpg" alt="" border="0"></a>
-
-<?php <script type="text/javascript">
+<script type="text/javascript">
 function selecionaalbum(salbum) {
         window.location="http://case4you.com.br/casefouryou/2/?l=<?php echo $_GET["l"]; ?>&m=<?php echo $_GET["m"]; ?>";
 }
@@ -123,12 +122,12 @@ function selecionaalbum(salbum) {
 
 <select  onchange="selecionaalbum(this)">
 
-<-php
+<?php
 foreach($albums['data'] as $album) 
 {
 print ('<option value="'.$album['id'].'">'.$album['name'].'</option>' ) ;
 }
-->
+?>
 
 </select>
 
