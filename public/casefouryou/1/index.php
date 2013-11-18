@@ -7,11 +7,7 @@
   <link rel="stylesheet" href="/case4you/0/style.css" />
 
 
-  <script type="text/javascript">
-  function selecionaalbum(salbum) {
-          window.location="http://case4you.com.br/casefouryou/2/?idalbum="salbum.value;
-  }
-  </script>
+
 
 </head>
  
@@ -82,6 +78,13 @@ else
         //para ver todos os campos retornados
         $albums = $facebook->api('/me/albums');
         ?>
+
+        <script type="text/javascript">
+        function selecionaalbum(salbum) {
+                window.location="http://case4you.com.br/casefouryou/2/?idalbum="salbum.value;
+        }
+        </script>
+        
         <select  onchange="selecionaalbum(this)">
           <?php
           foreach($albums['data'] as $album) 
