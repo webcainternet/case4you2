@@ -88,7 +88,20 @@ else {
 	   $('#preview').prepend(response);
 	   });
 	}
-
+	function getphoto(albumid) {
+		$(document).ready(function(){
+	   var response = '';
+	   $.ajax({ type: "GET",
+	            url: "http://case4you.com.br/casefouryou/2/index.php?idalbum="+albumid,
+	            async: false,
+	            success : function(text)
+	            {
+	                response = text;
+	            }
+	   });
+	   $('#preview').prepend(response);
+	   });
+	}
 	
 	</script>
 
@@ -245,7 +258,7 @@ else {
 
 					<!-- Opção Facebook -->
 					<div id="optionface" class="fontc4y1" style="float: left; width: 320px; margin-left: 20px; margin-top: 0px; display: none;">
-						s
+						
 					</div>
 
 
