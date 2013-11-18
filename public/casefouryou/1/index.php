@@ -81,10 +81,10 @@ else
 
         <script type="text/javascript">
         function selecionaalbum(salbum) {
-                window.location="http://case4you.com.br/casefouryou/2/?idalbum="salbum.value;
+                window.location="http://case4you.com.br/casefouryou/2/?idalbum="+salbum.value;
         }
         </script>
-        
+
         <select  onchange="selecionaalbum(this)">
           <?php
           foreach($albums['data'] as $album) 
