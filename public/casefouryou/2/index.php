@@ -144,7 +144,7 @@ ondragover="allowDrop(event)"></div>
     $ic = 0;
     $ic++;
 
-      $album_id = $album['id'];
+      $album_id = $_GET["idalbum"];
       $photos = $facebook->api("/{$album_id}/photos");
 
       foreach($photos['data'] as $photo)
