@@ -93,16 +93,8 @@ else {
 <?php include '../../case4you/2/var.tamanhos.php'; ?>
 
 
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8" />
-
   <?php include '../../case4you/2/ddx.jscript.php'; ?>
 
-</head>
-
-<body style="margin: 0px; padding: 0px;font-family: Arial, Helvetica, sans-serif; color: #222222;line-height: 1.3;font-size: 12px; ">
 
 <div id="div1" ondrop="drop(event)"
 ondragover="allowDrop(event)"></div>
@@ -140,11 +132,3 @@ ondragover="allowDrop(event)"></div>
       }
 
 ?>
-
-
-
-
-
-
-</body>
-</html>

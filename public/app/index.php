@@ -61,9 +61,20 @@ else {
 
 	<!-- Ferramenta -->
 	<script>
+	function hiddeall() {
+		document.getElementById("optionupload").style.display="none";
+		document.getElementById("optionface").style.display="none";
+	}
 	function showcomputador() {
+		hiddeall();
    		document.getElementById("optionupload").style.display="block";
 	}
+	function showfacebook() {
+		hiddeall();
+   		document.getElementById("optionface").style.display="block";
+	}
+
+	
 	</script>
 
 
@@ -190,10 +201,7 @@ else {
   				<div class="fontc4y2 c4ysteptitle">SELECIONE SUAS FOTOS!</div>
 				<div class="fontc4y1 c4ysteptext">AJUDA: Agora escolha de onde deseja buscar suas fotos: De seu computador, Facebook ou Instagram.</div>
 
-				<div style="float: left; margin-left: 20px; width: 360px; background-image: url('/app/img/setaarraste.png');
-background-repeat: no-repeat;
-background-size: 100;
-background-position-x: 263;">
+				<div style="float: left; margin-left: 20px; width: 360px; background-image: url('/app/img/setaarraste.png'); background-repeat: no-repeat; background-size: 100; background-position-x: 263;">
 					<input onchange="showcomputador()" type="radio" name="modelo" id="ishowcomp" value="" style="display: inline; float: none;position: relative; top: -23px;">
 			          <img style="margin-left: 2px; margin-right: 15px; width: 35px;" src="./img/computador.png" alt="">
 			        
@@ -205,21 +213,28 @@ background-position-x: 263;">
 				</div>
 
 				<div style="float: left; width: 360px;">
+
+
+					<!-- Opção computador -->
 					<div id="optionupload" class="fontc4y1" style="float: left; width: 320px; margin-left: 20px; margin-top: 0px; display: none;">
 						<form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
 						<div id='imageloadstatus' style='display:none'>
 							<img src="loader.gif" alt="Uploading...."/>
 						</div>
-						<div id='imageloadbutton' style="background-image: url('/app/img/button-upload.png'); background-repeat: no-repeat;border-radius: 5px;
-width: 123px;
-height: 34px;cursor: pointer;">
-							<input type="file" name="photoimg" id="photoimg" style="-moz-opacity:0 ; filter:alpha(opacity: 0); opacity: 0; z-index: 2;width: 123px;
-height: 34px;cursor: pointer;" />
+						<div id='imageloadbutton' style="background-image: url('/app/img/button-upload.png'); background-repeat: no-repeat;border-radius: 5px; width: 123px; height: 34px;cursor: pointer;">
+							<input type="file" name="photoimg" id="photoimg" style="-moz-opacity:0 ; filter:alpha(opacity: 0); opacity: 0; z-index: 2;width: 123px; height: 34px;cursor: pointer;" />
 						</div>
 						</form>
 					</div>
 
 
+					<!-- Opção Facebook -->
+					<div id="optionface" class="fontc4y1" style="float: left; width: 320px; margin-left: 20px; margin-top: 0px; display: none;">
+						s
+					</div>
+
+
+					<!-- Local imagens -->
 					<div style="height: 275px; float: left; width: 320px; overflow-x: hidden; margin-top: 10px;">
 						<div id='preview'>
 						</div>

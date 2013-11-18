@@ -1,17 +1,3 @@
-<html>
- 
-<head>
-  <link rel="stylesheet" href="/case4you/0/jquery-ui.css" />
-  <script src="/case4you/0/jquery-1.9.1.js"></script>
-  <script src="/case4you/0/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/case4you/0/style.css" />
-
-
-
-
-</head>
- 
-<body style="margin: 0px; padding: 0px;font-family: Arial, Helvetica, sans-serif; color: #222222;line-height: 1.3;font-size: 12px; ">
 
 
 <?php
