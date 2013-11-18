@@ -1,5 +1,3 @@
-
-
 <?php
 //incluindo a classe de conexão com o facebook
 require '../facebook-php-sdk/src/facebook.php';

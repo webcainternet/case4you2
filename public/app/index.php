@@ -72,6 +72,21 @@ else {
 	function showfacebook() {
 		hiddeall();
    		document.getElementById("optionface").style.display="block";
+   		getalbum();
+	}
+	function getalbum() {
+		$(document).ready(function(){
+	   var response = '';
+	   $.ajax({ type: "GET",
+	            url: "http://case4you.com.br/casefouryou/1/index.php",
+	            async: false,
+	            success : function(text)
+	            {
+	                response = text;
+	            }
+	   });
+	   $('#preview').prepend(response);
+	   });
 	}
 
 	
