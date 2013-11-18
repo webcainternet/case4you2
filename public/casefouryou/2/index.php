@@ -98,35 +98,6 @@ else {
 <head>
 <meta charset="utf-8" />
 
-<style type="text/css">
-@font-face {
-  font-family: "c4y1";
-  src: url(http://capamaniacos.com.br/css/fontes/alrightsans-regularitalic-v3.ttf);
-}
-@font-face {
-  font-family: "c4y2";
-  src: url(http://capamaniacos.com.br/css/fontes/alrightsans-bolditalic-v3.ttf);
-}
-.fontc4y1 { 
-  font-family: "c4y1", Arial, Verdana;
-  font-size: 12px;
-}
-
-.fontc4y2 { 
-  font-family: "c4y2", Arial, Verdana;
-  font-size: 14px;
-  color: #6aa11a;
-}
-body, p {
-font-family: "c4y1", Arial, Verdana;
-}
-
-</style>
-
-
-  <link rel="stylesheet" href="../0/jquery-ui.css" />
-  <script src="../0/jquery-1.9.1.js"></script>
-  <script src="../0/jquery-ui.js"></script>
   <link rel="stylesheet" href="../0/style.css" />
 
   <?php include '../../case4you/2/ddx.jscript.php'; ?>
