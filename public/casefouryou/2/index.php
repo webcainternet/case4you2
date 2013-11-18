@@ -139,8 +139,6 @@ font-family: "c4y1", Arial, Verdana;
 ondragover="allowDrop(event)"></div>
 
 
-<div style="height: 475px; float: left; width: 320px; overflow-x: hidden">
-
 
 <?php
     $ic = 0;
@@ -155,19 +153,18 @@ ondragover="allowDrop(event)"></div>
         {
 		$ic++;
 ?>
-		<div id="divdrag<?php echo $ic; ?>" style="background-color: #FFFFFF; width: 50px; float: left; overflow: hidden; height: 50px;
-
-background: rgba(255,255,255,0.8);
-position: relative;
-display: inline-block;
-margin: 5px;
-vertical-align: top;
-border: 1px solid #acacac;
-padding: 6px 6px 6px 6px;
--webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
-font-size: 14px;
-">
+  		<div id="divdrag<?php echo $ic; ?>" style="background-color: #FFFFFF; width: 50px; float: left; overflow: hidden; height: 50px;
+              background: rgba(255,255,255,0.8);
+              position: relative;
+              display: inline-block;
+              margin: 5px;
+              vertical-align: top;
+              border: 1px solid #acacac;
+              padding: 6px 6px 6px 6px;
+              -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
+              box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
+              font-size: 14px;
+              ">
 
 <?php echo "<img src='{$photo['source']}' "; ?>
  id="drag<?php echo $ic; ?>" draggable="true"
@@ -181,19 +178,6 @@ font-size: 14px;
 
 
 
-
-
-
-
-
-
-&nbsp;
-</div>
-
-
-<!-- ddx.layoyt -->
-    <?php include '../../case4you/2/ddx.layout.php'; ?>
-<!-- ddx.layout fim -->
 
 
 
