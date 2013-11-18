@@ -64,6 +64,7 @@ else {
 	function hiddeall() {
 		document.getElementById("optionupload").style.display="none";
 		document.getElementById("optionface").style.display="none";
+		document.getElementById("optioninsta").style.display="none";
 	}
 	function showcomputador() {
 		hiddeall();
@@ -108,6 +109,16 @@ else {
 	   	$('#preview').prepend(response);
 	   	});
 	}
+	function showinstagram() {
+		hiddeall();
+   		document.getElementById("optioninsta").style.display="block";
+   		getinstagram();
+	}
+	function getinstagram() {
+		http://case4you.com.br/instagram4you/instagram/
+	}
+
+
 	
 	</script>
 
@@ -264,6 +275,12 @@ else {
 
 					<!-- Opção Facebook -->
 					<div id="optionface" class="fontc4y1" style="float: left; width: 320px; margin-left: 20px; margin-top: 0px; display: none;">
+						
+					</div>
+
+
+					<!-- Opção Instagram -->
+					<div id="optioninsta" class="fontc4y1" style="float: left; width: 320px; margin-left: 20px; margin-top: 0px; display: none;">
 						
 					</div>
 
