@@ -1,8 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-
 <?php
 session_start();
 if($_GET['id']=='logout')
@@ -21,56 +16,12 @@ if (!empty($_SESSION['userdetails']))
 }
 else
 {
-    header('Location: 1/index.php');
+    header('Location: /instagram4you/instagram/index.php');
 }
 ?>
-
-<?php
-session_start();
-
-if (isset($_SESSION["userid"])) {
-  $idcsession = $_SESSION["userid"];
-}
-else {
-  //Randomiza nome do arquivo
-  $date1 = date_create();
-  $timestamp1 = date_timestamp_get($date1);
-  $ramdomico4 = rand(1000,9999);
-  $idsession = $timestamp1."".$ramdomico4;
-  $_SESSION["userid"] = $idsession;
-
-  //echo "Nao logado:" . $_SESSION["userid"];
-}
-
-    $gmodelo = $_GET["m"];
-    $glayout = $_GET["l"];
-?>
-
-<?php include '../../case4you/2/var.tamanhos.php'; ?>
-
-
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8" />
-
-  <link rel="stylesheet" href="../0/jquery-ui.css" />
-  <script src="../0/jquery-1.9.1.js"></script>
-  <script src="../0/jquery-ui.js"></script>
-  <link rel="stylesheet" href="../0/style.css" />
-
-  <?php include '../../case4you/2/ddx.jscript.php'; ?>
-</head>
-
-<body style="margin: 0px; padding: 0px;font-family: Arial, Helvetica, sans-serif; color: #222222;line-height: 1.3;font-size: 12px; ">
 
 <div id="div1" ondrop="drop(event)"
 ondragover="allowDrop(event)"></div>
-
-
-<div style="height: 475px; float: left; width: 320px; overflow-x: hidden">
-
-
 
 
 <?php
@@ -103,14 +54,3 @@ font-size: 14px;
 }
 
 ?>
-&nbsp;
-</div>
-
-<!-- ddx.layoyt -->
-    <?php include '../../case4you/2/ddx.layout.php'; ?>
-<!-- ddx.layout fim -->
-
-
-</body>
-</html>
-
