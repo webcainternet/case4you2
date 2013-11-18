@@ -98,8 +98,6 @@ else {
 <head>
 <meta charset="utf-8" />
 
-  <link rel="stylesheet" href="../0/style.css" />
-
   <?php include '../../case4you/2/ddx.jscript.php'; ?>
 
 </head>
