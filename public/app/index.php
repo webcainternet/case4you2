@@ -76,31 +76,37 @@ else {
 	}
 	function getalbum() {
 		$(document).ready(function(){
-	   var response = '';
-	   $.ajax({ type: "GET",
+	   	var response = '';
+	   	$.ajax({ type: "GET",
 	            url: "http://case4you.com.br/casefouryou/1/index.php",
 	            async: false,
 	            success : function(text)
 	            {
 	                response = text;
 	            }
-	   });
-	   $('#preview').prepend(response);
-	   });
+	   	});
+	   	$('#optionface').prepend(response);
+	   	});
 	}
 	function getphoto(albumid) {
 		$(document).ready(function(){
-	   var response = '';
-	   $.ajax({ type: "GET",
+	   	var response = '';
+	   	$.ajax({ type: "GET",
 	            url: "http://case4you.com.br/casefouryou/2/index.php?idalbum="+albumid,
 	            async: false,
 	            success : function(text)
 	            {
 	                response = text;
 	            }
-	   });
-	   $('#preview').prepend(response);
-	   });
+	   	});
+
+		var myNode = document.getElementById("preview");
+		while (myNode.firstChild) {
+		   myNode.removeChild(myNode.firstChild);
+		}
+
+	   	$('#preview').prepend(response);
+	   	});
 	}
 	
 	</script>
