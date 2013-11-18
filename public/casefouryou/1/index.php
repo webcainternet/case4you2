@@ -9,7 +9,7 @@
 
   <script type="text/javascript">
   function selecionaalbum(salbum) {
-          window.location="http://case4you.com.br/casefouryou/2/?l=<?php echo $_GET["l"]; ?>&m=<?php echo $_GET["m"]; ?>";
+          window.location="http://case4you.com.br/casefouryou/2/?idalbum="salbum.value;
   }
   </script>
 
