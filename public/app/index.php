@@ -114,9 +114,10 @@ else {
    		document.getElementById("optioninsta").style.display="block";
    		getinstagram();
 	}
+	/*
 	function getinstagram() {
 		http://case4you.com.br/instagram4you/instagram/
-	}
+	}*/
 
 
 	
