@@ -20,9 +20,6 @@ else
 }
 ?>
 
-<div id="div1" ondrop="drop(event)"
-ondragover="allowDrop(event)"></div>
-
 
 <?php
     $ic = 0;

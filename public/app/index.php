@@ -114,10 +114,28 @@ else {
    		document.getElementById("optioninsta").style.display="block";
    		getinstagram();
 	}
-	/*
 	function getinstagram() {
-		http://case4you.com.br/instagram4you/instagram/
-	}*/
+	
+		$(document).ready(function(){
+	   	var response = '';
+	   	$.ajax({ type: "GET",
+	            url: "http://case4you.com.br/instagram4you/instagram/home.php",
+	            async: false,
+	            success : function(text)
+	            {
+	                response = text;
+	            }
+	   	});
+
+		var myNode = document.getElementById("preview");
+		while (myNode.firstChild) {
+		   myNode.removeChild(myNode.firstChild);
+		}
+
+	   	$('#preview').prepend(response);
+	   	});
+
+	}
 
 
 	
