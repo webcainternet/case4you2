@@ -1,3 +1,23 @@
+<html>
+ 
+<head>
+  <link rel="stylesheet" href="/case4you/0/jquery-ui.css" />
+  <script src="/case4you/0/jquery-1.9.1.js"></script>
+  <script src="/case4you/0/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/case4you/0/style.css" />
+
+
+  <script type="text/javascript">
+  function selecionaalbum(salbum) {
+          window.location="http://case4you.com.br/casefouryou/2/?l=<?php echo $_GET["l"]; ?>&m=<?php echo $_GET["m"]; ?>";
+  }
+  </script>
+
+</head>
+ 
+<body style="margin: 0px; padding: 0px;font-family: Arial, Helvetica, sans-serif; color: #222222;line-height: 1.3;font-size: 12px; ">
+
+
 <?php
 //incluindo a classe de conexão com o facebook
 require '../facebook-php-sdk/src/facebook.php';
@@ -29,7 +49,6 @@ $o_user = $facebook->getUser();
 */
 if($o_user == 0)
 {
- 
     //Envia para a página de permissão do facebook, nela voce irá dar permissão ao aplicativo
     //acessar dados da sua conta
     $url = $facebook->getLoginUrl(array('scope' => array('user_about_me','user_hometown','user_photos','friends_photos','read_stream','friends_likes','photo_upload','publish_stream','status_update','video_upload')));
@@ -62,50 +81,23 @@ else
         //Use var_dump($home) ou print_r($home)
         //para ver todos os campos retornados
         $albums = $facebook->api('/me/albums');
+        ?>
+        <select  onchange="selecionaalbum(this)">
+          <?php
+          foreach($albums['data'] as $album) 
+          {
+          print ('<option value="'.$album['id'].'">'.$album['name'].'</option>' ) ;
+          }
+          ?>
+
+          </select>
+        <?php
+
+
     }
 }
  
 ?>
-
-
-
-
-<html>
- 
-<head>
-  <link rel="stylesheet" href="/case4you/0/jquery-ui.css" />
-  <script src="/case4you/0/jquery-1.9.1.js"></script>
-  <script src="/case4you/0/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/case4you/0/style.css" />
-
-</head>
- 
-<body style="margin: 0px; padding: 0px;font-family: Arial, Helvetica, sans-serif; color: #222222;line-height: 1.3;font-size: 12px; ">
-<div style="float: left; width: 350px; height: 550px;">
-
-
-<a href="http://case4you.com.br/casefouryou/2/?l=<?php echo $_GET["l"]; ?>&m=<?php echo $_GET["m"]; ?>"><img src="http://case4you.com.br/image/data/login_facebook.jpg" alt="" border="0"></a>
-<script type="text/javascript">
-function selecionaalbum(salbum) {
-        window.location="http://case4you.com.br/casefouryou/2/?l=<?php echo $_GET["l"]; ?>&m=<?php echo $_GET["m"]; ?>";
-}
-</script>
-
-<select  onchange="selecionaalbum(this)">
-
-<?php
-foreach($albums['data'] as $album) 
-{
-print ('<option value="'.$album['id'].'">'.$album['name'].'</option>' ) ;
-}
-?>
-
-</select>
-
-
-
-</div>
-
 
 
 
