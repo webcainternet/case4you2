@@ -134,19 +134,20 @@ else {
 	   	});
 
 	   	if (response.indexOf("Entrar") == -1 ) {
-	   		alert('ok');
+		   	$('#preview').prepend(response);
+		   	});
 	   	}
 	   	else {
-	   		alert('nao');
+			var myNode = document.getElementById("optioninsta");
+			while (myNode.firstChild) {
+			   myNode.removeChild(myNode.firstChild);
+			}
+
+		   	$('#optioninsta').prepend(response);
+		   	});
 	   	}
 
-		var myNode = document.getElementById("optioninsta");
-		while (myNode.firstChild) {
-		   myNode.removeChild(myNode.firstChild);
-		}
 
-	   	$('#optioninsta').prepend(response);
-	   	});
 	}
 
 
