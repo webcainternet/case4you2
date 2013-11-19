@@ -33,7 +33,7 @@ else
       $autok = 1;
     }
 
-    if (autok == 1) {
+    if ($autok == 1) {
       echo "Autenticação efetuada!";
     }
 /*
