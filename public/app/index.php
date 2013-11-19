@@ -133,7 +133,7 @@ else {
 	            }
 	   	});
 
-	   	if (response.indexOf("autentica") == -1 ) {
+	   	if (response.indexOf("Entrar") == -1 ) {
 	   		alert('ok');
 	   	}
 	   	else {
