@@ -19,7 +19,7 @@ else
     //header('Location: /instagram4you/instagram/index.php');
   // Display the login button
   $loginUrl = $instagram->getLoginUrl();
-  echo "<a target=\"_blank\" class=\"button\" href=\"$loginUrl\">Sign in with Instagram</a>";
+  echo "<a target=\"_blank\" class=\"button\" href=\"$loginUrl\">Entrar com Instagram</a>";
 
   //Script refresh
 }
@@ -27,6 +27,16 @@ else
 
 
 <?php
+    $autok = 0;
+
+    foreach ($popular->data as $data) {
+      $autok = 1;
+    }
+
+    if (autok == 1) {
+      echo "Autenticação efetuada!";
+    }
+/*
     $ic = 0;
     $popular = $instagram->getUserMedia($data->user->id);
 
@@ -54,5 +64,6 @@ else
 
 <?php
 }
-
+*/
 ?>
+

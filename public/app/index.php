@@ -119,7 +119,7 @@ else {
 		$(document).ready(function(){
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "http://case4you.com.br/instagram4you/instagram/home.php",
+	            url: "http://case4you.com.br/instagram4you/instagram/home2.php",
 	            async: false,
 	            success : function(text)
 	            {
