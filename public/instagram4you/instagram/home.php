@@ -30,17 +30,17 @@ else
 ?>
         <div id="divdrag<?php echo $ic; ?>" style="background-color: #FFFFFF; width: 50px; float: left; overflow: hidden; height: 50px;
 
-background: rgba(255,255,255,0.8);
-position: relative;
-display: inline-block;
-margin: 5px;
-vertical-align: top;
-border: 1px solid #acacac;
-padding: 6px 6px 6px 6px;
--webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
-font-size: 14px;
-">
+      background: rgba(255,255,255,0.8);
+      position: relative;
+      display: inline-block;
+      margin: 5px;
+      vertical-align: top;
+      border: 1px solid #acacac;
+      padding: 6px 6px 6px 6px;
+      -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
+      font-size: 14px;
+      ">
 
 <?php  echo "<img src=\"{$data->images->thumbnail->url}\""; ?>
  id="drag<?php echo $ic; ?>" draggable="true"
