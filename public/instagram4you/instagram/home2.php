@@ -25,6 +25,7 @@ else
   <script>
     setTimeout("getinstagram()", 2000);
   </script>
+  <?php
 }
 ?>
 
