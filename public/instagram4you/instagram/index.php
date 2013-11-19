@@ -9,5 +9,5 @@ require 'instagram.config.php';
 
 // Display the login button
 $loginUrl = $instagram->getLoginUrl();
-echo "<a class=\"button\" href=\"$loginUrl\">Sign in with Instagram</a>";
+echo "<a target=\"_blank\" class=\"button\" href=\"$loginUrl\">Sign in with Instagram</a>";
 ?>

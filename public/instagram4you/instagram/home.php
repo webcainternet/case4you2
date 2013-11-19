@@ -16,7 +16,12 @@ if (!empty($_SESSION['userdetails']))
 }
 else
 {
-    header('Location: /instagram4you/instagram/index.php');
+    //header('Location: /instagram4you/instagram/index.php');
+  // Display the login button
+  $loginUrl = $instagram->getLoginUrl();
+  echo "<a target=\"_blank\" class=\"button\" href=\"$loginUrl\">Sign in with Instagram</a>";
+
+  //Script refresh
 }
 ?>
 
