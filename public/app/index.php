@@ -123,6 +123,7 @@ else {
 	function getinstagram() {
 	
 		$(document).ready(function(){
+
 	   	var response = '';
 	   	$.ajax({ type: "GET",
 	            url: "http://case4you.com.br/instagram4you/instagram/home2.php",
@@ -135,7 +136,7 @@ else {
 
 	   	if (response.indexOf("Entrar") == -1 ) {
 		   	$('#preview').prepend(response);
-		   	});
+		   	
 	   	}
 	   	else {
 			var myNode = document.getElementById("optioninsta");
@@ -144,10 +145,10 @@ else {
 			}
 
 		   	$('#optioninsta').prepend(response);
-		   	});
+		   	
 	   	}
 
-
+		});
 	}
 
 
