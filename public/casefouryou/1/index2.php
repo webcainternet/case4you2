@@ -34,7 +34,7 @@ if($o_user == 0)
     $url = $facebook->getLoginUrl(array('scope' => array('user_about_me','user_hometown','user_photos','friends_photos','read_stream','friends_likes','photo_upload','publish_stream','status_update','video_upload')));
     //header("Location:".$url);
     //echo "<script language=javascript>location.href ='".$url."'</script>";
-    $url = str_replace($url, 'index2.php', 'index.php')
+    $url = str_replace($url, 'index2.php', 'index.php');
     echo "<a target=\"_blank\" class=\"button\" href=\"$url\">Entrar com Facebook</a>";
     ?> 
     <script>
