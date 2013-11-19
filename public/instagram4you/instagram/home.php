@@ -13,7 +13,7 @@ if (!empty($_SESSION['userdetails']))
 {
     $data=$_SESSION['userdetails'];
     $instagram->setAccessToken($data);
-     echo "Autentica&ccedil;&atilde;o efetuada!";
+     echo "<div>Autentica&ccedil;&atilde;o efetuada!</div>";
 }
 else
 {
