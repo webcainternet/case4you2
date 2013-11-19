@@ -133,8 +133,12 @@ else {
 	            }
 	   	});
 
-	   	alert(response.indexOf("autentica"));
-
+	   	if (response.indexOf("autentica") == -1 ) {
+	   		alert('ok');
+	   	}
+	   	else {
+	   		alert('nao');
+	   	}
 
 		var myNode = document.getElementById("optioninsta");
 		while (myNode.firstChild) {
