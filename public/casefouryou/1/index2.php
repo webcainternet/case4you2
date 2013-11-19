@@ -69,7 +69,23 @@ else
         //para ver todos os campos retornados
         $albums = $facebook->api('/me/albums');
         ?>
-            <div>Autentica&ccedil;&atilde;o efetuada!</div>
+
+        <script type="text/javascript">
+        function selecionaalbum(salbum) {
+                getphoto(salbum.value);
+                //window.location="http://case4you.com.br/casefouryou/2/?idalbum="+salbum.value;
+        }
+        </script>
+
+        <select  onchange="selecionaalbum(this)">
+          <?php
+          foreach($albums['data'] as $album) 
+          {
+          print ('<option value="'.$album['id'].'">'.$album['name'].'</option>' ) ;
+          }
+          ?>
+
+          </select>
         <?php
 
 

@@ -79,13 +79,19 @@ else {
 		$(document).ready(function(){
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "http://case4you.com.br/casefouryou/1/index.php",
+	            url: "http://case4you.com.br/casefouryou/1/index2.php",
 	            async: false,
 	            success : function(text)
 	            {
 	                response = text;
 	            }
 	   	});
+
+		var myNode = document.getElementById("optionface");
+		while (myNode.firstChild) {
+		   myNode.removeChild(myNode.firstChild);
+		}
+
 	   	$('#optionface').prepend(response);
 	   	});
 	}
