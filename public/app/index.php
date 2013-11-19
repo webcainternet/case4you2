@@ -132,13 +132,17 @@ else {
 	                response = text;
 	            }
 	   	});
-			var myNode = document.getElementById("optioninsta");
-			while (myNode.firstChild) {
-			   myNode.removeChild(myNode.firstChild);
-			}
 
-		   	$('#optioninsta').prepend(response);
-		   	});
+	   	alert(response.indexOf("autentica"));
+
+
+		var myNode = document.getElementById("optioninsta");
+		while (myNode.firstChild) {
+		   myNode.removeChild(myNode.firstChild);
+		}
+
+	   	$('#optioninsta').prepend(response);
+	   	});
 	}
 
 
