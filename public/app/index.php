@@ -132,8 +132,6 @@ else {
 	                response = text;
 	            }
 	   	});
-
-	   	if (response.indexOf("autentica") != '-1') {
 			var myNode = document.getElementById("optioninsta");
 			while (myNode.firstChild) {
 			   myNode.removeChild(myNode.firstChild);
@@ -141,12 +139,6 @@ else {
 
 		   	$('#optioninsta').prepend(response);
 		   	});
-		}
-		else {
-			$('#preview').prepend(response);
-		   	});
-		}
-
 	}
 
 
