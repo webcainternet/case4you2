@@ -32,7 +32,8 @@ if($o_user == 0)
     //Envia para a página de permissão do facebook, nela voce irá dar permissão ao aplicativo
     //acessar dados da sua conta
     $url = $facebook->getLoginUrl(array('scope' => array('user_about_me','user_hometown','user_photos','friends_photos','read_stream','friends_likes','photo_upload','publish_stream','status_update','video_upload')));
-    header("Location:".$url);
+    //header("Location:".$url);
+    echo "<div>App error</div>";
 }
 else
 {
@@ -90,19 +91,9 @@ else {
     $glayout = $_GET["l"];
 ?>
 
-<?php include '../../case4you/2/var.tamanhos.php'; ?>
-
-
-  <?php include '../../case4you/2/ddx.jscript.php'; ?>
-
-
-<div id="div1" ondrop="drop(event)"
-ondragover="allowDrop(event)"></div>
-
-
 
 <?php
-    $ic = 0;
+    $ic = 10000;
     $ic++;
 
       $album_id = $_GET["idalbum"];
