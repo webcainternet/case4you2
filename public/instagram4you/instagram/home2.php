@@ -31,6 +31,10 @@ else
 
 
 <?php
+if (!empty($_SESSION['userdetails'])) 
+{
+
+
     $ic = 0;
     $popular = $instagram->getUserMedia($data->user->id);
 
@@ -59,4 +63,5 @@ else
 <?php
 }
 
+}
 ?>
