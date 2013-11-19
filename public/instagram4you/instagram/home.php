@@ -13,6 +13,7 @@ if (!empty($_SESSION['userdetails']))
 {
     $data=$_SESSION['userdetails'];
     $instagram->setAccessToken($data);
+     echo "Autenticação efetuada!";
 }
 else
 {
@@ -27,15 +28,6 @@ else
 
 
 <?php
-    $autok = 0;
-
-    foreach ($popular->data as $data) {
-      $autok = 1;
-    }
-
-    if ($autok == 1) {
-      echo "Autenticação efetuada!";
-    }
 /*
     $ic = 0;
     $popular = $instagram->getUserMedia($data->user->id);
