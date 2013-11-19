@@ -21,7 +21,10 @@ else
   $loginUrl = $instagram->getLoginUrl();
   echo "<a target=\"_blank\" class=\"button\" href=\"$loginUrl\">Entrar com Instagram</a>";
 
-  //Script refresh
+  ?> 
+  <script>
+    setTimeout("getinstagram()", 2000);
+  </script>
 }
 ?>
 
