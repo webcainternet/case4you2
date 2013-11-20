@@ -93,15 +93,19 @@ else {
 
 
 <?php
-    $ic = 10000;
-    $ic++;
+    
 
       $album_id = $_GET["idalbum"];
       $photos = $facebook->api("/{$album_id}/photos");
 
+    $adate1 = date_create();
+    $atimestamp1 = date_timestamp_get($adate1);
+    $aramdomico4 = rand(1000,9999);
+    $ic = $atimestamp1.$aramdomico4;
+
       foreach($photos['data'] as $photo)
       {
-
+            $ic++;
 ?>
     		<div id="divdrag<?php echo $ic; ?>" style="background-color: #FFFFFF; width: 50px; float: left; overflow: hidden; height: 50px;
                 background: rgba(255,255,255,0.8);
