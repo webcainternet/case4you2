@@ -104,6 +104,7 @@ function escondemascarasup() {
 }
 
 function mostracontroles() {
+/*   
    document.getElementById("dvcontroles").style.display="block";
    document.getElementById("dvfechar1").style.display="block";
    document.getElementById("dvfechar2").style.display="block";
@@ -120,9 +121,11 @@ function mostracontroles() {
    document.getElementById("dvfechar13").style.display="block";
    document.getElementById("dvfechar14").style.display="block";
    document.getElementById("dvfechar15").style.display="block";
+*/   
 }
 
 function escondecontroles() {
+/*   
    document.getElementById("dvcontroles").style.display="none";
    document.getElementById("dvfechar1").style.display="none";
    document.getElementById("dvfechar2").style.display="none";
@@ -139,6 +142,7 @@ function escondecontroles() {
    document.getElementById("dvfechar13").style.display="none";
    document.getElementById("dvfechar14").style.display="none";
    document.getElementById("dvfechar15").style.display="none";
+*/   
 }
 
 
