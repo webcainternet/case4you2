@@ -1,3 +1,10 @@
+<script type="text/javascript" src="/catalog/view/javascript/jquery-1.8.0.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $("#clickinsta").click();
+  });
+</script> 
+
 <?php
 session_start();
 if($_GET['id']=='logout')
@@ -20,7 +27,7 @@ else
     //header('Location: /instagram4you/instagram/index.php');
   // Display the login button
   $loginUrl = $instagram->getLoginUrl();
-  echo "<a target=\"_blank\" class=\"button\" href=\"$loginUrl\">Entrar com Instagram</a>";
+  echo "<a id=\"clickinsta\" class=\"button\" href=\"$loginUrl\">Entrar com Instagram</a>";
 
   //Script refresh
 }

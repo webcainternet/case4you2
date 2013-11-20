@@ -1,3 +1,4 @@
+<script type="text/javascript" src="/catalog/view/javascript/jquery-1.8.0.min.js"></script>
 <script type="text/javascript">
 $(window).load(function() {
     $("#clickface").click();
