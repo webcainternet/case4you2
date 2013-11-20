@@ -19,7 +19,7 @@ else
     //header('Location: /instagram4you/instagram/index.php');
   // Display the login button
   $loginUrl = $instagram->getLoginUrl();
-  echo "<a target=\"_blank\" class=\"button\" onclick=\"window.open('$loginUrl','_blank','toolbar=no, scrollbars=no, resizable=yes, top=400, left=500, width=700, height=700');\" href=\"#\">Entrar com Instagram</a>";
+  echo "<a class=\"button\" onclick=\"window.open('$loginUrl','_blank','toolbar=no, scrollbars=no, resizable=yes, top=400, left=500, width=700, height=700');\" href=\"#\">Entrar com Instagram</a>";
 
   ?> 
   <script>

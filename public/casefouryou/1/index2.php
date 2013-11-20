@@ -36,7 +36,7 @@ if($o_user == 0)
     //echo "<script language=javascript>location.href ='".$url."'</script>";
     //$url = str_replace($url, 'index2.php', 'index.php');
     $url = "/casefouryou/1/index.php";
-    echo "<a target=\"_blank\" class=\"button\" onclick=\"window.open('$url','_blank','toolbar=no, scrollbars=no, resizable=yes, top=400, left=500, width=700, height=700');\" href=\"#\">Entrar com Facebook</a>";
+    echo "<a class=\"button\" onclick=\"window.open('$url','_blank','toolbar=no, scrollbars=no, resizable=yes, top=400, left=500, width=850, height=600');\" href=\"#\">Entrar com Facebook</a>";
     ?> 
     <script>
         setTimeout("getalbum()", 2000);
