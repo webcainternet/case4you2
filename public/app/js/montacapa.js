@@ -33,7 +33,84 @@ function lixeiraremove(divname) {
    while (myNode.firstChild) {
          myNode.removeChild(myNode.firstChild);  
    }
-   var textv = '<div id="'+divname+'" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove(\''+divname+'\')"><img src="img/close_red.gif"></a></div>';
+   var divnamefechar = '';
+
+   switch (divname) {
+      case 'divl1':
+         divnamefechar = 'dvfechar1';
+         break;
+
+      case 'divl2a':
+         divnamefechar = 'dvfechar1';
+         break;
+
+      case 'divl2b':
+         divnamefechar = 'dvfechar2';
+         break;
+
+      case 'divl15b1':
+         divnamefechar = 'dvfechar1';
+         break;
+
+      case 'divl15b2':
+         divnamefechar = 'dvfechar2';
+         break;
+
+      case 'divl15a1':
+         divnamefechar = 'dvfechar3';
+         break;
+
+      case 'divl15b3':
+         divnamefechar = 'dvfechar4';
+         break;
+
+      case 'divl15b4':
+         divnamefechar = 'dvfechar5';
+         break;
+
+      case 'divl15a2':
+         divnamefechar = 'dvfechar6';
+         break;
+
+      case 'divl15b5':
+         divnamefechar = 'dvfechar7';
+         break;
+
+      case 'divl15b6':
+         divnamefechar = 'dvfechar8';
+         break;
+
+      case 'divl15b7':
+         divnamefechar = 'dvfechar9';
+         break;
+
+      case 'divl15b8':
+         divnamefechar = 'dvfechar10';
+         break;
+
+      case 'divl15b9':
+         divnamefechar = 'dvfechar11';
+         break;
+
+      case 'divl15b10':
+         divnamefechar = 'dvfechar12';
+         break;
+
+      case 'divl15a3':
+         divnamefechar = 'dvfechar13';
+         break;
+
+      case 'divl15b11':
+         divnamefechar = 'dvfechar14';
+         break;
+
+      case 'divl15b12':
+         divnamefechar = 'dvfechar15';
+         break;
+   }
+
+
+   var textv = '<div id="'+divnamefechar+'" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove(\''+divname+'\')"><img src="img/close_red.gif"></a></div>';
    $('#'+divname).prepend(textv);
 }
 
