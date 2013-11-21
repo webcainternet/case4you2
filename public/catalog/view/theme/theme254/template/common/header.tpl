@@ -114,7 +114,7 @@ body {
 		$(document).ready(function () {
 	        $.fancybox({
 	            'width': '820',
-	            'height': '845',
+	            'height': '645',
 	            'padding': 5,
 	            'scrolling': 'no',
 	            'autoScale': true,
