@@ -110,10 +110,10 @@ if (isset($novoid)) {
 				    die('Invalid query: ' . mysql_error());
 				}
 				else {
-					  $date1 = date_create();
-					  $timestamp1 = date_timestamp_get($date1);
-					  $ramdomico4 = rand(1000,9999);
-					  $idsession = $timestamp1."".$ramdomico4;
+					  $date2 = date_create();
+					  $timestamp2 = date_timestamp_get($date2);
+					  $ramdomico2 = rand(1000,9999);
+					  $idsession = $timestamp2."".$ramdomico2;
 					  $_SESSION["userid"] = $idsession;
 					  $idcsession = $idsession;
 
