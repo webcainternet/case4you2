@@ -33,7 +33,7 @@ function lixeiraremove(divname) {
    while (myNode.firstChild) {
          myNode.removeChild(myNode.firstChild);  
    }
-   var textv = '<div style="position: absolute; margin: 5px; width: 10px; height: 10px;z-index: 10;"><a href="#" onclick="lixeiraremove(\''+divname+'\')"><img src="img/close_red.gif"></a></div>';
+   var textv = '<div id="'+divname+'" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove(\''+divname+'\')"><img src="img/close_red.gif"></a></div>';
    $('#'+divname).prepend(textv);
 }
 
