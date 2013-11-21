@@ -113,7 +113,7 @@ body {
 	function abrirferramenta() {
 		$(document).ready(function () {
 	        $.fancybox({
-	            'width': '1320',
+	            'width': '820',
 	            'height': '645',
 	            'padding': 5,
 	            'scrolling': 'no',
@@ -280,8 +280,8 @@ body {
 					type : 'iframe',
 					scrolling   : 'no',
 					padding : 5,
-					width: 820,
-					height: 845
+					width: 1320,
+					height: 445
 				});
 			});
 
