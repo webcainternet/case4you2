@@ -105,6 +105,8 @@ function escondemascarasup() {
 
 function mostracontroles() {
    document.getElementById("dvcontroles").style.display="block";
+   document.getElementById("dvcontroles1").style.display="block";
+   document.getElementById("dvcontroles2").style.display="block";
    document.getElementById("dvfechar1").style.display="block";
    document.getElementById("dvfechar2").style.display="block";
    document.getElementById("dvfechar3").style.display="block";
@@ -124,6 +126,8 @@ function mostracontroles() {
 
 function escondecontroles() {
    document.getElementById("dvcontroles").style.display="none";
+   document.getElementById("dvcontroles1").style.display="none";
+   document.getElementById("dvcontroles2").style.display="none";
    document.getElementById("dvfechar1").style.display="none";
    document.getElementById("dvfechar2").style.display="none";
    document.getElementById("dvfechar3").style.display="none";
