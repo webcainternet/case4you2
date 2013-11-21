@@ -162,7 +162,7 @@ else {
 
 	<div class="wrap-app">
 		
-		<div id="accordion" style="text-align: left; height: 700px; width: 400px; float: left;">
+		<div id="accordion" style="text-align: left; height: 615px; width: 400px; float: left;">
 			<!-- passo 1 -->
 			<h3>&nbsp;
     			<div class="tituloacc">Passo 1 - Modelo do seu celular</div>
