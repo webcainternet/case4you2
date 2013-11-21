@@ -114,6 +114,8 @@ function lixeiraremove(divname) {
 
    var textv = '<div id="'+divnamefechar+'" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove(\''+divname+'\')"><img src="img/close_red.gif"></a></div>';
    $('#'+divname).prepend(textv);
+   $('#'+divname).prepend(addcontrole);
+   
 }
 
 function finalizar() {
