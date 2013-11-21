@@ -279,7 +279,7 @@ else {
   				<div class="fontc4y2 c4ysteptitle">SELECIONE SUAS FOTOS!</div>
 				<div class="fontc4y1 c4ysteptext">AJUDA: Agora escolha de onde deseja buscar suas fotos: De seu computador, Facebook ou Instagram.</div>
 
-				<div style="float: left; margin-left: 20px; width: 360px; background-image: url('/app/img/setaarraste.png'); background-repeat: no-repeat; background-size: 100; background-position-x: 263;">
+				<div style="float: left; margin-left: 20px; width: 360px; background-image: url('/app/img/setaarraste.png'); background-repeat: no-repeat; background-size: 110; background-position-x: 245;">
 					<input onchange="showcomputador()" type="radio" name="modelo" id="ishowcomp" value="" style="display: inline; float: none;position: relative; top: -23px;">
 			          <img style="margin-left: 2px; margin-right: 15px; width: 35px;" src="./img/computador.png" alt="">
 			        
