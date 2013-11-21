@@ -39,22 +39,22 @@ function lixeiraremove(divname) {
    switch (divname) {
       case 'divl1':
          divnamefechar = 'dvfechar1';
-         addcontrole = '<div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
-                    <div class="controleico">&nbsp;</div>
-                    <div class="controleico"><a href="#" onclick="moverup(\'divl1\')"><img border="0" src="/app/img/seta_cim.png"></a></div>
-                    <div class="controleico">&nbsp;</div>
-                    <div class="controleico"><a href="#" onclick="zoommais(\'divl1\')"><img border="0" src="/app/img/seta_mai.png"></a></div>
+         addcontrole = "<div id=\"dvcontroles\" style=\"position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;\">
+                    <div class=\"controleico\">&nbsp;</div>
+                    <div class=\"controleico\"><a href=\"#\" onclick=\"moverup('divl1')\"><img border=\"0\" src=\"/app/img/seta_cim.png\"></a></div>
+                    <div class=\"controleico\">&nbsp;</div>
+                    <div class=\"controleico\"><a href=\"#\" onclick=\"zoommais('divl1')\"><img border=\"0\" src=\"/app/img/seta_mai.png\"></a></div>
 
-                    <div class="controleico"><a href="#" onclick="moveresq(\'divl1\')"><img border="0" src="/app/img/seta_esq.png"></a></div>
-                    <div class="controleico">&nbsp;</div>
-                    <div class="controleico"><a href="#" onclick="moverdir(\'divl1\')"><img border="0" src="/app/img/seta_dir.png"></a></div>
-                    <div class="controleico">&nbsp;</div>
+                    <div class=\"controleico\"><a href=\"#\" onclick=\"moveresq('divl1')\"><img border=\"0\" src=\"/app/img/seta_esq.png\"></a></div>
+                    <div class=\"controleico\">&nbsp;</div>
+                    <div class=\"controleico\"><a href=\"#\" onclick=\"moverdir('divl1')\"><img border=\"0\" src=\"/app/img/seta_dir.png\"></a></div>
+                    <div class=\"controleico\">&nbsp;</div>
 
-                    <div class="controleico">&nbsp;</div>
-                    <div class="controleico"><a href="#" onclick="moverbaixo(\'divl1\')"><img border="0" src="/app/img/seta_bai.png"></a></div>
-                    <div class="controleico">&nbsp;</div>
-                    <div class="controleico"><a href="#" onclick="zoommenos(\'divl1\')"><img border="0" src="/app/img/seta_men.png"></a></div>
-                </div>';
+                    <div class=\"controleico\">&nbsp;</div>
+                    <div class=\"controleico\"><a href=\"#\" onclick=\"moverbaixo('divl1')\"><img border=\"0\" src=\"/app/img/seta_bai.png\"></a></div>
+                    <div class=\"controleico\">&nbsp;</div>
+                    <div class=\"controleico\"><a href=\"#\" onclick=\"zoommenos('divl1')\"><img border=\"0\" src=\"/app/img/seta_men.png\"></a></div>
+                </div>";
          break;
 
       case 'divl2a':
