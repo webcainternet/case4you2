@@ -7,11 +7,11 @@
 <style type="text/css">
 @font-face {
   font-family: "c4y1";
-  src: url(http://capamaniacos.com.br/css/fontes/alrightsans-regularitalic-v3.ttf);
+  src: url(/catalog/view/theme/theme254/stylesheet/alrightsans-regularitalic-v3.ttf);
 }
 @font-face {
   font-family: "c4y2";
-  src: url(http://capamaniacos.com.br/css/fontes/alrightsans-bolditalic-v3.ttf);
+  src: url(/catalog/view/theme/theme254/stylesheet/alrightsans-bolditalic-v3.ttf);
 }
 .fontc4y1 { 
   font-family: "c4y1", Arial, Verdana;
