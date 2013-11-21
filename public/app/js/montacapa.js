@@ -253,7 +253,8 @@ function zoommais(dvposicao) {
          alert(eldvposicaoChildren.item(i).id); //elemento id
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
          var imwidth=elimagem.width;
-         alert(imwidth);
+         nimwidth=imwidth*1.5;
+         elimagem.width=nimwidth;
       }
       
    }
