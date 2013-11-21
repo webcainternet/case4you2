@@ -430,7 +430,7 @@ else {
 			font-size: 11px;">
 			<a href="#" onclick="VoltarEdicao()" style="color: #303030;">Voltar para a edição da capinha</a>
 			<img src="img/price.png" style="margin-top: 5px;">
-			<a href="#"><img src="img/comprar.png" onclick="comprar()" style="margin-top: 10px;"></a>
+			<a href="#"><img border="0" src="img/comprar.png" onclick="comprar()" style="margin-top: 10px;"></a>
 		</div>
 
 		<div id="ircheckout2"  style="width: 340px;
@@ -446,7 +446,7 @@ else {
 			display: block;
 			text-align: right;
 			font-size: 11px;">
-			<a href="#" onclick="finalizar()"><img src="img/proximo.png" style="margin-top: 5px;"></a>
+			<a href="#" onclick="finalizar()"><img border="0" src="img/proximo.png" style="margin-top: 5px;"></a>
 		</div>
 
 	</div>
