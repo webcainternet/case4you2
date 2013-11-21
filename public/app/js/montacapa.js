@@ -380,7 +380,7 @@ function moverbaixo(dvposicao) {
          var imtop=elimagem.style.marginTop;
          imtop = imtop.replace("px","");
          alert('imtop='+imtop);
-         nimtop=imtop+5;
+         nimtop=parseInt(imtop)+5;
          alert('nimtop='+nimtop);
          elimagem.style.marginTop=nimtop;
       }
