@@ -57,11 +57,11 @@
 			margin  : 20,
 
 			width     : 817,
-			height    : 660,
+			height    : 665,
 			minWidth  : 817,
-			minHeight : 660,
+			minHeight : 665,
 			maxWidth  : 9999,
-			maxHeight : 660,
+			maxHeight : 665,
 			pixelRatio: 1, // Set to 2 for retina display support
 
 			autoSize   : true,
