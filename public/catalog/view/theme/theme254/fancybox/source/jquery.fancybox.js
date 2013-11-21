@@ -56,10 +56,10 @@
 			padding : 0,
 			margin  : 20,
 
-			width     : 785,
-			height    : 845,
-			minWidth  : 785,
-			minHeight : 845,
+			width     : 820,
+			height    : 645,
+			minWidth  : 820,
+			minHeight : 645,
 			maxWidth  : 9999,
 			maxHeight : 9999,
 			pixelRatio: 1, // Set to 2 for retina display support
