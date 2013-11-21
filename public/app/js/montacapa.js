@@ -250,11 +250,15 @@ function zoommais(dvposicao) {
       eldvposicaoChildren.item(i).id != "dvfechar14" &&
       eldvposicaoChildren.item(i).id != "dvfechar15" ) {
 
-         alert(eldvposicaoChildren.item(i).id); //elemento id
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
          var imwidth=elimagem.width;
-         nimwidth=imwidth*1.5;
+         nimwidth=imwidth*1.05;
          elimagem.width=nimwidth;
+
+         var imheight=elimagem.height;
+         nimheight=imheight*1.05;
+         elimagem.height=nimheight;
+
       }
       
    }
