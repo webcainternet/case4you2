@@ -376,8 +376,12 @@ function moverbaixo(dvposicao) {
 
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
          var imtop=elimagem.style.marginTop;
-         if (imtop == "") { imtop = 0; }
-         imtop = imtop.replace("px","");
+         if (imtop == "") { 
+            imtop = 0; 
+         }
+         else {
+            imtop = imtop.replace("px","");   
+         }         
          alert('imtop='+imtop);
          var nimtop=parseFloat(0);
          nimtop=parseFloat(imtop)+parseFloat(5);
