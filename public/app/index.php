@@ -459,7 +459,7 @@ else {
 <input type="hidden" name="modelodocelular" id="modelodocelular" value="">
 <input type="hidden" name="layoutdacapinha" id="layoutdacapinha" value="">
 <input type="hidden" name="filtrocapinha" id="filtrocapinha" value="">
-<input type="hidden" name="idsession" id="idsession" value="<?php echo $idcsession; ?>">
+<input type="text" name="idsession" id="idsession" value="<?php echo $idcsession; ?>">
 
 
 
