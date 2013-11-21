@@ -55,7 +55,7 @@ if (!empty($_SESSION['userdetails']))
       font-size: 14px;
       ">
 
-<?php  echo "<img src=\"{$data->images->thumbnail->url}\""; ?>
+<?php  echo "<img src=\"{$data->images->url}\""; ?>
  id="drag<?php echo $ic; ?>" draggable="true"
   ondragstart="drag(event)" style="max-width:100%; max-height:100%;">
                 </div>
