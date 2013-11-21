@@ -107,6 +107,8 @@
     </div>
   </form>
   <?php if ($coupon_status || $voucher_status || $reward_status || $shipping_status) { ?>
+  
+  <div style="display: none;"><!-- Escondendo calculo do frete no carrinho -->
    <h2><?php echo $text_next; ?></h2>
   <div class="content shop-cart-content">
    
@@ -138,6 +140,7 @@
       <?php } ?>
     </table>
   </div>
+</div>
   <div class="cart-module">
     <div id="coupon" class="content">
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="coup">
