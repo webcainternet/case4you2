@@ -338,8 +338,10 @@ function moverup(dvposicao) {
 
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
          var imtop=elimagem.style.marginTop;
-         imtop = imtop.replace("px","");
-         nimtop=imtop.toInt()-5;
+         imtop = imtop.toInt();
+         alert('imtop='+imtop);
+         nimtop=imtop-5;
+         alert('nimtop='+nimtop);
          elimagem.style.marginTop=nimtop;
       }
       
@@ -377,7 +379,9 @@ function moverbaixo(dvposicao) {
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
          var imtop=elimagem.style.marginTop;
          imtop = imtop.replace("px","");
+         alert('imtop='+imtop);
          nimtop=imtop.toInt()+5;
+         alert('nimtop='+nimtop);
          elimagem.style.marginTop=nimtop;
       }
       
