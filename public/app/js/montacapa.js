@@ -249,8 +249,11 @@ function zoommais(dvposicao) {
       eldvposicaoChildren.item(i).id != "dvfechar13" &&
       eldvposicaoChildren.item(i).id != "dvfechar14" &&
       eldvposicaoChildren.item(i).id != "dvfechar15" ) {
-   
-         alert(eldvposicaoChildren.item(i).id);
+
+         alert(eldvposicaoChildren.item(i).id); //elemento id
+         var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
+         var imwidth=elimagem.style.width;
+         alert(imwidth);
       }
       
    }
