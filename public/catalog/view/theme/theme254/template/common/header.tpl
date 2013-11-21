@@ -113,7 +113,7 @@ body {
 	function abrirferramenta() {
 		$(document).ready(function () {
 	        $.fancybox({
-	            'width': '820',
+	            'width': '1320',
 	            'height': '645',
 	            'padding': 5,
 	            'scrolling': 'no',
