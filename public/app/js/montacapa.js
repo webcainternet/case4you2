@@ -375,7 +375,7 @@ function moverbaixo(dvposicao) {
 
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
          var imtop=elimagem.style.marginTop;
-         alert(imtop);
+         imtop = imtop.replace("px","");
          nimtop=imtop+5;
          elimagem.style.marginTop=nimtop;
       }
