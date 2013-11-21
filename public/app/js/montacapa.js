@@ -223,7 +223,18 @@ function escondecontroles() {
 }
 
 
+function zoommais(dvposicao) {
+   var eldvposicao=document.getElementById(dvposicao); 
 
+   var eldvposicaoChildren = eldvposicao.childNodes; 
+   for(var i = 0; i < eldvposicaoChildren.length; i++) 
+   { 
+      if (eldvposicaoChildren.item(i).id != null) {
+         alert(eldvposicaoChildren.item(i).id);
+      }
+      
+   }
+}
 
 
 
