@@ -110,6 +110,14 @@ if (isset($novoid)) {
 				    die('Invalid query: ' . mysql_error());
 				}
 				else {
+					  $date1 = date_create();
+					  $timestamp1 = date_timestamp_get($date1);
+					  $ramdomico4 = rand(1000,9999);
+					  $idsession = $timestamp1."".$ramdomico4;
+					  $_SESSION["userid"] = $idsession;
+					  $idcsession = $idsession;
+
+					
 					header('Location: http://case4you.com.br/index.php?route=product/productcustom&product_id='.$novoid);
 				}
 			}
