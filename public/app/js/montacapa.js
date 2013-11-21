@@ -436,7 +436,7 @@ function moveresq(dvposicao) {
          }         
          var nimleft=parseFloat(0);
          nimleft=parseFloat(imleft)+parseFloat(-5);
-         elimagem.style.marginTop=nimleft;
+         elimagem.style.marginLeft=nimleft;
       }
       
    }
