@@ -95,19 +95,19 @@ switch ($ql) {
 
                     <div id="dvcontroles1" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
                         <div class="controleico">&nbsp;</div>
-                        <div class="controleico"><a href="#" onclick="moverup()"><img src="/app/img/seta_cim.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="moverup('divl2a')"><img src="/app/img/seta_cim.png"></a></div>
                         <div class="controleico">&nbsp;</div>
-                        <div class="controleico"><a href="#" onclick="zoommais()"><img src="/app/img/seta_mai.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="zoommais('divl2a')"><img src="/app/img/seta_mai.png"></a></div>
 
-                        <div class="controleico"><a href="#" onclick="moveresq()"><img src="/app/img/seta_esq.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="moveresq('divl2a')"><img src="/app/img/seta_esq.png"></a></div>
                         <div class="controleico">&nbsp;</div>
-                        <div class="controleico"><a href="#" onclick="moverdir()"><img src="/app/img/seta_dir.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="moverdir('divl2a')"><img src="/app/img/seta_dir.png"></a></div>
                         <div class="controleico">&nbsp;</div>
 
                         <div class="controleico">&nbsp;</div>
-                        <div class="controleico"><a href="#" onclick="moverbaixo()"><img src="/app/img/seta_bai.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="moverbaixo('divl2a')"><img src="/app/img/seta_bai.png"></a></div>
                         <div class="controleico">&nbsp;</div>
-                        <div class="controleico"><a href="#" onclick="zoommenos()"><img src="/app/img/seta_men.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="zoommenos('divl2a')"><img src="/app/img/seta_men.png"></a></div>
                     </div>
 
                 </div>
@@ -118,19 +118,19 @@ switch ($ql) {
 
                     <div id="dvcontroles2" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
                         <div class="controleico">&nbsp;</div>
-                        <div class="controleico"><a href="#" onclick="moverup()"><img src="/app/img/seta_cim.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="moverup('divl2b')"><img src="/app/img/seta_cim.png"></a></div>
                         <div class="controleico">&nbsp;</div>
-                        <div class="controleico"><a href="#" onclick="zoommais()"><img src="/app/img/seta_mai.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="zoommais('divl2b')"><img src="/app/img/seta_mai.png"></a></div>
 
-                        <div class="controleico"><a href="#" onclick="moveresq()"><img src="/app/img/seta_esq.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="moveresq('divl2b')"><img src="/app/img/seta_esq.png"></a></div>
                         <div class="controleico">&nbsp;</div>
-                        <div class="controleico"><a href="#" onclick="moverdir()"><img src="/app/img/seta_dir.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="moverdir('divl2b')"><img src="/app/img/seta_dir.png"></a></div>
                         <div class="controleico">&nbsp;</div>
 
                         <div class="controleico">&nbsp;</div>
-                        <div class="controleico"><a href="#" onclick="moverbaixo()"><img src="/app/img/seta_bai.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="moverbaixo('divl2b')"><img src="/app/img/seta_bai.png"></a></div>
                         <div class="controleico">&nbsp;</div>
-                        <div class="controleico"><a href="#" onclick="zoommenos()"><img src="/app/img/seta_men.png"></a></div>
+                        <div class="controleico"><a href="#" onclick="zoommenos('divl2b')"><img src="/app/img/seta_men.png"></a></div>
                     </div>
                 </div>
 
