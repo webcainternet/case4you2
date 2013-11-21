@@ -337,9 +337,9 @@ function moverup(dvposicao) {
       eldvposicaoChildren.item(i).id != "dvfechar15" ) {
 
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
-         var imtop=elimagem.style.top;
+         var imtop=elimagem.style.marginTop;
          nimtop=imtop-5;
-         elimagem.style.top=nimtop;
+         elimagem.style.marginTop=nimtop;
       }
       
    }
@@ -374,9 +374,9 @@ function moverbaixo(dvposicao) {
       eldvposicaoChildren.item(i).id != "dvfechar15" ) {
 
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
-         var imtop=elimagem.style.top;
+         var imtop=elimagem.style.marginTop;
          nimtop=imtop+5;
-         elimagem.style.top=nimtop;
+         elimagem.style.marginTop=nimtop;
       }
       
    }
