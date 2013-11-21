@@ -229,7 +229,10 @@ function zoommais(dvposicao) {
    var eldvposicaoChildren = eldvposicao.childNodes; 
    for(var i = 0; i < eldvposicaoChildren.length; i++) 
    { 
-      if (eldvposicaoChildren.item(i).id != null && eldvposicaoChildren.item(i).id != "") {
+      if (eldvposicaoChildren.item(i).id != null && 
+         eldvposicaoChildren.item(i).id != "" &&
+         eldvposicaoChildren.item(i).id != "dvcontroles"
+         ) {
          alert(eldvposicaoChildren.item(i).id);
       }
       
