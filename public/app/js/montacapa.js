@@ -338,8 +338,14 @@ function moverup(dvposicao) {
 
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
          var imtop=elimagem.style.marginTop;
-         imtop = imtop.replace("px","");
-         nimtop=imtop-5;
+         if (imtop == "") { 
+            imtop = 0; 
+         }
+         else {
+            imtop = imtop.replace("px","");   
+         }         
+         var nimtop=parseFloat(0);
+         nimtop=parseFloat(imtop)+parseFloat(-5);
          elimagem.style.marginTop=nimtop;
       }
       
@@ -382,10 +388,8 @@ function moverbaixo(dvposicao) {
          else {
             imtop = imtop.replace("px","");   
          }         
-         alert('imtop='+imtop);
          var nimtop=parseFloat(0);
          nimtop=parseFloat(imtop)+parseFloat(5);
-         alert('nimtop='+nimtop);
          elimagem.style.marginTop=nimtop;
       }
       
