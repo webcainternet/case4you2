@@ -337,10 +337,10 @@ function moverup(dvposicao) {
       eldvposicaoChildren.item(i).id != "dvfechar15" ) {
 
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
-         var imtop=elimagem.top;
+         var imtop=elimagem.style.top;
          alert(imtop);
          nimtop=imtop-5;
-         elimagem.top=nimtop;
+         elimagem.style.top=nimtop;
       }
       
    }
