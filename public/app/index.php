@@ -3,6 +3,7 @@ session_start();
 
 if (isset($_SESSION["userid"])) {
   $idcsession = $_SESSION["userid"];
+  $idsession = $idcsession;
 }
 else {
   //Randomiza nome do arquivo
