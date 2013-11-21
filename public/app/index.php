@@ -1,11 +1,11 @@
 <?php
 session_start();
-
+/*
 if (isset($_SESSION["userid"])) {
   $idcsession = $_SESSION["userid"];
   $idsession = $idcsession;
 }
-else {
+else {*/
   //Randomiza nome do arquivo
   $date1 = date_create();
   $timestamp1 = date_timestamp_get($date1);
@@ -13,7 +13,7 @@ else {
   $idsession = $timestamp1."".$ramdomico4;
   $_SESSION["userid"] = $idsession;
   $idcsession = $idsession;
-}
+//}
 ?>
 
 <html>
