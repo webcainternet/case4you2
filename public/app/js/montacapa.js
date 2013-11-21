@@ -446,5 +446,52 @@ function moveresq(dvposicao) {
 
 
 
+function moverdir(dvposicao) {
+   var eldvposicao=document.getElementById(dvposicao); 
+
+   var eldvposicaoChildren = eldvposicao.childNodes; 
+   for(var i = 0; i < eldvposicaoChildren.length; i++) 
+   { 
+      if (eldvposicaoChildren.item(i).id != null && 
+      eldvposicaoChildren.item(i).id != "" &&
+      eldvposicaoChildren.item(i).id != "dvcontroles" &&
+      eldvposicaoChildren.item(i).id != "dvcontroles1" &&
+      eldvposicaoChildren.item(i).id != "dvcontroles2" &&
+      eldvposicaoChildren.item(i).id != "dvfechar1" &&
+      eldvposicaoChildren.item(i).id != "dvfechar2" &&
+      eldvposicaoChildren.item(i).id != "dvfechar3" &&
+      eldvposicaoChildren.item(i).id != "dvfechar4" &&
+      eldvposicaoChildren.item(i).id != "dvfechar5" &&
+      eldvposicaoChildren.item(i).id != "dvfechar6" &&
+      eldvposicaoChildren.item(i).id != "dvfechar7" &&
+      eldvposicaoChildren.item(i).id != "dvfechar8" &&
+      eldvposicaoChildren.item(i).id != "dvfechar9" &&
+      eldvposicaoChildren.item(i).id != "dvfechar10" &&
+      eldvposicaoChildren.item(i).id != "dvfechar11" &&
+      eldvposicaoChildren.item(i).id != "dvfechar12" &&
+      eldvposicaoChildren.item(i).id != "dvfechar13" &&
+      eldvposicaoChildren.item(i).id != "dvfechar14" &&
+      eldvposicaoChildren.item(i).id != "dvfechar15" ) {
+
+         var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
+         var imleft=elimagem.style.marginLeft;
+         if (imleft == "") { 
+            imleft = 0; 
+         }
+         else {
+            imleft = imleft.replace("px","");   
+         }         
+         var nimleft=parseFloat(0);
+         nimleft=parseFloat(imleft)+parseFloat(5);
+         elimagem.style.marginLeft=nimleft;
+      }
+      
+   }
+}
+
+
+
+
+
 
 
