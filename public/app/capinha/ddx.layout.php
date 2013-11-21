@@ -75,6 +75,11 @@ switch ($ql) {
                     <div id="dvfechar14" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img src="img/close_red.gif"></a></div>
                     <div id="dvfechar15" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img src="img/close_red.gif"></a></div>
                 </div>
+
+                <div style="display: none;">
+                    <div id="dvcontroles1" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">&nbsp;</div>
+                    <div id="dvcontroles2" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">&nbsp;</div>
+                </div>
             </div>
   	</div>
 <!-- FIM LAYOUT 1 -->
@@ -88,7 +93,7 @@ switch ($ql) {
         align: middle;">
                     <div id="dvfechar1" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2a')"><img src="img/close_red.gif"></a></div>
 
-                    <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
+                    <div id="dvcontroles1" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
                         <div class="controleico">&nbsp;</div>
                         <div class="controleico"><a href="#" onclick="moverup()"><img src="/app/img/seta_cim.png"></a></div>
                         <div class="controleico">&nbsp;</div>
@@ -111,7 +116,7 @@ switch ($ql) {
         align: middle;">
                     <div id="dvfechar2" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2b')"><img src="img/close_red.gif"></a></div>
 
-                    <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
+                    <div id="dvcontroles2" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
                         <div class="controleico">&nbsp;</div>
                         <div class="controleico"><a href="#" onclick="moverup()"><img src="/app/img/seta_cim.png"></a></div>
                         <div class="controleico">&nbsp;</div>
@@ -143,6 +148,10 @@ switch ($ql) {
                     <div id="dvfechar13" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img src="img/close_red.gif"></a></div>
                     <div id="dvfechar14" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img src="img/close_red.gif"></a></div>
                     <div id="dvfechar15" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img src="img/close_red.gif"></a></div>
+                </div>
+
+                <div style="display: none;">
+                    <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">&nbsp;</div>
                 </div>
 
         </div>
@@ -217,6 +226,12 @@ switch ($ql) {
 
                 <div id="divl15b12" ondrop="dropl15b(event, '14')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center; align: middle;">
                     <div id="dvfechar15" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl15b12')"><img src="img/close_red.gif"></a></div>
+                </div>
+
+                <div style="display: none;">
+                    <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">&nbsp;</div>
+                    <div id="dvcontroles1" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">&nbsp;</div>
+                    <div id="dvcontroles2" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">&nbsp;</div>
                 </div>
         </div>
 <!-- FIM LAYOUT 3 -->
