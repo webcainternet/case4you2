@@ -338,7 +338,7 @@ function moverup(dvposicao) {
 
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
          var imtop=elimagem.style.marginTop;
-         imtop = parseInt(imtop, 10);
+         imtop = imtop.replace("px","");
          alert('imtop='+imtop);
          nimtop=imtop-5;
          alert('nimtop='+nimtop);
@@ -380,7 +380,7 @@ function moverbaixo(dvposicao) {
          var imtop=elimagem.style.marginTop;
          imtop = imtop.replace("px","");
          alert('imtop='+imtop);
-         nimtop=parseInt(imtop, 10)+5;
+         nimtop=imtop+5;
          alert('nimtop='+nimtop);
          elimagem.style.marginTop=nimtop;
       }
