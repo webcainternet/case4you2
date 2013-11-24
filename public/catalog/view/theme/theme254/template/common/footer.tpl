@@ -40,7 +40,8 @@
       <div class="column col-2">
         <h3><?php echo $text_service; ?></h3>
         <ul>
-          <li><a href="fale-conosco">Fale Conosco</a></li>
+          <li><a href="/duvidas">Dúvidas</a></li>
+          <li><a href="/fale-conosco">Fale Conosco</a></li>
           <?php /* <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>*/ ?>
           <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
         </ul>
