@@ -3,7 +3,7 @@
 $to  = 'contato@case4you.com.br';
 
 // subject
-$subject = 'Case4you - Contato através do site';
+$subject = 'Case4you - Contato atrav&eacute;s do site';
 
 // message
 
@@ -24,11 +24,11 @@ Mensagem: '.$mensagem.'<br />
 
 --
 
-<p>Olá,</p>
+<p>Ol&aacute;,</p>
 
 <p>Recebemos a sua mensagem!<br>
 
-<p>A sua solicitação é muito importante para nós e retornaremos o mais breve possível.</p>
+<p>A sua solicita&ccedil;&atilde;o &eacute; muito importante para n&oacute;s e retornaremos o mais breve poss&iacute;vel.</p>
 
 <p>Obrigado por entrar em contato com a Case4you.</p>
 
@@ -58,7 +58,7 @@ mail($to, $subject, $message, $headers);
 $to  = $_POST["email"];
 
 // subject
-$subject = 'Case4you - Contato através do site';
+$subject = 'Case4you - Contato atrav&eacute;s do site';
 
 // message
 $message = '
@@ -66,11 +66,11 @@ $message = '
 
 <body>
 
-<p>Olá,</p>
+<p>Ol&aacute;,</p>
 
 <p>Recebemos a sua mensagem!<br>
 
-<p>A sua solicitação é muito importante para nós e retornaremos o mais breve possível.</p>
+<p>A sua solicita&ccedil;&atilde;o &eacute; muito importante para n&oacute;s e retornaremos o mais breve poss&iacute;vel.</p>
 
 <p>Obrigado por entrar em contato com a Case4you.</p>
 
