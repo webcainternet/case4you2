@@ -457,7 +457,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 					</ul> -->
 				</li>
 				<li>
-					<a class="" href="/acessorios">Acessórios</a>
+					<a class="" href="/peliculas">Acessórios</a>
 					<!--
 					<ul style="position: absolute; z-index:1000;">
 						<li><a class="" href="/capas-prontas">Capas prontas</a></li> 
