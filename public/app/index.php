@@ -24,8 +24,8 @@ else {*/
 
 	<!-- libs -->
 	<link rel="stylesheet" href="lib/jquery-ui.css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="/app/js/1.7.2.jquery.min.js" type="text/javascript"></script>
+	<script src="/app/js/1.8.jquery-ui.min.js" type="text/javascript"></script>
 
 
 	<!-- Case4you -->
