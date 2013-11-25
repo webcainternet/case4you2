@@ -485,7 +485,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 
 
 	</div>
-	<div class="outer" style="margin-bottom: 20px; padding-top: 40px;">
+	<div class="outer" style="margin-bottom: 20px; margin-top: 40px;">
 	
 	<?php if ($logo) { ?>
 	<div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" style="height: 105px; margin-top: 8px;" /></a></div>
