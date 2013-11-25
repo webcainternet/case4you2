@@ -927,19 +927,19 @@ ondragover="allowDrop(event)"></div>
       </div>
 
 <?php if ($_GET["m"] == "0") { ?>
-<div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 122px; width: 85px; background-size: 85px; background-image: url(http://case4you.com.br/app/img/mask-iphone4-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 122px; width: 85px; background-size: 85px; background-image: url(https://case4you.com.br/app/img/mask-iphone4-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
 <? } ?>
 
 <?php if ($_GET["m"] == "1") { ?>
-<div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 134px; width: 85px; background-size: 85px; background-image: url(http://case4you.com.br/app/img/mask-iphone5-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 134px; width: 85px; background-size: 85px; background-image: url(https://case4you.com.br/app/img/mask-iphone5-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
 <? } ?>
 
 <?php if ($_GET["m"] == "2") { ?>
-<div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 131px; width: 85px; background-size: 85px; background-image: url(http://case4you.com.br/app/img/mask-galaxy3-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 131px; width: 85px; background-size: 85px; background-image: url(https://case4you.com.br/app/img/mask-galaxy3-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
 <? } ?>
 
 <?php if ($_GET["m"] == "3") { ?>
-<div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 124px; width: 85px; background-size: 85px; background-image: url(http://case4you.com.br/app/img/mask-galaxy4-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 124px; width: 85px; background-size: 85px; background-image: url(https://case4you.com.br/app/img/mask-galaxy4-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
 <? } ?>
 
 

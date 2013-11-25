@@ -80,7 +80,7 @@ else {*/
 		$(document).ready(function(){
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "http://case4you.com.br/casefouryou/1/index2.php",
+	            url: "https://case4you.com.br/casefouryou/1/index2.php",
 	            async: false,
 	            success : function(text)
 	            {
@@ -100,7 +100,7 @@ else {*/
 		$(document).ready(function(){
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "http://case4you.com.br/casefouryou/2/index.php?idalbum="+albumid,
+	            url: "https://case4you.com.br/casefouryou/2/index.php?idalbum="+albumid,
 	            async: false,
 	            success : function(text)
 	            {
@@ -127,7 +127,7 @@ else {*/
 
 	   	var response = '';
 	   	$.ajax({ type: "GET",
-	            url: "http://case4you.com.br/instagram4you/instagram/home2.php",
+	            url: "https://case4you.com.br/instagram4you/instagram/home2.php",
 	            async: false,
 	            success : function(text)
 	            {

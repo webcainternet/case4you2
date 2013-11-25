@@ -323,7 +323,7 @@ $sql_statement = "INSERT INTO  `case4you2`.`c4y_capasconstrucao` (
 `ntop`
 )
 VALUES (
-'$gidcsession',  '$gmodelo',  '$glayout',  '$gposicao',  'http://case4you.com.br/case4you/$gimagem2',  '$qnheight',  '$qnwidth',  '$qnleft',  '$qntop'
+'$gidcsession',  '$gmodelo',  '$glayout',  '$gposicao',  'https://case4you.com.br/case4you/$gimagem2',  '$qnheight',  '$qnwidth',  '$qnleft',  '$qntop'
 )
 ";
 
@@ -334,10 +334,10 @@ if (!$result) {
 }
 else {
     ?>
-        <img src="http://case4you.com.br/case4you/<?php echo "$novoarq"; ?>.png">
-        <img src="http://case4you.com.br/case4you/<?php echo "$novoarq"; ?>.png-40.png">
-        <img src="http://case4you.com.br/case4you/<?php echo "$novoarq"; ?>.png-pb.png">
-        <img src="http://case4you.com.br/case4you/<?php echo "$novoarq"; ?>.png-sp.png">
+        <img src="https://case4you.com.br/case4you/<?php echo "$novoarq"; ?>.png">
+        <img src="https://case4you.com.br/case4you/<?php echo "$novoarq"; ?>.png-40.png">
+        <img src="https://case4you.com.br/case4you/<?php echo "$novoarq"; ?>.png-pb.png">
+        <img src="https://case4you.com.br/case4you/<?php echo "$novoarq"; ?>.png-sp.png">
     <?php
 }
 

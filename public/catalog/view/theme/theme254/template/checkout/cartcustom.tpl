@@ -57,7 +57,7 @@
 
             ?>
 
-            <iframe src="http://case4you.com.br/app/thumb/index.php?<?php echo $urlcapinha; ?>" style="border: 0px; width: 80px; height: 135px;" scrolling="no"></iframe>
+            <iframe src="https://case4you.com.br/app/thumb/index.php?<?php echo $urlcapinha; ?>" style="border: 0px; width: 80px; height: 135px;" scrolling="no"></iframe>
 
             <?php if ($product['thumb']) { ?>
 

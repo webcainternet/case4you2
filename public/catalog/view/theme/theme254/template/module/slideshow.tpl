@@ -39,10 +39,10 @@ $(document).ready(function() {
 
 <div id='coin-slider'>
 
-	<a href="http://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner3.png' ></a>
-	<a href="http://case4you.com.br/capas-prontas"><img src='image/data/banner/banner2.png' ></a>
-	<a href="http://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner4.png' ></a>
-	<!-- <a href="http://case4you.com.br/acessorios"><img src='image/data/banner/banner1.png' ></a> -->
+	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner3.png' ></a>
+	<a href="https://case4you.com.br/capas-prontas"><img src='image/data/banner/banner2.png' ></a>
+	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner4.png' ></a>
+	<!-- <a href="https://case4you.com.br/acessorios"><img src='image/data/banner/banner1.png' ></a> -->
 	
 </div>
 
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 
 <div>
-	<a class="fancybox fancybox.iframe sf-with-ul" href="http://case4you.com.br/app/?m=0">
+	<a class="fancybox fancybox.iframe sf-with-ul" href="https://case4you.com.br/app/?m=0">
 		<img src="/app/img/bannerhome.png" alt="">
 	</a>
 </div>

@@ -4,7 +4,7 @@ function MontaCapa(modelo, layout) {
    $(document).ready(function(){
    var response = '';
    $.ajax({ type: "GET",
-            url: "http://case4you.com.br/app/capinha/?m="+modelo+"&l="+layout,
+            url: "https://case4you.com.br/app/capinha/?m="+modelo+"&l="+layout,
             async: false,
             success : function(text)
             {

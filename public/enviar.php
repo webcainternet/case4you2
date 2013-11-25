@@ -33,7 +33,7 @@ Mensagem: '.$mensagem.'<br />
 <p>Obrigado por entrar em contato com a Case4you.</p>
 
 <p>Atenciosamente,<br />Equipe Case4you</p>
-<p><img src="http://case4you.com.br/image/data/SVGlogoAI_verde3.png" alt="" width="150" /</p>
+<p><img src="https://case4you.com.br/image/data/SVGlogoAI_verde3.png" alt="" width="150" /</p>
 
 </body>
 </html>
@@ -75,7 +75,7 @@ $message = '
 <p>Obrigado por entrar em contato com a Case4you.</p>
 
 <p>Atenciosamente,<br />Equipe Case4you</p>
-<p><img src="http://case4you.com.br/image/data/SVGlogoAI_verde3.png" alt="" width="150" /</p>
+<p><img src="https://case4you.com.br/image/data/SVGlogoAI_verde3.png" alt="" width="150" /</p>
 
 </body>
 </html>
@@ -97,7 +97,7 @@ mail($to, $subject, $message, $headers);
 
 
 
-header("Location: http://case4you.com.br/contato-sucesso");
+header("Location: https://case4you.com.br/contato-sucesso");
 
 
 

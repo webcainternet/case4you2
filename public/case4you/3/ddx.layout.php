@@ -4,7 +4,7 @@ switch ($ql) {
     case 0: ?>
 
 <!-- LAYOUT 1 -->
-        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; background-size: 340px; background-image: url(http://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
             <div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 100%; height: 100%; overflow: hidden;text-align: center;
     align: middle; "></div>
     </div>
@@ -14,7 +14,7 @@ switch ($ql) {
     case 1: ?>
 
 <!-- LAYOUT 2 -->
-        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; background-size: 340px; background-image: url(http://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
                 <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
         align: middle;"></div>
 
@@ -29,7 +29,7 @@ switch ($ql) {
     ?>
 
 <!-- LAYOUT 3 -->
-        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 332px; background-size: 340px; background-image: url(http://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 332px; background-size: 340px; background-image: url(https://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
 
 
                 <div id="divl15b1" ondrop="dropl15b(event, '1')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
@@ -89,20 +89,20 @@ switch ($ql) {
 
 <!-- invisible iframes -->
 <div style="display: none;">
-    <iframe id="invfr1"  name="invfr1"  src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr2"  name="invfr2"  src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr3"  name="invfr3"  src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr4"  name="invfr4"  src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr5"  name="invfr5"  src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr6"  name="invfr6"  src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr7"  name="invfr7"  src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr8"  name="invfr8"  src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr9"  name="invfr9"  src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr10" name="invfr10" src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr11" name="invfr11" src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr12" name="invfr12" src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr13" name="invfr13" src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr14" name="invfr14" src="http://case4you.com.br/case4you/2/blank.html"></iframe>
-    <iframe id="invfr15" name="invfr15" src="http://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr1"  name="invfr1"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr2"  name="invfr2"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr3"  name="invfr3"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr4"  name="invfr4"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr5"  name="invfr5"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr6"  name="invfr6"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr7"  name="invfr7"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr8"  name="invfr8"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr9"  name="invfr9"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr10" name="invfr10" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr11" name="invfr11" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr12" name="invfr12" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr13" name="invfr13" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr14" name="invfr14" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr15" name="invfr15" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
 </div>
 

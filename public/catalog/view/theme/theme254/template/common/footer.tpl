@@ -53,7 +53,7 @@
           <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
           <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
           <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li> -->
-          <li><a class="fancybox fancybox.iframe" href="http://case4you.com.br/app/">Crie sua capinha</a></li>
+          <li><a class="fancybox fancybox.iframe" href="https://case4you.com.br/app/">Crie sua capinha</a></li>
         </ul>
       </div>
       <div class="column col-4">
@@ -118,9 +118,9 @@ Please donate via PayPal to donate@opencart.com
 
 
 <div style="display: none;">
-<img src="http://case4you.com.br/catalog/view/theme/theme254/image/fs_instagram_hover.png">
-<img src="http://case4you.com.br/catalog/view/theme/theme254/image/fs_twitter_hover.png">
-<img src="http://case4you.com.br/catalog/view/theme/theme254/image/fs_face2_hover.png">
+<img src="https://case4you.com.br/catalog/view/theme/theme254/image/fs_instagram_hover.png">
+<img src="https://case4you.com.br/catalog/view/theme/theme254/image/fs_twitter_hover.png">
+<img src="https://case4you.com.br/catalog/view/theme/theme254/image/fs_face2_hover.png">
 
 </div>
 

@@ -75,7 +75,7 @@ else
         <script type="text/javascript">
         function selecionaalbum(salbum) {
                 getphoto(salbum.value);
-                //window.location="http://case4you.com.br/casefouryou/2/?idalbum="+salbum.value;
+                //window.location="https://case4you.com.br/casefouryou/2/?idalbum="+salbum.value;
         }
         </script>
 

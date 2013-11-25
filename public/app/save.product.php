@@ -118,7 +118,7 @@ if (isset($novoid)) {
 					  $idcsession = $idsession;
 
 					
-					header('Location: http://case4you.com.br/index.php?route=product/productcustom&product_id='.$novoid);
+					header('Location: https://case4you.com.br/index.php?route=product/productcustom&product_id='.$novoid);
 				}
 			}
 		}

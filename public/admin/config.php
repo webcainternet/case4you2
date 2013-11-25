@@ -1,11 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://case4you.com.br/admin/');
-define('HTTP_CATALOG', 'http://case4you.com.br/');
+define('HTTP_SERVER', 'https://case4you.com.br/admin/');
+define('HTTP_CATALOG', 'https://case4you.com.br/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://case4you.com.br/admin/');
-define('HTTPS_CATALOG', 'http://case4you.com.br/');
+define('HTTPS_SERVER', 'https://case4you.com.br/admin/');
+define('HTTPS_CATALOG', 'https://case4you.com.br/');
 
 // DIR
 define('DIR_APPLICATION', '/Users/fernandomendes/gitproj/case4you/public/admin/');
