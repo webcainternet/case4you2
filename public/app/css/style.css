@@ -83,9 +83,9 @@ background-color: transparent;
       position: absolute;
       top: 33px;
       left: 441px;
-      width: 342px;
+      width: 345px;
       height: 540px;
       z-index: 10;
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-image: url('/app/img/mask-iphone4-top.png');
 }
