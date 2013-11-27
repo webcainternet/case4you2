@@ -31,7 +31,15 @@ function teste() {
 }
 </script>
 
-<div style="border: dotted 3px red;margin-left: 10px;">
+<style>
+    .bordapontilhada {
+        border: dotted 3px red; margin-left: 10px; width: 339px;
+    }
+    .bordapontilhada:hover {
+        border: dotted 3px white;
+    }
+</style>
+<div class="bordapontilhada">
 
 <?php
 switch ($ql) {
