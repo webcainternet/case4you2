@@ -33,10 +33,10 @@ function teste() {
 
 <style>
     .bordapontilhada {
-        border: dotted 3px white; margin-left: 10px; width: 339px;
+        border: dashed 3px white; margin-left: 10px; width: 339px;
     }
     .bordapontilhada:hover {
-        border: dotted 3px #6aa11a;
+        border: dashed 3px #6aa11a;
     }
 </style>
 <div class="bordapontilhada">
