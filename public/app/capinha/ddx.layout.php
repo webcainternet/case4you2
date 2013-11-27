@@ -98,7 +98,7 @@ switch ($ql) {
     case 1: ?>
 
 <!-- LAYOUT 2 -->
-        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 10px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin: 0px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
                 <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
         align: middle;">
                     <div id="dvfechar1" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2a')"><img border="0" src="img/close_red.gif"></a></div>
@@ -171,7 +171,7 @@ switch ($ql) {
     case 2: ?>
 
 <!-- LAYOUT 3 -->
-        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 10px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin: 0px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
 
 
                 <div id="divl15b1" ondrop="dropl15b(event, '1')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center; align: middle;">
