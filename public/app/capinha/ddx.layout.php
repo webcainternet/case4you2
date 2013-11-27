@@ -48,8 +48,8 @@ switch ($ql) {
 
 <!-- LAYOUT 1 -->
     	<div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 0px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
-    		<div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 99%; height: 100%; overflow: hidden;text-align: center;
-	align: middle; border: solid 1px #6aa11a;">
+    		<div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 339px; height: 100%; overflow: hidden;text-align: center;
+	align: middle; border: 0px;">
                 <div id="dvfechar1" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img border="0" src="img/close_red.gif"></a></div>
 
                 <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
