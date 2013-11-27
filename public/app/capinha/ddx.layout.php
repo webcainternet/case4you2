@@ -31,7 +31,7 @@ function teste() {
 }
 </script>
 
-<div style="border: dotted 3px red;margin-left: 0px;">
+<div style="border: dotted 3px red;margin-left: 10px;">
 
 <?php
 switch ($ql) {
