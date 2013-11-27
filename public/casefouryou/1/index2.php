@@ -81,13 +81,20 @@ else
 
         <select  onchange="selecionaalbum(this)">
           <?php
+          $tfirsti = 0;
+          $tfirst = '';
           foreach($albums['data'] as $album) 
           {
+          $tfirst = $album['id'];
           print ('<option value="'.$album['id'].'">'.$album['name'].'</option>' ) ;
+          $tfirsti++;
           }
           ?>
 
           </select>
+          <script>
+            getphoto('<?php echo $tfirst; ?>');
+          </script>
         <?php
 
 

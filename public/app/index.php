@@ -95,8 +95,6 @@ else {*/
 
 	   	$('#optionface').prepend(response);
 	   	});
-
-	   	alert(response);
 	}
 	function getphoto(albumid) {
 		$(document).ready(function(){
