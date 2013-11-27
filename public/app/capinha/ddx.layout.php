@@ -31,6 +31,8 @@ function teste() {
 }
 </script>
 
+<div style="border: solid 1px red;">
+
 <?php
 switch ($ql) {
     //Layout 1 foto
@@ -238,6 +240,8 @@ switch ($ql) {
 
     <?php break;
 } ?>
+
+</div>
 
 <!-- invisible iframes -->
 <div style="display: none;">
