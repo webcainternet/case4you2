@@ -30,8 +30,8 @@ function drop(ev, posicao)
 	ev.preventDefault();
 	var data=ev.dataTransfer.getData("Text");
 	//ev.target.appendChild(document.getElementById(data));
-	document.getElementById(data).style.opacity='0.75';
-	document.getElementById(data).style.filter='alpha(opacity=75)';
+	//document.getElementById(data).style.opacity='0.75';
+	//document.getElementById(data).style.filter='alpha(opacity=75)';
 
 	iwidth=document.getElementById(data).width;
 	iheight=document.getElementById(data).height;
@@ -79,8 +79,8 @@ function dropl2(ev, posicao)
         ev.preventDefault();
         var data=ev.dataTransfer.getData("Text");
         //ev.target.appendChild(document.getElementById(data));
-        document.getElementById(data).style.opacity='0.75';
-        document.getElementById(data).style.filter='alpha(opacity=75)';
+        //document.getElementById(data).style.opacity='0.75';
+        //document.getElementById(data).style.filter='alpha(opacity=75)';
 
         iwidth=document.getElementById(data).width;
         iheight=document.getElementById(data).height;
@@ -128,8 +128,8 @@ function dropl15a(ev, posicao)
         ev.preventDefault();
         var data=ev.dataTransfer.getData("Text");
         //ev.target.appendChild(document.getElementById(data));
-        document.getElementById(data).style.opacity='0.75';
-        document.getElementById(data).style.filter='alpha(opacity=75)';
+        //document.getElementById(data).style.opacity='0.75';
+        //document.getElementById(data).style.filter='alpha(opacity=75)';
 
         iwidth=document.getElementById(data).width;
         iheight=document.getElementById(data).height;
@@ -177,8 +177,8 @@ function droplixeira(ev)
         ev.preventDefault();
         var data=ev.dataTransfer.getData("Text");
         //ev.target.appendChild(document.getElementById(data));
-        document.getElementById(data).style.opacity='0.75';
-        document.getElementById(data).style.filter='alpha(opacity=75)';
+        //document.getElementById(data).style.opacity='0.75';
+        //document.getElementById(data).style.filter='alpha(opacity=75)';
 
 	document.getElementById(data).style.display='none';
 
@@ -219,8 +219,8 @@ function dropl15b(ev, posicao)
         ev.preventDefault();
         var data=ev.dataTransfer.getData("Text");
         //ev.target.appendChild(document.getElementById(data));
-        document.getElementById(data).style.opacity='0.75';
-        document.getElementById(data).style.filter='alpha(opacity=75)';
+        //document.getElementById(data).style.opacity='0.75';
+        //document.getElementById(data).style.filter='alpha(opacity=75)';
 
         iwidth=document.getElementById(data).width;
         iheight=document.getElementById(data).height;
