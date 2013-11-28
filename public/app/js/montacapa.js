@@ -266,6 +266,29 @@ function zoommais(dvposicao) {
          nimheight=imheight*1.05;
          elimagem.height=nimheight;
 
+         //controle
+         var posicao = 0;
+         if (dvposicao == 'divl1') {posicao = 1;}
+         if (dvposicao == 'divl2a') {posicao = 1;}
+         if (dvposicao == 'divl2b') {posicao = 2;}
+         var imleft=elimagem.style.marginLeft;
+         if (imleft == "") { 
+            imleft = 0; 
+         }
+         else {
+            imleft = imleft.replace("px","");   
+         }
+         var imtop=elimagem.style.marginTop;
+         if (imtop == "") { 
+            imtop = 0; 
+         }
+         else {
+            imtop = imtop.replace("px","");   
+         }   
+         var imwidth=elimagem.width;
+         var imheight=elimagem.height;
+         idsession = document.getElementById('idsession').value;
+         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
       }
       
    }
@@ -308,6 +331,29 @@ function zoommenos(dvposicao) {
          nimheight=imheight*0.95;
          elimagem.height=nimheight;
 
+         //controle
+         var posicao = 0;
+         if (dvposicao == 'divl1') {posicao = 1;}
+         if (dvposicao == 'divl2a') {posicao = 1;}
+         if (dvposicao == 'divl2b') {posicao = 2;}
+         var imleft=elimagem.style.marginLeft;
+         if (imleft == "") { 
+            imleft = 0; 
+         }
+         else {
+            imleft = imleft.replace("px","");   
+         }
+         var imtop=elimagem.style.marginTop;
+         if (imtop == "") { 
+            imtop = 0; 
+         }
+         else {
+            imtop = imtop.replace("px","");   
+         }   
+         var imwidth=elimagem.width;
+         var imheight=elimagem.height;
+         idsession = document.getElementById('idsession').value;
+         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
       }
       
    }
@@ -354,6 +400,30 @@ function moverup(dvposicao) {
          var nimtop=parseFloat(0);
          nimtop=parseFloat(imtop)+parseFloat(-5);
          elimagem.style.marginTop=nimtop;
+
+         //controle
+         var posicao = 0;
+         if (dvposicao == 'divl1') {posicao = 1;}
+         if (dvposicao == 'divl2a') {posicao = 1;}
+         if (dvposicao == 'divl2b') {posicao = 2;}
+         var imleft=elimagem.style.marginLeft;
+         if (imleft == "") { 
+            imleft = 0; 
+         }
+         else {
+            imleft = imleft.replace("px","");   
+         }
+         var imtop=elimagem.style.marginTop;
+         if (imtop == "") { 
+            imtop = 0; 
+         }
+         else {
+            imtop = imtop.replace("px","");   
+         }   
+         var imwidth=elimagem.width;
+         var imheight=elimagem.height;
+         idsession = document.getElementById('idsession').value;
+         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
       }
       
    }
@@ -398,6 +468,30 @@ function moverbaixo(dvposicao) {
          var nimtop=parseFloat(0);
          nimtop=parseFloat(imtop)+parseFloat(5);
          elimagem.style.marginTop=nimtop;
+
+         //controle
+         var posicao = 0;
+         if (dvposicao == 'divl1') {posicao = 1;}
+         if (dvposicao == 'divl2a') {posicao = 1;}
+         if (dvposicao == 'divl2b') {posicao = 2;}
+         var imleft=elimagem.style.marginLeft;
+         if (imleft == "") { 
+            imleft = 0; 
+         }
+         else {
+            imleft = imleft.replace("px","");   
+         }
+         var imtop=elimagem.style.marginTop;
+         if (imtop == "") { 
+            imtop = 0; 
+         }
+         else {
+            imtop = imtop.replace("px","");   
+         }   
+         var imwidth=elimagem.width;
+         var imheight=elimagem.height;
+         idsession = document.getElementById('idsession').value;
+         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
       }
       
    }
@@ -444,6 +538,30 @@ function moveresq(dvposicao) {
          var nimleft=parseFloat(0);
          nimleft=parseFloat(imleft)+parseFloat(-5);
          elimagem.style.marginLeft=nimleft;
+
+         //controle
+         var posicao = 0;
+         if (dvposicao == 'divl1') {posicao = 1;}
+         if (dvposicao == 'divl2a') {posicao = 1;}
+         if (dvposicao == 'divl2b') {posicao = 2;}
+         var imleft=elimagem.style.marginLeft;
+         if (imleft == "") { 
+            imleft = 0; 
+         }
+         else {
+            imleft = imleft.replace("px","");   
+         }
+         var imtop=elimagem.style.marginTop;
+         if (imtop == "") { 
+            imtop = 0; 
+         }
+         else {
+            imtop = imtop.replace("px","");   
+         }   
+         var imwidth=elimagem.width;
+         var imheight=elimagem.height;
+         idsession = document.getElementById('idsession').value;
+         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
       }
       
    }
@@ -454,12 +572,6 @@ function moveresq(dvposicao) {
 
 
 function moverdir(dvposicao) {
-
-   var posicao = 0;
-   if (dvposicao == 'divl1') {posicao = 1;}
-   if (dvposicao == 'divl2a') {posicao = 1;}
-   if (dvposicao == 'divl2b') {posicao = 2;}
-
    var eldvposicao=document.getElementById(dvposicao); 
 
    var eldvposicaoChildren = eldvposicao.childNodes; 
@@ -500,6 +612,10 @@ function moverdir(dvposicao) {
 
 
          //controle
+         var posicao = 0;
+         if (dvposicao == 'divl1') {posicao = 1;}
+         if (dvposicao == 'divl2a') {posicao = 1;}
+         if (dvposicao == 'divl2b') {posicao = 2;}
          var imleft=elimagem.style.marginLeft;
          if (imleft == "") { 
             imleft = 0; 
