@@ -23,7 +23,21 @@
   <?php } ?>
   <?php } else { ?>
   <tr>
-    <td colspan="3">ssssss<div class="error"><?php echo $shipping_method['error']; ?></div></td>
+    <td colspan="3">
+      <?php
+        if (
+            $shipping_method['error'] != "PAC: CEP de destino invalido." && 
+            $shipping_method['error'] != "SEDEX: CEP de destino invalido." && 
+            $shipping_method['error'] != "SEDEX 10: CEP de destino invalido."
+          ) { ?>
+          <div class="error"><?php echo $shipping_method['error']; ?></div>    
+        <?php } else { ?>
+          <div style="color: #8e8e8e;" >
+          CEP deve ser preenchido corretamente.
+          </div>    
+        <?php }
+      
+    </td>
   </tr>
   <?php } ?>
   <?php } ?>
