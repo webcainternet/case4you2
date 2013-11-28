@@ -37,8 +37,10 @@ function drop(ev, posicao)
 	iheight=document.getElementById(data).height;
 
 	// --- Variaveis ---
-	pheight=527;
-	pwidth=340;
+    pheight=<?php echo $mh; ?>;
+    pwidth=<?php echo $mw; ?>;
+	//pheight=527;
+	//pwidth=340;
 	// -----------------
 
 	idiff=iheight/iwidth;
