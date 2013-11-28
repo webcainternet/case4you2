@@ -188,45 +188,45 @@ function escondemascarasup() {
 }
 
 function mostracontroles() {
-   document.getElementById("dvcontroles").style.display="block";
-   document.getElementById("dvcontroles1").style.display="block";
-   document.getElementById("dvcontroles2").style.display="block";
-   document.getElementById("dvfechar1").style.display="block";
-   document.getElementById("dvfechar2").style.display="block";
-   document.getElementById("dvfechar3").style.display="block";
-   document.getElementById("dvfechar4").style.display="block";
-   document.getElementById("dvfechar5").style.display="block";
-   document.getElementById("dvfechar6").style.display="block";
-   document.getElementById("dvfechar7").style.display="block";
-   document.getElementById("dvfechar8").style.display="block";
-   document.getElementById("dvfechar9").style.display="block";
-   document.getElementById("dvfechar10").style.display="block";
-   document.getElementById("dvfechar11").style.display="block";
-   document.getElementById("dvfechar12").style.display="block";
-   document.getElementById("dvfechar13").style.display="block";
-   document.getElementById("dvfechar14").style.display="block";
-   document.getElementById("dvfechar15").style.display="block";
+   $('#dvcontroles').show();
+   $('#dvcontroles1').show();
+   $('#dvcontroles2').show();
+   $('#dvfechar1').show();
+   $('#dvfechar2').show();
+   $('#dvfechar3').show();
+   $('#dvfechar4').show();
+   $('#dvfechar5').show();
+   $('#dvfechar6').show();
+   $('#dvfechar7').show();
+   $('#dvfechar8').show();
+   $('#dvfechar9').show();
+   $('#dvfechar10').show();
+   $('#dvfechar11').show();
+   $('#dvfechar12').show();
+   $('#dvfechar13').show();
+   $('#dvfechar14').show();
+   $('#dvfechar15').show();
 }
 
 function escondecontroles() {
-   document.getElementById("dvcontroles").style.display="none";
-   document.getElementById("dvcontroles1").style.display="none";
-   document.getElementById("dvcontroles2").style.display="none";
-   document.getElementById("dvfechar1").style.display="none";
-   document.getElementById("dvfechar2").style.display="none";
-   document.getElementById("dvfechar3").style.display="none";
-   document.getElementById("dvfechar4").style.display="none";
-   document.getElementById("dvfechar5").style.display="none";
-   document.getElementById("dvfechar6").style.display="none";
-   document.getElementById("dvfechar7").style.display="none";
-   document.getElementById("dvfechar8").style.display="none";
-   document.getElementById("dvfechar9").style.display="none";
-   document.getElementById("dvfechar10").style.display="none";
-   document.getElementById("dvfechar11").style.display="none";
-   document.getElementById("dvfechar12").style.display="none";
-   document.getElementById("dvfechar13").style.display="none";
-   document.getElementById("dvfechar14").style.display="none";
-   document.getElementById("dvfechar15").style.display="none";  
+   $('#dvcontroles').hide();
+   $('#dvcontroles1').hide();
+   $('#dvcontroles2').hide();
+   $('#dvfechar1').hide();
+   $('#dvfechar2').hide();
+   $('#dvfechar3').hide();
+   $('#dvfechar4').hide();
+   $('#dvfechar5').hide();
+   $('#dvfechar6').hide();
+   $('#dvfechar7').hide();
+   $('#dvfechar8').hide();
+   $('#dvfechar9').hide();
+   $('#dvfechar10').hide();
+   $('#dvfechar11').hide();
+   $('#dvfechar12').hide();
+   $('#dvfechar13').hide();
+   $('#dvfechar14').hide();
+   $('#dvfechar15').hide();
 }
 
 
