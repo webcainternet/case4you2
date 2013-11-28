@@ -23,7 +23,7 @@
   <?php } ?>
   <?php } else { ?>
   <tr>
-    <td colspan="3"><div class="error">ss<?php echo $shipping_method['error']; ?></div></td>
+    <td colspan="3"><div class="error"><?php echo $shipping_method['error']; ?></div></td>
   </tr>
   <?php } ?>
   <?php } ?>
