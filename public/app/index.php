@@ -387,8 +387,8 @@ else {*/
 			</div>
 
 
-				
-			<div style="font-size: 10px;">
+
+			<div style="font-size: 10px; border: 0px; padding-top: 0px; margin-top: -10px;">
 				* O limite de tamanho da imagem enviada &eacute; de at&eacute; 3MB<br />
 				* Preencha toda a &aacute;rea pontilhada para imprimir nas laterais da capinha
 			</div>
