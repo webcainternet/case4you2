@@ -31,15 +31,6 @@ function teste() {
 }
 </script>
 
-<style>
-    .bordapontilhada {
-        border: dashed 3px white; margin-left: 10px; width: 339px;
-    }
-    .bordapontilhada:hover {
-        border: dashed 3px #6aa11a;
-    }
-</style>
-
 <?php
 switch ($ql) {
     //Layout 1 foto
@@ -174,6 +165,7 @@ switch ($ql) {
     case 2: ?>
 
 <!-- LAYOUT 3 -->
+        <div style="border: dashed 3px white; margin-left: 10px; width: 339px;">
         <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin: 0px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
 
 
@@ -246,6 +238,7 @@ switch ($ql) {
                     <div id="dvcontroles1" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">&nbsp;</div>
                     <div id="dvcontroles2" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">&nbsp;</div>
                 </div>
+        </div>
         </div>
 <!-- FIM LAYOUT 3 -->
 

@@ -1,3 +1,10 @@
+.bordapontilhada {
+    border: dashed 3px white; margin-left: 10px; width: 339px;
+}
+.bordapontilhada:hover {
+    border: dashed 3px #6aa11a;
+}
+
 .tituloacc {
   float: left; width: 60%; margin-top: -8px; margin-left: 10px; font-family: c4y2, Arial, Verdana; font-size: 14px;
 }
