@@ -35,7 +35,7 @@
           <div style="color: #8e8e8e;" >
           CEP deve ser preenchido
           </div>    
-        <?php }
+        <?php } ?>
       
     </td>
   </tr>
