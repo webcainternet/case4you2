@@ -387,7 +387,11 @@ else {*/
 			</div>
 
 
-
+				
+			<div style="font-size: 10px;">
+				* O limite de tamanho da imagem enviada &eacute; de at&eacute; 3MB<br />
+				* Preencha toda a &aacute;rea pontilhada para imprimir nas laterais da capinha
+			</div>
 
 
 		</div>
@@ -451,10 +455,6 @@ else {*/
 			<a href="#" onclick="finalizar()"><img border="0" src="img/proximo.png" style="margin-top: 5px;"></a>
 		</div>
 
-		<div>
-			* O limite de tamanho da imagem enviada &eacute; de at&eacute; 3MB<br />
-			* Preencha toda a &aacute;rea pontilhada para imprimir nas laterais da capinha
-		</div>
 
 	</div>
 
