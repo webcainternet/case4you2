@@ -248,7 +248,6 @@ switch ($ql) {
 
     <?php break;
 } ?>
-&nbsp;
 </div>
 
 <!-- invisible iframes -->
