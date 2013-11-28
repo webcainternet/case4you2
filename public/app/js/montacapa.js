@@ -498,10 +498,24 @@ function moverdir(dvposicao) {
          nimleft=parseFloat(imleft)+parseFloat(5);
          elimagem.style.marginLeft=nimleft;
 
-         //var imleft=elimagem.style.marginLeft.replace("px","");
-         var imtop=elimagem.style.marginTop.replace("px","");
-         var imwidth=elimagem.width.replace("px","");
-         var imheight=elimagem.height.replace("px","");
+
+         //controle
+         var imleft=elimagem.style.marginLeft;
+         if (imleft == "") { 
+            imleft = 0; 
+         }
+         else {
+            imleft = imleft.replace("px","");   
+         }
+         var imtop=elimagem.style.marginTop;
+         if (imtop == "") { 
+            imtop = 0; 
+         }
+         else {
+            imtop = imtop.replace("px","");   
+         }   
+         var imwidth=elimagem.width;
+         var imheight=elimagem.height;
          idsession = document.getElementById('idsession').value;
          updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
       }
