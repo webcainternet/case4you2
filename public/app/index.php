@@ -393,6 +393,7 @@ else {*/
 		</div>
 
 		<div id="divcapinha" onmouseout="mostramascarasup()" style="width: 360px;
+			height: 540px;
 			float: left;
 			margin-left: 10px;
 			border: 1px solid #aaaaaa;
