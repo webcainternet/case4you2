@@ -40,7 +40,7 @@ switch ($ql) {
         <div class="bordapontilhada">
     	<div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 0px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
     		<div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 339px; height: 100%; overflow: hidden;text-align: center;
-	align: middle; border: 0px;">
+	align: middle; border: 0px; background-repeat: no-repeat;">
                 <div id="dvfechar1" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img border="0" src="img/close_red.gif"></a></div>
 
                 <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
@@ -93,7 +93,7 @@ switch ($ql) {
         <div class="bordapontilhada">
         <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin: 0px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
                 <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
-        align: middle;">
+        align: middle; background-repeat: no-repeat;">
                     <div id="dvfechar1" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2a')"><img border="0" src="img/close_red.gif"></a></div>
 
                     <div id="dvcontroles1" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
@@ -116,7 +116,7 @@ switch ($ql) {
                 </div>
 
         		<div id="divl2b" ondrop="dropl2(event, '2')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
-        align: middle;">
+        align: middle; background-repeat: no-repeat;">
                     <div id="dvfechar2" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2b')"><img border="0" src="img/close_red.gif"></a></div>
 
                     <div id="dvcontroles2" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
