@@ -26,8 +26,8 @@
     <td colspan="3">
       <?php
         if (
-            $shipping_method['error'] != "PAC: CEP de destino invalido." && 
-            $shipping_method['error'] != "SEDEX: CEP de destino invalido." && 
+            $shipping_method['error'] != "PAC: CEP de destino invalido." ||
+            $shipping_method['error'] != "SEDEX: CEP de destino invalido." || 
             $shipping_method['error'] != "SEDEX 10: CEP de destino invalido."
           ) { ?>
           <div class="error"><?php echo $shipping_method['error']; ?></div>    
