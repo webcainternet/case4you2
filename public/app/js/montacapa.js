@@ -288,7 +288,7 @@ function zoommais(dvposicao) {
          var imwidth=elimagem.width;
          var imheight=elimagem.height;
          idsession = document.getElementById('idsession').value;
-         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
+         updateposition(idsession, posicao, imheight, imwidth, imleft, imtop);
       }
       
    }
@@ -353,7 +353,7 @@ function zoommenos(dvposicao) {
          var imwidth=elimagem.width;
          var imheight=elimagem.height;
          idsession = document.getElementById('idsession').value;
-         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
+         updateposition(idsession, posicao, imheight, imwidth, imleft, imtop);
       }
       
    }
@@ -423,7 +423,7 @@ function moverup(dvposicao) {
          var imwidth=elimagem.width;
          var imheight=elimagem.height;
          idsession = document.getElementById('idsession').value;
-         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
+         updateposition(idsession, posicao, imheight, imwidth, imleft, imtop);
       }
       
    }
@@ -491,7 +491,7 @@ function moverbaixo(dvposicao) {
          var imwidth=elimagem.width;
          var imheight=elimagem.height;
          idsession = document.getElementById('idsession').value;
-         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
+         updateposition(idsession, posicao, imheight, imwidth, imleft, imtop);
       }
       
    }
@@ -561,7 +561,7 @@ function moveresq(dvposicao) {
          var imwidth=elimagem.width;
          var imheight=elimagem.height;
          idsession = document.getElementById('idsession').value;
-         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
+         updateposition(idsession, posicao, imheight, imwidth, imleft, imtop);
       }
       
    }
@@ -633,7 +633,7 @@ function moverdir(dvposicao) {
          var imwidth=elimagem.width;
          var imheight=elimagem.height;
          idsession = document.getElementById('idsession').value;
-         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
+         updateposition(idsession, posicao, imheight, imwidth, imleft, imtop);
       }
       
    }
