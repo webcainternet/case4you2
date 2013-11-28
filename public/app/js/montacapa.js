@@ -25,9 +25,7 @@ function MontaCapa(modelo, layout) {
    if (modelo == '2') { document.getElementById("mascarasuperior").style.backgroundImage = "url('/app/img/mask-galaxy3-top.png')"; }
    if (modelo == '3') { document.getElementById("mascarasuperior").style.backgroundImage = "url('/app/img/mask-galaxy4-top.png')"; }
 
-   currentHeight = $('#bordapontilhada').outerHeight();
-   console.log("set current height on load = " + currentHeight)
-   console.log("content height function (should be 374)  = " + contentHeight());
+   alert(document.getElementById("bordapontilhada").style.height);
 
 
 }
