@@ -39,7 +39,6 @@ function teste() {
         border: dashed 3px #6aa11a;
     }
 </style>
-<div class="bordapontilhada">
 
 <?php
 switch ($ql) {
@@ -47,6 +46,7 @@ switch ($ql) {
     case 0: ?>
 
 <!-- LAYOUT 1 -->
+        <div class="bordapontilhada">
     	<div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 0px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
     		<div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 339px; height: 100%; overflow: hidden;text-align: center;
 	align: middle; border: 0px;">
@@ -92,12 +92,14 @@ switch ($ql) {
                 </div>
             </div>
   	</div>
+    </div>
 <!-- FIM LAYOUT 1 -->
 
     <?php break;
     case 1: ?>
 
 <!-- LAYOUT 2 -->
+        <div class="bordapontilhada">
         <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin: 0px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
                 <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
         align: middle;">
@@ -164,6 +166,7 @@ switch ($ql) {
                     <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">&nbsp;</div>
                 </div>
 
+        </div>
         </div>
 <!-- FIM LAYOUT 2 -->
 
@@ -248,7 +251,6 @@ switch ($ql) {
 
     <?php break;
 } ?>
-</div>
 
 <!-- invisible iframes -->
 <div style="display: none;">
