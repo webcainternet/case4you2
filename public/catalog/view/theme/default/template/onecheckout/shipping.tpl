@@ -33,7 +33,7 @@
           <div class="error"><?php echo $shipping_method['error']; ?></div>    
         <?php } else { ?>
           <div style="color: #8e8e8e;" >
-          CEP deve ser preenchido corretamente.
+          CEP deve ser preenchido
           </div>    
         <?php }
       
