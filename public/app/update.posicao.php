@@ -22,7 +22,7 @@ $sql_statement = "UPDATE  `c4y_capasconstrucao` set
 `nheight` = ".$qnheight.",
 `nwidth` = ".$qnwidth.",
 `nleft` = ".$qnleft.",
-`ntop= ".$qntop."`
+`ntop`= ".$qntop."
 WHERE 
 `idcsession` = ".$gidcsession." AND
 `modelo` = ".$gmodelo." AND
@@ -30,8 +30,6 @@ WHERE
 `posicao` = ".$gposicao."
 ";
 
-echo $sql_statement;
-exit;
 
 $result = mysql_query($sql_statement,$dblink);
 
