@@ -498,10 +498,10 @@ function moverdir(dvposicao) {
          nimleft=parseFloat(imleft)+parseFloat(5);
          elimagem.style.marginLeft=nimleft;
 
-         //var imleft=elimagem.style.marginLeft;
-         var imtop=elimagem.style.marginTop;
-         var imwidth=elimagem.width;
-         var imheight=elimagem.height;
+         //var imleft=elimagem.style.marginLeft.replace("px","");
+         var imtop=elimagem.style.marginTop.replace("px","");
+         var imwidth=elimagem.width.replace("px","");
+         var imheight=elimagem.height.replace("px","");
          idsession = document.getElementById('idsession').value;
          updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
       }
