@@ -454,6 +454,12 @@ function moveresq(dvposicao) {
 
 
 function moverdir(dvposicao) {
+
+   var posicao = 0;
+   if (dvposicao == 'divl1') {posicao = 1;}
+   if (dvposicao == 'divl2a') {posicao = 1;}
+   if (dvposicao == 'divl2b') {posicao = 2;}
+
    var eldvposicao=document.getElementById(dvposicao); 
 
    var eldvposicaoChildren = eldvposicao.childNodes; 
@@ -491,12 +497,22 @@ function moverdir(dvposicao) {
          var nimleft=parseFloat(0);
          nimleft=parseFloat(imleft)+parseFloat(5);
          elimagem.style.marginLeft=nimleft;
+
+         //var imleft=elimagem.style.marginLeft;
+         var imtop=elimagem.style.marginTop;
+         var imwidth=elimagem.width;
+         var imheight=elimagem.height;
+         idsession = document.getElementById('idsession').value;
+         updateposition(idsession, posicao, imheight, imwidth, nimleft, imtop);
       }
       
    }
 }
 
-
+function updateposition(idsession, posicao, nheight, nwidth, nleft, ntop)
+{
+    document.getElementById("invfr"+posicao).src="https://case4you.com.br/app/update.posicao.php?idcsession="+idsession+"&posicao="+posicao+"&imagem="+imagemurl+"&nheight="+nheight+"&nwidth="+nwidth+"&nleft="+nleft+"&ntop="+ntop;
+}
 
 
 

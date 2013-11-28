@@ -25,11 +25,12 @@ $sql_statement = "UPDATE  `c4y_capasconstrucao` set
 `ntop`= ".$qntop."
 WHERE 
 `idcsession` = ".$gidcsession." AND
-`modelo` = ".$gmodelo." AND
-`layout` = ".$glayout." AND
 `posicao` = ".$gposicao."
 ";
 
+/*
+`modelo` = ".$gmodelo." AND
+`layout` = ".$glayout." AND*/
 
 $result = mysql_query($sql_statement,$dblink);
 
