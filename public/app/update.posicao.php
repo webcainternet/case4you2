@@ -30,6 +30,9 @@ WHERE
 `posicao` = ".$gposicao."
 ";
 
+echo $sql_statement;
+exit;
+
 $result = mysql_query($sql_statement,$dblink);
 
 if (!$result) {
