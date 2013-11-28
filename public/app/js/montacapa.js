@@ -25,6 +25,10 @@ function MontaCapa(modelo, layout) {
    if (modelo == '2') { document.getElementById("mascarasuperior").style.backgroundImage = "url('/app/img/mask-galaxy3-top.png')"; }
    if (modelo == '3') { document.getElementById("mascarasuperior").style.backgroundImage = "url('/app/img/mask-galaxy4-top.png')"; }
 
+   var nheightdm = document.getElementById("divmask").style.height;
+   document.getElementById("bordapontilhada").style.height = nheightdm;
+   
+
 }
 
 function lixeiraremove(divname) {
