@@ -37,7 +37,7 @@ switch ($ql) {
     case 0: ?>
 
 <!-- LAYOUT 1 -->
-        <div class="bordapontilhada">.
+        <div class="bordapontilhada">
     	<div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 0px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
     		<div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 339px; height: 100%; overflow: hidden;text-align: center;
 	align: middle; border: 0px;">
