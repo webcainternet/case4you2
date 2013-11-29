@@ -325,7 +325,7 @@ else {*/
 
 
 					<!-- Local imagens -->
-					<div style="height: 275px; float: left; width: 320px; overflow-x: hidden; margin-top: 10px;">
+					<div style="height: 230px; float: left; width: 320px; overflow-x: hidden; margin-top: 10px;">
 						<div id='preview'>
 						</div>
 					</div>
