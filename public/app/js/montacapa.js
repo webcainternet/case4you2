@@ -55,8 +55,26 @@ function lixeiraremove(divname) {
       eldvposicaoChildren.item(i).id != "dvfechar13" &&
       eldvposicaoChildren.item(i).id != "dvfechar14" &&
       eldvposicaoChildren.item(i).id != "dvfechar15" ) {
-         //Executar
+
+         var imgvoltar = '<div id="div'+eldvposicaoChildren.item(i).id+'" style="background-color: #FFFFFF; width: 50px; float: left; overflow: hidden; height: 50px;
+                background: rgba(255,255,255,0.8);
+                position: relative;
+                display: inline-block;
+                margin: 5px;
+                vertical-align: top;
+                border: 1px solid #acacac;
+                padding: 6px 6px 6px 6px;
+                -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
+                box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
+                font-size: 14px;
+                ">
+                <img src="'+$('#'+eldvposicaoChildren.item(i).id).prop('src')+'" id="'+eldvposicaoChildren.item(i).id+'" draggable="true"
+                ondragstart="drag(event)" style="max-width:100%; max-height:100%;">
+        </div>';
+
          $('#'+eldvposicaoChildren.item(i).id).remove();
+
+         $('#preview').prepend(imgvoltar);
       }
    }
 }
