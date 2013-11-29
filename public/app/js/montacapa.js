@@ -27,98 +27,40 @@ function MontaCapa(modelo, layout) {
 
 }
 
+
+
 function lixeiraremove(divname) {
-   var myNode = document.getElementById(divname);
+   var eldvposicao=document.getElementById(divname); 
 
-   while (myNode.firstChild) {
-         myNode.removeChild(myNode.firstChild);  
+   var eldvposicaoChildren = eldvposicao.childNodes; 
+   for(var i = 0; i < eldvposicaoChildren.length; i++) 
+   { 
+      if (eldvposicaoChildren.item(i).id != null && 
+      eldvposicaoChildren.item(i).id != "" &&
+      eldvposicaoChildren.item(i).id != "dvcontroles" &&
+      eldvposicaoChildren.item(i).id != "dvcontroles1" &&
+      eldvposicaoChildren.item(i).id != "dvcontroles2" &&
+      eldvposicaoChildren.item(i).id != "dvfechar1" &&
+      eldvposicaoChildren.item(i).id != "dvfechar2" &&
+      eldvposicaoChildren.item(i).id != "dvfechar3" &&
+      eldvposicaoChildren.item(i).id != "dvfechar4" &&
+      eldvposicaoChildren.item(i).id != "dvfechar5" &&
+      eldvposicaoChildren.item(i).id != "dvfechar6" &&
+      eldvposicaoChildren.item(i).id != "dvfechar7" &&
+      eldvposicaoChildren.item(i).id != "dvfechar8" &&
+      eldvposicaoChildren.item(i).id != "dvfechar9" &&
+      eldvposicaoChildren.item(i).id != "dvfechar10" &&
+      eldvposicaoChildren.item(i).id != "dvfechar11" &&
+      eldvposicaoChildren.item(i).id != "dvfechar12" &&
+      eldvposicaoChildren.item(i).id != "dvfechar13" &&
+      eldvposicaoChildren.item(i).id != "dvfechar14" &&
+      eldvposicaoChildren.item(i).id != "dvfechar15" ) {
+         //Executar
+         $('#'+eldvposicaoChildren.item(i).id).remove();
+      }
    }
-   var divnamefechar = '';
-   var addcontrole = '';
-
-   switch (divname) {
-      case 'divl1':
-         divnamefechar = 'dvfechar1';
-         addcontrole = '<div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;"><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="moverup(\'divl1\')"><img border="0" src="/app/img/seta_cim.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="zoommais(\'divl1\')"><img border="0" src="/app/img/seta_mai.png"></a></div><div class="controleico"><a href="#" onclick="moveresq(\'divl1\')"><img border="0" src="/app/img/seta_esq.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="moverdir(\'divl1\')"><img border="0" src="/app/img/seta_dir.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="moverbaixo(\'divl1\')"><img border="0" src="/app/img/seta_bai.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="zoommenos(\'divl1\')"><img border="0" src="/app/img/seta_men.png"></a></div></div>';
-         break;
-
-      case 'divl2a':
-         divnamefechar = 'dvfechar1';
-         addcontrole = '<div id="dvcontroles1" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;"><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="moverup(\'divl2a\')"><img border="0" src="/app/img/seta_cim.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="zoommais(\'divl2a\')"><img border="0" src="/app/img/seta_mai.png"></a></div><div class="controleico"><a href="#" onclick="moveresq(\'divl2a\')"><img border="0" src="/app/img/seta_esq.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="moverdir(\'divl2a\')"><img border="0" src="/app/img/seta_dir.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="moverbaixo(\'divl2a\')"><img border="0" src="/app/img/seta_bai.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="zoommenos(\'divl2a\')"><img border="0" src="/app/img/seta_men.png"></a></div></div>';
-         break;
-
-      case 'divl2b':
-         divnamefechar = 'dvfechar2';
-         addcontrole = '<div id="dvcontroles2" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;"><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="moverup(\'divl2b\')"><img border="0" src="/app/img/seta_cim.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="zoommais(\'divl2b\')"><img border="0" src="/app/img/seta_mai.png"></a></div><div class="controleico"><a href="#" onclick="moveresq(\'divl2b\')"><img border="0" src="/app/img/seta_esq.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="moverdir(\'divl2b\')"><img border="0" src="/app/img/seta_dir.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="moverbaixo(\'divl2b\')"><img border="0" src="/app/img/seta_bai.png"></a></div><div class="controleico">&nbsp;</div><div class="controleico"><a href="#" onclick="zoommenos(\'divl2b\')"><img border="0" src="/app/img/seta_men.png"></a></div></div>';
-         break;
-
-      case 'divl15b1':
-         divnamefechar = 'dvfechar1';
-         break;
-
-      case 'divl15b2':
-         divnamefechar = 'dvfechar2';
-         break;
-
-      case 'divl15a1':
-         divnamefechar = 'dvfechar3';
-         break;
-
-      case 'divl15b3':
-         divnamefechar = 'dvfechar4';
-         break;
-
-      case 'divl15b4':
-         divnamefechar = 'dvfechar5';
-         break;
-
-      case 'divl15a2':
-         divnamefechar = 'dvfechar6';
-         break;
-
-      case 'divl15b5':
-         divnamefechar = 'dvfechar7';
-         break;
-
-      case 'divl15b6':
-         divnamefechar = 'dvfechar8';
-         break;
-
-      case 'divl15b7':
-         divnamefechar = 'dvfechar9';
-         break;
-
-      case 'divl15b8':
-         divnamefechar = 'dvfechar10';
-         break;
-
-      case 'divl15b9':
-         divnamefechar = 'dvfechar11';
-         break;
-
-      case 'divl15b10':
-         divnamefechar = 'dvfechar12';
-         break;
-
-      case 'divl15a3':
-         divnamefechar = 'dvfechar13';
-         break;
-
-      case 'divl15b11':
-         divnamefechar = 'dvfechar14';
-         break;
-
-      case 'divl15b12':
-         divnamefechar = 'dvfechar15';
-         break;
-   }
-
-
-   var textv = '<div id="'+divnamefechar+'" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove(\''+divname+'\')"><img src="img/close_red.gif"></a></div>';
-   $('#'+divname).prepend(textv);
-   $('#'+divname).prepend(addcontrole);
-   
 }
+
 
 function finalizar() {
    if (document.getElementById("modelodocelular").value == "") {
