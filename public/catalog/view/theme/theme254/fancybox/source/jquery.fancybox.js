@@ -57,9 +57,9 @@
 			margin  : 20,
 
 			width     : 817,
-			height    : 670,
+			height    : 700,
 			minWidth  : 817,
-			minHeight : 670,
+			minHeight : 700,
 			maxWidth  : 9999,
 			maxHeight : 670,
 			pixelRatio: 1, // Set to 2 for retina display support
