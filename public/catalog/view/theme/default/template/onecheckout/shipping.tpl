@@ -25,7 +25,7 @@
   <tr>
     <td colspan="3">
       <?php
-        echo strpos('CEP de destino invalido', $shipping_method['error']);
+        echo strpos($shipping_method['error'], 'CEP de destino invalido');
       ?>
         <div class="error"><script>alert('<?php echo $shipping_method['error']; ?>');</script>333</div>
     </td>
