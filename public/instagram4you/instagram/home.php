@@ -50,7 +50,6 @@ $(window).load(function() {
         margin: 30px;
     }
 </style>
-
 <?php
 session_start();
 if($_GET['id']=='logout')
@@ -66,17 +65,16 @@ if (!empty($_SESSION['userdetails']))
 {
     $data=$_SESSION['userdetails'];
     $instagram->setAccessToken($data);
-     echo "<div>Autentica&ccedil;&atilde;o efetuada!</div>";
+    ?>
+    <div style="text-align: center;margin: 30px;">Autentica&ccedil;&atilde;o efetuada. Esta janela pode ser fechada!</div>
+    <?php
 }
 else
 {
     //header('Location: /instagram4you/instagram/index.php');
   // Display the login button
   $loginUrl = $instagram->getLoginUrl();
-  ?>
-  <div style="text-align: center;margin: 30px;">Voc&ecirc; precisa estar logado no instagram para conseguir utilizar suas fotos!</div>
-  <?php
-  echo "<div style='text-align: right;margin-left: 30px;'><a id=\"clickinsta\" class=\"button\" href=\"$loginUrl\">Entrar com Instagram</a></div>";
+  echo "<a id=\"clickinsta\" class=\"button\" href=\"$loginUrl\">Entrar com Instagram</a>";
 
   //Script refresh
 }
