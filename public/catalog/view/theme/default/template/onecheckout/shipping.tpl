@@ -25,9 +25,13 @@
   <tr>
     <td colspan="3">
       <?php
-        echo strpos($shipping_method['error'], 'CEdP de destino invalido');
+        if (strpos($shipping_method['error'], 'CEP de destino invalido') > 0) {
+          echo "Start";
+        }
+        else {
       ?>
-        <div class="error"><script>alert('<?php echo $shipping_method['error']; ?>');</script>333</div>
+        <div class="error"><?php echo $shipping_method['error']; ?></div>
+      <?php } ?>
     </td>
   </tr>
   <?php } ?>
