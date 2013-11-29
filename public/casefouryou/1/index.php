@@ -87,7 +87,7 @@ if($o_user == 0)
         margin: 30px;
     }
     </style>
-    <div style="text-align: center;">Voc&ecirc; precisa estar logado no facebook para conseguir utilizar suas fotos!</div>
+    <div style="text-align: center;margin: 30px;">Voc&ecirc; precisa estar logado no facebook para conseguir utilizar suas fotos!</div>
     <?php
     echo "<div style='text-align: right;margin-left: 30px;'><a id=\"clickface\" class=\"botaof button\" href=\"$url\">Entrar com Facebook</a></div>";
     ?> 
