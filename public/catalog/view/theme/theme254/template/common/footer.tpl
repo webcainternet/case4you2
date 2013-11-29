@@ -68,8 +68,8 @@
 	  
 	  <div class="column col-4">
         <h3>Site Seguro</h3>
-        <div style="float: left; width: 90px;"><img src="image/data/Selo-SSL-grande.png" alt="Site Seguro" style="width: 90px; margin-top: -5px;"></div>
-        <div style="float: left; width: 90px;"><img src="/catalog/view/theme/theme254/image/positivessl-icon.png" alt="Positive SSL" style="width: 90px; margin-top: -5px;"></div>
+        <div style="float: left; width: 110px;"><img src="image/data/Selo-SSL-grande.png" alt="Site Seguro" style="width: 90px; margin-top: -5px;"></div>
+        <div style="float: left; width: 90px;"><img src="/catalog/view/theme/theme254/image/positivessl-icon.png" alt="Positive SSL" style="width: 65px; margin-top: -5px;"></div>
       </div>
       
   </div>
