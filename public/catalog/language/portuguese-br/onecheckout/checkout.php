@@ -34,7 +34,7 @@ $_['text_your_password']             = 'Your Password';
 $_['text_agree']                     = 'Eu estou de acordo com os <a class="colorbox" href="%s" alt="%s"><b>%s</b></a>';
 $_['text_address_new']               = 'I want to use a new address';
 $_['text_address_existing']          = 'I want to use an existing address';
-$_['text_shipping_method']           = 'Valor fixo para todo o Brasil para envio via PAC.';
+$_['text_shipping_method']           = 'Valor calculado diretamente no Correio.';
 $_['text_not_shipping_method']       = 'Please fill in the address first,then shipping method will auto show up.';
 $_['text_payment_method']            = 'Pagamento via cartão de debito, crédito ou boleto bancário.';
 $_['text_comments']                  = 'Comentários para o pedido';
