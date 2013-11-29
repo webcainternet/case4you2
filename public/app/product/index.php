@@ -765,19 +765,19 @@ ondragover="allowDrop(event)"></div>
 ?>
 
 <?php if ($_GET["m"] == "0") { ?>
-<div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 490px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-iphone4-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 494px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-iphone4-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
 <? } ?>
 
 <?php if ($_GET["m"] == "1") { ?>
-<div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 538px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-iphone5-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 542px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-iphone5-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
 <? } ?>
 
 <?php if ($_GET["m"] == "2") { ?>
-<div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 527px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-galaxy3-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 531px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-galaxy3-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
 <? } ?>
 
 <?php if ($_GET["m"] == "3") { ?>
-<div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 499px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-galaxy4-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 503px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-galaxy4-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
 <? } ?>
 
 
