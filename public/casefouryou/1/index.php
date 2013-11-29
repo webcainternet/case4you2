@@ -43,6 +43,31 @@ if($o_user == 0)
     //echo "<script language=javascript>location.href ='".$url."'</script>";
     ?>
     <style>
+
+    @font-face {
+          font-family: "c4y1";
+          src: url(/catalog/view/theme/theme254/stylesheet/alrightsans-regularitalic-v3.ttf);
+    }
+    @font-face {
+          font-family: "c4y2";
+          src: url(/catalog/view/theme/theme254/stylesheet/alrightsans-bolditalic-v3.ttf);
+    }
+    .fontc4y1 { 
+          font-family: "c4y1", Arial, Verdana;
+          font-size: 12px;
+    }
+
+    .fontc4y2 { 
+          font-family: "c4y2", Arial, Verdana;
+          font-size: 14px;
+          color: #6aa11a;
+    }
+    body, p {
+        font-family: "c4y1", Arial, Verdana;
+        margin:0px; padding:0px;
+        background-color: transparent;
+    }
+
     .botaof {
         display: inline-block;
         text-decoration: none;
@@ -59,11 +84,12 @@ if($o_user == 0)
         line-height: 19px;
         text-transform: uppercase;
         font-weight: normal;
+        margin: 30px;
     }
     </style>
     <div style="text-align: center;">Voc&ecirc; precisa estar logado no facebook para conseguir utilizar suas fotos!</div>
     <?php
-    echo "<div style='text-align: right;'><a id=\"clickface\" class=\"botaof button\" href=\"$url\">Entrar com Facebook</a></div>";
+    echo "<div style='text-align: right;margin-left: 30px;'><a id=\"clickface\" class=\"botaof button\" href=\"$url\">Entrar com Facebook</a></div>";
     ?> 
     <script>
         setTimeout("getalbum()", 2000);
