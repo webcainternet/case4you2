@@ -139,7 +139,7 @@ class Instagram {
    * @param integer [optional] $limit     Limit of returned results
    * @return mixed
    */
-  public function getUserMedia($id = 'self', $limit = 50) {
+  public function getUserMedia($id = 'self', $limit = 500) {
     return $this->_makeCall('users/'.$id.'/media/recent', true, array('count' => $limit));
   }
 
