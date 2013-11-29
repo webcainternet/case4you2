@@ -14,7 +14,7 @@
         </a>
     </div>
     
-  <div class="content"> 
+  <div class="content">
   	
     <?php
     
@@ -43,7 +43,7 @@
               </td>
           <!--td class="quantity">x&nbsp;<?php //echo $product['quantity']; ?></td-->
           <!--td class="total"><?php //echo $product['total']; ?></td-->
-          <td class="remove"><span><img src="catalog/view/theme/theme254/image/close.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" onclick="(getURLVar('route') == 'checkout/cartcustom' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cartcustom&remove=<?php echo $product['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $product['key']; ?>' + ' #cart > *');" /></span></td>
+          <td class="remove"><span><img src="catalog/view/theme/theme254/image/close.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $product['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $product['key']; ?>' + ' #cart > *');" /></span></td>
         </tr>
         <?php } ?>
         <?php foreach ($vouchers as $voucher) { ?>
@@ -52,7 +52,7 @@
           <td class="name"><?php echo $voucher['description']; ?></td>
           <!--<td class="quantity">x&nbsp;1</td>
           <td class="total"><?php echo $voucher['amount']; ?></td>-->
-          <td class="remove"><span><img src="catalog/view/theme/theme254/image/close.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" onclick="(getURLVar('route') == 'checkout/cartcustom' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cartcustom&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');" /></span></td>
+          <td class="remove"><span><img src="catalog/view/theme/theme254/image/close.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');" /></span></td>
         </tr>
         <?php } ?>
       </table>
@@ -67,7 +67,7 @@
         <?php } ?>
       </table>
     </div>
-    <div class="checkout"><a class="button" href="<?php echo $cart; ?>"><span><?php echo $text_cart; ?></span></a> <a class="button" href="<?php echo $checkout; ?>"><span><?php echo $text_checkout; ?></span></a></div>
+    <div class="checkout"><a class="button" href="/index.php?route=checkout/cartcustom"><span><?php echo $text_cart; ?></span></a> <a class="button" href="<?php echo $checkout; ?>"><span><?php echo $text_checkout; ?></span></a></div>
     <?php } else { ?>
     <div class="empty"><?php echo $text_empty; ?></div>
     <?php } ?>
