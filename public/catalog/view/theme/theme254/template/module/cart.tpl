@@ -30,9 +30,9 @@
          ?>
         <tr>
           <td class="image"><?php if ($product['thumb']) { ?>
-            <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
+            <a href="/index.php?route=checkout/cartcustom"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
             <?php } ?></td>
-          <td class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+          <td class="name"><a href="/index.php?route=checkout/cartcustom"><?php echo $product['name']; ?></a>
             <div>
               <?php foreach ($product['option'] as $option) { ?>
               - <small><?php echo $option['name']; ?> <?php echo $option['value']; ?></small><br />
