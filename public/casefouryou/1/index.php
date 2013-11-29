@@ -47,7 +47,7 @@ if($o_user == 0)
         display: inline-block;
         text-decoration: none;
         cursor: pointer;
-        background: url('../image/button.png') repeat-x left top;
+        background: url('/catalog/view/theme/theme254/image/button.png') repeat-x left top;
         font-size: 12px;
         line-height: 18px;
         border-radius: 5px;
