@@ -306,7 +306,7 @@ ondragover="allowDrop(event)"></div>
 
 
 
-<div style="display: block; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 540px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
+<div style="display: block; margin-left:10px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 540px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
 
 <!-- ddx.layout -->
     <?php include 'ddx.layout.php'; ?>
