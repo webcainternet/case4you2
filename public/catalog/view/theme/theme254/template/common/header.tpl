@@ -425,8 +425,8 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 				<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/checkout") {echo "active";} ?>" href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></li>
 			</ul>
 
-			<div style="float: left; width: 95px; height: 20px;">
-				<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FCase4You%2F173492216171488%3Fref%3Dhl&amp;width=200&amp;height=20&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=true&amp;appId=363972257064181" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:20px;" allowTransparency="true"></iframe>
+			<div style="float: left; height: 20px;">
+				<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FCase4You%2F173492216171488%3Fref%3Dhl&amp;width=200&amp;height=20&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=true&amp;appId=363972257064181" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:170px; height:20px;" allowTransparency="true"></iframe>
 			</div>
 			<div id="welcome">
 	
