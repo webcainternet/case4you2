@@ -22,7 +22,7 @@ switch ($qm) {
     case 1:
         $mimage = "mask-iphone5.png";
         $mw = "340";
-        $mh = "538";
+        $mh = "534";
         break;
 
     //GALAXYS3
