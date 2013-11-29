@@ -39,7 +39,7 @@
             break;
           
           default:
-              ?><div class="error">222<?php echo $shipping_method['error']; ?>333</div><?php
+              ?><div class="error"><script>alert('<?php echo $shipping_method['error']; ?>');</script>333</div><?php
             break;
         }
       ?>
