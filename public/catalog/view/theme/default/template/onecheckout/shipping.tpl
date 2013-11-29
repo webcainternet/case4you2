@@ -25,11 +25,9 @@
   <tr>
     <td colspan="3">
       <?php
-        if (strpos($shipping_method['error'], 'CEP de destino invalido') > 0) {
-          echo "Start";
-        }
-        else {
-      ?>
+        if (strpos($shipping_method['error'], 'CEP de destino invalido') > 0) { ?>
+          <div style="color: #8e8e8e">Preencha o CEP para calculo do frete.</div>
+        <?php } else { ?>
         <div class="error"><?php echo $shipping_method['error']; ?></div>
       <?php } ?>
     </td>
