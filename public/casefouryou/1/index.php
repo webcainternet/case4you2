@@ -61,9 +61,9 @@ if($o_user == 0)
         font-weight: normal;
     }
     </style>
-    <div style="text-align: center;">Voc&ecirc; precisa estar logado no facebook para conseguir utilizar suas fotos!
+    <div style="text-align: center;">Voc&ecirc; precisa estar logado no facebook para conseguir utilizar suas fotos!</div>
     <?php
-    echo "<a id=\"clickface\" class=\"botaof button\" href=\"$url\">Entrar com Facebook</a>";
+    echo "<div style='text-align: right;'><a id=\"clickface\" class=\"botaof button\" href=\"$url\">Entrar com Facebook</a></div>";
     ?> 
     <script>
         setTimeout("getalbum()", 2000);
