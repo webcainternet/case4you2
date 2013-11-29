@@ -26,7 +26,7 @@
     <td colspan="3">
       <?php
         switch ($shipping_method['error']) {
-          case 'PAC: CEP de destino invalido.':
+          case 'PAC: CEP de destino invalido.<br>SEDEX: CEP de destino invalido.<br>SEDEX 10: CEP de destino invalido.':
               echo "1";
             break;
 
