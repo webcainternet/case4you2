@@ -41,7 +41,21 @@ if($o_user == 0)
     $url = $facebook->getLoginUrl(array('scope' => array('user_about_me','user_hometown','user_photos','friends_photos','read_stream','friends_likes','photo_upload','publish_stream','status_update','video_upload')));
     //header("Location:".$url);
     //echo "<script language=javascript>location.href ='".$url."'</script>";
-    echo "<a id=\"clickface\" class=\"button\" href=\"$url\">Entrar com Facebook</a>";
+    ?>
+    <style>
+    .botaof {
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        background: url('../image/button.png') repeat-x left top;
+        font-size: 12px;
+        line-height: 18px;
+        border-radius: 5px;
+    }
+    </style>
+    <div style="text-align: center;">Voc&ecirc; precisa estar logado no facebook para conseguir utilizar suas fotos!
+    <?php
+    echo "<a id=\"clickface\" class=\"botaof button\" href=\"$url\">Entrar com Facebook</a>";
     ?> 
     <script>
         setTimeout("getalbum()", 2000);
