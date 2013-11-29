@@ -354,7 +354,7 @@ else {*/
 				<div style="float: left; margin-left: 20px; width: 250px;">
 					<div style="float: left; text-align: left; width: 95px; margin-bottom: 20px; margin-left: 15px;">
 					        <div style="float: left; text-align: left">
-					                <input onchange="selecionarfiltro('0')" type="radio" name="filtro" id="fsepia" value="-sp.png">
+					                <input onchange="selecionarfiltro('0')" onclick="selecionarfiltro('0')" type="radio" name="filtro" id="fsepia" value="-sp.png">
 					        </div>
 					        <div style="float: left; text-align: left;padding-left: 5px; height: 80px;">
 					                <img src="img/pic-n.png" style="width: 65px;border:" alt="">
@@ -363,7 +363,7 @@ else {*/
 
 					<div style="float: left; text-align: left; width: 95px; margin-bottom: 20px; margin-left: 15px;">
 					        <div style="float: left; text-align: left">
-					                <input onchange="selecionarfiltro('2')" type="radio" name="filtro" id="fsepia" value="-sp.png">
+					                <input onchange="selecionarfiltro('2')" onclick="selecionarfiltro('2')" type="radio" name="filtro" id="fsepia" value="-sp.png">
 					        </div>
 					        <div style="float: left; text-align: left;padding-left: 5px; height: 80px;">
 					                <img src="img/pic-s.png" style="width: 65px;border:" alt="">
@@ -372,7 +372,7 @@ else {*/
 
 					<div style="float: left; text-align: left; width: 95px; margin-bottom: 20px; margin-left: 15px;">
 					        <div style="float: left; text-align: left">
-					                <input onchange="selecionarfiltro('1')" type="radio" name="filtro" id="fsepia" value="-sp.png">
+					                <input onchange="selecionarfiltro('1')" onclick="selecionarfiltro('1')" type="radio" name="filtro" id="fsepia" value="-sp.png">
 					        </div>
 					        <div style="float: left; text-align: left;padding-left: 5px; height: 80px;">
 					                <img src="img/pic-p.png" style="width: 65px;border:" alt="">
@@ -381,7 +381,7 @@ else {*/
 
 					<div style="float: left; text-align: left; width: 95px; margin-bottom: 20px; margin-left: 15px;">
 					        <div style="float: left; text-align: left">
-					                <input onchange="selecionarfiltro('3')" type="radio" name="filtro" id="fsepia" value="-sp.png">
+					                <input onchange="selecionarfiltro('3')" onclick="selecionarfiltro('3')" type="radio" name="filtro" id="fsepia" value="-sp.png">
 					        </div>
 					        <div style="float: left; text-align: left;padding-left: 5px; height: 80px;">
 					                <img src="img/pic-c.png" style="width: 65px;border:" alt="">
