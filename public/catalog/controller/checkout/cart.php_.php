@@ -1,9 +1,9 @@
 <?php 
-class ControllerCheckoutCartcustom extends Controller {
+class ControllerCheckoutCart extends Controller {
 	private $error = array();
 	
 	public function index() {
-		$this->language->load('checkout/cartcustom');
+		$this->language->load('checkout/cart');
 
 		if (!isset($this->session->data['vouchers'])) {
 			$this->session->data['vouchers'] = array();
@@ -21,7 +21,7 @@ class ControllerCheckoutCartcustom extends Controller {
 			unset($this->session->data['payment_methods']); 
 			unset($this->session->data['reward']);
 			
-			$this->redirect($this->url->link('checkout/cartcustom'));  			
+			$this->redirect($this->url->link('checkout/cart'));  			
 		}
        	
 		// Remove
@@ -38,7 +38,7 @@ class ControllerCheckoutCartcustom extends Controller {
 			unset($this->session->data['payment_methods']); 
 			unset($this->session->data['reward']);  
 								
-			$this->redirect($this->url->link('checkout/cartcustom'));
+			$this->redirect($this->url->link('checkout/cart'));
 		}
 			
 		// Coupon    
@@ -47,7 +47,7 @@ class ControllerCheckoutCartcustom extends Controller {
 				
 			$this->session->data['success'] = $this->language->get('text_coupon');
 			
-			$this->redirect($this->url->link('checkout/cartcustom'));
+			$this->redirect($this->url->link('checkout/cart'));
 		}
 		
 		// Voucher
@@ -56,7 +56,7 @@ class ControllerCheckoutCartcustom extends Controller {
 				
 			$this->session->data['success'] = $this->language->get('text_voucher');
 				
-			$this->redirect($this->url->link('checkout/cartcustom'));
+			$this->redirect($this->url->link('checkout/cart'));
 		}
 
 		// Reward
@@ -65,7 +65,7 @@ class ControllerCheckoutCartcustom extends Controller {
 				
 			$this->session->data['success'] = $this->language->get('text_reward');
 				
-			$this->redirect($this->url->link('checkout/cartcustom'));
+			$this->redirect($this->url->link('checkout/cart'));
 		}
 		
 		// Shipping
@@ -76,7 +76,7 @@ class ControllerCheckoutCartcustom extends Controller {
 			
 			$this->session->data['success'] = $this->language->get('text_shipping');
 			
-			$this->redirect($this->url->link('checkout/cartcustom'));
+			$this->redirect($this->url->link('checkout/cart'));
 		}
 		
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -92,7 +92,7 @@ class ControllerCheckoutCartcustom extends Controller {
       	); 
 
       	$this->data['breadcrumbs'][] = array(
-        	'href'      => $this->url->link('checkout/cartcustom'),
+        	'href'      => $this->url->link('checkout/cart'),
         	'text'      => $this->language->get('heading_title'),
         	'separator' => $this->language->get('text_separator')
       	);
@@ -167,7 +167,7 @@ class ControllerCheckoutCartcustom extends Controller {
 				$this->data['success'] = '';
 			}
 			
-			$this->data['action'] = $this->url->link('checkout/cartcustom');   
+			$this->data['action'] = $this->url->link('checkout/cart');   
 						
 			if ($this->config->get('config_cart_weight')) {
 				$this->data['weight'] = $this->weight->format($this->cart->getWeight(), $this->config->get('config_weight_class_id'), $this->language->get('decimal_point'), $this->language->get('thousand_point'));
@@ -232,7 +232,6 @@ class ControllerCheckoutCartcustom extends Controller {
 				}
 				
         		$this->data['products'][] = array(
-        			'product_id'	   => $product['product_id'],
           			'key'      => $product['key'],
           			'thumb'    => $image,
 					'name'     => $product['name'],
@@ -244,7 +243,7 @@ class ControllerCheckoutCartcustom extends Controller {
 					'price'    => $price,
 					'total'    => $total,
 					'href'     => $this->url->link('product/product', 'product_id=' . $product['product_id']),
-					'remove'   => $this->url->link('checkout/cartcustom', 'remove=' . $product['key'])
+					'remove'   => $this->url->link('checkout/cart', 'remove=' . $product['key'])
 				);
       		}
 			
@@ -257,7 +256,7 @@ class ControllerCheckoutCartcustom extends Controller {
 						'key'         => $key,
 						'description' => $voucher['description'],
 						'amount'      => $this->currency->format($voucher['amount']),
-						'remove'      => $this->url->link('checkout/cartcustom', 'remove=' . $key)   
+						'remove'      => $this->url->link('checkout/cart', 'remove=' . $key)   
 					);
 				}
 			}
@@ -378,10 +377,10 @@ class ControllerCheckoutCartcustom extends Controller {
 						
 			$this->data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
 
-			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/checkout/cartcustom.tpl')) {
-				$this->template = $this->config->get('config_template') . '/template/checkout/cartcustom.tpl';
+			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/checkout/cart.tpl')) {
+				$this->template = $this->config->get('config_template') . '/template/checkout/cart.tpl';
 			} else {
-				$this->template = 'default/template/checkout/cartcustom.tpl';
+				$this->template = 'default/template/checkout/cart.tpl';
 			}
 			
 			$this->children = array(
@@ -505,7 +504,7 @@ class ControllerCheckoutCartcustom extends Controller {
 	}
 								
 	public function add() {
-		$this->language->load('checkout/cartcustom');
+		$this->language->load('checkout/cart');
 		
 		$json = array();
 		
@@ -543,7 +542,7 @@ class ControllerCheckoutCartcustom extends Controller {
 			if (!$json) {
 				$this->cart->add($this->request->post['product_id'], $quantity, $option);
 
-				$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']), $product_info['name'], $this->url->link('checkout/cartcustom'));
+				$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']), $product_info['name'], $this->url->link('checkout/cart'));
 				
 				unset($this->session->data['shipping_method']);
 				unset($this->session->data['shipping_methods']);
@@ -596,7 +595,7 @@ class ControllerCheckoutCartcustom extends Controller {
 	}
 	
 	public function quote() {
-		$this->language->load('checkout/cartcustom');
+		$this->language->load('checkout/cart');
 		
 		$json = array();	
 		
