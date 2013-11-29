@@ -51,6 +51,14 @@ if($o_user == 0)
         font-size: 12px;
         line-height: 18px;
         border-radius: 5px;
+        color: #fff;
+        display: inline-block;
+        padding: 4px 10px;
+        white-space: nowrap;
+        font-size: 12px;
+        line-height: 19px;
+        text-transform: uppercase;
+        font-weight: normal;
     }
     </style>
     <div style="text-align: center;">Voc&ecirc; precisa estar logado no facebook para conseguir utilizar suas fotos!
