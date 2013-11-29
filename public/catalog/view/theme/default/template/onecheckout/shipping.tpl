@@ -25,18 +25,24 @@
   <tr>
     <td colspan="3">
       <?php
-        if (
-            $shipping_method['error'] != "PAC: CEP de destino invalido." ||
-            $shipping_method['error'] != "SEDEX: CEP de destino invalido." || 
-            $shipping_method['error'] != "SEDEX 10: CEP de destino invalido."
-          ) { ?>
-          <div class="error"><?php echo $shipping_method['error']; ?></div>    
-        <?php } else { ?>
-          <div style="color: #8e8e8e;" >
-          CEP deve ser preenchido
-          </div>    
-        <?php } ?>
-      
+        switch ($shipping_method['error']) {
+          case 'PAC: CEP de destino invalido.':
+              echo "1";
+            break;
+
+          case 'SEDEX: CEP de destino invalido.':
+              echo "2";
+            break;
+
+          case 'SEDEX 10: CEP de destino invalido.':
+              echo "3";
+            break;
+          
+          default:
+              ?><div class="error"><?php echo $shipping_method['error']; ?></div><?php
+            break;
+        }
+      ?>
     </td>
   </tr>
   <?php } ?>
