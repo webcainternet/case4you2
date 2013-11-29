@@ -496,13 +496,10 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 		<div class="fontc4y2" style="color: #6aa11a; font-size: 24px;float: left;width: 80px;">Assine</div>
 		<div class="fontc4y1" style="color: #606060; font-size: 24px;float: left;width: 140px;"> Case4You!</div>
 
-		<div class="fontc4y1" style="color: #606060; float: left; width: 220px;text-align: center;margin-bottom: 5px;"><input id="txtnews" type="text" value="" style="float: left;width: 155px;border-radius: 5px;
-height: 25px;
-margin-top: 5px;"><input type="image" src="/catalog/view/theme/theme254/image/button-email.png" onclick="cademail()" style="width: 51px;
-float: left;
-margin-left: 5px;
-border-radius: 5px;
-margin-top: 5px;"></div>
+		<div class="fontc4y1" style="color: #606060; float: left; width: 220px;text-align: center;margin-bottom: 5px;">
+			<input id="txtnews" name="txtnews" placeholder="Cadastrar" type="text" value="" style="float: left;width: 155px;border-radius: 5px; height: 25px; margin-top: 5px;">
+			<input type="image" src="/catalog/view/theme/theme254/image/button-email.png" onclick="cademail()" style="width: 51px; float: left; margin-left: 5px; border-radius: 5px; margin-top: 5px;">
+		</div>
 
 		<div class="fontc4y1" style="color: #606060; font-size: 12px;float: left;width: 200px; width: 220px;text-align: center;margin-bottom: 10px;">Receba nossas ofertas por email!</div>
 
