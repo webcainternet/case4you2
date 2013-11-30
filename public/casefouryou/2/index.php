@@ -121,8 +121,8 @@ else {
                 ">
                 <?php echo "<img src='{$photo['source']}' "; ?>
                 id="drag<?php echo $ic; ?>" draggable="true"
-                ondragstart="drag(event)" style="max-width:100%; max-height:100%;">
-        </div>
+                ondragstart="drag(event)" style="max-width:100%; max-height:100%;" />
+            </div>
 <?php
       }
 
