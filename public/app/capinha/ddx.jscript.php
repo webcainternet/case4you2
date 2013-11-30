@@ -27,8 +27,8 @@ function saveposition(idsession, posicao, imagemurl, nheight, nwidth, nleft, nto
 
 function drop(ev, posicao)
 {
-
-
+    var divname = 'divl1';
+    lixeiraremove(divname);
 
 	ev.preventDefault();
 	var data=ev.dataTransfer.getData("Text");
@@ -77,9 +77,6 @@ function drop(ev, posicao)
     //saveposition(posicao, imagemurl);
     idtsession = document.getElementById("idsession").value;
 	saveposition(idtsession, posicao, imagemurl, nheight, nwidth, nleft, ntop);
-
-    var divname = 'divl1';
-    lixeiraremove(divname);
 }
 
 function dropl2(ev, posicao)
