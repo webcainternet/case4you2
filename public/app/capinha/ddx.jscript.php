@@ -27,6 +27,10 @@ function saveposition(idsession, posicao, imagemurl, nheight, nwidth, nleft, nto
 
 function drop(ev, posicao)
 {
+    
+    var divname = 'divl1';
+    lixeiraremove(divname);
+    
     ev.preventDefault();
 	var data=ev.dataTransfer.getData("Text");
 	//ev.target.appendChild(document.getElementById(data));
@@ -77,8 +81,6 @@ function drop(ev, posicao)
 
     //$('#div'+data).remove();
 
-    var divname = 'divl1';
-    lixeiraremove(divname);
 }
 
 function dropl2(ev, posicao)
