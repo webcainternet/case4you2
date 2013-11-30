@@ -27,6 +27,7 @@ function saveposition(idsession, posicao, imagemurl, nheight, nwidth, nleft, nto
 
 function drop(ev, posicao)
 {
+    var existeitem = 0;
     var eldvposicao=document.getElementById('divl1'); 
 
     var eldvsubChildren = eldvposicao.childNodes;
@@ -53,63 +54,67 @@ function drop(ev, posicao)
             eldvsubChildren.item(i).id != "dvfechar14" &&
             eldvsubChildren.item(i).id != "dvfechar15" ) {
 
-            alert(eldvsubChildren.item(i).id);
-            //$('#'+eldvsubChildren.item(i).id).remove();
-            //$('#preview').prepend(imgvoltar);
+            //alert(eldvsubChildren.item(i).id);
+            existeitem = 1;
         }
     }
 
+    if (existeitem == 1) {
+        alert("Você deve remover a imagem existente antes de inserir outra no local, clique no [x] para excluir!");
+    }
+    else {
 
 
-    ev.preventDefault();
-	var data=ev.dataTransfer.getData("Text");
-	//ev.target.appendChild(document.getElementById(data));
-	//document.getElementById(data).style.opacity='0.75';
-	//document.getElementById(data).style.filter='alpha(opacity=75)';
+        ev.preventDefault();
+    	var data=ev.dataTransfer.getData("Text");
+    	//ev.target.appendChild(document.getElementById(data));
+    	//document.getElementById(data).style.opacity='0.75';
+    	//document.getElementById(data).style.filter='alpha(opacity=75)';
 
-	iwidth=document.getElementById(data).width;
-	iheight=document.getElementById(data).height;
+    	iwidth=document.getElementById(data).width;
+    	iheight=document.getElementById(data).height;
 
-	// --- Variaveis ---
-    pheight=<?php echo $mh; ?>;
-    pwidth=<?php echo $mw; ?>;
-	//pheight=527;
-	//pwidth=340;
-	// -----------------
+    	// --- Variaveis ---
+        pheight=<?php echo $mh; ?>;
+        pwidth=<?php echo $mw; ?>;
+    	//pheight=527;
+    	//pwidth=340;
+    	// -----------------
 
-	idiff=iheight/iwidth;
-	iprop=pheight/pwidth;
-	if (idiff<iprop) {
-		document.getElementById(data).height=pheight;
-		nheight = pheight;
-		nwidth=pheight/iheight*iwidth;
-		document.getElementById(data).width=nwidth;
+    	idiff=iheight/iwidth;
+    	iprop=pheight/pwidth;
+    	if (idiff<iprop) {
+    		document.getElementById(data).height=pheight;
+    		nheight = pheight;
+    		nwidth=pheight/iheight*iwidth;
+    		document.getElementById(data).width=nwidth;
 
-		ntop=0;
-		nleft=(pwidth-nwidth)/2;
-		document.getElementById(data).style.marginLeft=nleft+'px';
-	} else {
-	        document.getElementById(data).width=pwidth;
-		nwidth=pwidth;
-		nheight=pwidth/iwidth*iheight;
-		document.getElementById(data).height=nheight;
+    		ntop=0;
+    		nleft=(pwidth-nwidth)/2;
+    		document.getElementById(data).style.marginLeft=nleft+'px';
+    	} else {
+    	        document.getElementById(data).width=pwidth;
+    		nwidth=pwidth;
+    		nheight=pwidth/iwidth*iheight;
+    		document.getElementById(data).height=nheight;
 
-		nleft=0;
-		ntop=(pheight-nheight)/2;
-		document.getElementById(data).style.marginTop=ntop+'px';
-	}
-	document.getElementById(data).style.maxHeight='5000%';
-	document.getElementById(data).style.maxWidth='5000%';
+    		nleft=0;
+    		ntop=(pheight-nheight)/2;
+    		document.getElementById(data).style.marginTop=ntop+'px';
+    	}
+    	document.getElementById(data).style.maxHeight='5000%';
+    	document.getElementById(data).style.maxWidth='5000%';
 
-	document.getElementById("div"+data).style.display='none';
-	ev.target.appendChild(document.getElementById(data));
+    	document.getElementById("div"+data).style.display='none';
+    	ev.target.appendChild(document.getElementById(data));
 
-    imagemurl = document.getElementById(data).src;
-    //saveposition(posicao, imagemurl);
-    idtsession = document.getElementById("idsession").value;
-	saveposition(idtsession, posicao, imagemurl, nheight, nwidth, nleft, ntop);
+        imagemurl = document.getElementById(data).src;
+        //saveposition(posicao, imagemurl);
+        idtsession = document.getElementById("idsession").value;
+    	saveposition(idtsession, posicao, imagemurl, nheight, nwidth, nleft, ntop);
 
-    $('#div'+data).remove();
+        $('#div'+data).remove();
+    }
 }
 
 function dropl2(ev, posicao)
