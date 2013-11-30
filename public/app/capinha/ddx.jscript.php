@@ -31,7 +31,10 @@ function drop(ev, posicao)
         var data=ev.dataTransfer.getData("Text");
 
     var existeitem = 0;
-    var eldvposicao=document.getElementById('divl1'); 
+
+    var dvpsc = 'divl1';
+
+    var eldvposicao = document.getElementById(dvpsc); 
 
     var eldvsubChildren = eldvposicao.childNodes;
     for(var i = 0; i < eldvsubChildren.length; i++) 
@@ -121,6 +124,49 @@ function dropl2(ev, posicao)
 {
         ev.preventDefault();
         var data=ev.dataTransfer.getData("Text");
+
+    var existeitem = 0;
+
+    var dvpsc = '';
+    if (posicao == 1) { dvpsc = 'divl2a'; }
+    if (posicao == 2) { dvpsc = 'divl2b'; }    
+
+    var eldvposicao = document.getElementById(dvpsc); 
+
+    var eldvsubChildren = eldvposicao.childNodes;
+    for(var i = 0; i < eldvsubChildren.length; i++) 
+    { 
+        if (eldvsubChildren.item(i).id != null && 
+            eldvsubChildren.item(i).id != "" &&
+            eldvsubChildren.item(i).id != "dvcontroles" &&
+            eldvsubChildren.item(i).id != "dvcontroles1" &&
+            eldvsubChildren.item(i).id != "dvcontroles2" &&
+            eldvsubChildren.item(i).id != "dvfechar1" &&
+            eldvsubChildren.item(i).id != "dvfechar2" &&
+            eldvsubChildren.item(i).id != "dvfechar3" &&
+            eldvsubChildren.item(i).id != "dvfechar4" &&
+            eldvsubChildren.item(i).id != "dvfechar5" &&
+            eldvsubChildren.item(i).id != "dvfechar6" &&
+            eldvsubChildren.item(i).id != "dvfechar7" &&
+            eldvsubChildren.item(i).id != "dvfechar8" &&
+            eldvsubChildren.item(i).id != "dvfechar9" &&
+            eldvsubChildren.item(i).id != "dvfechar10" &&
+            eldvsubChildren.item(i).id != "dvfechar11" &&
+            eldvsubChildren.item(i).id != "dvfechar12" &&
+            eldvsubChildren.item(i).id != "dvfechar13" &&
+            eldvsubChildren.item(i).id != "dvfechar14" &&
+            eldvsubChildren.item(i).id != "dvfechar15" ) {
+
+            //alert(eldvsubChildren.item(i).id);
+            existeitem = 1;
+        }
+    }
+
+    if (existeitem == 1) {
+        alert("Você deve remover a imagem existente antes de inserir outra no local, clique no [x] para excluir!");
+    }
+    else {
+
         //ev.target.appendChild(document.getElementById(data));
         //document.getElementById(data).style.opacity='0.75';
         //document.getElementById(data).style.filter='alpha(opacity=75)';
@@ -164,12 +210,69 @@ function dropl2(ev, posicao)
     //saveposition(posicao, imagemurl);
         idtsession = document.getElementById("idsession").value;
         saveposition(idtsession, posicao, imagemurl, nheight, nwidth, nleft, ntop);
+    }
 }
 
 function dropl15a(ev, posicao)
 {
         ev.preventDefault();
         var data=ev.dataTransfer.getData("Text");
+
+
+    var existeitem = 0;
+
+    var dvpsc = '';
+    if (posicao == 1)  { dvpsc = 'divl15b1'; }
+    if (posicao == 2)  { dvpsc = 'divl15b2'; }
+    if (posicao == 5)  { dvpsc = 'divl15a1'; }
+    if (posicao == 3)  { dvpsc = 'divl15b3'; }
+    if (posicao == 4)  { dvpsc = 'divl15b4'; }
+    if (posicao == 6)  { dvpsc = 'divl15a2'; }
+    if (posicao == 8)  { dvpsc = 'divl15b5'; }
+    if (posicao == 7)  { dvpsc = 'divl15b6'; }
+    if (posicao == 10)  { dvpsc = 'divl15b7'; }
+    if (posicao == 9)  { dvpsc = 'divl15b8'; }
+    if (posicao == 11)  { dvpsc = 'divl15b9'; }
+    if (posicao == 12)  { dvpsc = 'divl15b10'; }
+    if (posicao == 15)  { dvpsc = 'divl15a3'; }
+    if (posicao == 13)  { dvpsc = 'divl15b11'; }
+    if (posicao == 14)  { dvpsc = 'divl15b12'; }  
+
+    var eldvposicao = document.getElementById(dvpsc); 
+
+    var eldvsubChildren = eldvposicao.childNodes;
+    for(var i = 0; i < eldvsubChildren.length; i++) 
+    { 
+        if (eldvsubChildren.item(i).id != null && 
+            eldvsubChildren.item(i).id != "" &&
+            eldvsubChildren.item(i).id != "dvcontroles" &&
+            eldvsubChildren.item(i).id != "dvcontroles1" &&
+            eldvsubChildren.item(i).id != "dvcontroles2" &&
+            eldvsubChildren.item(i).id != "dvfechar1" &&
+            eldvsubChildren.item(i).id != "dvfechar2" &&
+            eldvsubChildren.item(i).id != "dvfechar3" &&
+            eldvsubChildren.item(i).id != "dvfechar4" &&
+            eldvsubChildren.item(i).id != "dvfechar5" &&
+            eldvsubChildren.item(i).id != "dvfechar6" &&
+            eldvsubChildren.item(i).id != "dvfechar7" &&
+            eldvsubChildren.item(i).id != "dvfechar8" &&
+            eldvsubChildren.item(i).id != "dvfechar9" &&
+            eldvsubChildren.item(i).id != "dvfechar10" &&
+            eldvsubChildren.item(i).id != "dvfechar11" &&
+            eldvsubChildren.item(i).id != "dvfechar12" &&
+            eldvsubChildren.item(i).id != "dvfechar13" &&
+            eldvsubChildren.item(i).id != "dvfechar14" &&
+            eldvsubChildren.item(i).id != "dvfechar15" ) {
+
+            //alert(eldvsubChildren.item(i).id);
+            existeitem = 1;
+        }
+    }
+
+    if (existeitem == 1) {
+        alert("Você deve remover a imagem existente antes de inserir outra no local, clique no [x] para excluir!");
+    }
+    else {
         //ev.target.appendChild(document.getElementById(data));
         //document.getElementById(data).style.opacity='0.75';
         //document.getElementById(data).style.filter='alpha(opacity=75)';
@@ -213,6 +316,7 @@ function dropl15a(ev, posicao)
     //saveposition(posicao, imagemurl);
         idtsession = document.getElementById("idsession").value;
         saveposition(idtsession, posicao, imagemurl, nheight, nwidth, nleft, ntop);
+    }
 }
 
 function droplixeira(ev)
