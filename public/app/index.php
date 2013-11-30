@@ -477,7 +477,14 @@ border-radius: 5px;
 background-position-y: -28;
 margin-top: 23px;">
 					
-						<a href="/app" id="button-confirmorder" class="button"><span>Reiniciar edição</span></a>
+						<a href="/app" id="button-confirmorder" class="button" style="white-space: nowrap;
+font-size: 12px;
+line-height: 19px;
+text-transform: uppercase;
+font-weight: normal;
+display: inline-block;
+text-decoration: none;
+cursor: pointer;"><span>Reiniciar edição</span></a>
 				</div></a>
 			</div>
 
