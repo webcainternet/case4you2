@@ -28,45 +28,6 @@ function MontaCapa(modelo, layout) {
 }
 
 
-
-function lixeiraremove2(divname, divname2) {
-   var eldvposicao=document.getElementById(divname); 
-
-   var eldvposicaoChildren = eldvposicao.childNodes; 
-   for(var i = 0; i < eldvposicaoChildren.length; i++) 
-   { 
-      if (eldvposicaoChildren.item(i).id != null && 
-         eldvposicaoChildren.item(i).id != "" &&
-         eldvposicaoChildren.item(i).id != divname2 &&
-         eldvposicaoChildren.item(i).id != "dvcontroles" &&
-         eldvposicaoChildren.item(i).id != "dvcontroles1" &&
-         eldvposicaoChildren.item(i).id != "dvcontroles2" &&
-         eldvposicaoChildren.item(i).id != "dvfechar1" &&
-         eldvposicaoChildren.item(i).id != "dvfechar2" &&
-         eldvposicaoChildren.item(i).id != "dvfechar3" &&
-         eldvposicaoChildren.item(i).id != "dvfechar4" &&
-         eldvposicaoChildren.item(i).id != "dvfechar5" &&
-         eldvposicaoChildren.item(i).id != "dvfechar6" &&
-         eldvposicaoChildren.item(i).id != "dvfechar7" &&
-         eldvposicaoChildren.item(i).id != "dvfechar8" &&
-         eldvposicaoChildren.item(i).id != "dvfechar9" &&
-         eldvposicaoChildren.item(i).id != "dvfechar10" &&
-         eldvposicaoChildren.item(i).id != "dvfechar11" &&
-         eldvposicaoChildren.item(i).id != "dvfechar12" &&
-         eldvposicaoChildren.item(i).id != "dvfechar13" &&
-         eldvposicaoChildren.item(i).id != "dvfechar14" &&
-         eldvposicaoChildren.item(i).id != "dvfechar15" ) {
-
-         var imgvoltar = '<div id="div'+eldvposicaoChildren.item(i).id+'" style="background-color: #FFFFFF; width: 50px; float: left; overflow: hidden; height: 50px; background: rgba(255,255,255,0.8); position: relative; display: inline-block; margin: 5px; vertical-align: top; border: 1px solid #acacac; padding: 6px 6px 6px 6px; -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.16); box-shadow: 1px 1px 4px rgba(0,0,0,0.16); font-size: 14px; "> <img src="'+$('#'+eldvposicaoChildren.item(i).id).prop('src')+'" id="'+eldvposicaoChildren.item(i).id+'" draggable="true" ondragstart="drag(event)" style="max-width:100%; max-height:100%;"> </div>';
-
-         $('#'+eldvposicaoChildren.item(i).id).remove();
-
-         $('#preview').prepend(imgvoltar);
-      }
-   }
-}
-
-
 function lixeiraremove(divname) {
    var eldvposicao=document.getElementById(divname); 
 
@@ -100,6 +61,8 @@ function lixeiraremove(divname) {
          $('#'+eldvposicaoChildren.item(i).id).remove();
 
          $('#preview').prepend(imgvoltar);
+
+         i = eldvposicaoChildren.length;
       }
    }
 }
