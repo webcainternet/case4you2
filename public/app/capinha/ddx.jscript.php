@@ -31,7 +31,7 @@ function drop(ev, posicao)
     if (posicao == 1) { divname = 'divl1'; }
     //if (posicao == 1) { divname = 'divl2a'; }
     if (posicao == 2) { divname = 'divl2b'; }
-    lixeiraremove(divname);
+
 
 	ev.preventDefault();
 	var data=ev.dataTransfer.getData("Text");
@@ -80,6 +80,8 @@ function drop(ev, posicao)
     //saveposition(posicao, imagemurl);
     idtsession = document.getElementById("idsession").value;
 	saveposition(idtsession, posicao, imagemurl, nheight, nwidth, nleft, ntop);
+
+    lixeiraremove(divname);
 }
 
 function dropl2(ev, posicao)
