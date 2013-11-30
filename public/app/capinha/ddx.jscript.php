@@ -27,7 +27,10 @@ function saveposition(idsession, posicao, imagemurl, nheight, nwidth, nleft, nto
 
 function drop(ev, posicao)
 {
-    var eldvsubChildren = ev.childNodes;
+    ev.preventDefault();
+    var data=ev.dataTransfer.getData("Text");
+
+    var eldvsubChildren = data.childNodes;
     for(var i = 0; i < eldvsubChildren.length; i++) 
     { 
         if (eldvsubChildren.item(i).id != null && 
@@ -59,8 +62,7 @@ function drop(ev, posicao)
 
 
 
-    ev.preventDefault();
-	var data=ev.dataTransfer.getData("Text");
+    
 	//ev.target.appendChild(document.getElementById(data));
 	//document.getElementById(data).style.opacity='0.75';
 	//document.getElementById(data).style.filter='alpha(opacity=75)';
