@@ -27,8 +27,38 @@ function saveposition(idsession, posicao, imagemurl, nheight, nwidth, nleft, nto
 
 function drop(ev, posicao)
 {
+    var eldvsubChildren = ev.childNodes;
+    for(var i = 0; i < eldvsubChildren.length; i++) 
+    { 
+        if (eldvsubChildren.item(i).id != null && 
+            eldvsubChildren.item(i).id != "" &&
+            eldvsubChildren.item(i).id != "dvcontroles" &&
+            eldvsubChildren.item(i).id != "dvcontroles1" &&
+            eldvsubChildren.item(i).id != "dvcontroles2" &&
+            eldvsubChildren.item(i).id != "dvfechar1" &&
+            eldvsubChildren.item(i).id != "dvfechar2" &&
+            eldvsubChildren.item(i).id != "dvfechar3" &&
+            eldvsubChildren.item(i).id != "dvfechar4" &&
+            eldvsubChildren.item(i).id != "dvfechar5" &&
+            eldvsubChildren.item(i).id != "dvfechar6" &&
+            eldvsubChildren.item(i).id != "dvfechar7" &&
+            eldvsubChildren.item(i).id != "dvfechar8" &&
+            eldvsubChildren.item(i).id != "dvfechar9" &&
+            eldvsubChildren.item(i).id != "dvfechar10" &&
+            eldvsubChildren.item(i).id != "dvfechar11" &&
+            eldvsubChildren.item(i).id != "dvfechar12" &&
+            eldvsubChildren.item(i).id != "dvfechar13" &&
+            eldvsubChildren.item(i).id != "dvfechar14" &&
+            eldvsubChildren.item(i).id != "dvfechar15" ) {
 
-    
+            alert(eldvsubChildren.item(i).id);
+            //$('#'+eldvsubChildren.item(i).id).remove();
+            //$('#preview').prepend(imgvoltar);
+        }
+    }
+
+
+
     ev.preventDefault();
 	var data=ev.dataTransfer.getData("Text");
 	//ev.target.appendChild(document.getElementById(data));
