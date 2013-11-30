@@ -77,8 +77,8 @@ function drop(ev, posicao)
 
     //$('#div'+data).remove();
 
-    //var divname = 'divl1';
-    //lixeiraremove(divname);
+    var divname = 'divl1';
+    lixeiraremove(divname);
 }
 
 function dropl2(ev, posicao)
