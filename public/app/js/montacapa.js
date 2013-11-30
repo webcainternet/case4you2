@@ -61,8 +61,6 @@ function lixeiraremove(divname) {
          $('#'+eldvposicaoChildren.item(i).id).remove();
 
          $('#preview').prepend(imgvoltar);
-
-         i = eldvposicaoChildren.length;
       }
    }
 }

@@ -75,6 +75,8 @@ function drop(ev, posicao)
     idtsession = document.getElementById("idsession").value;
 	saveposition(idtsession, posicao, imagemurl, nheight, nwidth, nleft, ntop);
 
+    //$('#div'+data).remove();
+
     //var divname = 'divl1';
     //lixeiraremove(divname);
 }
