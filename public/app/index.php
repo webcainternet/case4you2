@@ -478,6 +478,7 @@ background-position-y: -28;
 margin-top: 23px;">
 					
 						<a href="/app" id="button-confirmorder" class="button" style="white-space: nowrap;
+color: #fff;
 font-size: 12px;
 line-height: 19px;
 text-transform: uppercase;
