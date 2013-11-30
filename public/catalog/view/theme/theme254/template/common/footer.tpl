@@ -44,7 +44,6 @@
           <li><a href="/fale-conosco">Fale Conosco</a></li>
           <?php /* <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
           <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li> */ ?>
-          <li><a href="/duvidas">Joao</a></li>
         </ul>
       </div>
       <div class="column col-3">
