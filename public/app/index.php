@@ -459,23 +459,25 @@ else {*/
 			font-size: 11px;">
 			
 			<div style="margin: 0px; padding: 0px; float: left;">
-				<a href="/app" style="color: #fff;
-										display: inline-block;
-										padding: 4px 10px;
-										white-space: nowrap;
-										font-size: 12px;
-										line-height: 19px;
-										text-transform: uppercase;
-										font-weight: normal;
-										display: inline-block;
-										text-decoration: none;
-										cursor: pointer;
-										background: url('../image/button.png') repeat-x left top;
-										font-size: 12px;
-										line-height: 18px;
-										border-radius: 5px;">
-					<a id="button-confirmorder" class="button"><span>Reiniciar edição</span></a>
-				</a>
+				<div style="color: #fff;
+display: inline-block;
+padding: 4px 10px;
+white-space: nowrap;
+font-size: 12px;
+line-height: 19px;
+text-transform: uppercase;
+font-weight: normal;
+display: inline-block;
+text-decoration: none;
+cursor: pointer;
+background: url('../image/button.png') repeat-x left top;
+font-size: 12px;
+line-height: 18px;
+border-radius: 5px;">
+					<a href="/app">
+						<a id="button-confirmorder" class="button"><span>Reiniciar edição</span></a>
+					</a>
+				</div>
 			</div>
 
 			<div style="margin: 0px; padding: 0px; float: right;">
