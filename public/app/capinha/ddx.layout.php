@@ -44,10 +44,10 @@ switch ($ql) {
                 <div id="dvfechar1" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img border="0" src="img/close_red.gif"></a></div>
 
                 <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
-                    <div class="controleico">&nbsp;</div>
-                    <div class="controleico"><a href="#" onclick="giromais('divl1')"><img border="0" src="/app/img/seta_bai.png"></a></div>
-                    <div class="controleico">&nbsp;</div>
-                    <div class="controleico"><a href="#" onclick="giromais('divl1')"><img border="0" src="/app/img/seta_men.png"></a></div>
+                    <div class="controleico">1</div>
+                    <div class="controleico">2</div>
+                    <div class="controleico">3</div>
+                    <div class="controleico">4</div>
 
                     <div class="controleico">&nbsp;</div>
                     <div class="controleico"><a href="#" onclick="moverup('divl1')"><img border="0" src="/app/img/seta_cim.png"></a></div>
