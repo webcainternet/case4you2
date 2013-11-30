@@ -459,7 +459,7 @@ else {*/
 			font-size: 11px;">
 			
 			<div style="margin: 0px; padding: 0px; float: left;">
-				<div style="color: #fff;
+				<a href="/app"><div style="color: #fff;
 display: inline-block;
 padding: 4px 10px;
 white-space: nowrap;
@@ -473,11 +473,12 @@ cursor: pointer;
 background: url('/catalog/view/theme/theme254/image/button.png') repeat-x left top;
 font-size: 12px;
 line-height: 18px;
-border-radius: 5px;">
-					<a href="/app">
-						<a id="button-confirmorder" class="button"><span>Reiniciar edição</span></a>
-					</a>
-				</div>
+border-radius: 5px;
+background-position-y: -28;
+margin-top: 23px;">
+					
+						<a href="/app" id="button-confirmorder" class="button"><span>Reiniciar edição</span></a>
+				</div></a>
 			</div>
 
 			<div style="margin: 0px; padding: 0px; float: right;">
