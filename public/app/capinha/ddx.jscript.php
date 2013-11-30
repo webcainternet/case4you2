@@ -27,6 +27,12 @@ function saveposition(idsession, posicao, imagemurl, nheight, nwidth, nleft, nto
 
 function drop(ev, posicao)
 {
+    var divname = '';
+    if (posicao == 1) { divname = 'divl1'; }
+    //if (posicao == 1) { divname = 'divl2a'; }
+    if (posicao == 2) { divname = 'divl2b'; }
+    lixeiraremove(divname);
+
 	ev.preventDefault();
 	var data=ev.dataTransfer.getData("Text");
 	//ev.target.appendChild(document.getElementById(data));
