@@ -96,7 +96,7 @@ else {
     
 
       $album_id = $_GET["idalbum"];
-      $photos = $facebook->api("/{$album_id}/photos");
+      $photos = $facebook->api("/{$album_id}/photos?limit=1000&offset=0");
 
     $adate1 = date_create();
     $atimestamp1 = date_timestamp_get($adate1);
