@@ -397,7 +397,7 @@ else {*/
 				* O limite de tamanho da imagem enviada &eacute; de at&eacute; 3MB<br />
 				* Preencha toda a &aacute;rea pontilhada para imprimir nas laterais da capinha
 
-				<div><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fcase4you.com.br%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=533870426700085" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe></div>
+				<div><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fcase4you.com.br%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=533870426700085" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px; width: 370px; margin-top: 10px;" allowTransparency="true"></iframe></div>
 			</div>
 
 
