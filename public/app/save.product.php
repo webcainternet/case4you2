@@ -4,6 +4,84 @@ $qm = $_GET["m"];
 $ql = $_GET["l"];
 $qf = $_GET["f"];
 
+
+switch ($ql) {
+    //Layout 1 fotos
+	case 0:
+		switch ($qm) {
+			//IPHONE4 IPHONE4S
+			case 0:
+			$textoprod = "Capinha personalizada Iphone4/4S com 1 foto";
+			break;
+
+			//IPHONE5
+			case 1:
+			$textoprod = "Capinha personalizada Iphone5/5S com 1 foto";
+			break;
+
+			//GALAXYS3
+			case 2:
+			$textoprod = "Capinha personalizada Galaxy S3 com 1 foto";
+			break;
+
+			//GALAXYS4
+			case 3:
+			$textoprod = "Capinha personalizada Galaxy S4 com 1 foto";
+			break;
+		}
+		break;
+
+    //Layout 2 fotos
+	case 1:
+		switch ($qm) {
+			//IPHONE4 IPHONE4S
+			case 0:
+			$textoprod = "Capinha personalizada Iphone4/4S com 2 fotos";
+			break;
+
+			//IPHONE5
+			case 1:
+			$textoprod = "Capinha personalizada Iphone5/5S com 2 fotos";
+			break;
+
+			//GALAXYS3
+			case 2:
+			$textoprod = "Capinha personalizada Galaxy S3 com 2 fotos";
+			break;
+
+			//GALAXYS4
+			case 3:
+			$textoprod = "Capinha personalizada Galaxy S4 com 2 fotos";
+			break;
+		}
+		break;
+
+    //Layout 15 fotos
+    case 2:
+		switch ($qm) {
+			//IPHONE4 IPHONE4S
+			case 0:
+			$textoprod = "Capinha personalizada Iphone4/4S com 15 fotos";
+			break;
+
+			//IPHONE5
+			case 1:
+			$textoprod = "Capinha personalizada Iphone5/5S com 15 fotos";
+			break;
+
+			//GALAXYS3
+			case 2:
+			$textoprod = "Capinha personalizada Galaxy S3 com 15 fotos";
+			break;
+
+			//GALAXYS4
+			case 3:
+			$textoprod = "Capinha personalizada Galaxy S4 com 15 fotos";
+			break;
+		}
+		break;
+	}
+
 include '../config.php';
 
 $dblink = mysql_connect(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD);
@@ -74,7 +152,7 @@ if (isset($novoid)) {
 			`meta_keyword` ,
 			`tag`
 			)
-			VALUES ('".$novoid."',  '2',  'Capinha 3D Personalizada',  'A capinha com a sua cara',  '',  '',  '')";
+			VALUES ('".$novoid."',  '2',  '".$textoprod."',  'A capinha com a sua cara',  '',  '',  '')";
 
 		$rquery2 = mysql_query($iquery2,$dblink);
 
