@@ -475,7 +475,8 @@ h2 {
 	top:54px;
 	background:#fff;
 	z-index:99999;
-	width:235px;
+	/* width:235px; */
+	width: 361px;
 	float:right;
 	box-shadow:1px 1px 5px #b0b0af;
 	-webkit-transition: all 0.5s ease-in-out;
