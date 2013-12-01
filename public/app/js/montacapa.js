@@ -610,10 +610,11 @@ function virarmais(dvposicao) {
       eldvposicaoChildren.item(i).id != "dvfechar14" &&
       eldvposicaoChildren.item(i).id != "dvfechar15" ) {
 
-      alert($('#'+eldvposicaoChildren.item(i).id).width());
+      alert($('#'+eldvposicaoChildren.item(i).id).css({'transform'));
 
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
 
+         /* virar */
          (function( $ ){
          $.fn.rotate = function(deg) {
              this.css({'transform': 'rotate('+deg+'deg)'});
@@ -624,6 +625,7 @@ function virarmais(dvposicao) {
              return this; 
          };
          })( jQuery );
+         /* virar fim */
 
          $('#'+eldvposicaoChildren.item(i).id).rotate(90);
       }

@@ -1,27 +1,3 @@
-.r0deg {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  rotation: 0deg;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-}
-.r90deg {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  rotation: 90deg;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-}
-.r180deg {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  rotation: 180deg;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-}
-.r270deg {
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
 .bordapontilhada {
     border: dashed 3px white; margin-left: 10px; width: 339px;
 }
