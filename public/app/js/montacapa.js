@@ -628,7 +628,9 @@ function virarmais(dvposicao) {
          /* virar fim */
 
          $('#'+eldvposicaoChildren.item(i).id).rotate(90);
-         alert(dvposicao);
+         $("#rot"+dvposicao).val("90");
+
+         alert(document.getElementById('rot'+dvposicao).value);
 
       }
    }

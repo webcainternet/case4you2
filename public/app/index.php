@@ -507,6 +507,9 @@ cursor: pointer;"><span>Reiniciar edição</span></a>
 <input type="hidden" name="layoutdacapinha" id="layoutdacapinha" value="">
 <input type="hidden" name="filtrocapinha" id="filtrocapinha" value="">
 <input type="hidden" name="idsession" id="idsession" value="<?php echo $idcsession; ?>">
+<input type="hidden" name="rotdivl1" id="rotdivl1" value="">
+<input type="hidden" name="rotdivl2a" id="rotdivl2a" value="">
+<input type="hidden" name="rotdivl2b" id="rotdivl2b" value="">
 
 
 
