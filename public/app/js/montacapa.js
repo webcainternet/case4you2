@@ -584,6 +584,13 @@ function moverdir(dvposicao) {
 }
 
 function virarmais(dvposicao) {
+   var estavirado = document.getElementById('rot'+dvposicao).value;
+   var novovirado = '0';
+   if (estavirado == '0') { novovirado = '90'; }
+   if (estavirado == '90') { novovirado = '180'; }
+   if (estavirado == '180') { novovirado = '270'; }
+   if (estavirado == '270') { novovirado = '0'; }
+
    var eldvposicao=document.getElementById(dvposicao); 
 
    var eldvposicaoChildren = eldvposicao.childNodes; 
@@ -627,8 +634,8 @@ function virarmais(dvposicao) {
          })( jQuery );
          /* virar fim */
 
-         $('#'+eldvposicaoChildren.item(i).id).rotate(90);
-         $("#rot"+dvposicao).val("90");
+         $('#'+eldvposicaoChildren.item(i).id).rotate(novovirado);
+         $("#rot"+dvposicao).val(novovirado);
 
          alert(document.getElementById('rot'+dvposicao).value);
 
