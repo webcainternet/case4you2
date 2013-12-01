@@ -27,7 +27,7 @@ class Instagram {
   /**
    * The OAuth token URL
    */
-  const API_OAUTH_TOKEN_URL = 'https://api.instagram.com/oauth/access_token?count=250';
+  const API_OAUTH_TOKEN_URL = 'https://api.instagram.com/oauth/access_token';
 
   /**
    * The Instagram API Key
@@ -139,8 +139,8 @@ class Instagram {
    * @param integer [optional] $limit     Limit of returned results
    * @return mixed
    */
-  public function getUserMedia($id = 'self', $limit = 250) {
-    return $this->_makeCall('users/'.$id.'/media/recent', true, array('count' => $limit));
+  public function getUserMedia($id = 'self', $limit = 500) {
+    return $this->_makeCall('users/'.$id.'/media/recent?count=250', true, array('count' => $limit));
   }
 
   /**
