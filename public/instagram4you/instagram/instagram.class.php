@@ -140,6 +140,7 @@ class Instagram {
    * @return mixed
    */
   public function getUserMedia($id = 'self', $limit = 500) {
+    //return $this->_makeCall('users/'.$id.'/media/recent', true, array('count' => $limit));
     return $this->_makeCall('users/'.$id.'/media/recent', true, array('count' => $limit));
   }
 
@@ -248,7 +249,7 @@ class Instagram {
     } else {
       // if the call needs a authenticated user
       if (true === isset($this->_accesstoken)) {
-        $authMethod = '?access_token='.$this->getAccessToken();
+        $authMethod = '?access_token='.$this->getAccessToken().'&count=200';
       } else {
         throw new Exeption("Error: _makeCall() | $function - This method requires an authenticated users access token.");
       }
