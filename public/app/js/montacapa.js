@@ -610,6 +610,8 @@ function virarmais(dvposicao) {
       eldvposicaoChildren.item(i).id != "dvfechar14" &&
       eldvposicaoChildren.item(i).id != "dvfechar15" ) {
 
+      alert($('#'+eldvposicaoChildren.item(i).id).width());
+
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
 
          (function( $ ){
@@ -623,8 +625,9 @@ function virarmais(dvposicao) {
          };
          })( jQuery );
 
-         $(eldvposicaoChildren.item(i).id).rotate(90);
+         $('#'+eldvposicaoChildren.item(i).id).rotate(90);
       }
+
       
    }
 }
