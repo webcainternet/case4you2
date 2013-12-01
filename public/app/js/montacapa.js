@@ -636,9 +636,6 @@ function virarmais(dvposicao) {
 
          $('#'+eldvposicaoChildren.item(i).id).rotate(novovirado);
          $("#rot"+dvposicao).val(novovirado);
-
-         alert(document.getElementById('rot'+dvposicao).value);
-
       }
    }
 }
