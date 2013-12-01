@@ -248,7 +248,7 @@ class Instagram {
     } else {
       // if the call needs a authenticated user
       if (true === isset($this->_accesstoken)) {
-        $authMethod = '?count=-1&access_token='.$this->getAccessToken();
+        $authMethod = '?access_token='.$this->getAccessToken();
       } else {
         throw new Exeption("Error: _makeCall() | $function - This method requires an authenticated users access token.");
       }
