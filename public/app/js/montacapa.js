@@ -612,7 +612,13 @@ function virarmais(dvposicao) {
 
          var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
          alert($(eldvposicaoChildren.item(i).id).css('rotation'));
+         
+         $(eldvposicaoChildren.item(i).id).css('-webkit-transform', 'rotate(90deg)');
+         $(eldvposicaoChildren.item(i).id).css('-moz-transform', 'rotate(90deg)');
+         $(eldvposicaoChildren.item(i).id).css('rotation', '90deg');
+         $(eldvposicaoChildren.item(i).id).css('filter', 'progid:DXImageTransform.Microsoft.BasicImage(rotation=0)');
 
+         alert($(eldvposicaoChildren.item(i).id).css('rotation'));
       }
       
    }
