@@ -629,6 +629,10 @@ function virarmais(dvposicao) {
 
          $('#'+eldvposicaoChildren.item(i).id).rotate(90);
 
+         alert($('#'+eldvposicaoChildren.item(i).id).css('transform'));
+         alert($('#'+eldvposicaoChildren.item(i).id).css('-ms-transform'));
+         alert($('#'+eldvposicaoChildren.item(i).id).css('-moz-transform'));
+         alert($('#'+eldvposicaoChildren.item(i).id).css('-o-transform'));
          alert($('#'+eldvposicaoChildren.item(i).id).css('-webkit-transform'));
       }
    }
