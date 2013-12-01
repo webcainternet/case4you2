@@ -640,6 +640,64 @@ function virarmais(dvposicao) {
    }
 }
 
+
+function virarmenos(dvposicao) {
+   var estavirado = document.getElementById('rot'+dvposicao).value;
+   var novovirado = '270';
+   if (estavirado == '90') { novovirado = '0'; }
+   if (estavirado == '180') { novovirado = '90'; }
+   if (estavirado == '270') { novovirado = '180'; }
+   if (estavirado == '0') { novovirado = '270'; }
+
+   var eldvposicao=document.getElementById(dvposicao); 
+
+   var eldvposicaoChildren = eldvposicao.childNodes; 
+   for(var i = 0; i < eldvposicaoChildren.length; i++) 
+   { 
+      if (eldvposicaoChildren.item(i).id != null && 
+      eldvposicaoChildren.item(i).id != "" &&
+      eldvposicaoChildren.item(i).id != "dvcontroles" &&
+      eldvposicaoChildren.item(i).id != "dvcontroles1" &&
+      eldvposicaoChildren.item(i).id != "dvcontroles2" &&
+      eldvposicaoChildren.item(i).id != "dvfechar1" &&
+      eldvposicaoChildren.item(i).id != "dvfechar2" &&
+      eldvposicaoChildren.item(i).id != "dvfechar3" &&
+      eldvposicaoChildren.item(i).id != "dvfechar4" &&
+      eldvposicaoChildren.item(i).id != "dvfechar5" &&
+      eldvposicaoChildren.item(i).id != "dvfechar6" &&
+      eldvposicaoChildren.item(i).id != "dvfechar7" &&
+      eldvposicaoChildren.item(i).id != "dvfechar8" &&
+      eldvposicaoChildren.item(i).id != "dvfechar9" &&
+      eldvposicaoChildren.item(i).id != "dvfechar10" &&
+      eldvposicaoChildren.item(i).id != "dvfechar11" &&
+      eldvposicaoChildren.item(i).id != "dvfechar12" &&
+      eldvposicaoChildren.item(i).id != "dvfechar13" &&
+      eldvposicaoChildren.item(i).id != "dvfechar14" &&
+      eldvposicaoChildren.item(i).id != "dvfechar15" ) {
+
+      
+
+         var elimagem=document.getElementById(eldvposicaoChildren.item(i).id); 
+
+         /* virar */
+         (function( $ ){
+         $.fn.rotate = function(deg) {
+             this.css({'transform': 'rotate('+deg+'deg)'});
+             this.css({'-ms-transform': 'rotate('+deg+'deg)'});
+             this.css({'-moz-transform': 'rotate('+deg+'deg)'});
+             this.css({'-o-transform': 'rotate('+deg+'deg)'}); 
+             this.css({'-webkit-transform': 'rotate('+deg+'deg)'});
+             return this; 
+         };
+         })( jQuery );
+         /* virar fim */
+
+         $('#'+eldvposicaoChildren.item(i).id).rotate(novovirado);
+         $("#rot"+dvposicao).val(novovirado);
+      }
+   }
+}
+
 function updateposition(idsession, posicao, nheight, nwidth, nleft, ntop)
 {
     document.getElementById("invfr"+posicao).src="https://case4you.com.br/app/update.posicao.php?idcsession="+idsession+"&posicao="+posicao+"&imagem="+imagemurl+"&nheight="+nheight+"&nwidth="+nwidth+"&nleft="+nleft+"&ntop="+ntop;
