@@ -44,9 +44,9 @@ switch ($ql) {
                 <div id="dvfechar1" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl1')"><img border="0" src="img/close_red.gif"></a></div>
 
                 <div id="dvcontroles" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
-                    <div class="controleico"><a href="#" onclick="virarmais('divl1')"><img border="0" src="/app/img/seta_mai.png"></a></div>
+                    <div class="controleico"><a href="#" onclick="virarmais('divl1')"><img border="0" src="/app/img/seta_rotmais.png"></a></div>
                     <div class="controleico">&nbsp;</div>
-                    <div class="controleico"><a href="#" onclick="virarmenos('divl1')"><img border="0" src="/app/img/seta_men.png"></a></div>
+                    <div class="controleico"><a href="#" onclick="virarmenos('divl1')"><img border="0" src="/app/img/seta_rotmenos.png"></a></div>
                     <div class="controleico">&nbsp;</div>
 
                     <div class="controleico">&nbsp;</div>
@@ -102,6 +102,11 @@ switch ($ql) {
                     <div id="dvfechar1" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2a')"><img border="0" src="img/close_red.gif"></a></div>
 
                     <div id="dvcontroles1" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
+                        <div class="controleico"><a href="#" onclick="virarmais('divl2a')"><img border="0" src="/app/img/seta_rotmais.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="virarmenos('divl2a')"><img border="0" src="/app/img/seta_rotmenos.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+
                         <div class="controleico">&nbsp;</div>
                         <div class="controleico"><a href="#" onclick="moverup('divl2a')"><img border="0" src="/app/img/seta_cim.png"></a></div>
                         <div class="controleico">&nbsp;</div>
@@ -125,6 +130,11 @@ switch ($ql) {
                     <div id="dvfechar2" style="position: absolute; width: 10px; height: 10px;z-index: 100; margin: 5px;"><a href="#" onclick="lixeiraremove('divl2b')"><img border="0" src="img/close_red.gif"></a></div>
 
                     <div id="dvcontroles2" style="position: absolute; width: 100px; height: 75px;z-index: 100; margin-top: 10px; margin-left: 230px;">
+                        <div class="controleico"><a href="#" onclick="virarmais('divl2b')"><img border="0" src="/app/img/seta_rotmais.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+                        <div class="controleico"><a href="#" onclick="virarmenos('divl2b')"><img border="0" src="/app/img/seta_rotmenos.png"></a></div>
+                        <div class="controleico">&nbsp;</div>
+                        
                         <div class="controleico">&nbsp;</div>
                         <div class="controleico"><a href="#" onclick="moverup('divl2b')"><img border="0" src="/app/img/seta_cim.png"></a></div>
                         <div class="controleico">&nbsp;</div>
