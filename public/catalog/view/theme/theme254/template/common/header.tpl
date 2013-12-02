@@ -457,15 +457,6 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 						<li><a class="fancybox fancybox.iframe" href="https://case4you.com.br/app/?m=3">Galaxy S4</a></li>
 					</ul> -->
 				</li>
-				<li>
-					<a class="" href="/peliculas">Acessórios</a>
-					<!--
-					<ul style="position: absolute; z-index:1000;">
-						<li><a class="" href="/capas-prontas">Capas prontas</a></li> 
-						<li><a class="" href="/acessorios">Acessórios</a></li>
-					</ul>
-					-->
-				</li>
 				<li><a class="" href="/quem-somos">Quem Somos</a></li>
 				<li><a class="" href="/duvidas">D&uacute;vidas</a></li>
 				<li><a class="" href="/fale-conosco">Fale Conosco</a></li>
