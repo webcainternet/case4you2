@@ -28,6 +28,7 @@ function getExtension($str)
 					if($size<(1024*1024*5))
 						{
 							$actual_image_name = time().substr(str_replace(" ", "_", $txt), 5).".".$ext;
+							$actual_image_name = str_replace(".", "", $actual_image_name);
 							$tmp = $_FILES['photoimg']['tmp_name'];
 							if(move_uploaded_file($tmp, $path.$actual_image_name))
 								{ 					
@@ -45,7 +46,7 @@ function getExtension($str)
 									-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
 									box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
 									font-size: 14px;
-									"><img id="<?php echo $actual_image_name; ?>" src="uploads/<?php echo $actual_image_name; ?>" id="<?php echo $actual_image_name; ?>" draggable="true" ondragstart="drag(event)" style="max-width:100%; max-height:100%;">
+									"><img src="uploads/<?php echo $actual_image_name; ?>" id="<?php echo $actual_image_name; ?>" draggable="true" ondragstart="drag(event)" style="max-width:100%; max-height:100%;">
 									</div>
 
 									<?php
