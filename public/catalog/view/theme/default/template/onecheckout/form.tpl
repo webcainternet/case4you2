@@ -72,7 +72,7 @@
   	<span id="payment-postcode-required" class="required">*</span> <?php echo $entry_postcode; ?><br />
   	<input type="text" name="postcode" value="<?php echo $postcode; ?>" class="small-field" style="width: 53px;" />
 
-	<a class="button"><span>Calcular frete</span></a>
+	<a class="button"><span>Calcular</span></a>
 
   	<br />
   </div>
