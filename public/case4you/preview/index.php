@@ -962,6 +962,6 @@ ondragover="allowDrop(event)"></div>
 <? } ?>
 
 </script>
-<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;dwd
+<div style="height: 2000px; width: 2000px;">&nbsp;</div>
 </body>
 </html>
