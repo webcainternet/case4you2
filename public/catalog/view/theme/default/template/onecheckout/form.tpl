@@ -71,9 +71,8 @@
   <div class="right">
   	<span id="payment-postcode-required" class="required">*</span> <?php echo $entry_postcode; ?><br />
   	<input type="text" name="postcode" value="<?php echo $postcode; ?>" class="small-field" style="width: 53px;" />
-<input type="text" name="postcode" value="<?php echo $postcode; ?>" class="small-field" style="width: 53px;" />
 
-	<a id="button-confirmorder" class="button"><span>Confirmar pedido</span></a>
+	<a class="button"><span>Calcular frete</span></a>
 
   	<br />
   </div>
