@@ -86,7 +86,7 @@
   </div>
 
   <div style="width: 1024px; margin: auto; text-align: center; float: left; color: #9da9b6; font-size: 10px;">
-    Case4You &copy; Texto direitos reservados - Sob CNPJ 18.672.112/0001-54 - Desenvolvido por <a style=" color: #9da9b6; font-size: 10px;" href="http://webca.com.br/" target="_blank">WebCA Internet</a> 
+    Case4You &copy; Todos os direitos reservados - Sob CNPJ 18.672.112/0001-54 - Desenvolvido por <a style=" color: #9da9b6; font-size: 10px;" href="http://webca.com.br/" target="_blank">WebCA Internet</a> 
   </div>
   
 </div>
