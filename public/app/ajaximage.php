@@ -45,7 +45,7 @@ function getExtension($str)
 									-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
 									box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
 									font-size: 14px;
-									"><img id="<?php echo $actual_image_name; ?>" src="uploads/<?php echo $actual_image_name; ?>" draggable="true" ondragstart="drag(event)" style="max-width:100%; max-height:100%;">
+									"><img id="<?php echo $actual_image_name; ?>" src="uploads/<?php echo $actual_image_name; ?>" id="<?php echo $actual_image_name; ?>" draggable="true" ondragstart="drag(event)" style="max-width:100%; max-height:100%;">
 									</div>
 
 									<?php
