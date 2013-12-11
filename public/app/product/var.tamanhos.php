@@ -38,6 +38,20 @@ switch ($qm) {
         $mw = "340";
         $mh = "499";
         break;
+
+    //GALAXYS2
+    case 4:
+        $mimage = "mask-galaxys2.png";
+        $mw = "340";
+        $mh = "560";
+        break;
+
+    //GALAXY NOTE 2
+    case 5:
+        $mimage = "mask-galaxyn2.png";
+        $mw = "340";
+        $mh = "561";
+        break;
 }
 
 switch ($ql) {
@@ -67,6 +81,18 @@ switch ($ql) {
 			        $mw2 = "338";
 			        $mh2 = "247";
 			        break;
+
+                //GALAXYS2
+                case 4:
+                    $mw2 = "338";
+                    $mh2 = "278";
+                    break;
+
+                //GALAXY NOTE 2
+                case 5:
+                    $mw2 = "338";
+                    $mh2 = "278";
+                    break;
 			}
         break;
 
@@ -103,6 +129,22 @@ switch ($ql) {
                                 $mh15a = "164";
                                 $mw15b = "83";
                                 $mh15b = "81";
+                                break;
+
+                            //GALAXYS2
+                            case 4:
+                                $mw15a = "168";
+                                $mh15a = "184";
+                                $mw15b = "83";
+                                $mh15b = "91";
+                                break;
+
+                            //GALAXY NOTE 2
+                            case 5:
+                                $mw15a = "168";
+                                $mh15a = "184";
+                                $mw15b = "83";
+                                $mh15b = "91";
                                 break;
 			}
         break;

@@ -4,7 +4,7 @@ switch ($ql) {
     case 0: ?>
 
 <!-- LAYOUT 1 -->
-        <div id="divmask" style="padding: 0px; height: <?php echo $mh-1; ?>px; width: 84px; background-size: 42px; background-image: url(https://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh-1; ?>px; width: 84px; background-size: 42px; background-repeat: no-repeat no-repeat;">
             <div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 100%; height: 100%; overflow: hidden;text-align: center;
     align: middle; background-repeat: no-repeat;"></div>
     </div>
@@ -14,7 +14,7 @@ switch ($ql) {
     case 1: ?>
 
 <!-- LAYOUT 2 -->
-        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 42px; background-size: 42px; background-image: url(https://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 42px; background-size: 42px; background-repeat: no-repeat no-repeat;">
                 <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
         align: middle; background-repeat: no-repeat;"></div>
 
@@ -29,7 +29,7 @@ switch ($ql) {
     ?>
 
 <!-- LAYOUT 3 -->
-        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 83px; background-size: 42px; background-image: url(https://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 83px; background-size: 42px; background-repeat: no-repeat no-repeat;">
 <?php if ($ql == 2 && $qm == 3) { $mh15a = $mh15a+1; } ?>
 
                 <div id="divl15b1" ondrop="dropl15b(event, '1')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;

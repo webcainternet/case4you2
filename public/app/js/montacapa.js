@@ -24,6 +24,8 @@ function MontaCapa(modelo, layout) {
    if (modelo == '1') { $('#mascarasuperior').css("background-image", "url(/app/img/mask-iphone5-top.png)"); }
    if (modelo == '2') { $('#mascarasuperior').css("background-image", "url(/app/img/mask-galaxy3-top.png)"); }
    if (modelo == '3') { $('#mascarasuperior').css("background-image", "url(/app/img/mask-galaxy4-top.png)"); }
+   if (modelo == '4') { $('#mascarasuperior').css("background-image", "url(/app/img/mask-galaxys2-top.png)"); }
+   if (modelo == '5') { $('#mascarasuperior').css("background-image", "url(/app/img/mask-galaxyn2-top.png)"); }
 
 }
 

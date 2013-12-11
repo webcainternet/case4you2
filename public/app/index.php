@@ -228,6 +228,30 @@ else {*/
 				                Galaxy S4
 				        </div>
 				</div>
+
+				<div style="float: left; text-align: left; width: 95px; margin-bottom: 20px; margin-left: 15px;">
+				        <div style="float: left; text-align: left">
+				                <input onChange="selecionarmodelo(this)" type="radio" name="modelo" id="mgalaxy2" value="4">
+				        </div>
+				        <div style="float: left; text-align: left;padding-left: 5px; height: 90px;">
+				                <img style="width: 45px;" src="./img/galaxys2.png" alt="">
+				        </div>
+				        <div class="fontc4y1" style="float: left; text-align: left; padding-left: 20px;margin-top: 5px;">
+				                Galaxy S2
+				        </div>
+				</div>
+
+				<div style="float: left; text-align: left; width: 100px; margin-bottom: 20px; margin-left: 15px;">
+				        <div style="float: left; text-align: left">
+				                <input onChange="selecionarmodelo(this)" type="radio" name="modelo" id="mgalaxyn2" value="5">
+				        </div>
+				        <div style="float: left; text-align: left;padding-left: 5px; height: 90px;">
+				                <img style="width: 45px;" src="./img/galaxynote2.png" alt="">
+				        </div>
+				        <div class="fontc4y1" style="float: left; text-align: left; padding-left: 20px;margin-top: 5px;">
+				                Galaxy Note 2
+				        </div>
+				</div>
 			</div>
 
 
@@ -405,7 +429,7 @@ else {*/
 		</div>
 
 		<div id="divcapinha" onmouseout="mostramascarasup()" style="width: 360px;
-			height: 540px;
+			height: 564px;
 			float: left;
 			margin-left: 10px;
 			border: 1px solid #aaaaaa;
@@ -417,6 +441,7 @@ else {*/
 		</div>
 
 		<div id="divcapinhapreview" style="width: 360px;
+			height: 564px;
 			float: left;
 			margin-left: 10px;
 			border: 1px solid #aaaaaa;
@@ -426,7 +451,7 @@ else {*/
 			margin-top: 2px;
 			padding-left: 0px;
 			display: none;">
-			<iframe name="previewframe" id="previewframe" src=""  width="340" height="540" scrolling="no" frameborder="0"></iframe>
+			<iframe name="previewframe" id="previewframe" src=""  width="340" height="564" scrolling="no" frameborder="0"></iframe>
 		</div>
 
 		<div id="ircheckout1"  style="width: 340px;

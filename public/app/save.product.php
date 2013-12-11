@@ -28,6 +28,16 @@ switch ($ql) {
 			case 3:
 			$textoprod = "Capinha personalizada Galaxy S4 com 1 foto";
 			break;
+
+			//GALAXYS2
+			case 4:
+			$textoprod = "Capinha personalizada Galaxy S2 com 1 foto";
+			break;
+
+			//GALAXY NOTE 2
+			case 5:
+			$textoprod = "Capinha personalizada Galaxy Note 2 com 1 foto";
+			break;
 		}
 		break;
 
@@ -53,6 +63,16 @@ switch ($ql) {
 			case 3:
 			$textoprod = "Capinha personalizada Galaxy S4 com 2 fotos";
 			break;
+
+			//GALAXYS2
+			case 4:
+			$textoprod = "Capinha personalizada Galaxy S2 com 2 fotos";
+			break;
+
+			//GALAXY NOTE 2
+			case 5:
+			$textoprod = "Capinha personalizada Galaxy Note 2 com 2 fotos";
+			break;
 		}
 		break;
 
@@ -77,6 +97,16 @@ switch ($ql) {
 			//GALAXYS4
 			case 3:
 			$textoprod = "Capinha personalizada Galaxy S4 com 15 fotos";
+			break;
+
+			//GALAXYS2
+			case 4:
+			$textoprod = "Capinha personalizada Galaxy S2 com 15 fotos";
+			break;
+
+			//GALAXY NOTE 2
+			case 5:
+			$textoprod = "Capinha personalizada Galaxy Note 2 com 15 fotos";
 			break;
 		}
 		break;

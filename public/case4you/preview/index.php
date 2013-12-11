@@ -942,6 +942,14 @@ ondragover="allowDrop(event)"></div>
 <div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 998px; width: 680px; background-size: 680px; background-image: url(https://case4you.com.br/case4you/0/img/mask-galaxy4-b.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
 <? } ?>
 
+<?php if ($_GET["m"] == "4") { ?>
+<div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 1116px; width: 680px; background-size: 680px; background-image: url(https://case4you.com.br/case4you/0/img/mask-galaxy4-b.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<? } ?>
+
+<?php if ($_GET["m"] == "5") { ?>
+<div id="mascarasp" style="position: absolute; top: 0px; left: 0px; padding: 0px; height: 1116px; width: 680px; background-size: 680px; background-image: url(https://case4you.com.br/case4you/0/img/mask-galaxy4-b.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<? } ?>
+
 
 
 <script>

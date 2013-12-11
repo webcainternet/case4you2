@@ -1,4 +1,3 @@
-
 <?php
 $mh2=0;
 $mw2=0;
@@ -38,6 +37,20 @@ switch ($qm) {
         $mw = "340";
         $mh = "499";
         break;
+
+    //GALAXYS2
+    case 4:
+        $mimage = "mask-galaxys2.png";
+        $mw = "340";
+        $mh = "560";
+        break;
+
+    //GALAXY NOTE 2
+    case 5:
+        $mimage = "mask-galaxyn2.png";
+        $mw = "340";
+        $mh = "561";
+        break;
 }
 
 $mw = $mw/4;
@@ -46,31 +59,43 @@ $mh = $mh/4;
 switch ($ql) {
     //Layout 2 fotos
     case 1:
-			switch ($qm) {
-			    //IPHONE4 IPHONE4S
-			    case 0:
-			        $mw2 = "338";
-			        $mh2 = "243";
-			        break;
+            switch ($qm) {
+                //IPHONE4 IPHONE4S
+                case 0:
+                    $mw2 = "338";
+                    $mh2 = "243";
+                    break;
 
-			    //IPHONE5
-			    case 1:
-			        $mw2 = "338";
-			        $mh2 = "267";
-			        break;
+                //IPHONE5
+                case 1:
+                    $mw2 = "338";
+                    $mh2 = "267";
+                    break;
 
-			    //GALAXYS3
-			    case 2:
-			        $mw2 = "338";
-			        $mh2 = "261";
-			        break;
+                //GALAXYS3
+                case 2:
+                    $mw2 = "338";
+                    $mh2 = "261";
+                    break;
 
-			    //GALAXYS4
-			    case 3:
-			        $mw2 = "338";
-			        $mh2 = "247";
-			        break;
-			}
+                //GALAXYS4
+                case 3:
+                    $mw2 = "338";
+                    $mh2 = "247";
+                    break;
+
+                //GALAXYS2
+                case 4:
+                    $mw2 = "338";
+                    $mh2 = "278";
+                    break;
+
+                //GALAXY NOTE 2
+                case 5:
+                    $mw2 = "338";
+                    $mh2 = "278";
+                    break;
+            }
         break;
 
     //Layout 15 fotos
@@ -107,7 +132,23 @@ switch ($ql) {
                                 $mw15b = "83";
                                 $mh15b = "81";
                                 break;
-			}
+
+                            //GALAXYS2
+                            case 4:
+                                $mw15a = "168";
+                                $mh15a = "184";
+                                $mw15b = "83";
+                                $mh15b = "91";
+                                break;
+
+                            //GALAXY NOTE 2
+                            case 5:
+                                $mw15a = "168";
+                                $mh15a = "184";
+                                $mw15b = "83";
+                                $mh15b = "91";
+                                break;
+            }
         break;
     }
 
@@ -142,6 +183,20 @@ switch ($ql) {
         $mh15a = ($mh15a/4);
         $mw15b = $mw15b/4;
         $mh15b = ($mh15b/4)+0.5;
+    }
+
+    if ($ql == 2 && $qm == 4) {
+        $mw15a = ($mw15a/4)+1;
+        $mh15a = ($mh15a/4)+0;
+        $mw15b = ($mw15b/4)+0;
+        $mh15b = ($mh15b/4)+0;
+    }
+
+    if ($ql == 2 && $qm == 5) {
+        $mw15a = ($mw15a/4)+1;
+        $mh15a = ($mh15a/4)+0;
+        $mw15b = ($mw15b/4)+0;
+        $mh15b = ($mh15b/4)+0;
     }
 
 ?>

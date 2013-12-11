@@ -306,7 +306,7 @@ ondragover="allowDrop(event)"></div>
 
 
 
-<div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 540px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
+<div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 564px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
 
 <!-- ddx.layout -->
     <?php include 'ddx.layout.php'; ?>
@@ -778,6 +778,14 @@ ondragover="allowDrop(event)"></div>
 
 <?php if ($_GET["m"] == "3") { ?>
 <div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 503px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-galaxy4-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
+<? } ?>
+
+<?php if ($_GET["m"] == "4") { ?>
+<div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 563px; width: 343px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-galaxys2-top.png);">&nbsp;</div>
+<? } ?>
+
+<?php if ($_GET["m"] == "5") { ?>
+<div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 564px; width: 343px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-galaxyn2-top.png);">&nbsp;</div>
 <? } ?>
 
 

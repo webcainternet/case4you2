@@ -6,7 +6,7 @@ switch ($ql) {
     case 0: ?>
 
 <!-- LAYOUT 1 -->
-    	<div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 10px; background-size: 340px; background-image: url(https://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+    	<div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 10px; background-size: 340px; background-repeat: no-repeat no-repeat;">
     		<div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 100%; height: 100%; overflow: hidden;text-align: center;
 	align: middle; border: solid 1px #6aa11a;"></div>
   	</div>
@@ -16,7 +16,7 @@ switch ($ql) {
     case 1: ?>
 
 <!-- LAYOUT 2 -->
-        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 10px; background-size: 340px; background-image: url(https://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 10px; background-size: 340px; background-repeat: no-repeat no-repeat;">
                 <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
         align: middle;"></div>
 
@@ -29,7 +29,7 @@ switch ($ql) {
     case 2: ?>
 
 <!-- LAYOUT 3 -->
-        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 10px; background-size: 340px; background-image: url(https://case4you.com.br/case4you/0/img/<?php echo $mimage; ?>); background-repeat: no-repeat no-repeat;">
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; margin-left: 10px; background-size: 340px; background-repeat: no-repeat no-repeat;">
 
 
                 <div id="divl15b1" ondrop="dropl15b(event, '1')" ondragover="allowDrop(event)" style="float: left; border: solid 1px #6aa11a; width: <?php echo $mw15b; ?>px; height: <?php echo $mh15b; ?>px; overflow: hidden;text-align: center;
