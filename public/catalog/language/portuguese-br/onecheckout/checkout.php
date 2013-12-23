@@ -74,7 +74,7 @@ $_['error_maximum_reward']			 = 'Warning: The maximum number of points that can 
 $_['entry_email_address']            = 'E-Mail Address:';
 $_['entry_email']                    = 'E-Mail:';
 $_['entry_password']                 = 'Senha:';
-$_['entry_confirm']                  = 'Password Confirm:';
+$_['entry_confirm']                  = 'Confirme a senha:';
 $_['entry_account']                  = 'Account:';
 $_['entry_firstname']                = 'Nome:';
 $_['entry_lastname']                 = 'Sobrenome:';
@@ -89,7 +89,7 @@ $_['entry_postcode']                 = 'CEP:';
 $_['entry_city']                     = 'Cidade:';
 $_['entry_country']                  = 'País:';
 $_['entry_zone']                     = 'Estado:';
-$_['entry_newsletter']               = 'I wish to subscribe to the %s newsletter.';
+$_['entry_newsletter']               = 'Quero me escrever na newsletter.';
 $_['entry_shipping'] 	             = 'Endereço de cobrança é o mesmo que o de entrega';
 
 // Error
@@ -101,7 +101,7 @@ $_['error_lastname']                 = 'O sobrenome deve ter entre 1 e 32 caract
 $_['error_email']                    = 'E-Mail inválido!';
 $_['error_telephone']                = 'Telefone deve conter de 3 a 32 caracteres!';
 $_['error_password']                 = 'Password must be between 3 and 20 characters!';
-$_['error_confirm']                  = 'Password confirmation does not match password!';
+$_['error_confirm']                  = 'Confirme a senhaation does not match password!';
 $_['error_company_id']               = 'Company ID required!';
 $_['error_tax_id']                   = 'Tax ID required!';
 $_['error_vat']                      = 'VAT number is invalid!';

@@ -9,9 +9,9 @@ $_['text_success']   = 'Success: Your password has been successfully updated.';
 
 // Entry
 $_['entry_password'] = 'Password:';
-$_['entry_confirm']  = 'Password Confirm:';
+$_['entry_confirm']  = 'Confirme a senha:';
 
 // Error
 $_['error_password'] = 'Password must be between 4 and 20 characters!';
-$_['error_confirm']  = 'Password confirmation does not match password!';
+$_['error_confirm']  = 'Confirme a senhaation does not match password!';
 ?>
