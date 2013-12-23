@@ -96,6 +96,7 @@ function selecionarmodelo(modelo) {
 
    //Para onde vai
    if (document.getElementById("layoutdacapinha").value == "") {
+      MontaCapa(smodelo,0);
       goto2();
    }
    else {
