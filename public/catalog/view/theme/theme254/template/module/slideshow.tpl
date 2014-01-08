@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('#coin-slider').coinslider({ width: 1024, height: 450, navigation: true, delay: 5000 });
+		$('#coin-slider').coinslider({ width: 1024, height: 450, navigation: true, delay: 10000 });
 	});
 </script>
 
