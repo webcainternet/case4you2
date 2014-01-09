@@ -45,7 +45,7 @@ $(document).ready(function() {
 	<!-- <a href="https://case4you.com.br/acessorios"><img src='image/data/banner/banner1.png' ></a> -->
 	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-famosos.png' ></a>
 	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-facebook.png' ></a>
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-site2.png' ></a>
+	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-site3.png' ></a>
 	<a href="https://case4you.com.br/empresas"><img src='image/data/banner/banner-empresas.png' ></a>
 	
 
