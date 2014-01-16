@@ -79,7 +79,7 @@
               <small><?php echo $product['reward']; ?></small>
               <?php } ?></td>
             <td class="model"><?php echo $product['model']; ?></td>
-            <td class="quantity"><input type="text" onchange="atualizavalor()"> name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
+            <td class="quantity"><input type="text" onchange="atualizavalor()" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
               
               <div class="wrapper mt5">
               
