@@ -79,10 +79,10 @@
               <small><?php echo $product['reward']; ?></small>
               <?php } ?></td>
             <td class="model"><?php echo $product['model']; ?></td>
-            <td class="quantity"><input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
+            <td class="quantity"><input type="text" id="quantity" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
               
               <div class="wrapper mt5">
-              <input type="image" src="catalog/view/theme/theme254/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
+              <input style="display: none;" id="botaoquantity" type="image" src="catalog/view/theme/theme254/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
               &nbsp;<a href="<?php echo $product['remove']; ?>"><img src="catalog/view/theme/theme254/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a>
               </div>
               </td>
@@ -383,5 +383,13 @@ $('select[name=\'country_id\']').bind('change', function() {
 
 $('select[name=\'country_id\']').trigger('change');
 //--></script>
+
+<script type="text/javascript">
+$(function(){
+ $("#quantity").keyup(function(){
+  $('#botaoquantity').click();
+ });
+});
+</script>
 <?php } ?>
 <?php echo $footer; ?>
