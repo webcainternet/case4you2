@@ -79,7 +79,7 @@
               <small><?php echo $product['reward']; ?></small>
               <?php } ?></td>
             <td class="model"><?php echo $product['model']; ?></td>
-            <td class="quantity"><input type="text" onkeyup="javascript:if (this.length > 0) { atualizavalor(); }" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
+            <td class="quantity"><input type="text" onkeyup="atualizavalor(this)" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
               
               <div class="wrapper mt5">
               
@@ -387,8 +387,10 @@ $('select[name=\'country_id\']').trigger('change');
 //--></script>
 
 <script type="text/javascript">
-function atualizavalor() {
-  $('#botaoquantity').click();
+function atualizavalor(elm) {
+  if (elm.value != '') {
+    $('#botaoquantity').click();
+  }
 }
 </script>
 <?php } ?>
