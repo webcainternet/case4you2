@@ -55,6 +55,8 @@
           <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li> -->
           <li><a class="fancybox fancybox.iframe" href="https://case4you.com.br/app/">Crie sua capinha</a></li>
           <li><a href="https://case4you.com.br/empresas/">Capinha para empresas</a></li>
+          <li><a href="https://case4you.com.br/revendas/">Revendas</a></li>
+
         </ul>
       </div>
       <div class="column col-4">
