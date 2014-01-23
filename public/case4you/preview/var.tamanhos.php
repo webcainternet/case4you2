@@ -185,4 +185,18 @@ switch ($ql) {
         $mh15b = $mh15b*2;
     }
 
+    if ($ql == 2 && $qm == 4) {
+        $mw15a = $mw15a*2;
+        $mh15a = ($mh15a*2)-4;
+        $mw15b = $mw15b*2;
+        $mh15b = $mh15b*2;
+    }
+
+    if ($ql == 2 && $qm == 5) {
+        $mw15a = $mw15a*2;
+        $mh15a = ($mh15a*2)-4;
+        $mw15b = $mw15b*2;
+        $mh15b = $mh15b*2;
+    }
+
 ?>
