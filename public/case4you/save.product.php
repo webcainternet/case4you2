@@ -23,7 +23,7 @@ $novoid = $ultimoid+1;
 
 if (isset($novoid)) {
 
-	$iquery1 = "INSERT INTO  `case4you2`.`oc_product` (
+	$iquery1 = "INSERT INTO  `case4you`.`oc_product` (
 	`product_id` ,
 	`model` ,
 	`sku` ,
@@ -65,7 +65,7 @@ if (isset($novoid)) {
 	    die('Invalid query: ' . mysql_error());
 	}
 	else {
-		$iquery2 = "INSERT INTO  `case4you2`.`oc_product_description` (
+		$iquery2 = "INSERT INTO  `case4you`.`oc_product_description` (
 			`product_id` ,
 			`language_id` ,
 			`name` ,
@@ -82,7 +82,7 @@ if (isset($novoid)) {
 		    die('Invalid query: ' . mysql_error());
 		}
 		else {
-			$iquery3 = "INSERT INTO  `case4you2`.`oc_product_to_layout` (
+			$iquery3 = "INSERT INTO  `case4you`.`oc_product_to_layout` (
 				`product_id` ,
 				`store_id` ,
 				`layout_id`
@@ -97,7 +97,7 @@ if (isset($novoid)) {
 			    die('Invalid query: ' . mysql_error());
 			}
 			else {
-				$iquery4 = "INSERT INTO  `case4you2`.`oc_product_to_store` (
+				$iquery4 = "INSERT INTO  `case4you`.`oc_product_to_store` (
 					`product_id` ,
 					`store_id`
 					)

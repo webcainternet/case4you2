@@ -19,7 +19,7 @@ echo DB_DATABASE;
 $dblink = mysql_connect(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD);
 mysql_select_db(DB_DATABASE,$dblink);
 
-$sql_statement = "INSERT INTO  `case4you2`.`c4y_capasconstrucao` (
+$sql_statement = "INSERT INTO  `case4you`.`c4y_capasconstrucao` (
 `idcsession` ,
 `modelo` ,
 `layout` ,
