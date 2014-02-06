@@ -290,6 +290,19 @@ else
       document.getElementById("ishowcomp").checked = false;
       uncheckmodelo();
     }
+
+    /* virar */
+     (function( $ ){
+     $.fn.rotate = function(deg) {
+         this.css({'transform': 'rotate('+deg+'deg)'});
+         this.css({'-ms-transform': 'rotate('+deg+'deg)'});
+         this.css({'-moz-transform': 'rotate('+deg+'deg)'});
+         this.css({'-o-transform': 'rotate('+deg+'deg)'}); 
+         this.css({'-webkit-transform': 'rotate('+deg+'deg)'});
+         return this; 
+     };
+     })( jQuery );
+     /* virar fim */
 </script>
 
 </head>
@@ -356,6 +369,22 @@ ondragover="allowDrop(event)"></div>
 			<?php
 			}
 		}
+
+        $sqlangulo1 = "SELECT * FROM c4y_capasconstrucao_girar WHERE idsession = $gidcsession AND posicao = 1 limit 1;";
+        $resultangulo1 = mysql_query($sqlangulo1);
+        if (!$resultangulo1) { 
+            die('Invalid query: ' . mysql_error()); 
+        }
+        else { 
+            while ($rowangulo1 = mysql_fetch_array($resultangulo1, MYSQL_ASSOC)) { 
+                $angulo1   = $rowangulo1["angulo"];
+            ?>
+                <script>
+                        //document.getElementById('divl1').style.backgroundImage = "url('<?php echo $imagemurl[1]; ?>')";
+                </script>
+            <?php
+            }
+        }
 	}
 
 
@@ -391,6 +420,22 @@ ondragover="allowDrop(event)"></div>
                         }
                 }
 
+                $sqlangulo1 = "SELECT * FROM c4y_capasconstrucao_girar WHERE idsession = $gidcsession AND posicao = 1 limit 1;";
+                $resultangulo1 = mysql_query($sqlangulo1);
+                if (!$resultangulo1) { 
+                    die('Invalid query: ' . mysql_error()); 
+                }
+                else { 
+                    while ($rowangulo1 = mysql_fetch_array($resultangulo1, MYSQL_ASSOC)) { 
+                        $angulo1   = $rowangulo1["angulo"];
+                    ?>
+                        <script>
+                                $('#divl2a').rotate(<?php echo $angulo1; ?>);
+                        </script>
+                    <?php
+                    }
+                }
+
                 $sql_statement2  = "SELECT * FROM c4y_capasconstrucao WHERE idcsession = $gidcsession AND modelo = $gmodelo AND layout = $glayout AND posicao = 2  order by datainsert desc limit 1";
                 $result2 = mysql_query($sql_statement2);
                 if (!$result2) { 
@@ -411,6 +456,22 @@ ondragover="allowDrop(event)"></div>
                                 </script>
                         <?php
                         }
+                }
+
+                $sqlangulo2 = "SELECT * FROM c4y_capasconstrucao_girar WHERE idsession = $gidcsession AND posicao = 2 limit 1;";
+                $resultangulo2 = mysql_query($sqlangulo2);
+                if (!$resultangulo2) { 
+                    die('Invalid query: ' . mysql_error()); 
+                }
+                else { 
+                    while ($rowangulo2 = mysql_fetch_array($resultangulo2, MYSQL_ASSOC)) { 
+                        $angulo2   = $rowangulo2["angulo"];
+                    ?>
+                        <script>
+                                //document.getElementById('divl1').style.backgroundImage = "url('<?php echo $imagemurl[1]; ?>')";
+                        </script>
+                    <?php
+                    }
                 }
         }
 

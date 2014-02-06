@@ -653,6 +653,14 @@ function virarmais(dvposicao) {
          $("#rot"+dvposicao).val(novovirado);
       }
    }
+
+   //Grava no banco
+   var novapos = '99';
+   if (dvposicao == 'divl1') {novapos = '1';}
+   if (dvposicao == 'divl2a') {novapos = '1';}
+   if (dvposicao == 'divl2b') {novapos = '2';}
+   idsession = document.getElementById('idsession').value;
+   GirarImg(''+idsession, ''+novapos, ''+novovirado);
 }
 
 
