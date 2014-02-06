@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8" />
 
-	
 <style type="text/css">
 @font-face {
   font-family: "c4y1";
@@ -372,7 +371,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 <?php } ?>
 <?php echo $google_analytics; ?>
 
-<script>
+<script type="text/javascript">
 function cademail() {
 	alert('Email cadastrado com sucesso! Obrigado!');
 	ajaxmail($('#txtnews').val());
