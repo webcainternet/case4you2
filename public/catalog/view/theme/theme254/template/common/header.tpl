@@ -108,6 +108,28 @@ body {
 	<!-- Add Media helper (this is optional) -->
 	<script type="text/javascript" src="catalog/view/theme/theme254/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
+
+	<script type="text/javascript">
+	function cademail() {
+		alert('Email cadastrado com sucesso! Obrigado!');
+		ajaxmail($('#txtnews').val());
+		$('#txtnews').val('');
+	}
+
+	function ajaxmail(emailcad) {
+	   $(document).ready(function(){
+	   var response = '';
+	   $.ajax({ type: "GET",
+	            url: "https://case4you.com.br/news/?txtnews="+emailcad,
+	            async: false,
+	            success : function(text)
+	            {
+	                response = text;
+	            }
+	   });
+	}
+	</script>
+
 	<script type="text/javascript">
 	function abrirferramenta() {
 		$(document).ready(function () {
@@ -371,26 +393,6 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 <?php } ?>
 <?php echo $google_analytics; ?>
 
-<script type="text/javascript">
-function cademail() {
-	alert('Email cadastrado com sucesso! Obrigado!');
-	ajaxmail($('#txtnews').val());
-	$('#txtnews').val('');
-}
-
-function ajaxmail(emailcad) {
-   $(document).ready(function(){
-   var response = '';
-   $.ajax({ type: "GET",
-            url: "https://case4you.com.br/news/?txtnews="+emailcad,
-            async: false,
-            success : function(text)
-            {
-                response = text;
-            }
-   });
-}
-</script>
 
 
 <!--Start of Zopim Live Chat Script-->
