@@ -38,6 +38,7 @@ else
 <head>
 <meta charset="utf-8" />
 
+<script type="text/javascript" src="/catalog/view/theme/theme254/fancybox/lib/jquery-1.10.1.min.js"></script>
 
 <script>
 	function selecionarfiltro(meutemplate, minhaext) {
