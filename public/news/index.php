@@ -1,14 +1,17 @@
 <?php  
 
-	include ../config.php;
-	echo DB_HOSTNAME;
-	echo DB_USERNAME;
-	echo DB_PASSWORD;
-	echo DB_DATABASE;
+	require "../config.php";
+
+	$host = DB_HOSTNAME;
+	$user = DB_USERNAME;
+	$pass = DB_PASSWORD;
+	$base = DB_DATABASE;
+
+	echo $host;
+	echo $user;
+	echo $pass;
+	echo $base;
 /*
-	$host = 'localhost';
-	$user = 'root';
-	$pass = 'root';
 
 
 	$mysqli = new mysqli($host, $user, $pass, "pelo_bem");
