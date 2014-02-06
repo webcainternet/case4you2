@@ -376,6 +376,17 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 function cademail() {
 	alert('Email cadastrado com sucesso! Obrigado!');
 	$('#txtnews').val('');
+	
+	$(document).ready(function(){
+	var response = '';
+	$.ajax({ type: "GET",
+	        url: "https://case4you.com.br/news/?txtnews=fefe222",
+	        async: false,
+	        success : function(text)
+	        {
+	            response = text;
+	        }
+	});
 }
 </script>
 
