@@ -18,13 +18,11 @@
 
 		$txtnews = $_GET['txtnews'];
 
-//		echo "O meu é:".$nome."e meu emai é:".$email."e meu cpf é:".$cpf;
+		echo "OK";
 
 		$sql = "INSERT INTO case4you.c4y_news (email)
 				VALUES('$txtnews')";
 
 		$result = $mysqli->query($sql);
-
-		echo $sql;
 	}
 ?>
