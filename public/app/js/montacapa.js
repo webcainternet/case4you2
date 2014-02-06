@@ -712,7 +712,8 @@ function virarmenos(dvposicao) {
       }
    }
 
-   GirarImg('21321', '213321', '231231');
+   idsession = document.getElementById('idsession').value;
+   GirarImg('111'+idsession, '1', ''+estavirado);
 }
 
 function updateposition(idsession, posicao, nheight, nwidth, nleft, ntop)
