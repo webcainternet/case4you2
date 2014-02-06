@@ -712,8 +712,13 @@ function virarmenos(dvposicao) {
       }
    }
 
+   //Grava no banco
+   var novapos = '99';
+   if (dvposicao == 'divl1') {novapos = '1';}
+   if (dvposicao == 'divl2a') {novapos = '1';}
+   if (dvposicao == 'divl2b') {novapos = '2';}
    idsession = document.getElementById('idsession').value;
-   GirarImg('111'+idsession, '1', ''+estavirado);
+   GirarImg(''+idsession, ''+novapos, ''+novovirado);
 }
 
 function updateposition(idsession, posicao, nheight, nwidth, nleft, ntop)
