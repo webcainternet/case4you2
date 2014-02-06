@@ -16,11 +16,11 @@
 
 	if (isset($_GET['idsession']) && isset($_GET['posicao']) && isset($_GET['angulo'])){
 
-		$sql = "INSERT INTO case4you.c4y_capasconstrucao_girar (idsession, posicao, angulo)
+		$sql = "REPLACE INTO case4you.c4y_capasconstrucao_girar (idsession, posicao, angulo)
 				VALUES(".$_GET['idsession'].", ".$_GET['posicao'].", ".$_GET['angulo'].")";
 
 		$result = $mysqli->query($sql);
 
-		echo $sql;
+		echo "OK";
 	}
 ?>

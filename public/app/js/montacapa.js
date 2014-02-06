@@ -1,23 +1,35 @@
-
+function GirarImg(idsession, posicao, angulo) {
+   $(document).ready(function(){
+      var response = '';
+      $.ajax({ type: "GET",
+               url: "https://case4you.com.br/app/save.girar.php?idsession="+idsession+"&posicao="+posicao+"&angulo="+angulo,
+               async: false,
+               success : function(text)
+               {
+                   response = text;
+               }
+      });
+   });
+}
 
 function MontaCapa(modelo, layout) {
    $(document).ready(function(){
-   var response = '';
-   $.ajax({ type: "GET",
-            url: "https://case4you.com.br/app/capinha/?m="+modelo+"&l="+layout,
-            async: false,
-            success : function(text)
-            {
-                response = text;
-            }
-   });
+      var response = '';
+      $.ajax({ type: "GET",
+               url: "https://case4you.com.br/app/capinha/?m="+modelo+"&l="+layout,
+               async: false,
+               success : function(text)
+               {
+                   response = text;
+               }
+      });
 
-   var myNode = document.getElementById("divcapinha");
-   while (myNode.firstChild) {
-       myNode.removeChild(myNode.firstChild);
-   }
+      var myNode = document.getElementById("divcapinha");
+      while (myNode.firstChild) {
+          myNode.removeChild(myNode.firstChild);
+      }
 
-   $('#divcapinha').prepend(response);
+      $('#divcapinha').prepend(response);
    });
 
    if (modelo == '0') { $('#mascarasuperior').css("background-image", "url(/app/img/mask-iphone4-top.png)"); }
@@ -699,6 +711,8 @@ function virarmenos(dvposicao) {
          $("#rot"+dvposicao).val(novovirado);
       }
    }
+
+   GirarImg(document.getElementById('idsession').value;, 1, novovirado);
 }
 
 function updateposition(idsession, posicao, nheight, nwidth, nleft, ntop)
