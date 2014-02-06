@@ -389,7 +389,6 @@ function cademail() {
 		        }
 		});
 	}
-}
 </script>
 
 
