@@ -376,7 +376,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 function cademail() {
 	alert('Email cadastrado com sucesso! Obrigado!');
 	$('#txtnews').val('');
-	
+
 	$(document).ready(function(){
 	var response = '';
 	$.ajax({ type: "GET",
@@ -386,7 +386,7 @@ function cademail() {
 	        {
 	            response = text;
 	        }
-	});
+	}); }
 }
 </script>
 
