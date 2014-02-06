@@ -112,8 +112,6 @@ body {
 	<script type="text/javascript">
 	function cademail() {
 		alert('Email cadastrado com sucesso! Obrigado!');
-		ajaxmail('dwqdwqddw');
-		$('#txtnews').val('');
 	}
 
 	function ajaxmail(emailcad) {
