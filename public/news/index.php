@@ -7,14 +7,7 @@
 	$pass = DB_PASSWORD;
 	$base = DB_DATABASE;
 
-	echo $host;
-	echo $user;
-	echo $pass;
-	echo $base;
-/*
-
-
-	$mysqli = new mysqli($host, $user, $pass, "pelo_bem");
+	$mysqli = new mysqli($host, $user, $pass, $base);
 
 	if (mysqli_connect_errno()) {
     	printf("Connect failed: %s\n", mysqli_connect_error());
