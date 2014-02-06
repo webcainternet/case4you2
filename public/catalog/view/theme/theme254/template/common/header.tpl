@@ -112,7 +112,7 @@ body {
 	<script type="text/javascript">
 	function cademail() {
 		alert('Email cadastrado com sucesso! Obrigado!');
-		ajaxmail($('#txtnews').val());
+		ajaxmail('dwqdwqddw');
 		$('#txtnews').val('');
 	}
 
