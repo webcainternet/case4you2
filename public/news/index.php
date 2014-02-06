@@ -14,9 +14,9 @@
 	exit();
 	}
 
-	if (isset($_POST['txtnews'])){
+	if (isset($_GET['txtnews'])){
 
-		$txtnews = $_POST['txtnews'];
+		$txtnews = $_GET['txtnews'];
 
 //		echo "O meu é:".$nome."e meu emai é:".$email."e meu cpf é:".$cpf;
 
