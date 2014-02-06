@@ -13,5 +13,18 @@
     	printf("Connect failed: %s\n", mysqli_connect_error());
 	exit();
 	}
-*/
+
+	if (isset($_POST['txtnews'])){
+
+		$txtnews = $_POST['txtnews'];
+
+//		echo "O meu é:".$nome."e meu emai é:".$email."e meu cpf é:".$cpf;
+
+		$sql = "INSERT INTO case4you.c4y_news (email)
+				VALUES('$txtnews')";
+
+		$result = $mysqli->query($sql);
+
+		echo $sql;
+	}
 ?>
