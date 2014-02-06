@@ -381,7 +381,7 @@ ondragover="allowDrop(event)"></div>
                 $angulo1   = $rowangulo1["angulo"];
             ?>
                 <script>
-                        //document.getElementById('divl1').style.backgroundImage = "url('<?php echo $imagemurl[1]; ?>')";
+                        $('#divl1').rotate(<?php echo $angulo1; ?>);
                 </script>
             <?php
             }
@@ -469,7 +469,7 @@ ondragover="allowDrop(event)"></div>
                         $angulo2   = $rowangulo2["angulo"];
                     ?>
                         <script>
-                                //document.getElementById('divl1').style.backgroundImage = "url('<?php echo $imagemurl[1]; ?>')";
+                                $('#divl2b').rotate(<?php echo $angulo2; ?>);
                         </script>
                     <?php
                     }
