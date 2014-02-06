@@ -376,12 +376,12 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 function cademail() {
 	alert('Email cadastrado com sucesso! Obrigado!');
 	$('#txtnews').val('');
-	var cademail = $('#txtnews').val();
+	var cademailval = $('#txtnews').val();
 
 	$(document).ready(function(){
 		var response = '';
 		$.ajax({ type: "GET",
-		        url: "https://case4you.com.br/news/?txtnews="+cademail,
+		        url: "https://case4you.com.br/news/?txtnews="+cademailval,
 		        async: false,
 		        success : function(text)
 		        {
