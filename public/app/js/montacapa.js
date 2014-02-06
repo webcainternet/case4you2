@@ -711,6 +711,8 @@ function virarmenos(dvposicao) {
          $("#rot"+dvposicao).val(novovirado);
       }
    }
+
+   GirarImg('21321', '213321', '231231');
 }
 
 function updateposition(idsession, posicao, nheight, nwidth, nleft, ntop)
