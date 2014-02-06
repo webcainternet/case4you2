@@ -375,7 +375,21 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 <script>
 function cademail() {
 	alert('Email cadastrado com sucesso! Obrigado!');
+	ajaxmail($('#txtnews').val());
 	$('#txtnews').val('');
+}
+
+function ajaxmail(emailcad) {
+   $(document).ready(function(){
+   var response = '';
+   $.ajax({ type: "GET",
+            url: "https://case4you.com.br/news/?txtnews="+emailcad,
+            async: false,
+            success : function(text)
+            {
+                response = text;
+            }
+   });
 }
 </script>
 
