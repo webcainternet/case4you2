@@ -153,7 +153,7 @@
         <a onclick="$('#coup').submit();" class="button"><span><?php echo $button_coupon; ?></span></a>
       </form>
     </div>
-    <div id="voucher" class="content">
+   <!-- <div id="voucher" class="content">
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="gift">
         <?php echo $entry_voucher; ?>&nbsp;
         <input type="text" name="voucher" value="<?php echo $voucher; ?>" />
@@ -198,7 +198,7 @@
         </tr>
       </table>
       <a id="button-quote" class="button"><span><?php echo $button_quote; ?></span></a>
-    </div>
+    </div> -->
     <?php } ?>
   </div>
   <div class="cart-bottom">
