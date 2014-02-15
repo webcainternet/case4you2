@@ -38,8 +38,7 @@ else
 <head>
 <meta charset="utf-8" />
 
-<script type="text/javascript" src="/catalog/view/javascript/jquery-1.8.0.min.js"></script>
-<!-- <script type="text/javascript" src="/catalog/view/theme/theme254/fancybox/lib/jquery-1.10.1.min.js"></script> -->
+<script type="text/javascript" src="/catalog/view/theme/theme254/fancybox/lib/jquery-1.10.1.min.js"></script>
 
 <script>
 	function selecionarfiltro(meutemplate, minhaext) {
@@ -364,12 +363,9 @@ ondragover="allowDrop(event)"></div>
 				$ntop[1] 		= $row1["ntop"];
 			?>
 				<script>
-                        var imgdi = '<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/t1/215165_1754565261846_7666395_n.jpg" id="drag13923943083204" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-left: -183.9473684210526px; -webkit-transform: rotate(270deg);" height="538" width="707">';
-                              $('#divl1').attr(imgdi);
-
-      			      //  document.getElementById('divl1').style.backgroundImage = "url('<?php echo $imagemurl[1]; ?>')";
-				      //  document.getElementById('divl1').style.backgroundSize = "<?php echo $nwidth[1]; ?>px <?php echo $nheight[1]; ?>px";
-				      //  document.getElementById('divl1').style.backgroundPosition = "<?php echo $nleft[1]; ?>px <?php echo $ntop[1]; ?>px";
+				        document.getElementById('divl1').style.backgroundImage = "url('<?php echo $imagemurl[1]; ?>')";
+				        document.getElementById('divl1').style.backgroundSize = "<?php echo $nwidth[1]; ?>px <?php echo $nheight[1]; ?>px";
+				        document.getElementById('divl1').style.backgroundPosition = "<?php echo $nleft[1]; ?>px <?php echo $ntop[1]; ?>px";
 				</script>
 			<?php
 			}
