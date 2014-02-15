@@ -31,7 +31,7 @@ $_['column_price']           = 'Unit Price';
 $_['column_total']           = 'Total';
 
 // Entry
-$_['entry_coupon']           = 'Enter your coupon here:';
+$_['entry_coupon']           = 'Digite o cupom de desconto:';
 $_['entry_voucher']          = 'Enter your gift voucher code here:';
 $_['entry_reward']           = 'Points to use (Max %s):';
 $_['entry_country']          = 'Country:';

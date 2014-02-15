@@ -51,10 +51,10 @@ $_['column_total']                   = 'Total';
 $_['column_remove']   = 'Remove';
 
 //cart module
-$_['heading_title_coupon']			 = 'Apply Discount Code';
+$_['heading_title_coupon']			 = 'Cupom de desconto';
 $_['text_coupon']   				 = 'Coupon(%s)';
 $_['text_success_coupon'] 			 = 'Success: Your coupon discount has been applied!';
-$_['entry_coupon'] 					 = 'Enter your coupon here:';
+$_['entry_coupon'] 					 = 'Digite o cupom de desconto:';
 $_['error_coupon'] 					 = 'Warning: Coupon is either invalid, expired or reached it\'s usage limit!';
 $_['heading_title_voucher']			 = 'Use Gift Voucher';
 $_['text_voucher'] 					 = 'Voucher(%s)';
