@@ -4173,7 +4173,7 @@ input#sub_category, input#description {
 	padding:20px 0;
 }
 #content .cart-module > div {
-	display:none;
+	display:block;
 	border:1px solid #D9D9D9;
 	padding:15px;
 	border-top:none;
