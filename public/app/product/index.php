@@ -406,7 +406,7 @@ ondragover="allowDrop(event)"></div>
                         ?>
 
                         <?php
-                              $imgl2a = "<img src=""".$imagemurl[1].""" id=""imgl2a"" draggable=""true"" ondragstart=""drag(event)"" style=""max-width: 5000%; max-height: 5000%; margin-top: ".$ntop[1]."px; margin-left: ".$nleft[1]."px;"" width=""".$nwidth[1].""" height=""".$nheight[1]"""></div>";
+                              $imgl2a = '<img src="'.$imagemurl[1].'" id="imgl2a" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: '.$ntop[1].'px; margin-left: '.$nleft[1].'px;" width="'.$nwidth[1].'" height="'.$nheight[1].'"></div>';
                         ?>
 
                         <div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 564px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
@@ -450,7 +450,7 @@ ondragover="allowDrop(event)"></div>
                         ?>
                         
                         <?php
-                              $imgl2b = "<img src=""".$imagemurl[1].""" id=""imgl2b"" draggable=""true"" ondragstart=""drag(event)"" style=""max-width: 5000%; max-height: 5000%; margin-top: ".$ntop[1]."px; margin-left: ".$nleft[1]."px;"" width=""".$nwidth[1].""" height=""".$nheight[1]"""></div>";
+                              $imgl2b = '<img src="'.$imagemurl[1].'" id="imgl2b" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: '.$ntop[1].'px; margin-left: '.$nleft[1].'px;" width="'.$nwidth[1].'" height="'.$nheight[1].'"></div>';
                         ?>
 
                         <div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 564px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
