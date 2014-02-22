@@ -43,45 +43,6 @@ else
 <script>
 	function selecionarfiltro(meutemplate, minhaext) {
 
-                if (meutemplate == '0') {
-                        varbg = document.getElementById("divl1").style.backgroundImage;
-                        varnbg = varbg.replace("png-sp.png)","png)");
-                        varnbg = varnbg.replace("png-40.png)","png)");
-                        varnbg = varnbg.replace("png-pb.png)","png)");
-                        varnbg = varnbg.replace("png-red.png)","png)");
-                        varnbg = varnbg.replace("png-verde.png)","png)");
-                        varnbg = varnbg.replace("png-azul.png)","png)");
-                        varnbg = varnbg.replace("png-amarelo.png)","png)");
-                        varnbg = varnbg.replace("png-roxo.png)","png)");
-                        varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("divl1").style.backgroundImage = varnbg;
-                }
-
-                if (meutemplate == '1') {
-                        varbg = document.getElementById("divl2a").style.backgroundImage;
-                        varnbg = varbg.replace("png-sp.png)","png)");
-                        varnbg = varnbg.replace("png-40.png)","png)");
-                        varnbg = varnbg.replace("png-pb.png)","png)");
-                        varnbg = varnbg.replace("png-red.png)","png)");
-                        varnbg = varnbg.replace("png-verde.png)","png)");
-                        varnbg = varnbg.replace("png-azul.png)","png)");
-                        varnbg = varnbg.replace("png-amarelo.png)","png)");
-                        varnbg = varnbg.replace("png-roxo.png)","png)");
-                        varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("divl2a").style.backgroundImage = varnbg;
-
-                        varbg = document.getElementById("divl2b").style.backgroundImage;
-                        varnbg = varbg.replace("png-sp.png)","png)");
-                        varnbg = varnbg.replace("png-40.png)","png)");
-                        varnbg = varnbg.replace("png-pb.png)","png)");
-                        varnbg = varnbg.replace("png-red.png)","png)");
-                        varnbg = varnbg.replace("png-verde.png)","png)");
-                        varnbg = varnbg.replace("png-azul.png)","png)");
-                        varnbg = varnbg.replace("png-amarelo.png)","png)");
-                        varnbg = varnbg.replace("png-roxo.png)","png)");
-                        varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("divl2b").style.backgroundImage = varnbg;
-                }
 
                 if (meutemplate == '2') {
                         varbg = document.getElementById("divl15b1").style.backgroundImage;
