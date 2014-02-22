@@ -1,15 +1,6 @@
 <?php
 switch ($ql) {
-    //Layout 1 foto
-    case 0: ?>
-
-
-    <?php break;
-    case 1: ?>
-
-
-
-    <?php break;
+    
     case 2: 
         $mw15a = $mw15a - 2;
     ?>
