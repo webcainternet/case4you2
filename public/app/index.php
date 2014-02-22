@@ -179,7 +179,7 @@ else {*/
 
   				<div class="c4ystepnumber">1</div>
   				<div class="fontc4y2 c4ysteptitle">SELECIONE O MODELO DE SEU CELULAR!</div>
-				<div class="fontc4y1 c4ysteptext">AJUDA: Temos diversas opções como Iphone4/4S, Iphone5/5S, Galaxy S3, Galaxy S4, e em breve outros modelos!</div>
+				<div class="fontc4y1 c4ysteptext">AJUDA: Temos diversas opções como Iphone4/4S, Iphone5/5S, Galaxy S2, Galaxy S3, Galaxy S4, Samsung Note 2 e em breve outros modelos!</div>
 
 				<div style="float: left; text-align: left; width: 95px; margin-bottom: 20px; margin-left: 15px;">
 						<div style="float: left; text-align: left">
