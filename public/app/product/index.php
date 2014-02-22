@@ -1,5 +1,7 @@
 <?php
 
+ini_set("display_errors", 1);
+
 if (isset($_GET["idsession"])) {
     $idcsession = $_GET["idsession"];
     $_SESSION["userid"] = $idcsession;
