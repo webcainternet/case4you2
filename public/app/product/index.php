@@ -275,6 +275,24 @@ else
 ondragover="allowDrop(event)"></div>
 
 
+<!-- invisible iframes -->
+<div style="display: none;">
+    <iframe id="invfr1"  name="invfr1"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr2"  name="invfr2"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr3"  name="invfr3"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr4"  name="invfr4"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr5"  name="invfr5"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr6"  name="invfr6"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr7"  name="invfr7"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr8"  name="invfr8"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr9"  name="invfr9"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr10" name="invfr10" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr11" name="invfr11" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr12" name="invfr12" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr13" name="invfr13" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr14" name="invfr14" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr15" name="invfr15" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+</div>
 
 
 
@@ -310,13 +328,18 @@ ondragover="allowDrop(event)"></div>
 				$ntop[1] 		= $row1["ntop"];
 			?>
 
-                  <?php
-                   $imgl1 = '<img src="'.$imagemurl[1].'" id="imgl1" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: '.$ntop[1].'px; margin-left: '.$nleft[1].'px;" width="'.$nwidth[1].'" height="'.$nheight[1].'"></div>';
-                  ?>
-
                   <div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 564px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
                   <!-- ddx.layout -->
-                  <?php include 'ddx.layout.php'; ?>
+                  
+                  <!-- LAYOUT 1 -->
+                          <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; background-size: 340px; background-repeat: no-repeat no-repeat;">
+                              <div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 100%; height: 100%; overflow: hidden;text-align: center;
+                      align: middle;  background-repeat: no-repeat;">
+                                  <img src="<?php echo $imagemurl[1]; ?>" id="imgl1" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: <?php echo $ntop[1]; ?>px; margin-left: <?php echo $nleft[1]; ?>px;" width="<?php echo $nwidth[1]; ?>" height="<?php echo $nheight[1]; ?>"></div>
+                              </div>
+                      </div>
+                  <!-- FIM LAYOUT 1 -->
+
                   <!-- ddx.layout fim -->
                   </div>
 
@@ -352,6 +375,10 @@ ondragover="allowDrop(event)"></div>
 
 
         if ($glayout == 1) {
+            ?>
+<!-- LAYOUT 2 -->
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; background-size: 340px; background-repeat: no-repeat no-repeat;">
+            <?php
                 $sql_statement1  = "SELECT * FROM c4y_capasconstrucao WHERE idcsession = $gidcsession AND modelo = $gmodelo AND layout = $glayout AND posicao = 1  order by datainsert desc limit 1";
                 $result1 = mysql_query($sql_statement1);
                 if (!$result1) { 
@@ -364,8 +391,12 @@ ondragover="allowDrop(event)"></div>
                                 $nwidth[1]              = $row1["nwidth"];
                                 $nleft[1]               = $row1["nleft"];
                                 $ntop[1]                = $row1["ntop"];
-
-                              $imgl2a = '<img src="'.$imagemurl[1].'" id="imgl2a" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: '.$ntop[1].'px; margin-left: '.$nleft[1].'px;" width="'.$nwidth[1].'" height="'.$nheight[1].'"></div>';
+                                ?>
+                              <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
+                                align: middle;  background-repeat: no-repeat;">
+                                            <img src="<?php echo $imagemurl[1]; ?>" id="imgl2a" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: <?php echo $ntop[1]; ?>px; margin-left: <?php echo $nleft[1]; ?>px;" width="<?php echo $nwidth[1]; ?>" height="<?php echo $nheight[1]; ?>"></div>
+                                          </div>
+                                <?php
                         }
                   }                              
 
@@ -381,17 +412,19 @@ ondragover="allowDrop(event)"></div>
                                 $nwidth[2]              = $row2["nwidth"];
                                 $nleft[2]               = $row2["nleft"];
                                 $ntop[2]                = $row2["ntop"];
-
-                              $imgl2b = '<img src="'.$imagemurl[1].'" id="imgl2b" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: '.$ntop[1].'px; margin-left: '.$nleft[1].'px;" width="'.$nwidth[1].'" height="'.$nheight[1].'"></div>';
+                                ?>
+                              <div id="divl2b" ondrop="dropl2(event, '2')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
+                                align: middle;  background-repeat: no-repeat;">
+                                            <img src="<?php echo $imagemurl[1]; ?>" id="imgl2b" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: <?php echo $ntop[1]; ?>px; margin-left: <?php echo $nleft[1]; ?>px;" width="<?php echo $nwidth[1]; ?>" height="<?php echo $nheight[1]; ?>"></div>
+                                          </div>
+                                <?php
                         }
                 }
 
                 ?>
-                  <div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 564px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
-                  <!-- ddx.layout -->
-                  <?php include 'ddx.layout.php'; ?>
-                  <!-- ddx.layout fim -->
-                  </div>
+       
+        </div>
+<!-- FIM LAYOUT 2 -->
 
                 <?php
                 $sqlangulo1 = "SELECT * FROM c4y_capasconstrucao_girar WHERE idsession = $gidcsession AND posicao = 1 limit 1;";
