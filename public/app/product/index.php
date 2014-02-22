@@ -395,7 +395,7 @@ ondragover="allowDrop(event)"></div>
                               <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
                                 align: middle;  background-repeat: no-repeat;">
                                             <img src="<?php echo $imagemurl[1]; ?>" id="imgl2a" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: <?php echo $ntop[1]; ?>px; margin-left: <?php echo $nleft[1]; ?>px;" width="<?php echo $nwidth[1]; ?>" height="<?php echo $nheight[1]; ?>"></div>
-                                          </div>
+
                                 <?php
                         }
                   }                              
@@ -416,13 +416,13 @@ ondragover="allowDrop(event)"></div>
                               <div id="divl2b" ondrop="dropl2(event, '2')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
                                 align: middle;  background-repeat: no-repeat;">
                                             <img src="<?php echo $imagemurl[1]; ?>" id="imgl2b" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: <?php echo $ntop[1]; ?>px; margin-left: <?php echo $nleft[1]; ?>px;" width="<?php echo $nwidth[1]; ?>" height="<?php echo $nheight[1]; ?>"></div>
-                                          </div>
+
                                 <?php
                         }
                 }
 
                 ?>
-       
+       </div>
         </div>
 <!-- FIM LAYOUT 2 -->
 
