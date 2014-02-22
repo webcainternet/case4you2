@@ -318,20 +318,6 @@ ondragover="allowDrop(event)"></div>
 
 
 
-
-
-<div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 564px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
-
-<!-- ddx.layout -->
-    <?php include 'ddx.layout.php'; ?>
-<!-- ddx.layout fim -->
-
-</div>
-
-
-
-
-
 <?php
 	include '../../config.php';
 
@@ -362,11 +348,17 @@ ondragover="allowDrop(event)"></div>
 				$nleft[1] 		= $row1["nleft"];
 				$ntop[1] 		= $row1["ntop"];
 			?>
-				<script>
-				        document.getElementById('divl1').style.backgroundImage = "url('<?php echo $imagemurl[1]; ?>')";
-				        document.getElementById('divl1').style.backgroundSize = "<?php echo $nwidth[1]; ?>px <?php echo $nheight[1]; ?>px";
-				        document.getElementById('divl1').style.backgroundPosition = "<?php echo $nleft[1]; ?>px <?php echo $ntop[1]; ?>px";
-				</script>
+
+                  <?php
+                   $imgl1 = "<img src=""".$imagemurl[1].""" id=""imgl1"" draggable=""true"" ondragstart=""drag(event)"" style=""max-width: 5000%; max-height: 5000%; margin-top: ".$ntop[1]."px; margin-left: ".$nleft[1]."px;"" width=""".$nwidth[1].""" height=""".$nheight[1]"""></div>";
+                  ?>
+
+                  <div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 564px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
+                  <!-- ddx.layout -->
+                  <?php include 'ddx.layout.php'; ?>
+                  <!-- ddx.layout fim -->
+                  </div>
+
 			<?php
 			}
 		}
@@ -381,7 +373,7 @@ ondragover="allowDrop(event)"></div>
                 $angulo1   = $rowangulo1["angulo"];
             ?>
                 <script>
-                        $('#divl1').rotate(<?php echo $angulo1; ?>);
+                        $('#imgl1').rotate(<?php echo $angulo1; ?>);
                 </script>
             <?php
             }
@@ -412,11 +404,17 @@ ondragover="allowDrop(event)"></div>
                                 $nleft[1]               = $row1["nleft"];
                                 $ntop[1]                = $row1["ntop"];
                         ?>
-                                <script>
-                                        document.getElementById('divl2a').style.backgroundImage = "url('<?php echo $imagemurl[1]; ?>')";
-                                        document.getElementById('divl2a').style.backgroundSize = "<?php echo $nwidth[1]; ?>px <?php echo $nheight[1]; ?>px";
-                                        document.getElementById('divl2a').style.backgroundPosition = "<?php echo $nleft[1]; ?>px <?php echo $ntop[1]; ?>px";
-                                </script>
+
+                        <?php
+                              $imgl2a = "<img src=""".$imagemurl[1].""" id=""imgl2a"" draggable=""true"" ondragstart=""drag(event)"" style=""max-width: 5000%; max-height: 5000%; margin-top: ".$ntop[1]."px; margin-left: ".$nleft[1]."px;"" width=""".$nwidth[1].""" height=""".$nheight[1]"""></div>";
+                        ?>
+
+                        <div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 564px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
+                        <!-- ddx.layout -->
+                        <?php include 'ddx.layout.php'; ?>
+                        <!-- ddx.layout fim -->
+                        </div>
+
                         <?php
                         }
                 }
@@ -431,7 +429,7 @@ ondragover="allowDrop(event)"></div>
                         $angulo1   = $rowangulo1["angulo"];
                     ?>
                         <script>
-                                $('#divl2a').rotate(<?php echo $angulo1; ?>);
+                                $('#imgl2a').rotate(<?php echo $angulo1; ?>);
                         </script>
                     <?php
                     }
@@ -450,11 +448,17 @@ ondragover="allowDrop(event)"></div>
                                 $nleft[2]               = $row2["nleft"];
                                 $ntop[2]                = $row2["ntop"];
                         ?>
-                                <script>
-                                        document.getElementById('divl2b').style.backgroundImage = "url('<?php echo $imagemurl[2]; ?>')";
-                                        document.getElementById('divl2b').style.backgroundSize = "<?php echo $nwidth[2]; ?>px <?php echo $nheight[2]; ?>px";
-                                        document.getElementById('divl2b').style.backgroundPosition = "<?php echo $nleft[2]; ?>px <?php echo $ntop[2]; ?>px";
-                                </script>
+                        
+                        <?php
+                              $imgl2b = "<img src=""".$imagemurl[1].""" id=""imgl2b"" draggable=""true"" ondragstart=""drag(event)"" style=""max-width: 5000%; max-height: 5000%; margin-top: ".$ntop[1]."px; margin-left: ".$nleft[1]."px;"" width=""".$nwidth[1].""" height=""".$nheight[1]"""></div>";
+                        ?>
+
+                        <div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 564px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
+                        <!-- ddx.layout -->
+                        <?php include 'ddx.layout.php'; ?>
+                        <!-- ddx.layout fim -->
+                        </div>
+                        
                         <?php
                         }
                 }
@@ -469,7 +473,7 @@ ondragover="allowDrop(event)"></div>
                         $angulo2   = $rowangulo2["angulo"];
                     ?>
                         <script>
-                                $('#divl2b').rotate(<?php echo $angulo2; ?>);
+                                $('#imgl2b').rotate(<?php echo $angulo2; ?>);
                         </script>
                     <?php
                     }
@@ -489,6 +493,17 @@ ondragover="allowDrop(event)"></div>
 
 
         if ($glayout == 2) {
+            ?>
+                  <div style="display: block; margin-left:13px; margin-top: 3px; float: left; width: 350px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 564px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
+                  <!-- ddx.layout -->
+                  <?php include 'ddx.layout.php'; ?>
+                  <!-- ddx.layout fim -->
+                  </div>
+                        
+            <?php
+
+
+
                 $sql_statement1  = "SELECT * FROM c4y_capasconstrucao WHERE idcsession = $gidcsession AND modelo = $gmodelo AND layout = $glayout AND posicao = 1  order by datainsert desc limit 1";
                 $result1 = mysql_query($sql_statement1);
                 if (!$result1) { 
@@ -826,6 +841,8 @@ ondragover="allowDrop(event)"></div>
 
 ?>
 
+
+<!-- Mascaras -->
 <?php if ($_GET["m"] == "0") { ?>
 <div style="position: absolute; top: 0px; left: 0px; margin-left: 10px; padding: 0px; height: 494px; width: 340px; background-size: 340px; background-image: url(https://case4you.com.br/app/img/mask-iphone4-top.png); background-repeat: no-repeat no-repeat;">&nbsp;</div>
 <? } ?>
@@ -852,7 +869,7 @@ ondragover="allowDrop(event)"></div>
 
 
 
-
+<!-- Filtros -->
 <script>
 <?php if ($_GET["f"] == "0") { ?>
     selecionarfiltro('<?php echo $_GET['l']; ?>', '');

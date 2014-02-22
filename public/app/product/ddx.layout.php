@@ -6,7 +6,9 @@ switch ($ql) {
 <!-- LAYOUT 1 -->
         <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; background-size: 340px; background-repeat: no-repeat no-repeat;">
             <div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 100%; height: 100%; overflow: hidden;text-align: center;
-    align: middle;  background-repeat: no-repeat;"></div>
+    align: middle;  background-repeat: no-repeat;">
+                <?php echo $imgl1; ?>
+            </div>
     </div>
 <!-- FIM LAYOUT 1 -->
 
@@ -16,10 +18,14 @@ switch ($ql) {
 <!-- LAYOUT 2 -->
         <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 340px; background-size: 340px; background-repeat: no-repeat no-repeat;">
                 <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
-        align: middle;  background-repeat: no-repeat;"></div>
+        align: middle;  background-repeat: no-repeat;">
+                    <?php echo $imgl2a; ?>
+                </div>
 
         <div id="divl2b" ondrop="dropl2(event, '2')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
-        align: middle;  background-repeat: no-repeat;"></div>
+        align: middle;  background-repeat: no-repeat;">
+                    <?php echo $imgl2b; ?>
+                </div>
         </div>
 <!-- FIM LAYOUT 2 -->
 
