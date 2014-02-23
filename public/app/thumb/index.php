@@ -29,6 +29,8 @@ else {
 <head>
 <meta charset="utf-8" />
 
+<script type="text/javascript" src="/catalog/view/theme/theme254/fancybox/lib/jquery-1.10.1.min.js"></script>
+
 
 <style type="text/css">
 @font-face {
@@ -56,11 +58,6 @@ background-color: transparent;
 }
 
 </style>
-
-  <link rel="stylesheet" href="../0/jquery-ui.css" />
-  <script src="../0/jquery-1.9.1.js"></script>
-  <script src="../0/jquery-ui.js"></script>
-  <link rel="stylesheet" href="../0/style.css" />
 
   <?php include 'ddx.jscript.php'; ?>
 
