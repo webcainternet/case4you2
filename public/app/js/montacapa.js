@@ -12,6 +12,10 @@ function GirarImg(idsession, posicao, angulo) {
    });
 }
 
+function LimpaGirarImg(idsession, posicao) {
+   GirarImg(idsession, posicao, 0);
+}
+
 function MontaCapa(modelo, layout) {
    $(document).ready(function(){
       var response = '';
