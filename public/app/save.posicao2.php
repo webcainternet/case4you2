@@ -50,7 +50,7 @@ ini_set("memory_limit","128M");
         fclose($savefile);
 
         //Descobre o tipo da imagem
-        $imagemtipo = exif_imagetype($novoarq.'.tmp');
+        $imagemtipo = exif_imagetype('/var/www/case4you.com.br/case4you2/public/app/'.$novoarq.'.tmp');
 
         switch ($imagemtipo) {
             case 1:
