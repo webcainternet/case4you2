@@ -497,11 +497,6 @@ ondragover="allowDrop(event)"></div>
 
 
 
-
-
-
-<?php
-
         if ($glayout == 2) {
                 $sql_statement1  = "SELECT * FROM c4y_capasconstrucao WHERE idcsession = $gidcsession AND modelo = $gmodelo AND layout = $glayout AND posicao = 1  order by datainsert desc limit 1";
                 $result1 = mysql_query($sql_statement1);
