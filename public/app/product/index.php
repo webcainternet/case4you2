@@ -274,7 +274,6 @@ else
 <div id="div1" ondrop="drop(event)"
 ondragover="allowDrop(event)"></div>
 
-
 <!-- invisible iframes -->
 <div style="display: none;">
     <iframe id="invfr1"  name="invfr1"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>

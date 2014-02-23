@@ -66,47 +66,6 @@ background-color: transparent;
 
 <script>
 	function selecionarfiltro(meutemplate, minhaext) {
-
-                if (meutemplate == '0') {
-                        varbg = document.getElementById("divl1").style.backgroundImage;
-                        varnbg = varbg.replace("png-sp.png)","png)");
-                        varnbg = varnbg.replace("png-40.png)","png)");
-                        varnbg = varnbg.replace("png-pb.png)","png)");
-                        varnbg = varnbg.replace("png-red.png)","png)");
-                        varnbg = varnbg.replace("png-verde.png)","png)");
-                        varnbg = varnbg.replace("png-azul.png)","png)");
-                        varnbg = varnbg.replace("png-amarelo.png)","png)");
-                        varnbg = varnbg.replace("png-roxo.png)","png)");
-                        varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("divl1").style.backgroundImage = varnbg;
-                }
-
-                if (meutemplate == '1') {
-                        varbg = document.getElementById("divl2a").style.backgroundImage;
-                        varnbg = varbg.replace("png-sp.png)","png)");
-                        varnbg = varnbg.replace("png-40.png)","png)");
-                        varnbg = varnbg.replace("png-pb.png)","png)");
-                        varnbg = varnbg.replace("png-red.png)","png)");
-                        varnbg = varnbg.replace("png-verde.png)","png)");
-                        varnbg = varnbg.replace("png-azul.png)","png)");
-                        varnbg = varnbg.replace("png-amarelo.png)","png)");
-                        varnbg = varnbg.replace("png-roxo.png)","png)");
-                        varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("divl2a").style.backgroundImage = varnbg;
-
-                        varbg = document.getElementById("divl2b").style.backgroundImage;
-                        varnbg = varbg.replace("png-sp.png)","png)");
-                        varnbg = varnbg.replace("png-40.png)","png)");
-                        varnbg = varnbg.replace("png-pb.png)","png)");
-                        varnbg = varnbg.replace("png-red.png)","png)");
-                        varnbg = varnbg.replace("png-verde.png)","png)");
-                        varnbg = varnbg.replace("png-azul.png)","png)");
-                        varnbg = varnbg.replace("png-amarelo.png)","png)");
-                        varnbg = varnbg.replace("png-roxo.png)","png)");
-                        varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("divl2b").style.backgroundImage = varnbg;
-                }
-
                 if (meutemplate == '2') {
                         varbg = document.getElementById("divl15b1").style.backgroundImage;
                         varnbg = varbg.replace("png-sp.png)","png)");
@@ -324,19 +283,23 @@ background-color: transparent;
 <div id="div1" ondrop="drop(event)"
 ondragover="allowDrop(event)"></div>
 
-
-
-
-
-
-
-
-<div style="display: block; float: left; width: 87px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 135px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
-
-<!-- ddx.layout -->
-    <?php include 'ddx.layout.php'; ?>
-<!-- ddx.layout fim -->
-
+<!-- invisible iframes -->
+<div style="display: none;">
+    <iframe id="invfr1"  name="invfr1"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr2"  name="invfr2"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr3"  name="invfr3"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr4"  name="invfr4"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr5"  name="invfr5"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr6"  name="invfr6"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr7"  name="invfr7"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr8"  name="invfr8"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr9"  name="invfr9"  src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr10" name="invfr10" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr11" name="invfr11" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr12" name="invfr12" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr13" name="invfr13" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr14" name="invfr14" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
+    <iframe id="invfr15" name="invfr15" src="https://case4you.com.br/case4you/2/blank.html"></iframe>
 </div>
 
 
@@ -379,14 +342,45 @@ ondragover="allowDrop(event)"></div>
 
 
 			?>
-				<script>
-				        document.getElementById('divl1').style.backgroundImage = "url('<?php echo $imagemurl[1]; ?>')";
-				        document.getElementById('divl1').style.backgroundSize = "<?php echo $nwidth[1]; ?>px <?php echo $nheight[1]; ?>px";
-				        document.getElementById('divl1').style.backgroundPosition = "<?php echo $nleft[1]; ?>px <?php echo $ntop[1]; ?>px";
-				</script>
+
+                  <div style="display: block; float: left; width: 87px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 135px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
+                  <!-- ddx.layout -->
+                  
+                  <!-- LAYOUT 1 -->
+                          <div id="divmask" style="padding: 0px; height: <?php echo $mh-1; ?>px; width: 84px; background-size: 42px; background-repeat: no-repeat no-repeat;">
+                                  <div id="divl1" ondrop="drop(event, '1')" ondragover="allowDrop(event)" style="width: 100%; height: 100%; overflow: hidden;text-align: center;
+                      align: middle;  background-repeat: no-repeat;">
+                                  <img src="<?php echo $imagemurl[1]; ?>" id="imgl1" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: <?php echo $ntop[1]; ?>px; margin-left: <?php echo $nleft[1]; ?>px;" width="<?php echo $nwidth[1]; ?>" height="<?php echo $nheight[1]; ?>"></div>
+                          </div>
+                      </div>
+                  <!-- FIM LAYOUT 1 -->
+
+                  <!-- ddx.layout fim -->
+                  </div>
+
+
 			<?php
 			}
 		}
+
+
+        $sqlangulo1 = "SELECT * FROM c4y_capasconstrucao_girar WHERE idsession = $gidcsession AND posicao = 1 limit 1;";
+        $resultangulo1 = mysql_query($sqlangulo1);
+        if (!$resultangulo1) { 
+            die('Invalid query: ' . mysql_error()); 
+        }
+        else { 
+            while ($rowangulo1 = mysql_fetch_array($resultangulo1, MYSQL_ASSOC)) { 
+                $angulo1   = $rowangulo1["angulo"];
+            ?>
+                <script>
+                        $('#imgl1').rotate(<?php echo $angulo1; ?>);
+                </script>
+            <?php
+            }
+        }
+
+
 	}
 
 
@@ -400,6 +394,10 @@ ondragover="allowDrop(event)"></div>
 
 
         if ($glayout == 1) {
+            ?>
+<!-- LAYOUT 2 -->
+        <div id="divmask" style="padding: 0px; height: <?php echo $mh; ?>px; width: 42px; background-size: 42px; background-repeat: no-repeat no-repeat;">
+            <?php
                 $sql_statement1  = "SELECT * FROM c4y_capasconstrucao WHERE idcsession = $gidcsession AND modelo = $gmodelo AND layout = $glayout AND posicao = 1  order by datainsert desc limit 1";
                 $result1 = mysql_query($sql_statement1);
                 if (!$result1) { 
@@ -418,11 +416,11 @@ ondragover="allowDrop(event)"></div>
                                 $nleft[1]       = $nleft[1]/4;
                                 $ntop[1]        = $ntop[1]/4;
                         ?>
-                                <script>
-                                        document.getElementById('divl2a').style.backgroundImage = "url('<?php echo $imagemurl[1]; ?>')";
-                                        document.getElementById('divl2a').style.backgroundSize = "<?php echo $nwidth[1]; ?>px <?php echo $nheight[1]; ?>px";
-                                        document.getElementById('divl2a').style.backgroundPosition = "<?php echo $nleft[1]; ?>px <?php echo $ntop[1]; ?>px";
-                                </script>
+
+                              <div id="divl2a" ondrop="dropl2(event, '1')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
+                                align: middle;  background-repeat: no-repeat; margin-left: 17px;">
+                                            <img src="<?php echo $imagemurl[1]; ?>" id="imgl2a" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: <?php echo $ntop[1]; ?>px; margin-left: <?php echo $nleft[1]; ?>px;" width="<?php echo $nwidth[1]; ?>" height="<?php echo $nheight[1]; ?>"></div>
+
                         <?php
                         }
                 }
@@ -445,15 +443,55 @@ ondragover="allowDrop(event)"></div>
                                 $nleft[2]       = $nleft[2]/4;
                                 $ntop[2]        = $ntop[2]/4;
                         ?>
-                                <script>
-                                        document.getElementById('divl2b').style.backgroundImage = "url('<?php echo $imagemurl[2]; ?>')";
-                                        document.getElementById('divl2b').style.backgroundSize = "<?php echo $nwidth[2]; ?>px <?php echo $nheight[2]; ?>px";
-                                        document.getElementById('divl2b').style.backgroundPosition = "<?php echo $nleft[2]; ?>px <?php echo $ntop[2]; ?>px";
-                                </script>
+                              <div id="divl2b" ondrop="dropl2(event, '2')" ondragover="allowDrop(event)" style="float: left;  width: <?php echo $mw2; ?>px; height: <?php echo $mh2; ?>px; overflow: hidden;text-align: center;
+                                align: middle;  background-repeat: no-repeat; margin-left: 17px;">
+                                            <img src="<?php echo $imagemurl[2]; ?>" id="imgl2b" draggable="true" ondragstart="drag(event)" style="max-width: 5000%; max-height: 5000%; margin-top: <?php echo $ntop[2]; ?>px; margin-left: <?php echo $nleft[2]; ?>px;" width="<?php echo $nwidth[2]; ?>" height="<?php echo $nheight[2]; ?>"></div>
+
                         <?php
                         }
                 }
+
+ ?>
+       </div>
+        </div>
+<!-- FIM LAYOUT 2 -->
+
+
+                <?php
+                $sqlangulo1 = "SELECT * FROM c4y_capasconstrucao_girar WHERE idsession = $gidcsession AND posicao = 1 limit 1;";
+                $resultangulo1 = mysql_query($sqlangulo1);
+                if (!$resultangulo1) { 
+                    die('Invalid query: ' . mysql_error()); 
+                }
+                else { 
+                    while ($rowangulo1 = mysql_fetch_array($resultangulo1, MYSQL_ASSOC)) { 
+                        $angulo1   = $rowangulo1["angulo"];
+                    ?>
+                        <script>
+                                $('#imgl2a').rotate(<?php echo $angulo1; ?>);
+                        </script>
+                    <?php
+                    }
+                }
+
+                $sqlangulo2 = "SELECT * FROM c4y_capasconstrucao_girar WHERE idsession = $gidcsession AND posicao = 2 limit 1;";
+                $resultangulo2 = mysql_query($sqlangulo2);
+                if (!$resultangulo2) { 
+                    die('Invalid query: ' . mysql_error()); 
+                }
+                else { 
+                    while ($rowangulo2 = mysql_fetch_array($resultangulo2, MYSQL_ASSOC)) { 
+                        $angulo2   = $rowangulo2["angulo"];
+                    ?>
+                        <script>
+                                $('#imgl2b').rotate(<?php echo $angulo2; ?>);
+                        </script>
+                    <?php
+                    }
+                }
+
         }
+               
 
 
 
@@ -462,10 +500,7 @@ ondragover="allowDrop(event)"></div>
 
 
 
-
-
-
-
+<?php
 
         if ($glayout == 2) {
                 $sql_statement1  = "SELECT * FROM c4y_capasconstrucao WHERE idcsession = $gidcsession AND modelo = $gmodelo AND layout = $glayout AND posicao = 1  order by datainsert desc limit 1";
