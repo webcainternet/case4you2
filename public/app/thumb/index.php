@@ -74,6 +74,7 @@ background-color: transparent;
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
+                        alert(minhaext);
                         $('#imgl1').attr("src", varnbg);
                 }
 
@@ -88,6 +89,7 @@ background-color: transparent;
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
+                        alert(minhaext);
                         $('#imgl2a').attr("src", varnbg);
 
                         varbg = document.getElementById("imgl2b").getAttribute('src');
@@ -100,6 +102,7 @@ background-color: transparent;
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
+                        alert(minhaext);
                         $('#imgl2b').attr("src", varnbg);
                 }
 
