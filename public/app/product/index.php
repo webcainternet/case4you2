@@ -42,49 +42,49 @@ else
 
 <script>
 	function selecionarfiltro(meutemplate, minhaext) {
-                alert(minhaext);
+                //alert(minhaext);
 
                 if (meutemplate == '0') {
                         varbg = document.getElementById("imgl1").getAttribute('src');
-                        varnbg = varbg.replace("png-sp.png)","png)");
-                        varnbg = varnbg.replace("png-40.png)","png)");
-                        varnbg = varnbg.replace("png-pb.png)","png)");
-                        varnbg = varnbg.replace("png-red.png)","png)");
-                        varnbg = varnbg.replace("png-verde.png)","png)");
-                        varnbg = varnbg.replace("png-azul.png)","png)");
-                        varnbg = varnbg.replace("png-amarelo.png)","png)");
-                        varnbg = varnbg.replace("png-roxo.png)","png)");
-                        varnbg = varnbg.replace(")",minhaext+")");
+                        varnbg = varbg.replace("png-sp.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-40.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-pb.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-red.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-verde.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-azul.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-amarelo.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-roxo.png","pngALTERAR");
+                        varnbg = varnbg.replace("pngALTERAR",minhaext);
                         $('#imgl1').attr("src", varnbg);
-                        //alert(varnbg);
+                        alert(varnbg);
                 }
 
                 if (meutemplate == '1') {
                         varbg = document.getElementById("imgl2a").getAttribute('src');
-                        varnbg = varbg.replace("png-sp.png)","png)");
-                        varnbg = varnbg.replace("png-40.png)","png)");
-                        varnbg = varnbg.replace("png-pb.png)","png)");
-                        varnbg = varnbg.replace("png-red.png)","png)");
-                        varnbg = varnbg.replace("png-verde.png)","png)");
-                        varnbg = varnbg.replace("png-azul.png)","png)");
-                        varnbg = varnbg.replace("png-amarelo.png)","png)");
-                        varnbg = varnbg.replace("png-roxo.png)","png)");
-                        varnbg = varnbg.replace(")",minhaext+")");
+                        varnbg = varbg.replace("png-sp.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-40.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-pb.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-red.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-verde.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-azul.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-amarelo.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-roxo.png","pngALTERAR");
+                        varnbg = varnbg.replace("pngALTERAR",minhaext);
                         $('#imgl2a').attr("src", varnbg);
-                        //alert(varnbg);
+                        alert(varnbg);
 
                         varbg = document.getElementById("imgl2b").getAttribute('src');
-                        varnbg = varbg.replace("png-sp.png)","png)");
-                        varnbg = varnbg.replace("png-40.png)","png)");
-                        varnbg = varnbg.replace("png-pb.png)","png)");
-                        varnbg = varnbg.replace("png-red.png)","png)");
-                        varnbg = varnbg.replace("png-verde.png)","png)");
-                        varnbg = varnbg.replace("png-azul.png)","png)");
-                        varnbg = varnbg.replace("png-amarelo.png)","png)");
-                        varnbg = varnbg.replace("png-roxo.png)","png)");
-                        varnbg = varnbg.replace(")",minhaext+")");
+                        varnbg = varbg.replace("png-sp.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-40.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-pb.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-red.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-verde.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-azul.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-amarelo.png","pngALTERAR");
+                        varnbg = varnbg.replace("png-roxo.png","pngALTERAR");
+                        varnbg = varnbg.replace("pngALTERAR",minhaext);
                         $('#imgl2b').attr("src", varnbg);
-                        //alert(varnbg);
+                        alert(varnbg);
                 }
 
                 if (meutemplate == '2') {
