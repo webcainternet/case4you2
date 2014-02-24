@@ -41,13 +41,10 @@ else
 <script type="text/javascript" src="/catalog/view/theme/theme254/fancybox/lib/jquery-1.10.1.min.js"></script>
 
 <script>
-    function selecionarfiltro(filtroselecionado) {
-        alert(filtroselecionado);
-    }
-
 	function selecionarfiltro(meutemplate, minhaext) {
+                alert(minhaext);
+
                 if (meutemplate == '0') {
-                        minhaext = document.getElementById("imgl1").getAttribute('src');
                         varbg = document.getElementById("imgl1").getAttribute('src');
                         varnbg = varbg.replace("png-sp.png)","png)");
                         varnbg = varnbg.replace("png-40.png)","png)");
@@ -59,7 +56,7 @@ else
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
                         $('#imgl1').attr("src", varnbg);
-                        alert(varnbg);
+                        //alert(varnbg);
                 }
 
                 if (meutemplate == '1') {
@@ -74,7 +71,7 @@ else
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
                         $('#imgl2a').attr("src", varnbg);
-                        alert(varnbg);
+                        //alert(varnbg);
 
                         varbg = document.getElementById("imgl2b").getAttribute('src');
                         varnbg = varbg.replace("png-sp.png)","png)");
@@ -87,7 +84,7 @@ else
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
                         $('#imgl2b').attr("src", varnbg);
-                        alert(varnbg);
+                        //alert(varnbg);
                 }
 
                 if (meutemplate == '2') {
