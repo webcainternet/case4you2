@@ -42,8 +42,6 @@ else
 
 <script>
 	function selecionarfiltro(meutemplate, minhaext) {
-                //alert(minhaext);
-
                 if (meutemplate == '0') {
                         varbg = document.getElementById("imgl1").getAttribute('src');
                         varnbg = varbg.replace(".png-sp.png",".pngALTERARXY");
