@@ -65,7 +65,6 @@ background-color: transparent;
 	function selecionarfiltro(meutemplate, minhaext) {
                 if (meutemplate == '0') {
                         varbg = document.getElementById("imgl1").getAttribute('src');
-                        alert('111 '+varbg);
                         varnbg = varbg.replace("png-sp.png)","png)");
                         varnbg = varnbg.replace("png-40.png)","png)");
                         varnbg = varnbg.replace("png-pb.png)","png)");
@@ -75,13 +74,11 @@ background-color: transparent;
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("imgl1").src = varnbg
-                        alert('222 '+varnbg);
+                        document.getElementById("imgl1").src = varnbg;
                 }
 
                 if (meutemplate == '1') {
                         varbg = document.getElementById("imgl2a").getAttribute('src');
-                        alert('111a '+varbg);
                         varnbg = varbg.replace("png-sp.png)","png)");
                         varnbg = varnbg.replace("png-40.png)","png)");
                         varnbg = varnbg.replace("png-pb.png)","png)");
@@ -91,11 +88,9 @@ background-color: transparent;
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("imgl2a").src = varnbg
-                        alert('222a '+varnbg);
+                        document.getElementById("imgl2a").src = varnbg;
 
                         varbg = document.getElementById("imgl2b").getAttribute('src');
-                        alert('111b '+varbg);
                         varnbg = varbg.replace("png-sp.png)","png)");
                         varnbg = varnbg.replace("png-40.png)","png)");
                         varnbg = varnbg.replace("png-pb.png)","png)");
@@ -105,8 +100,7 @@ background-color: transparent;
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("imgl2b").src = varnbg
-                        alert('222b '+varnbg);
+                        document.getElementById("imgl2b").src = varnbg;
                 }
 
                 if (meutemplate == '2') {
