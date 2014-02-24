@@ -41,8 +41,13 @@ else
 <script type="text/javascript" src="/catalog/view/theme/theme254/fancybox/lib/jquery-1.10.1.min.js"></script>
 
 <script>
+    function selecionarfiltro(filtroselecionado) {
+        alert(filtroselecionado);
+    }
+
 	function selecionarfiltro(meutemplate, minhaext) {
                 if (meutemplate == '0') {
+                        minhaext = document.getElementById("imgl1").getAttribute('src');
                         varbg = document.getElementById("imgl1").getAttribute('src');
                         varnbg = varbg.replace("png-sp.png)","png)");
                         varnbg = varnbg.replace("png-40.png)","png)");
