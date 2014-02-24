@@ -953,7 +953,7 @@ ondragover="allowDrop(event)"></div>
 ?>
 
       <div class="fontc4y1" style="float: left; width: 320px; margin-left: 20px; margin-top: 20px;">
-
+<!--
       <div style="float: left; text-align: left; width: 95px; margin-bottom: 20px; margin-left: 15px;">
                 <div style="float: left; text-align: left">
                         <input onchange="selecionarfiltro('<?php echo $_GET['l']; ?>', '')" type="radio" name="filtro" id="fsepia" value="-sp.png">
@@ -988,7 +988,7 @@ ondragover="allowDrop(event)"></div>
                 <div style="float: left; text-align: left;padding-left: 5px; height: 80px;">
                         <img src="img/pic-c.png" style="width: 65px;border:" alt="">
                 </div>
-        </div>
+        </div> -->
 
         <div style="float: left; text-align: left; width: 210px; margin-bottom: 20px; margin-left: 15px;">
         <a href="#" onclick="document.getElementById('mascarasp').style.display = 'block'">Coloca mascara</a> | <a href="#" onclick="document.getElementById('mascarasp').style.display = 'none'">Remove mascara</a>
