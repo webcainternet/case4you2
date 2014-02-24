@@ -990,9 +990,8 @@ ondragover="allowDrop(event)"></div>
                 </div>
         </div> -->
 
-        <div style="float: left; text-align: left; width: 210px; margin-bottom: 20px; margin-left: 15px;">
-        <a href="#" onclick="document.getElementById('mascarasp').style.display = 'block'">Coloca mascara</a> | <a href="#" onclick="document.getElementById('mascarasp').style.display = 'none'">Remove mascara</a>
-
+        <div style="background-color: #303030; position: absolute; top: 10px; right: 10px; padding: 20px; border-radius: 15px; color: #FFFFFF;">
+            <a style="color: #FFFFFF;" href="#" onclick="document.getElementById('mascarasp').style.display = 'block'">Coloca mascara</a> | <a style="color: #FFFFFF;" href="#" onclick="document.getElementById('mascarasp').style.display = 'none'">Remove mascara</a>
         </div>
 
 
