@@ -42,7 +42,45 @@ else
 
 <script>
 	function selecionarfiltro(meutemplate, minhaext) {
+                if (meutemplate == '0') {
+                        varbg = document.getElementById("imgl1").getAttribute('src');
+                        varnbg = varbg.replace("png-sp.png)","png)");
+                        varnbg = varnbg.replace("png-40.png)","png)");
+                        varnbg = varnbg.replace("png-pb.png)","png)");
+                        varnbg = varnbg.replace("png-red.png)","png)");
+                        varnbg = varnbg.replace("png-verde.png)","png)");
+                        varnbg = varnbg.replace("png-azul.png)","png)");
+                        varnbg = varnbg.replace("png-amarelo.png)","png)");
+                        varnbg = varnbg.replace("png-roxo.png)","png)");
+                        varnbg = varnbg.replace(")",minhaext+")");
+                        document.getElementById("imgl1").src = varnbg
+                }
 
+                if (meutemplate == '1') {
+                        varbg = document.getElementById("imgl2a").getAttribute('src');
+                        varnbg = varbg.replace("png-sp.png)","png)");
+                        varnbg = varnbg.replace("png-40.png)","png)");
+                        varnbg = varnbg.replace("png-pb.png)","png)");
+                        varnbg = varnbg.replace("png-red.png)","png)");
+                        varnbg = varnbg.replace("png-verde.png)","png)");
+                        varnbg = varnbg.replace("png-azul.png)","png)");
+                        varnbg = varnbg.replace("png-amarelo.png)","png)");
+                        varnbg = varnbg.replace("png-roxo.png)","png)");
+                        varnbg = varnbg.replace(")",minhaext+")");
+                        document.getElementById("imgl2a").src = varnbg
+
+                        varbg = document.getElementById("imgl2b").getAttribute('src');
+                        varnbg = varbg.replace("png-sp.png)","png)");
+                        varnbg = varnbg.replace("png-40.png)","png)");
+                        varnbg = varnbg.replace("png-pb.png)","png)");
+                        varnbg = varnbg.replace("png-red.png)","png)");
+                        varnbg = varnbg.replace("png-verde.png)","png)");
+                        varnbg = varnbg.replace("png-azul.png)","png)");
+                        varnbg = varnbg.replace("png-amarelo.png)","png)");
+                        varnbg = varnbg.replace("png-roxo.png)","png)");
+                        varnbg = varnbg.replace(")",minhaext+")");
+                        document.getElementById("imgl2b").src = varnbg
+                }
 
                 if (meutemplate == '2') {
                         varbg = document.getElementById("divl15b1").style.backgroundImage;
