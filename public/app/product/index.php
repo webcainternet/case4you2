@@ -53,8 +53,8 @@ else
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
-                        //alert(minhaext);
-                        //$('#imgl1').attr("src", varnbg);
+                        $('#imgl1').attr("src", varnbg);
+                        alert(varnbg);
                 }
 
                 if (meutemplate == '1') {
@@ -68,11 +68,8 @@ else
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
-                        //alert(minhaext);
-                        //$('#imgl2a').attr("src", varnbg);
-                        searchPic1 = new Image();
-                        searchPic1.src = varnbg;
-                        document.getElementById("imgl2a").src = searchPic1.src;
+                        $('#imgl2a').attr("src", varnbg);
+                        alert(varnbg);
 
                         varbg = document.getElementById("imgl2b").getAttribute('src');
                         varnbg = varbg.replace("png-sp.png)","png)");
@@ -84,8 +81,8 @@ else
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
-                        //alert(minhaext);
-                        //$('#imgl2b').attr("src", varnbg);
+                        $('#imgl2b').attr("src", varnbg);
+                        alert(varnbg);
                 }
 
                 if (meutemplate == '2') {
