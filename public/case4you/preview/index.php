@@ -493,7 +493,6 @@ ondragover="allowDrop(event)"></div>
                 }
 
                 ?>
-       </div>
         </div>
 <!-- FIM LAYOUT 2 -->
 
