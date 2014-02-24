@@ -74,7 +74,7 @@ background-color: transparent;
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("imgl1").src = varnbg;
+                        $('#imgl1').attr("src", varnbg);
                 }
 
                 if (meutemplate == '1') {
@@ -88,7 +88,7 @@ background-color: transparent;
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("imgl2a").src = varnbg;
+                        $('#imgl2a').attr("src", varnbg);
 
                         varbg = document.getElementById("imgl2b").getAttribute('src');
                         varnbg = varbg.replace("png-sp.png)","png)");
@@ -100,7 +100,7 @@ background-color: transparent;
                         varnbg = varnbg.replace("png-amarelo.png)","png)");
                         varnbg = varnbg.replace("png-roxo.png)","png)");
                         varnbg = varnbg.replace(")",minhaext+")");
-                        document.getElementById("imgl2b").src = varnbg;
+                        $('#imgl2b').attr("src", varnbg);
                 }
 
                 if (meutemplate == '2') {
