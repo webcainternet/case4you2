@@ -1,12 +1,14 @@
+
 <div id='coin-slider'>
 
-
-
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/case4you_02_1.png' ></a>
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/case4you_01_2.png' ></a>
-	<a href="https://case4you.com.br/empresas"><img src='image/data/banner/case4you_03_3.png' ></a>
+	<!-- <a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner3.png' ></a> -->
+	<!-- <a href="https://case4you.com.br/capas-prontas"><img src='image/data/banner/banner2.png' ></a> -->
+	<!-- <a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner4.png' ></a> -->
+	<!-- <a href="https://case4you.com.br/acessorios"><img src='image/data/banner/banner1.png' ></a> -->
 	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-famosos.png' ></a>
-	
+	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-facebook.png' ></a>
+	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-site3.png' ></a>
+	<a href="https://case4you.com.br/empresas"><img src='image/data/banner/banner-empresas.png' ></a>
 	
 
 	
