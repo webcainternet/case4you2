@@ -1,52 +1,12 @@
-<?php /*
-<div class="slideshow">
-  <div id="slideshow<?php echo $module; ?>" class="nivoSlider" style="width: <?php echo $width; ?>px; height: <?php echo $height; ?>px;">
-    <?php foreach ($banners as $banner) { ?>
-    <?php if ($banner['link']) { ?>
-    <a title="<?php echo $banner['title']; ?>" href="<?php echo $banner['link']; ?>"><img title="<?php echo $banner['description']; ?>" src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" /></a>
-    <?php } else { ?>
-    <img title="<?php echo $banner['description']; ?>" src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" />
-    <?php } ?>
-    <?php } ?>
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function() {
-        $('#slideshow<?php echo $module; ?>').nivoSlider({
-        	effect: 'fade',
-		animSpeed: 500 ,
-        pauseTime:5000,
-		slices:20,
-		captionOpacity:1,
-		controlNavThumbs:false,
-        controlNavThumbsFromRel:false,
-		controlNavThumbsSearch: '.jpg',
-		controlNavThumbsReplace: '_thumb.jpg',
-		directionNav:false,
-		controlNav: true,
-		prevText: false,
-		nextText: false
-        });
-	$('.nivo-controlNav a').eq(0).addClass('first');
-	$('.nivo-controlNav a').eq(1).addClass('second');
-	$('.nivo-controlNav a').eq(2).addClass('third');
-	$('.nivo-controlNav a').eq(3).addClass('four');
-});
-</script>
-*/
-?>
-
-
 <div id='coin-slider'>
 
-	<!-- <a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner3.png' ></a> -->
-	<!-- <a href="https://case4you.com.br/capas-prontas"><img src='image/data/banner/banner2.png' ></a> -->
-	<!-- <a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner4.png' ></a> -->
-	<!-- <a href="https://case4you.com.br/acessorios"><img src='image/data/banner/banner1.png' ></a> -->
+
+
+	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/case4you_02_1.png' ></a>
+	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/case4you_01_2.png' ></a>
+	<a href="https://case4you.com.br/empresas"><img src='image/data/banner/case4you_03_3.png' ></a>
 	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-famosos.png' ></a>
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-facebook.png' ></a>
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-site3.png' ></a>
-	<a href="https://case4you.com.br/empresas"><img src='image/data/banner/banner-empresas.png' ></a>
+	
 	
 
 	
