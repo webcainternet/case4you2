@@ -540,6 +540,16 @@ ondragover="allowDrop(event)"></div>
 
 
         if ($glayout == 2) {
+            ?>
+                  <div style="display: block; float: left; width: 700px; border-left-style: solid; border-left-width: 0px; border-left-color: rgb(204, 204, 204); height: 1080px; text-align: center; background-position: 15px 10px; background-repeat: no-repeat no-repeat;">
+                  <!-- ddx.layout -->
+                  <?php include 'ddx.layout.php'; ?>
+                  <!-- ddx.layout fim -->
+                  </div>
+                        
+            <?php
+
+
                 $sql_statement1  = "SELECT * FROM c4y_capasconstrucao WHERE idcsession = $gidcsession AND modelo = $gmodelo AND layout = $glayout AND posicao = 1  order by datainsert desc limit 1";
                 $result1 = mysql_query($sql_statement1);
                 if (!$result1) { 
