@@ -11,7 +11,7 @@
 
 	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/case4you_02.png' ></a>
 	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/case4you_01.png' ></a>
-	<a href="https://case4you.com.br/empresas"><img src='image/data/banner/banner-empresas.png' ></a>
+	<a href="https://case4you.com.br/empresas"><img src='image/data/banner/case4youcapa-1.png' ></a>
 	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-famosos.png' ></a>
 	
 <!--
