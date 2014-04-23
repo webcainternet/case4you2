@@ -5,6 +5,23 @@
 <?php echo $content_bottom; ?>
 </div>
 
+
+<!-- Google para tag de remarketing -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 981933754;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/981933754/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+<!-- End of Google para tag de remarketing -->
+
 <!-- border-top: solid 1px #6aa11a; C8E59C -->
 	<div class="wrapper" style="background-color: #71B01A; background-repeat: repeat-x; padding-bottom: 10px; background-image: url('/image/data/rodapebg.png');">
 		<div style="margin: auto; width: 1024px;">
