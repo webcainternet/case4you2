@@ -17,5 +17,5 @@ $(window).load(function() {
 </form>
 
 <script type="text/javascript">
-document.getElementById("frps1").submit();
+//document.getElementById("frps1").submit();
 </script> 
