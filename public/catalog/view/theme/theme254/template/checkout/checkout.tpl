@@ -43,6 +43,7 @@
     </div>
   </div>
   <?php echo $content_bottom; ?></div>
+<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
 <script type="text/javascript"><!--
 $('#checkout .checkout-content input[name=\'account\']').live('change', function() {
 	if ($(this).attr('value') == 'register') {

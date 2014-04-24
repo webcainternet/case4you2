@@ -10,7 +10,7 @@ $(window).load(function() {
 <form name="frps1" id="frps1" action="<?php echo $action; ?>" method="post">
     <div class="buttons">
     <div class="right">
-      <input id="psconfirm" type="submit" value="<?php echo $button_confirm; ?>" class="button" />
+      <input id="psconfirm" type="submit" value="AAA<?php echo $button_confirm; ?>" class="button" />
     </div>
   </div>
      <input type="hidden" id="url_ps" name="url_ps" value="<?php echo $url_ps; ?>">
