@@ -66,6 +66,7 @@ $_['error_approved']                 = 'Atenção: O seu cadastro necessita ser 
 $_['error_exists']                   = 'Atenção: Este e-mail já está cadastrado em nossa loja!';
 $_['error_firstname']                = 'Atenção: O nome deve ter entre 1 e 32 caracteres!';
 $_['error_lastname']                 = 'Atenção: O sobrenome deve ter entre 1 e 32 caracteres!';
+$_['error_company']                  = 'Atenção: O CPF/CNPJ é obrigatório!';
 $_['error_email']                    = 'Atenção: O e-mail não é válido!';
 $_['error_telephone']                = 'Atenção: O telefone deve ter entre 3 e 32 caracteres!';
 $_['error_password']                 = 'Atenção: A senha deve ter entre 4 e 20 caracteres!';

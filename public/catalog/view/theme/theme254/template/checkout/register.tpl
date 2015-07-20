@@ -33,7 +33,7 @@
 </div>
 <div class="right">
   <h2><?php echo $text_your_address; ?></h2>
-  <?php echo $entry_company; ?><br />
+  <span class="required">*</span> <?php echo $entry_company; ?><br />
   <input type="text" name="company" value="" class="large-field" />
   <br />
   <br />

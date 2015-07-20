@@ -3,10 +3,9 @@ class ControllerModuleLatest extends Controller {
 	protected function index($setting) {
 		$this->language->load('module/latest');
 		
-      	$this->data['heading_title'] = $this->language->get('heading_title');
+		$this->data['heading_title'] = $this->language->get('heading_title');
 		
 		$this->data['button_cart'] = $this->language->get('button_cart');
-		$this->data['button_details'] = $this->language->get('button_details');
 				
 		$this->load->model('catalog/product');
 		
@@ -52,8 +51,6 @@ class ControllerModuleLatest extends Controller {
 				'product_id' => $result['product_id'],
 				'thumb'   	 => $image,
 				'name'    	 => $result['name'],
-				'description' =>html_entity_decode($result['description']),
-				'description1' =>strip_tags (html_entity_decode($result['description'])),
 				'price'   	 => $price,
 				'special' 	 => $special,
 				'rating'     => $rating,

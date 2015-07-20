@@ -1,30 +1,33 @@
 <?php
+
+$root = dirname(__FILE__);
+$ds = DIRECTORY_SEPARATOR;
+$base_path = $root . $ds . '..' . $ds;
+
+require $base_path . 'env.php';
+
+$http_url = E_HTTP;
+$ssl_url = E_SSL;
+
 // HTTP
-define('HTTP_SERVER', 'https://case4you.com.br/admin/');
-define('HTTP_CATALOG', 'https://case4you.com.br/');
+define('HTTP_SERVER', $http_url . 'admin/');
+define('HTTP_CATALOG', $http_url);
 
 // HTTPS
-define('HTTPS_SERVER', 'https://case4you.com.br/admin/');
-define('HTTPS_CATALOG', 'https://case4you.com.br/');
+define('HTTPS_SERVER', $ssl_url . 'admin/');
+define('HTTPS_CATALOG', $ssl_url);
 
 // DIR
-define('DIR_APPLICATION', '/Users/fernandomendes/gitproj/case4you/public/admin/');
-define('DIR_SYSTEM', '/Users/fernandomendes/gitproj/case4you/public/system/');
-define('DIR_DATABASE', '/Users/fernandomendes/gitproj/case4you/public/system/database/');
-define('DIR_LANGUAGE', '/Users/fernandomendes/gitproj/case4you/public/admin/language/');
-define('DIR_TEMPLATE', '/Users/fernandomendes/gitproj/case4you/public/admin/view/template/');
-define('DIR_CONFIG', '/Users/fernandomendes/gitproj/case4you/public/system/config/');
-define('DIR_IMAGE', '/Users/fernandomendes/gitproj/case4you/public/image/');
-define('DIR_CACHE', '/Users/fernandomendes/gitproj/case4you/public/system/cache/');
-define('DIR_DOWNLOAD', '/Users/fernandomendes/gitproj/case4you/public/download/');
-define('DIR_LOGS', '/Users/fernandomendes/gitproj/case4you/public/system/logs/');
-define('DIR_CATALOG', '/Users/fernandomendes/gitproj/case4you/public/catalog/');
+define('DIR_APPLICATION', $base_path . 'admin' . $ds);
+define('DIR_SYSTEM', $base_path . 'system' . $ds);
+define('DIR_DATABASE', $base_path . 'system' . $ds . 'database' . $ds);
+define('DIR_LANGUAGE', $base_path . 'admin' . $ds . 'language' . $ds);
+define('DIR_TEMPLATE', $base_path . 'admin' . $ds . 'view' . $ds . 'template' . $ds);
+define('DIR_CONFIG', $base_path . 'system' . $ds . 'config' . $ds);
+define('DIR_IMAGE', $base_path . 'image' . $ds);
+define('DIR_CACHE', $base_path . 'system' . $ds . 'cache' . $ds);
+define('DIR_DOWNLOAD', $base_path . 'download' . $ds);
+define('DIR_LOGS', $base_path . 'system' . $ds . 'logs' . $ds);
+define('DIR_CATALOG', $base_path . 'catalog' . $ds);
 
-// DB
-define('DB_DRIVER', 'mysql');
-define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'case4you2');
-define('DB_PREFIX', 'oc_');
 ?>

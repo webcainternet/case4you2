@@ -1,11 +1,12 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+<?php echo $header; ?>
+<?php echo $content_top; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  
+
   <div class="product-info">
     <div class="wrapper indent-bot">
     <?php if ($thumb || $images) { ?>
@@ -14,8 +15,8 @@
             <div class="zoom-top">      <a href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>"  data-gal="prettyPhoto[gallery]" ><img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></div>
                           <?php } ?>
           <?php if ($thumb) { ?>
-           
-          <div class="image"> 
+
+          <div class="image">
           <a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class = 'cloud-zoom' id='zoom1' rel="position: 'right'" >
           <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" />
           </a>
@@ -34,7 +35,7 @@
           ?>
           <div class="image-additional <?php echo $cl1;?>">
               <ul>
-        
+
                 <?php $u=0; foreach ($images as $image) {
                     $u++;
                     $cl='';
@@ -44,8 +45,8 @@
                     else {
                         $cl='';
                     }
-                    
-                
+
+
                  ?>
                          <li <?php echo $cl;?>>
                                 <a href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: '<?php echo $image['thumb']; ?>' "><img src="<?php echo $image['small']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>
@@ -54,8 +55,8 @@
               </ul>
               </div>
           <?php } ?>
-          
-               
+
+
         </div>
         <?php } ?>
     <div class="extra-wrap">
@@ -75,7 +76,7 @@
         <?php if (!$special) { ?>
         <?php echo $price; ?>
         <?php } else { ?>
-        <span class="price-new"><?php echo $special; ?></span><span class="price-old"><?php echo $price; ?></span> 
+        <span class="price-new"><?php echo $special; ?></span><span class="price-old"><?php echo $price; ?></span>
         <?php } ?>
         <?php if ($tax) { ?>
         <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span><br />
@@ -84,7 +85,7 @@
         <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span>
         <?php } ?>
         <?php if ($discounts) { ?>
-       
+
         <div class="discount">
           <?php foreach ($discounts as $discount) { ?>
           <?php echo sprintf($text_discount, $discount['quantity'], $discount['price']); ?><br />
@@ -361,22 +362,22 @@
   </div>
   <?php } ?>
   </div>
-  
+
   </div>
   <?php if ($products) {
     $carous='';
-      if (count($products)>4) 
+      if (count($products)>4)
       {
         $carous='related-carousel';
         }
-      
-      
+
+
       ?>
   <h1><?php echo $tab_related;?></h1>
   <div  class="related <?php echo $carous;?>">
-    <div class="box-product"> 
+    <div class="box-product">
       <ul>
-       
+
       <?php foreach ($products as $product) { ?>
       <li class="related-info">
         <?php if ($product['thumb']) { ?>
@@ -397,9 +398,9 @@
           </div>
         </div>
         <?php } ?>
-        
+
          <div class="cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a></div>
-        
+
         </li>
       <?php } ?>
       </ul>
@@ -417,23 +418,23 @@ $('#button-cart').bind('click', function() {
 		dataType: 'json',
 		success: function(json) {
 			$('.success, .warning, .attention, information, .error').remove();
-			
+
 			if (json['error']) {
 				if (json['error']['option']) {
 					for (i in json['error']['option']) {
 						$('#option-' + i).after('<span class="error">' + json['error']['option'][i] + '</span>');
 					}
 				}
-			} 
-			
+			}
+
 			if (json['success']) {
 				//$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<span><img src="catalog/view/theme/theme254/image/close.png" alt="" class="close" /></span></div>');
 				//$('.success').fadeIn('slow');
 				//$('#cart-total').html(json['total']);
-				//$('html, body').animate({ scrollTop: 0 }, 'slow'); 
-				
+				//$('html, body').animate({ scrollTop: 0 }, 'slow');
+
 				window.location = 'index.php?route=checkout/cart';
-			}	
+			}
 		}
 	});
 });
@@ -454,20 +455,20 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 	},
 	onComplete: function(file, json) {
 		$('#button-option-<?php echo $option['product_option_id']; ?>').attr('disabled', false);
-		
+
 		$('.error').remove();
-		
+
 		if (json['success']) {
 			alert(json['success']);
-			
+
 			$('input[name=\'option[<?php echo $option['product_option_id']; ?>]\']').attr('value', json['file']);
 		}
-		
+
 		if (json['error']) {
 			$('#option-<?php echo $option['product_option_id']; ?>').after('<span class="error">' + json['error'] + '</span>');
 		}
-		
-		$('.loading').remove();	
+
+		$('.loading').remove();
 	}
 });
 //--></script>
@@ -477,13 +478,13 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 <script type="text/javascript"><!--
 $('#review .pagination a').live('click', function() {
 	$('#review').fadeOut('slow');
-		
+
 	$('#review').load(this.href);
-	
+
 	$('#review').fadeIn('slow');
-	
+
 	return false;
-});			
+});
 
 $('#review').load('index.php?route=product/product/review&product_id=<?php echo $product_id; ?>');
 
@@ -506,10 +507,10 @@ $('#button-review').bind('click', function() {
 			if (data['error']) {
 				$('#review-title').after('<div class="warning">' + data['error'] + '</div>');
 			}
-			
+
 			if (data['success']) {
 				$('#review-title').after('<div class="success">' + data['success'] + '</div>');
-								
+
 				$('input[name=\'name\']').val('');
 				$('textarea[name=\'text\']').val('');
 				$('input[name=\'rating\']:checked').attr('checked', '');
@@ -518,11 +519,11 @@ $('#button-review').bind('click', function() {
 		}
 	});
 });
-//--></script> 
+//--></script>
 <script type="text/javascript"><!--
 $('#tabs a').tabs();
-//--></script> 
-<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script> 
+//--></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script>
 <script type="text/javascript"><!--
 $(document).ready(function() {
 	if ($.browser.msie && $.browser.version == 6) {
@@ -536,5 +537,5 @@ $(document).ready(function() {
 	});
 	$('.time').timepicker({timeFormat: 'h:m'});
 });
-//--></script> 
+//--></script>
 <?php echo $footer; ?>

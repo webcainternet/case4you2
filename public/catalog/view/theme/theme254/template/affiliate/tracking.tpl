@@ -1,11 +1,12 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+<?php echo $header; ?>
+<?php echo $content_top; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  
+
   <div class="box-container">
 	<h1><?php echo $heading_title; ?></h1>
       <p><?php echo $text_description; ?></p>
@@ -30,7 +31,7 @@ $('input[name=\'product\']').autocomplete({
 		$.ajax({
 			url: 'index.php?route=affiliate/tracking/autocomplete&filter_name=' +  encodeURIComponent(request.term),
 			dataType: 'json',
-			success: function(json) {		
+			success: function(json) {
 				response($.map(json, function(item) {
 					return {
 						label: item.name,
@@ -43,12 +44,12 @@ $('input[name=\'product\']').autocomplete({
 	select: function(event, ui) {
 		$('input[name=\'product\']').attr('value', ui.item.label);
 		$('textarea[name=\'link\']').attr('value', ui.item.value);
-						
+
 		return false;
 	},
 	focus: function(event, ui) {
       return false;
    }
 });
-//--></script> 
+//--></script>
 <?php echo $footer; ?>

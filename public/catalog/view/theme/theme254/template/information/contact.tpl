@@ -1,13 +1,14 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+<?php echo $header; ?>
+<?php echo $content_top; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  
+
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="contact">
-    
+
     <h2 style="display:none"><?php echo $text_location; ?></h2>
     <div class="contact-info">
     <h1><?php echo $heading_title; ?></h1>
@@ -25,13 +26,9 @@
         <?php echo $fax; ?>
         <?php } ?>
       </div></div>
-               <div class="map-content">         
-               <figure>
-               <iframe width="330" height="243"  src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-                  </figure></div>
     </div>
     </div>
-    
+
     <div class="content contact-f"><h2><?php echo $text_contact; ?></h2>
 <div class="padd-content">   <div class="extra-wrap"> <div class="contact-form-left"><b><?php echo $entry_name; ?></b><br />
     <input class="q2" type="text" name="name" value="<?php echo $name; ?>" />

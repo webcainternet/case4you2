@@ -1,0 +1,96 @@
+<modification>
+	<id>VQMOD Add Meta Tag Description and Meta Tag Keyword in Information Page</id>
+	<version>v1.5.x.x</version>
+	<vqmver>v2.x.x</vqmver>
+	<author>robin.gupta@infodreamz.com</author>	
+	
+	<file name="admin/language/english/catalog/information.php" error="skip">				
+		<operation error="skip">
+			<search position="after" error="skip" index="1"><![CDATA[$_['entry_title']       = 'Information Title:';]]></search>
+			<add><![CDATA[
+			$_['entry_meta_keyword']       	   = 'Meta Tag Keyword:';
+			$_['entry_meta_description']       = 'Meta Tag Description:';
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="system/library/db.php">
+		<operation>
+			<search position="before"><![CDATA[
+				function query($sql) {
+			]]></search>
+			<add trim="true"><![CDATA[
+				public function checkTable($table, $column) {
+					//check if column exists.  If not, then make it exist.
+					$sql = "DESC " . DB_PREFIX . "{$table} {$column}";
+					$query = $this->query($sql);
+					if (!$query->num_rows) {
+						$sql = "ALTER TABLE " . DB_PREFIX . "{$table} ADD {$column} VARCHAR(255) NOT NULL DEFAULT ''";
+						$this->query($sql);
+					}
+				}
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="admin/controller/catalog/information.php" error="skip">				
+		<operation>			
+			<search position="after"><![CDATA[
+				function getForm() {
+			]]></search>
+			<add trim="true"><![CDATA[
+				$this->db->checkTable('information_description', 'meta_description');
+				$this->db->checkTable('information_description', 'meta_keyword');
+			]]></add>
+		</operation>
+		
+		<operation error="skip">
+			<search position="after" error="skip" index="1"><![CDATA[$this->data['entry_title'] = $this->language->get('entry_title');]]></search>
+			<add><![CDATA[
+			$this->data['entry_meta_keyword'] = $this->language->get('entry_meta_keyword');
+			$this->data['entry_meta_description'] = $this->language->get('entry_meta_description');
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="admin/model/catalog/information.php" error="skip">
+		<operation error="skip">
+			<search position="replace" error="skip"><![CDATA["', description = '" . $this->db->escape($value['description'])]]></search>
+			<add><![CDATA[ "', description = '" . $this->db->escape($value['description']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword'])]]></add>
+		</operation>
+		
+		<operation error="skip">
+			<search position="before" error="skip"><![CDATA['description' => $result['description']]]></search>
+			<add><![CDATA[
+			'meta_description' => $result['meta_description'],
+			'meta_keyword' => $result['meta_keyword'],
+			]]></add>
+		</operation>
+	</file>
+		
+	<file name="admin/view/template/catalog/information_form.tpl" error="skip">				
+		<operation error="skip">
+			<search position="after" error="skip" index="1" offset="3"><![CDATA[<span class="error"><?php echo $error_title[$language['language_id']]; ?></span>]]></search>
+			<add><![CDATA[
+				<tr>
+                <td><?php echo $entry_meta_description; ?></td>
+                <td><textarea name="information_description[<?php echo $language['language_id']; ?>][meta_description]" cols="40" rows="5"><?php echo isset($information_description[$language['language_id']]) ? $information_description[$language['language_id']]['meta_description'] : ''; ?></textarea></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_meta_keyword; ?></td>
+                <td><textarea name="information_description[<?php echo $language['language_id']; ?>][meta_keyword]" cols="40" rows="5"><?php echo isset($information_description[$language['language_id']]) ? $information_description[$language['language_id']]['meta_keyword'] : ''; ?></textarea></td>
+              </tr>
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/controller/information/information.php" error="skip">				
+		<operation error="skip">
+			<search position="after" error="skip" index="1"><![CDATA[$this->document->setTitle($information_info['title']);]]></search>
+			<add><![CDATA[
+			$this->document->setDescription($information_info['meta_description']);
+			$this->document->setKeywords($information_info['meta_keyword']); 
+			]]></add>
+		</operation>
+	</file>
+</modification>

@@ -13,7 +13,7 @@
 	devido a falta de tempo
 	Soluções comerciais, contato felipo.antonoff@gmail.com
 	Meu site, usando Opencart 1.5.5.1 - fgame.com.br
-	
+
 	1.0.1 - Inserido Akatus com 3 Imagens
 	-->
 	<id>Code Market - Imagem Pagamento e Entrega no Checkout</id>
@@ -130,6 +130,35 @@
 		</operation>
 	</file>
 
+    <file name="catalog/view/theme/*/template/onecheckout/payment_method.tpl">
+        <operation error="abort">
+            <!-- Acrescentando as imagens na View payment_method.tpl -->
+            <search position="replace">
+                <![CDATA[
+                    $payment_method['title'];
+                ]]>
+            </search>
+            <add>
+                <![CDATA[
+                        $payment_method['title']."<br>".$payment_method['img'];
+                ]]>
+            </add>
+        </operation>
+        <operation error="abort">
+            <!-- Diminuindo o Textarea -->
+            <search position="replace">
+                <![CDATA[
+                <textarea name="comment" rows="8"
+                ]]>
+            </search>
+            <add>
+                <![CDATA[
+                <textarea name="comment" rows="3"
+                ]]>
+            </add>
+        </operation>
+    </file>
+
 	<!-- ENTREGA -->
 	<!-- 	Imagem no tipo de Entrega e Textarea com 3 linhas e não 8 (ocupa muito espaço)
 	Modificações nos Modelos de Entrega para receber a imagem e na View, para mostrar no Checkout -->
@@ -193,5 +222,33 @@
 			</add>
 		</operation>
 	</file>
+    <file name="catalog/view/theme/*/template/onecheckout/shipping_method.tpl">
+        <operation error="abort">
+            <!-- Acrescentando a imagem no View  shipping_method.tpl -->
+            <search position="replace">
+                <![CDATA[
+                $quote['title'];
+                ]]>
+            </search>
+            <add>
+                <![CDATA[
+                $quote['title']."<br>".$quote['img'];
+                ]]>
+            </add>
+        </operation>
+        <operation error="abort">
+            <!-- Diminuindo o Textarea -->
+            <search position="replace">
+                <![CDATA[
+                <textarea name="comment" rows="8"
+                ]]>
+            </search>
+            <add>
+                <![CDATA[
+                <textarea name="comment" rows="3"
+                ]]>
+            </add>
+        </operation>
+    </file>
 
 </modification>

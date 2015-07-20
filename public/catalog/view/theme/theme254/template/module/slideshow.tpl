@@ -1,61 +1,80 @@
-
-<div id='coin-slider'>
-
-	<!-- <a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner3.png' ></a> -->
-	<!-- <a href="https://case4you.com.br/capas-prontas"><img src='image/data/banner/banner2.png' ></a> -->
-	<!-- <a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner4.png' ></a> -->
-	<!-- <a href="https://case4you.com.br/acessorios"><img src='image/data/banner/banner1.png' ></a> -->
-	<!-- <a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-facebook.png' ></a> -->
-	<!-- <a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-site3.png' ></a> -->
-	<!-- <a href="https://case4you.com.br/empresas"><img src='image/data/banner/banner-empresas.png' ></a> -->
-
-
-
-	<!-- <a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/bannermaes.png' ></a> -->
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/case4you_02.png' ></a>
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/case4you_01.png' ></a>
-	<a href="https://case4you.com.br/empresas"><img src='image/data/banner/case4youcapa-1.png' ></a>
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-famosos.png' ></a>
-	
-<!--
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-famosos.png' ></a>
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-facebook.png' ></a>
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/banner-site3.png' ></a>
-	<a href="https://case4you.com.br/empresas"><img src='image/data/banner/case4you_03_3.png' ></a>
-	<a href="https://case4you.com.br/?ferramenta=1"><img src='image/data/banner/case4you_01_2.png' ></a>
--->
-	
+<div class="flexslider">
+    <ul class="slides">
+        <?php foreach ($banners as $banner): ?>
+            <?php if ($banner['link']): ?>
+                <li><a href="<?php echo $banner['link']; ?>"><img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" /></a></li>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </ul>
 </div>
 
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('#coin-slider').coinslider({ width: 1024, height: 450, navigation: true, delay: 5000 });
-	});
-</script>
+<div class="newsletter-row">
+    <div class="rds-wrapper group">
+        <div class="newsletter-text">
+            <p><strong>Assine case4you</strong></p>
+            <p>Receba nossas ofertas por e-mail!</p>
+        </div>
 
-
-<div class="passos">
-	<div class="passositem">
-		<div class="passotitle">SELECIONE UM MODELO</div>
-		<div class="passotexto">Temos os modelos dispon&iacute;veis para Iphone 4/4S, Iphone 5, Samsung S2, Samsung S3, Samsung S4 e Samsung Note 2</div>
-		<div class="passoimg1"><div class="passonumero">1</div></div>
-	</div>
-	<div class="passositem" style="margin-left: 10px; margin-right: 10px;">
-		<div class="passotitle">ESCOLHA SUAS FOTOS</div>
-		<div class="passotexto">Selecione suas fotos diretamente das redes sociais (Facebook, Instagram) ou de seu computador</div>
-		<div class="passoimg2"><div class="passonumero">2</div></div>
-	</div>
-	<div class="passositem">
-		<div class="passotitle">RECEBA EM CASA</div>
-		<div class="passotexto">Voc&ecirc; recebe seu produto em casa com toda comodidade e seguran&ccedil;a</div>
-		<div class="passoimg3"><div class="passonumero">3</div></div>
-	</div>
+        <form action="#" class="newsletter-form group" method="POST" accept-chartset="utf-8">
+            <input type="email" name="txtnews" placeholder="Insira seu e-mail">
+            <button class="rds-send-button" type="submit">Enviar</button>
+        </form>
+    </div>
 </div>
 
+<div class="header-modules"></div>
 
+<?php
+$theme_path = 'catalog/view/theme/' . $this->config->get('config_template');
+?>
 
-<div>
-	<a class="fancybox fancybox.iframe sf-with-ul" href="https://case4you.com.br/app/?m=0">
-		<img src="/app/img/bannerhome.png" alt="">
-	</a>
-</div>
+<section class="how-it-works" id="como-funciona">
+    <h2 style="width:100%;text-align:center;"><a style="text-decoration:none;font-size: 45px;" href="http://case4you.com.br/criar-capinha-personalizada" title"Capinhas Personalizadas">Capinhas Personalizadas</a></h2>
+
+    <ol class="group rds-wrapper">
+        <li>
+          <a style="text-decoration: none;" href="http://case4you.com.br/criar-capinha-personalizada" title="Criar capinha">
+            <img src="<?php echo $theme_path; ?>/image/hiw-step1.png" alt="Selecione um modelo" width="295" height="270">
+            <h2><span>1.</span> Selecione um modelo</h2>
+            <p>Temos Diversos modelos de Capas para Celular, escolha o seu.</p>
+          </a>
+        </li>
+
+        <li>
+          <a style="text-decoration: none;" href="http://case4you.com.br/criar-capinha-personalizada" title="Criar capinha">
+            <img src="<?php echo $theme_path; ?>/image/hiw-step2.png" alt="Escolha suas fotos" width="295" height="270">
+            <h2><span>2.</span> Escolha suas fotos</h2>
+            <p>Selecione Fotos do Seu Facebook, Instagram ou Computador e cria sua capinha personalizada</p>
+          </a>
+        </li>
+
+        <li>
+          <a style="text-decoration: none;" href="http://case4you.com.br/criar-capinha-personalizada" title="Criar capinha">
+            <img src="<?php echo $theme_path; ?>/image/hiw-step3.png" alt="Receba em casa" width="295" height="270">
+            <h2><span>3.</span> Receba em casa</h2>
+            <p>Você recebe sua capinha em casa, com toda comodidade e segurança</p>
+          </a>
+        </li>
+    </ol>
+</section>
+
+<section class="contact-us">
+    <div class="rds-wrapper">
+        <h3>Fale conosco</h3>
+        <p>Envie suas dúvidas, sugestões, elogios ou reclamações, queremos ouvi-lo!</p>
+
+        <form action="#" method="post" class="rds-wrapper contact-form" accept-charset="utf-8">
+            <div class="group">
+                <input type="text" name="name" class="name-field" placeholder="Nome">
+                <input type="text" name="surname" class="surname-field" placeholder="Sobrenome">
+            </div>
+
+            <input type="email" name="email" class="email-field" placeholder="E-mail">
+
+            <div class="group">
+                <input type="text" name="message" class="message-field" placeholder="Mensagem">
+                <button class="rds-send-button" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</section>

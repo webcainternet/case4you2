@@ -1,29 +1,30 @@
 
 <?php echo $header; ?>
+<?php echo $content_top; ?>
 
 <script type="text/javascript">
 $(window).load(function() {
     $("#button-cart").click();
   });
-</script> 
+</script>
 
 <?php // echo $column_left; ?><?php // echo $column_right; ?>
 
 <center><h1>Aguarde...</h1></center>
 
-<div id="content" style="display: none;"><?php echo $content_top; ?>
+<div id="content" style="display: none;">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  
+
   <div class="product-info">
     <div class="wrapper indent-bot">
-    
+
         <div class="fleft left spacing" style="">
 
-          <?php    
+          <?php
             include '../config.php';
 
             $dblink = mysql_connect(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD);
@@ -34,15 +35,11 @@ $(window).load(function() {
             while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
                 $urlcapinha = $row["mpn"];
             }
-
-            mysql_free_result($result);
           ?>
 
-          <iframe src="https://case4you.com.br/app/product/index.php?<?php echo $urlcapinha; ?>" style="border: 0px; width: 370px; height: 540px;" scrolling="no"></iframe>
-          
-               
+
         </div>
-    
+
     <div class="extra-wrap">
       <h1><?php echo $heading_title; ?></h1>
       <div class="description">
@@ -60,7 +57,7 @@ $(window).load(function() {
         <?php if (!$special) { ?>
         <?php echo $price; ?>
         <?php } else { ?>
-        <span class="price-new"><?php echo $special; ?></span><span class="price-old"><?php echo $price; ?></span> 
+        <span class="price-new"><?php echo $special; ?></span><span class="price-old"><?php echo $price; ?></span>
         <?php } ?>
         <?php if ($tax) { ?>
         <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span><br />
@@ -69,7 +66,7 @@ $(window).load(function() {
         <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span>
         <?php } ?>
         <?php if ($discounts) { ?>
-       
+
         <div class="discount">
           <?php foreach ($discounts as $discount) { ?>
           <?php echo sprintf($text_discount, $discount['quantity'], $discount['price']); ?><br />
@@ -346,22 +343,22 @@ $(window).load(function() {
   </div>
   <?php } ?>
   </div>
-  
+
   </div>
   <?php if ($products) {
     $carous='';
-      if (count($products)>4) 
+      if (count($products)>4)
       {
         $carous='related-carousel';
         }
-      
-      
+
+
       ?>
   <h1><?php echo $tab_related;?></h1>
   <div  class="related <?php echo $carous;?>">
-    <div class="box-product"> 
+    <div class="box-product">
       <ul>
-       
+
       <?php foreach ($products as $product) { ?>
       <li class="related-info">
         <?php if ($product['thumb']) { ?>
@@ -382,9 +379,9 @@ $(window).load(function() {
           </div>
         </div>
         <?php } ?>
-        
+
          <div class="cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a></div>
-        
+
         </li>
       <?php } ?>
       </ul>
@@ -396,31 +393,31 @@ $(window).load(function() {
 <script type="text/javascript"><!--
 $('#button-cart').bind('click', function() {
 	$.ajax({
-		url: 'index.php?route=checkout/cart/add',
+		url: '/index.php?route=checkout/cart/add',
 		type: 'post',
 		data: $('.product-info input[type=\'text\'], .product-info input[type=\'hidden\'], .product-info input[type=\'radio\']:checked, .product-info input[type=\'checkbox\']:checked, .product-info select, .product-info textarea'),
 		dataType: 'json',
 		success: function(json) {
 			$('.success, .warning, .attention, information, .error').remove();
-			
+
 			if (json['error']) {
 				if (json['error']['option']) {
 					for (i in json['error']['option']) {
 						$('#option-' + i).after('<span class="error">' + json['error']['option'][i] + '</span>');
 					}
 				}
-			} 
-			
+			}
+
 			if (json['success']) {
 				//$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<span><img src="catalog/view/theme/theme254/image/close.png" alt="" class="close" /></span></div>');
 				//$('.success').fadeIn('slow');
 				//$('#cart-total').html(json['total']);
-				//$('html, body').animate({ scrollTop: 0 }, 'slow'); 
-				
+				//$('html, body').animate({ scrollTop: 0 }, 'slow');
+
         window.location = 'index.php?route=checkout/cartcustom';
 
 				//window.location = 'index.php?route=checkout/checkout';
-			}	
+			}
 		}
 	});
 });
@@ -441,20 +438,20 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 	},
 	onComplete: function(file, json) {
 		$('#button-option-<?php echo $option['product_option_id']; ?>').attr('disabled', false);
-		
+
 		$('.error').remove();
-		
+
 		if (json['success']) {
 			alert(json['success']);
-			
+
 			$('input[name=\'option[<?php echo $option['product_option_id']; ?>]\']').attr('value', json['file']);
 		}
-		
+
 		if (json['error']) {
 			$('#option-<?php echo $option['product_option_id']; ?>').after('<span class="error">' + json['error'] + '</span>');
 		}
-		
-		$('.loading').remove();	
+
+		$('.loading').remove();
 	}
 });
 //--></script>
@@ -464,13 +461,13 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 <script type="text/javascript"><!--
 $('#review .pagination a').live('click', function() {
 	$('#review').fadeOut('slow');
-		
+
 	$('#review').load(this.href);
-	
+
 	$('#review').fadeIn('slow');
-	
+
 	return false;
-});			
+});
 
 $('#review').load('index.php?route=product/product/review&product_id=<?php echo $product_id; ?>');
 
@@ -493,10 +490,10 @@ $('#button-review').bind('click', function() {
 			if (data['error']) {
 				$('#review-title').after('<div class="warning">' + data['error'] + '</div>');
 			}
-			
+
 			if (data['success']) {
 				$('#review-title').after('<div class="success">' + data['success'] + '</div>');
-								
+
 				$('input[name=\'name\']').val('');
 				$('textarea[name=\'text\']').val('');
 				$('input[name=\'rating\']:checked').attr('checked', '');
@@ -505,11 +502,11 @@ $('#button-review').bind('click', function() {
 		}
 	});
 });
-//--></script> 
+//--></script>
 <script type="text/javascript"><!--
 $('#tabs a').tabs();
-//--></script> 
-<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script> 
+//--></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script>
 <script type="text/javascript"><!--
 $(document).ready(function() {
 	if ($.browser.msie && $.browser.version == 6) {
@@ -523,5 +520,5 @@ $(document).ready(function() {
 	});
 	$('.time').timepicker({timeFormat: 'h:m'});
 });
-//--></script> 
+//--></script>
 <?php  echo $footer; ?>

@@ -1,7 +1,7 @@
 <?php
 // Heading
 $_['heading_title']       = 'Slideshow';
-$_['text_header']       = 'Header';
+
 // Text
 $_['text_module']         = 'Modules';
 $_['text_success']        = 'Success: You have modified module slideshow!';

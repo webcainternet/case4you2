@@ -11,7 +11,7 @@ class ControllerModuleSlideshow extends Controller {
 		if (file_exists('catalog/view/theme/' . $this->config->get('config_template') . '/stylesheet/slideshow.css')) {
 			$this->document->addStyle('catalog/view/theme/' . $this->config->get('config_template') . '/stylesheet/slideshow.css');
 		} else {
-			$this->document->addStyle('catalog/view/theme/theme254/stylesheet/slideshow.css');
+			$this->document->addStyle('catalog/view/theme/default/stylesheet/slideshow.css');
 		}
 		
 		$this->data['width'] = $setting['width'];
@@ -21,14 +21,13 @@ class ControllerModuleSlideshow extends Controller {
 		
 		if (isset($setting['banner_id'])) {
 			$results = $this->model_design_banner->getBanner($setting['banner_id']);
-			  
+
 			foreach ($results as $result) {
 				if (file_exists(DIR_IMAGE . $result['image'])) {
 					$this->data['banners'][] = array(
 						'title' => $result['title'],
 						'link'  => $result['link'],
-						'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height']),
-						'description' => ($result['description'])
+						'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
 					);
 				}
 			}

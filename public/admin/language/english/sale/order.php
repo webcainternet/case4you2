@@ -3,6 +3,9 @@
 $_['heading_title']                           = 'Orders';
 
 // Text
+
+$_['text_amazon_order_id']                    = 'Amazon Order ID:';
+$_['text_name']                               = 'Name:';
 $_['text_success']                            = 'Success: You have modified orders!';
 $_['text_order_id']                           = 'Order ID:';
 $_['text_invoice_no']                         = 'Invoice No.:';
@@ -181,7 +184,7 @@ $_['error_lastname']                          = 'Last Name must be between 1 and
 $_['error_email']                             = 'E-Mail Address does not appear to be valid!';
 $_['error_telephone']                         = 'Telephone must be between 3 and 32 characters!';
 $_['error_password']                          = 'Password must be between 3 and 20 characters!';
-$_['error_confirm']                           = 'Password and Confirme a senhaation do not match!';
+$_['error_confirm']                           = 'Password and password confirmation do not match!';
 $_['error_company_id']                        = 'Company ID required!';
 $_['error_tax_id']                            = 'Tax ID required!';
 $_['error_vat']                               = 'VAT number is invalid!';

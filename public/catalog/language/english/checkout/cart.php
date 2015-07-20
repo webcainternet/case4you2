@@ -11,7 +11,7 @@ $_['text_reward']            = 'Success: Your reward points discount has been ap
 $_['text_shipping']          = 'Success: Your shipping estimate has been applied!';
 $_['text_login']             = 'Attention: You must <a href="%s">login</a> or <a href="%s">create an account</a> to view prices!';
 $_['text_points']            = 'Reward Points: %s';
-$_['text_items']             = '%s item(s) - <strong>%s</strong>';
+$_['text_items']             = '%s item(s) - %s';
 $_['text_next']              = 'What would you like to do next?';
 $_['text_next_choice']       = 'Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.';
 $_['text_use_coupon']        = 'Use Coupon Code';
@@ -21,6 +21,17 @@ $_['text_shipping_estimate'] = 'Estimate Shipping &amp; Taxes';
 $_['text_shipping_detail']   = 'Enter your destination to get a shipping estimate.';
 $_['text_shipping_method']   = 'Please select the preferred shipping method to use on this order.';
 $_['text_empty']             = 'Your shopping cart is empty!';
+$_['text_until_cancelled']   = 'until cancelled';
+$_['text_recurring_item']    = 'Recurring item';
+$_['text_payment_profile']   = 'Payment Profile';
+$_['text_trial_description'] = '%s every %d %s(s) for %d payment(s) then';
+$_['text_payment_description'] = '%s every %d %s(s) for %d payment(s)';
+$_['text_payment_until_canceled_description'] = '%s every %d %s(s) until canceled';
+$_['text_day']               = 'day';
+$_['text_week']              = 'week';
+$_['text_semi_month']        = 'half-month';
+$_['text_month']             = 'month';
+$_['text_year']              = 'year';
 
 // Column
 $_['column_image']           = 'Image';
@@ -31,7 +42,7 @@ $_['column_price']           = 'Unit Price';
 $_['column_total']           = 'Total';
 
 // Entry
-$_['entry_coupon']           = 'Digite o cupom de desconto:';
+$_['entry_coupon']           = 'Enter your coupon here:';
 $_['entry_voucher']          = 'Enter your gift voucher code here:';
 $_['entry_reward']           = 'Points to use (Max %s):';
 $_['entry_country']          = 'Country:';
@@ -53,4 +64,9 @@ $_['error_country']          = 'Please select a country!';
 $_['error_zone']             = 'Please select a region / state!';
 $_['error_shipping']         = 'Warning: Shipping method required!';
 $_['error_no_shipping']      = 'Warning: No Shipping options are available. Please <a href="%s">contact us</a> for assistance!';
+$_['error_profile_required'] = 'Please select a payment profile!';
+
+$_['text_trial']             = '%s every %s %s for %s payments then ';
+$_['text_recurring']         = '%s every %s %s';
+$_['text_length']            = ' for %s payments';
 ?>

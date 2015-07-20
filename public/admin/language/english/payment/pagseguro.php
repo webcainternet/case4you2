@@ -1,56 +1,40 @@
 <?php
-/*
- ************************************************************************
- Copyright [2013] [PagSeguro Internet Ltda.]
+// Heading
+$_['heading_title']       			= 'PagSeguro';
 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
+// Text
+$_['text_payment']        			= 'Pagamento';
+$_['text_success']        			= 'Módulo PagSeguro atualizado com sucesso!';
+$_['text_pagseguro'] 				= '<a onclick="window.open(\'http://www.pagseguro.com.br/\');"><img src="view/image/payment/pagseguro_uol.gif" alt="PagSeguro" title="PagSeguro" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_order_nao_efetivado'] 		= 'O pagamento no site do PagSeguro não foi concluído.';
+$_['text_frete_loja']        		= 'pela loja';
+$_['text_frete_pagseguro_pac']      = 'pelo PagSeguro usando PAC';
+$_['text_frete_pagseguro_sedex']    = 'pelo PagSeguro usando Sedex';
+$_['text_frete_pagseguro_nao_especificado'] = 'pelo PagSeguro. O cliente escolhe entre PAC e Sedex';
 
- http://www.apache.org/licenses/LICENSE-2.0
+// Entry
+$_['entry_token']         				= 'Token:<br /><span class="help">Token de Segurança</span>';
+$_['entry_email']         				= 'Email:<br /><span class="help">E-mail de cadastro no PagSeguro</span>';
+$_['entry_posfixo']         			= 'Pós-fixo para o número do pedido:<br /><span class="help">Útil para identificar no PagSeguro de qual loja pertence o pedido. Ex. para pedido de nro. 15 e pós-fixo "loja01", a referência do pedido no PagSeguro será "15_loja01" </span>';
+$_['entry_tipo_frete']         			= 'Cálculo do frete feito:<br /><span class="help">Se optar pelo cálculo feito pela loja, escolha "Frete fixo" em Preferências de frete no PagSeguro senão marque "Frete por peso" para que o PagSeguro faça os cálculos.</span>';
 
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
- ************************************************************************
- */
+$_['entry_order_aguardando_retorno'] 	= 'Status Aguardando retorno:<br /><span class="help">a loja aguarda o primeiro retorno da transação pelo PagSeguro.</span>';
+$_['entry_order_aguardando_pagamento'] 	= 'Status Aguardando pagamento:<br /><span class="help">o comprador iniciou a transação, mas até o momento o PagSeguro não recebeu nenhuma informação sobre o pagamento.</span>';
+$_['entry_order_analise'] 				= 'Status Em análise:<br /><span class="help">o comprador optou por pagar com um cartão de crédito e o PagSeguro está analisando o risco da transação.</span>';
+$_['entry_order_paga'] 					= 'Status Paga:<br /><span class="help">a transação foi paga pelo comprador e o PagSeguro já recebeu uma confirmação da instituição financeira responsável pelo processamento.</span>';
+$_['entry_order_disponivel'] 			= 'Status Disponível:<br /><span class="help">a transação foi paga e chegou ao final de seu prazo de liberação sem ter sido retornada e sem que haja nenhuma disputa aberta.</span>';
+$_['entry_order_disputa'] 				= 'Status Disputa:<br /><span class="help">o comprador, dentro do prazo de liberação da transação, abriu uma disputa.</span>';
+$_['entry_order_devolvida'] 			= 'Status Devolvida:<br /><span class="help">o valor da transação foi devolvido para o comprador.</span>';
+$_['entry_order_cancelada'] 			= 'Status Cancelada:<br /><span class="help">a transação foi cancelada sem ter sido finalizada.</span>';
+$_['entry_total']       			 	= 'Total Mínimo:<br /><span class="help">Total mínimo que o pedido deve alcançar para que este método de pagamento seja habilitado.</span>'; 
 
-$_['heading_title'] = 'PagSeguro';
+$_['entry_geo_zone']      			= 'Região geográfica:';
+$_['entry_status']        			= 'Situação:';
+$_['entry_sort_order']    			= 'Ordenação:';
+$_['entry_update_status_alert'] 	= 'Alertar sobre mudança no status da transação:<br /><span class="help">Envia e-mail para o cliente avisando-o sobre mudança no status do pedido.</span>';
 
-$_['text_payment'] = 'Payment';
-$_['text_pagseguro'] = '<a href="https://pagseguro.uol.com.br/" target="_blank"><img src="view/image/payment/ps-logo.png" alt="PagSeguro" title="PagSeguro" style="border: 1px solid #EEEEEE;" /></a>';
-
-$_['enable_module'] = 'ENABLE MODULE:';
-$_['display_order'] = 'DISPLAY ORDER:';
-$_['ps_email'] = 'E-MAIL:';
-$_['ps_token'] = 'TOKEN:';
-$_['url_forwarding'] = 'REDIRECT URL:';
-$_['url_notification'] = 'NOTIFICATION URL:';
-$_['charset'] = 'CHARSET:';
-$_['log'] = 'LOG:';
-$_['directory'] = 'DIRECTORY';
-
-$_['iso'] = 'ISO-8859-1';
-$_['utf'] = 'UTF-8';
-
-$_['text_success'] = 'Success: You have modified settings!';
-
-$_['text_module'] = 'Enable the module?';
-$_['text_order'] = 'Enter the order in which PagSeguro should appear in your store checkout.';
-$_['text_email'] = 'Do not have a PagSeguro account? <a href="https://pagseguro.uol.com.br/registration/registration.jhtml?ep=10&tipo=cadastro#!vendedor" target="_blank">Click here </a> and register for free.';
-$_['text_token'] = 'Do not have or do not know your token? <a href="https://pagseguro.uol.com.br/integracao/token-de-seguranca.jhtml" target="_blank">Click here </a> to generate a new one.';
-$_['text_url_forwarding'] = 'Your customer will be redirected back to your store or to the URL entered in this field. <a href="https://pagseguro.uol.com.br/integracao/pagamentos-via-api.jhtml" target="_blank">Click here </a> to activate.';
-$_['text_url_notification'] = 'Whenever a transaction change its status, PagSeguro sends a notification to your store or to the URL entered in this field.';
-$_['text_charset'] = 'Set the charset according to the coding of your system.';
-$_['text_log'] = 'Create log file?';
-$_['text_directory'] = 'Path to the log file.';
-
-// ERROR
-$_['error_permission'] = 'Warning: You do not have permission to modify settings!';
-$_['error_email_required'] = 'E-mail required!';
-$_['error_email_invalid'] = 'Invalid E-mail!';
-$_['error_token_required'] = 'Token required!';
-$_['error_token_invalid'] = 'Invalid Token!';
+// Error
+$_['error_permission']    		= 'Atenção: Você não possui permissão para modificar o PagSeguro!';
+$_['error_token']         		= 'Digite o token de segurança';
+$_['error_email']         		= 'Digite o e-mail de cadastro no PagSeguro';
 ?>

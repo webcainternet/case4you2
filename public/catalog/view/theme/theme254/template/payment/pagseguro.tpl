@@ -1,21 +1,22 @@
-<!-- File with the button redirect to PagSeguro  -->
- <?php /*
-<script type="text/javascript">
-$(window).load(function() {
-    $("#psconfirm").click();
-  });
-</script>
-*/ ?> 
-
-<form name="frps1" id="frps1" action="<?php echo $action; ?>" method="post">
-    <div class="buttons">
-    <div class="right">
-      <input id="psconfirm" type="submit" value="<?php echo $button_confirm; ?>" class="button" />
-    </div>
-  </div>
-     <input type="hidden" id="url_ps" name="url_ps" value="<?php echo $url_ps; ?>">
-</form>
-
-<script type="text/javascript">
-document.getElementById("frps1").submit();
-</script> 
+<?php if ($text_information) { ?>
+<div class="information"><?php echo $text_information; ?></div>
+<?php } ?>
+<div class="buttons">
+  <div class="right"><a id="button-confirm" class="button"><span><?php echo $button_confirm; ?></span></a></div>   
+</div>
+<script type="text/javascript"><!--
+$('#button-confirm').bind('click', function() {
+	$.ajax({
+		type: 'GET',
+		url: 'index.php?route=payment/pagseguro/confirm',
+		beforeSend: function() {
+			$('#button-confirm').attr('disabled', true);
+			
+			$('#payment').before('<div class="attention"><img src="catalog/view/theme/default/image/loading.gif" alt="" /> <?php echo $text_wait; ?></div>');
+		},
+		success: function() {
+			location = '<?php echo $url; ?>';
+		}
+	});
+});
+//--></script>

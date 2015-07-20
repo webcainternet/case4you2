@@ -1,13 +1,14 @@
 <?php echo $header; ?>
+<?php echo $content_top; ?>
 <?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+<div id="content">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  
-  
+
+
   <?php if ($products) { ?>
     <div class="box-container">
     <h1><?php echo $heading_title; ?></h1>
@@ -91,16 +92,16 @@
         <?php } ?>
       </tr>
     </tbody>
-    
+
     <?php foreach ($attribute_groups as $attribute_group) { ?>
-    
+
     <thead>
       <tr>
         <td class="compare-attribute" colspan="<?php echo count($products) + 1; ?>"><?php echo $attribute_group['name']; ?></td>
       </tr>
     </thead>
     <?php foreach ($attribute_group['attribute'] as $key => $attribute) { ?>
-    
+
       <tr>
         <td><?php echo $attribute['name']; ?></td>
         <?php foreach ($products as $product) { ?>
@@ -111,7 +112,7 @@
         <?php } ?>
         <?php } ?>
       </tr>
-    
+
     <?php } ?>
     <?php } ?>
     <tr>
@@ -147,4 +148,3 @@ $('.compare-info tr td:last-child').addClass('last');
 </script>
   <?php echo $content_bottom; ?></div>
 <?php echo $footer; ?>
-  

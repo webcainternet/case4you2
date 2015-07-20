@@ -2,12 +2,11 @@
 class ControllerModuleSpecial extends Controller {
 	protected function index($setting) {
 		$this->language->load('module/special');
- 
-      	$this->data['heading_title'] = $this->language->get('heading_title');
-		$this->data['off_text'] = $this->language->get('off_text');
-		$this->data['sale_text'] = $this->language->get('sale_text');
+
+		$this->data['heading_title'] = $this->language->get('heading_title');
+
 		$this->data['button_cart'] = $this->language->get('button_cart');
-		$this->data['button_details'] = $this->language->get('button_details');
+		
 		$this->load->model('catalog/product');
 		
 		$this->load->model('tool/image');
@@ -50,8 +49,6 @@ class ControllerModuleSpecial extends Controller {
 			
 			$this->data['products'][] = array(
 				'product_id' => $result['product_id'],
-				'description' =>html_entity_decode($result['description']),
-				'description1' =>strip_tags (html_entity_decode($result['description'])),
 				'thumb'   	 => $image,
 				'name'    	 => $result['name'],
 				'price'   	 => $price,

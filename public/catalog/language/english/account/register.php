@@ -30,7 +30,7 @@ $_['entry_country']        = 'Country:';
 $_['entry_zone']           = 'Region / State:';
 $_['entry_newsletter']     = 'Subscribe:';
 $_['entry_password']       = 'Password:';
-$_['entry_confirm']        = 'Confirme a senha:';
+$_['entry_confirm']        = 'Password Confirm:';
 
 // Error
 $_['error_exists']         = 'Warning: E-Mail Address is already registered!';
@@ -39,7 +39,7 @@ $_['error_lastname']       = 'Last Name must be between 1 and 32 characters!';
 $_['error_email']          = 'E-Mail Address does not appear to be valid!';
 $_['error_telephone']      = 'Telephone must be between 3 and 32 characters!';
 $_['error_password']       = 'Password must be between 4 and 20 characters!';
-$_['error_confirm']        = 'Confirme a senhaation does not match password!';
+$_['error_confirm']        = 'Password confirmation does not match password!';
 $_['error_company_id']     = 'Company ID required!';
 $_['error_tax_id']         = 'Tax ID required!';
 $_['error_vat']            = 'VAT number is invalid!';

@@ -1,6 +1,6 @@
 <?php
 // Text
-$_['text_new_subject']          = '%s - Pedido %s';
+$_['text_new_subject']          = '%s - Sua compra foi registrada com sucesso';
 $_['text_new_greeting']         = 'Obrigado por se interessar nos produtos da loja %s.';
 $_['text_new_received']         = 'Você recebeu um pedido.';
 $_['text_new_link']             = 'Para acompanhar o andamento do seu pedido, clique no link abaixo:';
@@ -21,8 +21,8 @@ $_['text_new_product']          = 'Produto';
 $_['text_new_model']            = 'Modelo';
 $_['text_new_quantity']         = 'Quantidade';
 $_['text_new_price']            = 'Preço';
-$_['text_new_order_total']      = 'Total do Pedido';	
-$_['text_new_total']            = 'Total';	
+$_['text_new_order_total']      = 'Total do Pedido';
+$_['text_new_total']            = 'Total';
 $_['text_new_download']         = 'Assim que seu pagamento for confirmado você poderá clicar no link abaixo para acessar os produtos para download:';
 $_['text_new_comment']          = 'Os comentários para seu pedido são:';
 $_['text_new_footer']           = 'Caso tenha alguma dúvida responda este e-mail.';

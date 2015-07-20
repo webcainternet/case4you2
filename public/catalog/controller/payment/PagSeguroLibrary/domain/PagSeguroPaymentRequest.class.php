@@ -49,7 +49,7 @@ class PagSeguroPaymentRequest {
 
     /**
      * Extra amount to be added to the transaction total
-     * 
+     *
      * This value can be used to add an extra charge to the transaction
      * or provide a discount in the case ExtraAmount is a negative value.
      */
@@ -86,7 +86,7 @@ class PagSeguroPaymentRequest {
 
     /**
      * Determines for which url PagSeguro will send the order related notifications codes.
-     * 
+     *
      * Optional. Any change happens in the transaction status, a new notification request will be send
      * to this url. You can use that for update the related order.
      */
@@ -94,17 +94,17 @@ class PagSeguroPaymentRequest {
 
     /**
      * Extra parameters that user can add to a PagSeguro checkout request
-     * 
-     * Optional. 
-     * @var type 
+     *
+     * Optional.
+     * @var type
      */
     private $metadata;
-    
+
     /**
      * Extra parameters that user can add to a PagSeguro checkout request
-     * 
+     *
      * Optional
-     * @var type 
+     * @var type
      */
     private $parameter;
     /**
@@ -223,7 +223,7 @@ class PagSeguroPaymentRequest {
 
     /**
      * Adds a new product/item in this payment request
-     * 
+     *
      * @param String $id
      * @param String $description
      * @param String $quantity
@@ -270,10 +270,10 @@ class PagSeguroPaymentRequest {
 
     /**
      * Sets the redirect URL
-     * 
+     *
      * Uri to where the PagSeguro payment page should redirect the user after the payment information is processed.
      * Typically this is a confirmation page on your web site.
-     * 
+     *
      * @param String $redirectURL
      */
     public function setRedirectURL($redirectURL) {
@@ -459,7 +459,7 @@ class PagSeguroPaymentRequest {
 
     /**
      * Get the notification status url
-     * 
+     *
      * @return type
      */
     public function getNotificationURL() {
@@ -468,7 +468,7 @@ class PagSeguroPaymentRequest {
 
     /**
      * Sets the url that PagSeguro will send the new notifications statuses
-     * 
+     *
      * @param type $notificationURL
      */
     public function setNotificationURL($notificationURL) {
@@ -477,7 +477,7 @@ class PagSeguroPaymentRequest {
 
     /**
      * Sets metadata for PagSeguro checkout requests
-     * 
+     *
      * @param type $metaData
      */
     public function setMetaData($metaData) {
@@ -486,7 +486,7 @@ class PagSeguroPaymentRequest {
 
     /**
      * Gets metadata for PagSeguro checkout requests
-     * 
+     *
      * @return type $metaData
      */
     public function getMetaData() {
@@ -496,10 +496,10 @@ class PagSeguroPaymentRequest {
         }
         return $this->metadata;
     }
-    
+
     /**
-     * add a parameter for PagSeguro metadata checkout request 
-     * 
+     * add a parameter for PagSeguro metadata checkout request
+     *
      * @param type $itemKey - PagSeguroMetaDataItem key
      * @param type $itemValue - PagSeguroMetaDataItem value
      * @param type $itemGroup - PagSeguroMetaDataItem group
@@ -507,19 +507,19 @@ class PagSeguroPaymentRequest {
     public function addMetaData($itemKey, $itemValue, $itemGroup = NULL){
         $this->getMetaData()->addItem(new PagSeguroMetaDataItem($itemKey, $itemValue, $itemGroup));
     }
-    
+
     /**
      * Sets parameter for PagSeguro checkout requests
-     * 
+     *
      * @param type $parameter
      */
     public function setParameter($parameter){
         $this->parameter = $parameter;
     }
-    
+
     /**
      * Gets parameter for PagSeguro checkout requests
-     * 
+     *
      * @return type
      */
     public function getParameter(){
@@ -530,8 +530,8 @@ class PagSeguroPaymentRequest {
     }
 
     /**
-     * add a parameter for PagSeguro checkout request 
-     * 
+     * add a parameter for PagSeguro checkout request
+     *
      * @param type $parameterName - PagSeguroParameterItem key
      * @param type $parameterValue - PagSeguroParameterItem value
      */
@@ -541,7 +541,7 @@ class PagSeguroPaymentRequest {
 
     /**
      * add a parameter for PagSeguro checkout request
-     * 
+     *
      * @param type $parameterName - PagSeguroParameterItem key
      * @param type $parameterValue - PagSeguroParameterItem value
      * @param type $parameterIndex - PagSeguroParameterItem group
@@ -552,11 +552,12 @@ class PagSeguroPaymentRequest {
 
     /**
      * Calls the PagSeguro web service and register this request for payment
-     * 
+     *
      * @param Credentials $credentials
      * @return The URL to where the user needs to be redirected to in order to complete the payment process
      */
     public function register(PagSeguroCredentials $credentials) {
+
         return PagSeguroPaymentService::createCheckoutRequest($credentials, $this);
     }
 

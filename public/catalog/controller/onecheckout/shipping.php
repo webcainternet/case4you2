@@ -152,6 +152,7 @@ class ControllerOneCheckoutShipping extends Controller {
 					$this->tax->setZone($shipping_address['country_id'], $shipping_address['zone_id']);
 				}
 				// Default Shipping Address
+
 				if ($this->config->get('config_tax_customer') == 'shipping') {
 					$this->session->data['shipping_country_id'] = $shipping_address['country_id'];
 					$this->session->data['shipping_zone_id'] = $shipping_address['zone_id'];
@@ -187,7 +188,9 @@ class ControllerOneCheckoutShipping extends Controller {
 
 									'sort_order' => $quote['sort_order'],
 
-									'error'      => $quote['error']
+									'error'      => $quote['error'],
+									
+									'teste'      => $this->session->data['shipping_postcode'],
 
 								);
 

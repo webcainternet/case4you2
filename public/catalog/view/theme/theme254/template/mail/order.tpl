@@ -1,117 +1,67 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<!doctype html>
 <html>
 <head>
+<title>Seu pedido foi registrado com sucesso</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title><?php echo $title; ?></title>
 </head>
-<body style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
-<div style="width: 680px;"><a href="<?php echo $store_url; ?>" title="<?php echo $store_name; ?>"><img src="<?php echo $logo; ?>" alt="<?php echo $store_name; ?>" style="margin-bottom: 20px; border: none;" /></a>
-  <p style="margin-top: 0px; margin-bottom: 20px;"><?php echo $text_greeting; ?></p>
-  <?php if ($customer_id) { ?>
-  <p style="margin-top: 0px; margin-bottom: 20px;"><?php echo $text_link; ?></p>
-  <p style="margin-top: 0px; margin-bottom: 20px;"><a href="<?php echo $link; ?>"><?php echo $link; ?></a></p>
-  <?php } ?>
-  <?php if ($download) { ?>
-  <p style="margin-top: 0px; margin-bottom: 20px;"><?php echo $text_download; ?></p>
-  <p style="margin-top: 0px; margin-bottom: 20px;"><a href="<?php echo $download; ?>"><?php echo $download; ?></a></p>
-  <?php } ?>
-  <table style="border-collapse: collapse; width: 100%; border-top: 1px solid #DDDDDD; border-left: 1px solid #DDDDDD; margin-bottom: 20px;">
-    <thead>
-      <tr>
-        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;" colspan="2"><?php echo $text_order_detail; ?></td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><b><?php echo $text_order_id; ?></b> <?php echo $order_id; ?><br />
-          <b><?php echo $text_date_added; ?></b> <?php echo $date_added; ?><br />
-          <b><?php echo $text_payment_method; ?></b> <?php echo $payment_method; ?><br />
-          <?php if ($shipping_method) { ?>
-          <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
-          <?php } ?></td>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><b><?php echo $text_email; ?></b> <?php echo $email; ?><br />
-          <b><?php echo $text_telephone; ?></b> <?php echo $telephone; ?><br />
-          <b><?php echo $text_ip; ?></b> <?php echo $ip; ?><br /></td>
-      </tr>
-    </tbody>
-  </table>
-  <?php if ($comment) { ?>
-  <table style="border-collapse: collapse; width: 100%; border-top: 1px solid #DDDDDD; border-left: 1px solid #DDDDDD; margin-bottom: 20px;">
-    <thead>
-      <tr>
-        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;"><?php echo $text_instruction; ?></td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><?php echo $comment; ?></td>
-      </tr>
-    </tbody>
-  </table>
-  <?php } ?>
-  <table style="border-collapse: collapse; width: 100%; border-top: 1px solid #DDDDDD; border-left: 1px solid #DDDDDD; margin-bottom: 20px;">
-    <thead>
-      <tr>
-        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;"><?php echo $text_payment_address; ?></td>
-        <?php if ($shipping_address) { ?>
-        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;"><?php echo $text_shipping_address; ?></td>
-        <?php } ?>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><?php echo $payment_address; ?></td>
-        <?php if ($shipping_address) { ?>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><?php echo $shipping_address; ?></td>
-        <?php } ?>
-      </tr>
-    </tbody>
-  </table>
-  <table style="border-collapse: collapse; width: 100%; border-top: 1px solid #DDDDDD; border-left: 1px solid #DDDDDD; margin-bottom: 20px;">
-    <thead>
-      <tr>
-        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;"><?php echo $text_product; ?></td>
-        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;"><?php echo $text_model; ?></td>
-        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: right; padding: 7px; color: #222222;"><?php echo $text_quantity; ?></td>
-        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: right; padding: 7px; color: #222222;"><?php echo $text_price; ?></td>
-        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: right; padding: 7px; color: #222222;"><?php echo $text_total; ?></td>
-      </tr>
-    </thead>
-    <tbody>
-      <?php foreach ($products as $product) { ?>
-      <tr>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><?php echo $product['name']; ?>
-          <?php foreach ($product['option'] as $option) { ?>
-          <br />
-          &nbsp;<small> - <?php echo $option['name']; ?>: <?php echo $option['value']; ?></small>
-          <?php } ?></td>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><?php echo $product['model']; ?></td>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;"><?php echo $product['quantity']; ?></td>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;"><?php echo $product['price']; ?></td>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;"><?php echo $product['total']; ?></td>
-      </tr>
-      <?php } ?>
-      <?php foreach ($vouchers as $voucher) { ?>
-      <tr>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><?php echo $voucher['description']; ?></td>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"></td>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;">1</td>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;"><?php echo $voucher['amount']; ?></td>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;"><?php echo $voucher['amount']; ?></td>
-      </tr>
-      <?php } ?>
-    </tbody>
-    <tfoot>
-      <?php foreach ($totals as $total) { ?>
-      <tr>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;" colspan="4"><b><?php echo $total['title']; ?>:</b></td>
-        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;"><?php echo $total['text']; ?></td>
-      </tr>
-      <?php } ?>
-    </tfoot>
-  </table>
-  <p style="margin-top: 0px; margin-bottom: 20px;"><?php echo $text_footer; ?></p>
-  <p style="margin-top: 0px; margin-bottom: 20px;"><?php echo $text_powered; ?></p>
-</div>
+<body bgcolor="#b5ea77" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background:#b5ea77;padding: 20px 0;">
+<!-- Save for Web Slices (Email_automatico_Case4You.png) -->
+<table width="603" height="720" border="0" cellpadding="0" cellspacing="0" style="background-color: #fff; border: none;" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="16">
+            <img src="<?php echo $base_url; ?>image/email/Email_automatico_Case4You_01.png" width="602" height="168" alt=""></td>
+        <td>
+            <img src="<?php echo $base_url; ?>image/email/spacer.gif" width="1" height="168" alt=""></td>
+    </tr>
+    <tr>
+        <td colspan="16" style="font-family: Arial; font-size: 14px; color: #58595b; line-height: 1.777; padding: 0px 45px">
+            <p><b>Seu pedido foi registrado com sucesso</b></p>
+
+            <p><b>Olá <?php echo $firstname; ?>,</b></p>
+
+            <p>Que bom que você escolheu a Case4you. Seu pedido foi registrado com sucesso e será enviado para a produção assim que recebermos a confirmação do pagamento através do PagSeguro.</p>
+
+            <p>E caso ainda não tenha finalizado o pagamento basta acessar este link.</p>
+
+            <p><a href="http://case4you.com.br/index.php?route=checkout/cartcustom" style="color: orange;">Finalizar minha compra!</a></p>
+
+            <p style="margin: 0;"><b>Os dados da sua compra são:</b></p>
+
+            <?php foreach ($products as $product): ?>
+                <p style="margin: 0;"><b><?php echo $product['quantity']; ?> - <?php echo $product['name']; ?></b></p>
+                <p style="margin: 0;"><b>Valor: <?php echo $product['price']; ?></b></p>
+                <p style="margin: 0;"><b>Total: <?php echo $product['total']; ?></b></p>
+            <?php endforeach; ?>
+
+            <hr>
+
+            <p style="margin: 0;"><strong>Informações de entrega:</strong></p>
+            <p style="margin: 0;"><b>Método:</b> <?php echo $shipping_method; ?></p>
+            <p style="margin: 0;"><b>Valor do frete:</b> R$ <?php echo $shipping_cost; ?></p>
+
+            <p><b>Total com frete:</b> R$ <?php echo $total; ?></p>
+
+            <p>Caso ainda tenha alguma dúvida, por favor, entre em contato conosco.</p>
+
+            <p>Um grande abraço<br>
+            <b>Equipe Case4you</b></p>
+        <td>
+            <img src="<?php echo $base_url; ?>image/email/spacer.gif" width="1" height="370" alt=""></td>
+    </tr>
+    <tr>
+        <td colspan="16">
+            <img id="Image-Maps-Com-image-maps-2014-07-04-122230" src="http://case4you.com.br/image/email/email_case4you.jpg" border="0" width="600" height="154" orgWidth="600" orgHeight="154" usemap="#image-maps-2014-07-04-122230" alt="" />
+            <map name="image-maps-2014-07-04-122230" id="ImageMapsCom-image-maps-2014-07-04-122230">
+            <area  alt="" title="" href="https://www.facebook.com/case4youoficial" target="_blank" shape="rect" coords="423,40,467,82" style="outline:none;" target="_self"     />
+            <area  alt="" title="" href="https://twitter.com/case4youoficial" target="_blank" shape="rect" coords="475,41,518,81" style="outline:none;" target="_self"     />
+            <area  alt="" title="" href="http://instagram.com/case4youoficial" target="_blank" shape="rect" coords="533,42,576,82" style="outline:none;" target="_self"     />
+            <area  alt="" title="" href="mailto:contato@case4you.com.br" target="_blank" shape="rect" coords="23,114,95,141" style="outline:none;" target="_self"     />
+            <area  alt="" title="" href="http://case4you.com.br/privacidade" target="_blank" shape="rect" coords="193,116,313,139" style="outline:none;" target="_self"     />
+            <area  alt="" title="" href="http://case4you.com.br/termos" target="_blank" shape="rect" coords="310,116,398,137" style="outline:none;" target="_self"     />
+            </map>
+        <td>
+    </tr>
+</table>
+<!-- End Save for Web Slices -->
 </body>
 </html>

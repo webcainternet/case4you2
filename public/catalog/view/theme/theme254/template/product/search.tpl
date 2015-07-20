@@ -1,11 +1,12 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+<?php echo $header; ?>
+<?php echo $content_top; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  
+
   <div class="box-container">
 	<h1><?php echo $heading_title; ?></h1>
       <b style=" padding-bottom:7px; display:block;"> <?php echo $text_critea; ?></b>
@@ -85,11 +86,11 @@
     </div>
  <div class="product-compare"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></div>
   </div>
- 
+
   <div class="product-list">
     <ul>
         <?php $i=0; foreach ($products as $product) { $i++; ?>
-            <?php 
+            <?php
                             if ($i%4==1) {
                                 $a='class="first-in-line"';
                             }
@@ -156,27 +157,27 @@ $('select[name=\'category_id\']').trigger('change');
 
 $('#button-search').bind('click', function() {
 	url = 'index.php?route=product/search';
-	
+
 	var search = $('#content input[name=\'search\']').attr('value');
-	
+
 	if (search) {
 		url += '&search=' + encodeURIComponent(search);
 	}
 
 	var category_id = $('#content select[name=\'category_id\']').attr('value');
-	
+
 	if (category_id > 0) {
 		url += '&category_id=' + encodeURIComponent(category_id);
 	}
-	
+
 	var sub_category = $('#content input[name=\'sub_category\']:checked').attr('value');
-	
+
 	if (sub_category) {
 		url += '&sub_category=true';
 	}
-		
+
 	var filter_description = $('#content input[name=\'description\']:checked').attr('value');
-	
+
 	if (filter_description) {
 		url += '&description=true';
 	}
@@ -187,79 +188,79 @@ $('#button-search').bind('click', function() {
 function display(view) {
 	if (view == 'list') {
 		$('.product-grid').attr('class', 'product-list');
-		
+
 		$('.product-list ul li').each(function(index, element) {
 			html  = '<div class="right">';
 			html += '  <div class="price">' + $(element).find('.price').html() + '</div>';
 			html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
 			html += '  <div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
 			html += '  <div class="compare">' + $(element).find('.compare').html() + '</div>';
-			html += '</div>';			
-			
-			html += '<div class="left">';
-			
-			var image = $(element).find('.image').html();
-			
-			if (image != null) { 
-				html += '<div class="image">' + image + '</div>';
-			}
-			
-		
-						
-			html += '  <div class="name">' + $(element).find('.name').html() + '</div>';
-			html += '  <div class="description">' + $(element).find('.description').html() + '</div>';
-			
-			var rating = $(element).find('.rating').html();
-			
-			if (rating != null) {
-				html += '<div class="rating">' + rating + '</div>';
-			}
-				
 			html += '</div>';
 
-						
-			$(element).html(html);
-		});		
-		
-$('.display').html('<b><?php echo $text_display; ?></b> <div id="list_b"></div> <a id="grid_a" onclick="display(\'grid\');"><?php echo $text_grid; ?></a>');
-		
-		$.totalStorage('display', 'list'); 
-	} else {
-		$('.product-list').attr('class', 'product-grid');
-		
-		$('.product-grid ul li').each(function(index, element) {
-			html = '';
-			
+			html += '<div class="left">';
+
 			var image = $(element).find('.image').html();
-			
+
 			if (image != null) {
 				html += '<div class="image">' + image + '</div>';
 			}
-			
-			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
-			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
-			
-			var price = $(element).find('.price').html();
-			
-			if (price != null) {
-				html += '<div class="price">' + price  + '</div>';
-			}	
-					
+
+
+
+			html += '  <div class="name">' + $(element).find('.name').html() + '</div>';
+			html += '  <div class="description">' + $(element).find('.description').html() + '</div>';
+
 			var rating = $(element).find('.rating').html();
-			
+
 			if (rating != null) {
 				html += '<div class="rating">' + rating + '</div>';
 			}
-						
+
+			html += '</div>';
+
+
+			$(element).html(html);
+		});
+
+$('.display').html('<b><?php echo $text_display; ?></b> <div id="list_b"></div> <a id="grid_a" onclick="display(\'grid\');"><?php echo $text_grid; ?></a>');
+
+		$.totalStorage('display', 'list');
+	} else {
+		$('.product-list').attr('class', 'product-grid');
+
+		$('.product-grid ul li').each(function(index, element) {
+			html = '';
+
+			var image = $(element).find('.image').html();
+
+			if (image != null) {
+				html += '<div class="image">' + image + '</div>';
+			}
+
+			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
+			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
+
+			var price = $(element).find('.price').html();
+
+			if (price != null) {
+				html += '<div class="price">' + price  + '</div>';
+			}
+
+			var rating = $(element).find('.rating').html();
+
+			if (rating != null) {
+				html += '<div class="rating">' + rating + '</div>';
+			}
+
 			html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
 			html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
 			html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';
-			
+
 			$(element).html(html);
-		});	
-					
+		});
+
 		$('.display').html('<b><?php echo $text_display; ?></b> <a id="list_a" onclick="display(\'list\');"><?php echo $text_list; ?></a>  <div id="grid_b"></div>');
-		
+
 		$.totalStorage('display', 'grid');
 	}
 	$(".wishlist a.tip").easyTooltip();
@@ -273,5 +274,5 @@ if (view) {
 } else {
 	display('list');
 }
-//--></script> 
+//--></script>
 <?php echo $footer; ?>
