@@ -14,39 +14,42 @@ $theme_path = $view_path . 'theme/' . $this->config->get('config_template') . '/
 <head>
     <meta charset="UTF-8" />
 
-        <?php
-    // TEST
-    $currentpage = $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
-    echo $currentpage;
-    if ('case4you.com.br/criar-capinha-personalizada' == $cuurentpage) {
-        $c4y_description = '';
-        $c4y_keywords = '';
-        $c4y_company = '';
-        $c4y_url = '';
-    }
+    <?php $currentpage = $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"]; ?>
 
-    if ('case4you.com.br/capinhas-para-celular' == $cuurentpage) {
-        $c4y_description = '';
-        $c4y_keywords = '';
-        $c4y_company = '';
-        $c4y_url = '';
-    }
+    <?php if ('case4you.com.br/index.php?route=common/home' == $currentpage || 'case4you.com.br/' == $currentpage): ?>
+        <meta name="description" content="Crie Capinhas Personalizadas de forma simples e rápida, com fotos do seu Instagram, Facebook e direto do seu computador. Crie Já Sua Capinha!" />
+        <meta name="keywords" content="capinha, capinha personalizada, capinhas, capinha celular, capa celular, case celular, capinha para celular, capinha de celular" />
+        <meta name="company" content="Case4You" />
+        <meta name="keywords" content="http://case4you.com.br" />
+    <?php endif; ?>
 
-    if ('case4you.com.br/quem-somos' == $cuurentpage) {
-        $c4y_description = '';
-        $c4y_keywords = '';
-        $c4y_company = '';
-        $c4y_url = '';
-    }
+    <?php if ('case4you.com.br/criar-capinha-personalizada' == $currentpage): ?>
+        <meta name="description" content="Crie Capinhas Personalizadas de forma simples e rápida, com fotos do seu Instagram, Facebook e direto do seu computador. Crie Já Sua Capinha!" />
+        <meta name="keywords" content="capinha personalizada, capinhas personalizadas, criar capinha, criar capinha personalizada, case personalizada" />
+        <meta name="company" content="Case4You" />
+        <meta name="keywords" content="http://case4you.com.br/criar-capinha-personalizada" />
+    <?php endif; ?>
 
-    if ('case4you.com.br/index.php?route=common/home' == $cuurentpage) {
-        $c4y_description = '';
-        $c4y_keywords = '';
-        $c4y_company = '';
-        $c4y_url = '';
-    }
-    ?>
+    <?php if ('case4you.com.br/capinhas-para-celular' == $currentpage): ?>
+        <meta name="description" content="capa celular, capa de celular, capinha para celular, capinha de celular, capa smartphone, capinha iphone, capinha samsung, capinha motorola" />
+        <meta name="keywords" content="Capinhas para Celular com o estilo ideal para você, encontre capinhas de diversos modelos para o seu Celular. Compre Sua Capinha na Case4You!" />
+        <meta name="company" content="Case4You" />
+        <meta name="keywords" content="http://case4you.com.br/capinhas-para-celular" />
+    <?php endif; ?>
 
+    <?php if ('case4you.com.br/quem-somos' == $currentpage): ?>
+        <meta name="description" content="capinha, capinha personalizada, capinhas, capinha celular, capa celular, case celular, capinha para celular, capinha de celular" />
+        <meta name="keywords" content="Crie Capinhas Personalizadas de forma simples e rápida, com fotos do seu Instagram, Facebook e direto do seu computador. Crie Já Sua Capinha!" />
+        <meta name="company" content="Case4You" />
+        <meta name="keywords" content="http://case4you.com.br/quem-somos" />
+    <?php endif; ?>
+
+    <?php if ('case4you.com.br/capinhas-para-empresas/' == $currentpage): ?>
+        <meta name="description" content="Crie Capinhas Personalizadas de forma simples e rápida, para sua Empresa direto do seu computador. Crie Já Uma Capinha Personalizada para Sua Empresa!" />
+        <meta name="keywords" content="capinha empresa, capinha para empresas, capinhas empresas, capinha personalizada empresa" />
+        <meta name="company" content="Case4You" />
+        <meta name="keywords" content="http://case4you.com.br/capinhas-para-empresas/" />
+    <?php endif; ?>
 
 
     <?php if (isset($title) && !empty($title)): ?>

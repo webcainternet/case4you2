@@ -253,7 +253,7 @@ $theme_path = $view_path . 'theme/' . $this->config->get('config_template') . '/
                 }
             ?>
             <li class="<?php echo $cart_item_classes; ?>"><a href="<?php echo $shopping_cart; ?>custom" title="Minhas Capinhas"><span class="icon icon-cart"><?php echo $text_shopcart; ?></span></a></li>
-            <li class="<?php echo $account_item_classes; ?>"><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+            <li class="<?php echo $account_item_classes; ?>"><a href="<?php echo $account; ?>" title="Acesse Sua Conta da Case4You"><?php echo $text_account; ?></a></li>
         </ul>
     </div>
 </header>

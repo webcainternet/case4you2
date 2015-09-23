@@ -14,7 +14,7 @@ $theme_path = $view_path . 'theme/' . $this->config->get('config_template') . '/
 
 <section class="keep-in-touch">
     <div class="rds-wrapper">
-        <h1>Criar Capinha Personalizada</h1>
+        <a href="http://case4you.com.br/criar-capinha-personalizada"style="text-decoration:none"><h1>Capinha Personalizada</h1></a>
         <p>Siga-nos, temos muito para compartilhar com você!</p>
 
         <ul class="link-list social-link-list">
@@ -33,6 +33,7 @@ $theme_path = $view_path . 'theme/' . $this->config->get('config_template') . '/
                 <div class="information-belt">
                     <h3><?php echo $text_information; ?></h3>
                     <ul>
+			<li><a href="http://case4you.com.br/capinhas-para-celular" title="Capinhas para Celular">Capinhas para Celular</a></li>
                         <li><a href="http://case4you.com.br/criar-capinha-personalizada" title="Criar capinha">Capas para celular</a></li>
                         <?php foreach ($informations as $information) { ?>
                         <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
@@ -84,7 +85,7 @@ $theme_path = $view_path . 'theme/' . $this->config->get('config_template') . '/
 
     <div class="copyright">
         <div class="rds-wrapper">
-            <small>Case4You &copy; Todos os direitos reservados - Sob CNPJ 18.672.112/0001-54</small>
+            <small>Case4You &copy; Capinhas Personalizadas © Todos os direitos reservados - Sob CNPJ 18.672.112/0001-5</small>
         </div>
     </div>
 </footer>
